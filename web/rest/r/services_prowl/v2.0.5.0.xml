@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_prowl">Services_Prowl</p>
+    <c>openpear.org</c>
+    <v>0.5.0</v>
+    <a>0.5.0</a>
+    <mp>5.1.0</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>halt</m>
+    <s>Prowlに投げるやつ。</s>
+    <d>Prowlに投げるやつ。</d>
+    <da>2009-09-30 00:39:04</da>
+    <n>
+------------------------------------------------------------------------
+r1204 | halt | 2009-09-26 00:18:45 +0900 (土, 26  9月 2009) | 1 line
+
+return codeは配列にしてメンバ変数に入れた。
+------------------------------------------------------------------------
+r1203 | halt | 2009-09-26 00:01:40 +0900 (土, 26  9月 2009) | 1 line
+
+prowl公式へのリンクを追加
+------------------------------------------------------------------------
+r1202 | halt | 2009-09-26 00:01:14 +0900 (土, 26  9月 2009) | 1 line
+
+ちゃんと時間いれた
+------------------------------------------------------------------------
+r1174 | halt | 2009-09-10 00:58:42 +0900 (木, 10  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1173 | openpear | 2009-09-10 00:55:03 +0900 (木, 10  9月 2009) | 1 line
+
+[New Package] Services_Prowl
+------------------------------------------------------------------------
+ </n>
+    <f>1809</f>
+    <g>http://openpear.org/get/Services_Prowl-0.5.0</g>
+    <x xlink:href="package.0.5.0.xml"/>
+</r>

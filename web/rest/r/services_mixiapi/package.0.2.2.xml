@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_MixiAPI</name>
+ <channel>openpear.org</channel>
+ <summary>*概要
+mixiステーションが利用するAPIを叩くServicesパッケージです。[http://ido.nu/kuma/2007/06/29/mixi%E3%81%AE%E3%81%82%E3%81%97%E3%81%82%E3%81%A8api%E7%99%BA%E6%8E%98/:title=mixiのあしあとAPI発掘]を参考にしています。
+
+*関連URL
+-[http://d.hatena.ne.jp/shimooka/20080804/1217780008]
+-[http://d.hatena.ne.jp/shimooka/20080801/1217525203]
+-[http://d.hatena.ne.jp/shimooka/20080318/1205813764]
+-[http://d.hatena.ne.jp/shimooka/20080129/1201536348]
+-[http://d.hatena.ne.jp/shimooka/20070917/1189959168]</summary>
+ <description>*概要
+mixiステーションが利用するAPIを叩くServicesパッケージです。[http://ido.nu/kuma/2007/06/29/mixi%E3%81%AE%E3%81%82%E3%81%97%E3%81%82%E3%81%A8api%E7%99%BA%E6%8E%98/:title=mixiのあしあとAPI発掘]を参考にしています。
+
+*関連URL
+-[http://d.hatena.ne.jp/shimooka/20080804/1217780008]
+-[http://d.hatena.ne.jp/shimooka/20080801/1217525203]
+-[http://d.hatena.ne.jp/shimooka/20080318/1205813764]
+-[http://d.hatena.ne.jp/shimooka/20080129/1201536348]
+-[http://d.hatena.ne.jp/shimooka/20070917/1189959168]</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-18</date>
+ <time>08:06:50</time>
+ <version>
+  <release>0.2.2</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">The PHP License, version 3.01</license>
+ <notes>------------------------------------------------------------------------
+r590 | shimooka | 2009-03-18 08:00:58 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- tagged RELEASE_0_2_2
+------------------------------------------------------------------------
+r589 | shimooka | 2009-03-18 07:58:03 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- initial import from coderepos
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="419e383d63cd1c5b2584b8920682dcc5" name="MixiAPI/AbstractAPI.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="276500aaed8838bb3d2c2c66c9f95ab7" name="MixiAPI/AlbumList.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="7a7630cf5edb959c01926426edb9e5d0" name="MixiAPI/API.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="cc251dc5eea4040010fc8511f2b6eb44" name="MixiAPI/Diary.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="41e7385ec233222ef2839060e1acea69" name="MixiAPI/Factory.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="7cfd67ed38e5b23375ee11543e7ec205" name="MixiAPI/Footprint.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="3036ecdb2bfcd25ee65613f84f43630d" name="MixiAPI/Image.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="ef2b5b4214b96db183f20ad4e1d851c4" name="MixiAPI/MyMixi.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="3d3aea4227582348b7fa1888c1318547" name="MixiAPI/PhotoAlbum.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="feb3dc5977445d1cfd9c8b9549bac9b9" name="MixiAPI/PostDiary.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="609a950a716fb3610b40555926657539" name="MixiAPI/WhatsNew.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="5daca581f91a78ea1d0451551c2131fd" name="MixiAPI.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.11</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-03-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">The PHP License, version 3.01</license>
+   <notes>------------------------------------------------------------------------
+r590 | shimooka | 2009-03-18 08:00:58 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- tagged RELEASE_0_2_2
+------------------------------------------------------------------------
+r589 | shimooka | 2009-03-18 07:58:03 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- initial import from coderepos
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

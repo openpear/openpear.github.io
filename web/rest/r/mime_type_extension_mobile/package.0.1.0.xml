@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>MIME_Type_Extension_Mobile</name>
+ <channel>openpear.org</channel>
+ <summary>拡張子からMIME-Typeを判別します。</summary>
+ <description>拡張子からMIME-Typeを判別します。</description>
+ <lead>
+  <name>okonomi</name>
+  <user>okonomi</user>
+  <email>oknm@okonomi.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-26</date>
+ <time>01:19:32</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r749 | okonomi | 2009-04-26 01:09:59 -0700 (Sun, 26 Apr 2009) | 1 line
+
+?\227?\130?\162?\227?\130?\175?\227?\130?\187?\227?\130?\185?\227?\131?\172?\227?\131?\153?\227?\131?\171?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r748 | okonomi | 2009-04-26 01:09:47 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="5cd090e0d61a3206d23efb3f9c56133f" name="MIME/Type/Extension/Mobile.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>MIME_Type</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-04-26</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r749 | okonomi | 2009-04-26 01:09:59 -0700 (Sun, 26 Apr 2009) | 1 line
+
+?\227?\130?\162?\227?\130?\175?\227?\130?\187?\227?\130?\185?\227?\131?\172?\227?\131?\153?\227?\131?\171?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r748 | okonomi | 2009-04-26 01:09:47 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

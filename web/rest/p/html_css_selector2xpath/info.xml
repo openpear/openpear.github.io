@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>HTML_CSS_Selector2XPath</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>The MIT License</l>
+<s>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</s>
+<d>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</d>
+<r xlink:href="/rest/r/html_css_selector2xpath" />
+</p>

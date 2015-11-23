@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/sfjpmobileplugin">sfJpMobilePlugin</p>
+    <c>openpear.org</c>
+    <v>0.0.6</v>
+    <a>0.0.6</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>MIT License</l>
+    <m>vector</m>
+    <s>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</s>
+    <d>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</d>
+    <da>2009-08-08 19:42:04</da>
+    <n>
+------------------------------------------------------------------------
+r1095 | vector | 2009-08-08 19:24:41 +0900 (土, 08  8月 2009) | 1 line
+
+Merge branch 'github'
+------------------------------------------------------------------------
+r1008 | vector | 2009-07-15 04:16:22 +0900 (水, 15  7月 2009) | 1 line
+
+Merge branch 'github'
+------------------------------------------------------------------------
+r1004 | vector | 2009-07-11 01:31:47 +0900 (土, 11  7月 2009) | 6 lines
+
+Merge branch 'master' of git@github.com:vectorxenon/sfJpMobilePlugin
+
+Conflicts:
+	config/config_handlers.yml
+	lib/controller/sfJpMobileController.class.php
+	lib/filter/sfJpMobileFilter.class.php
+------------------------------------------------------------------------
+r1001 | vector | 2009-07-09 02:45:25 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r1000 | vector | 2009-07-09 02:45:06 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r938 | vector | 2009-06-09 02:49:07 +0900 (火, 09  6月 2009) | 1 line
+
+plugin内のconfig_handlersがdebug=offの時に動作しなかったので修正
+------------------------------------------------------------------------
+r925 | vector | 2009-06-05 02:20:59 +0900 (金, 05  6月 2009) | 1 line
+
+Merge branch 'master' of git@github.com:vectorxenon/sfJpMobilePlugin into github
+------------------------------------------------------------------------
+r921 | openpear | 2009-06-04 15:15:55 +0900 (木, 04  6月 2009) | 1 line
+
+[Create Base Directory] sfJpMobilePlugin
+------------------------------------------------------------------------
+ </n>
+    <f>17781</f>
+    <g>http://openpear.org/get/sfJpMobilePlugin-0.0.6</g>
+    <x xlink:href="package.0.0.6.xml"/>
+</r>

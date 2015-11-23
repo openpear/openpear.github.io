@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/wozozo_saigoppe">Wozozo_Saigoppe</p>
+    <c>openpear.org</c>
+    <v>1.1.0</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>MugeSo</m>
+    <s>最後っ屁をかまします。
+
+Usage:
+
+new Wozozo_Saigoppe(); //デフォルトの最後っ屁を登録
+new Wozozo_Saigoppe('ブリブリ'); // 擬音を指定して登録
+new Wozozo_Saigoppe('poot!', false); // 顔文字を無効に</s>
+    <d>最後っ屁をかまします。
+
+Usage:
+
+new Wozozo_Saigoppe(); //デフォルトの最後っ屁を登録
+new Wozozo_Saigoppe('ブリブリ'); // 擬音を指定して登録
+new Wozozo_Saigoppe('poot!', false); // 顔文字を無効に</d>
+    <da>2009-10-07 19:01:04</da>
+    <n>
+------------------------------------------------------------------------
+r1273 | MugeSo | 2009-10-07 18:58:51 +0900 (水, 07 10月 2009) | 1 line
+
+絵がないとさみしいよね
+------------------------------------------------------------------------
+r1268 | MugeSo | 2009-10-07 18:19:12 +0900 (水, 07 10月 2009) | 1 line
+
+完成
+------------------------------------------------------------------------
+r1267 | openpear | 2009-10-07 18:04:02 +0900 (水, 07 10月 2009) | 1 line
+
+[New Package] Wozozo_Saigoppe
+------------------------------------------------------------------------
+ </n>
+    <f>1362</f>
+    <g>http://openpear.org/get/Wozozo_Saigoppe-1.1.0</g>
+    <x xlink:href="package.1.1.0.xml"/>
+</r>

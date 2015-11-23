@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTML_CSS_Mobile</name>
+ <channel>openpear.org</channel>
+ <summary>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。
+
+なお、このパッケージはCodeReposからのexternal版で、本体リポジトリは
+[http://coderepos.org/share/browser/lang/php/HTML_CSS_Mobile/trunk]
+にあります。</summary>
+ <description>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。
+
+なお、このパッケージはCodeReposからのexternal版で、本体リポジトリは
+[http://coderepos.org/share/browser/lang/php/HTML_CSS_Mobile/trunk]
+にあります。</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>yudoufu</name>
+  <user>yudoufu</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2009-05-09</date>
+ <time>13:47:00</time>
+ <version>
+  <release>0.1.6</release>
+  <api>0.1.6</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>------------------------------------------------------------------------
+r808 | yudoufu | 2009-05-09 13:44:20 -0700 (Sat, 09 May 2009) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\227?\130?\130?\228?\184?\184?\227?\129?\148?\227?\129?\168?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------
+r807 | yudoufu | 2009-05-09 13:43:13 -0700 (Sat, 09 May 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r806 | yudoufu | 2009-05-09 13:40:15 -0700 (Sat, 09 May 2009) | 1 line
+
+HTML_CSS_Mobile?\227?\130?\146?\227?\131?\170?\227?\131?\157?\227?\130?\184?\227?\131?\136?\227?\131?\170?\227?\129?\190?\227?\130?\139?\227?\129?\148?\227?\129?\168?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------
+r805 | yudoufu | 2009-05-09 13:36:01 -0700 (Sat, 09 May 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r377 | sotarok | 2009-01-29 09:53:30 -0800 (Thu, 29 Jan 2009) | 2 lines
+
+ * ?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\227?\129?\174?\230?\149?\180?\231?\144?\134?\227?\129?\170?\227?\129?\169
+
+------------------------------------------------------------------------
+r371 | sotarok | 2009-01-29 06:36:25 -0800 (Thu, 29 Jan 2009) | 1 line
+
+ * add prop
+------------------------------------------------------------------------
+r370 | openpear | 2009-01-29 06:32:22 -0800 (Thu, 29 Jan 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Mobile
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="96b1e4194ea64d8cf971d36ad8bb60d6" name="HTML/CSS/Mobile.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9136e89b7d99f11a11ddac83d617e5d" name="sample/sample.css" role="data" />
+   <file baseinstalldir="/" md5sum="fe38dfe19186eb8715b175cd553e94c7" name="sample/sample.html" role="doc" />
+   <file baseinstalldir="/" md5sum="03a4d57be1a8a82e00310fd38079949a" name="sample/sample.php" role="php" />
+   <file baseinstalldir="/" md5sum="8161922331f3740e9ae32d68a7edd339" name="sample/sample2.css" role="data" />
+   <file baseinstalldir="/" md5sum="4afc4787c7fde1406530149edd1f111e" name="sample/sample3.css" role="data" />
+   <file baseinstalldir="/" md5sum="d7699184368f5af45ceb17712b592ec7" name="sample/sample4.css" role="data" />
+   <file baseinstalldir="/" md5sum="16247c8424c577112ba7ba9e206073e6" name="sample/sample5.css" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTML_CSS_Selector2XPath</name>
+    <channel>openpear.org</channel>
+   </package>
+   <package>
+    <name>HTML_CSS</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.6</release>
+    <api>0.1.6</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-05-09</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>------------------------------------------------------------------------
+r808 | yudoufu | 2009-05-09 13:44:20 -0700 (Sat, 09 May 2009) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\227?\130?\130?\228?\184?\184?\227?\129?\148?\227?\129?\168?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------
+r807 | yudoufu | 2009-05-09 13:43:13 -0700 (Sat, 09 May 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r806 | yudoufu | 2009-05-09 13:40:15 -0700 (Sat, 09 May 2009) | 1 line
+
+HTML_CSS_Mobile?\227?\130?\146?\227?\131?\170?\227?\131?\157?\227?\130?\184?\227?\131?\136?\227?\131?\170?\227?\129?\190?\227?\130?\139?\227?\129?\148?\227?\129?\168?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------
+r805 | yudoufu | 2009-05-09 13:36:01 -0700 (Sat, 09 May 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r377 | sotarok | 2009-01-29 09:53:30 -0800 (Thu, 29 Jan 2009) | 2 lines
+
+ * ?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\227?\129?\174?\230?\149?\180?\231?\144?\134?\227?\129?\170?\227?\129?\169
+
+------------------------------------------------------------------------
+r371 | sotarok | 2009-01-29 06:36:25 -0800 (Thu, 29 Jan 2009) | 1 line
+
+ * add prop
+------------------------------------------------------------------------
+r370 | openpear | 2009-01-29 06:32:22 -0800 (Thu, 29 Jan 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Mobile
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

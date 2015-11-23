@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Ustream</name>
+ <channel>openpear.org</channel>
+ <summary>Ustream API (http://developer.ustream.tv/)を利用するライブラリ。
+&gt;&gt;注：現在使える代物ではありませんm(_ _)m&lt;&lt;
+*使い方
+
+&gt;||
+&lt;?php
+require_once &apos;Services/Ustream.php&apos;;
+
+// user(hoge)のビデオリストを取得
+$ust = Services_Ustream::factory(&apos;user&apos;);
+$results = $ust-&gt;listAllVideos(&apos;hoge&apos;);
+
+// yyyy-mm-ddのビデオを検索
+$ust = Services_Ustream::factory(&apos;search&apos;);
+$results = $ust-&gt;command(&apos;video&apos;)-&gt;all()
+               -&gt;where(&apos;created&apos;)-&gt;eq(&apos;yyyy-mm-dd&apos;)
+               -&gt;query();
+||&lt;
+
+*依存パッケージ
+:HTTP_Request2:http://pear.php.net/package/HTTP_Request2
+:XML_Serializer:http://pear.php.net/package/XML_Serializer</summary>
+ <description>Ustream API (http://developer.ustream.tv/)を利用するライブラリ。
+&gt;&gt;注：現在使える代物ではありませんm(_ _)m&lt;&lt;
+*使い方
+
+&gt;||
+&lt;?php
+require_once &apos;Services/Ustream.php&apos;;
+
+// user(hoge)のビデオリストを取得
+$ust = Services_Ustream::factory(&apos;user&apos;);
+$results = $ust-&gt;listAllVideos(&apos;hoge&apos;);
+
+// yyyy-mm-ddのビデオを検索
+$ust = Services_Ustream::factory(&apos;search&apos;);
+$results = $ust-&gt;command(&apos;video&apos;)-&gt;all()
+               -&gt;where(&apos;created&apos;)-&gt;eq(&apos;yyyy-mm-dd&apos;)
+               -&gt;query();
+||&lt;
+
+*依存パッケージ
+:HTTP_Request2:http://pear.php.net/package/HTTP_Request2
+:XML_Serializer:http://pear.php.net/package/XML_Serializer</description>
+ <lead>
+  <name>gagne</name>
+  <user>gagne</user>
+  <email>makino@gagne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-03</date>
+ <time>21:43:28</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r485 | gagne | 2009-03-03 21:37:37 -0800 (Tue, 03 Mar 2009) | 1 line
+
+0.2.0 All Fixed.
+------------------------------------------------------------------------
+r434 | gagne | 2009-02-24 19:01:01 -0800 (Tue, 24 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r433 | gagne | 2009-02-24 19:00:31 -0800 (Tue, 24 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r406 | gagne | 2009-02-17 17:15:10 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r405 | gagne | 2009-02-17 17:00:08 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="fe49cce2b919ca6d0a0135154a621c0a" name="examples/search.php" role="doc" />
+   <file baseinstalldir="/" md5sum="aaae375e1e746c64b7f115e1ebf7f40b" name="Services/Ustream/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="6eaa85885069ac8b382c5ceec9074a57" name="Services/Ustream/Channel.php" role="php" />
+   <file baseinstalldir="/" md5sum="789d752dcc864a205a30ff7f46d4219d" name="Services/Ustream/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="6ac0899d7455dd71a33f518d72070065" name="Services/Ustream/Result.php" role="php" />
+   <file baseinstalldir="/" md5sum="bdf265d0af60413a7b7466bca49168f6" name="Services/Ustream/Search.php" role="php" />
+   <file baseinstalldir="/" md5sum="02c546aa2d78133ad91af7d020561282" name="Services/Ustream/Stream.php" role="php" />
+   <file baseinstalldir="/" md5sum="44dc4b5d0dd12983e351cd3f17c07250" name="Services/Ustream/System.php" role="php" />
+   <file baseinstalldir="/" md5sum="69e120c5cec0970aadaac3a74b0affa5" name="Services/Ustream/User.php" role="php" />
+   <file baseinstalldir="/" md5sum="8f37cf899912693c2638531963179e54" name="Services/Ustream/Video.php" role="php" />
+   <file baseinstalldir="/" md5sum="394b521f51afc9762cb3fa1336c27be5" name="Services/Ustream.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>XML_Serializer</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-03-03</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r485 | gagne | 2009-03-03 21:37:37 -0800 (Tue, 03 Mar 2009) | 1 line
+
+0.2.0 All Fixed.
+------------------------------------------------------------------------
+r434 | gagne | 2009-02-24 19:01:01 -0800 (Tue, 24 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r433 | gagne | 2009-02-24 19:00:31 -0800 (Tue, 24 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r406 | gagne | 2009-02-17 17:15:10 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r405 | gagne | 2009-02-17 17:00:08 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

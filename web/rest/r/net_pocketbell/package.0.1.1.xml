@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_Pocketbell</name>
+ <channel>openpear.org</channel>
+ <summary>ポケベル打ちの数値とカナの変換ライブラリ</summary>
+ <description>ポケベル打ちの数値とカナの変換ライブラリ</description>
+ <lead>
+  <name>ketaiorg</name>
+  <user>ketaiorg</user>
+  <email>info@ke-tai.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-18</date>
+ <time>00:10:46</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r714 | ketaiorg | 2009-04-18 00:09:39 -0700 (Sat, 18 Apr 2009) | 2 lines
+
+?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\230?\167?\139?\233?\128?\160?\227?\130?\146?\229?\164?\137?\230?\155?\180
+
+------------------------------------------------------------------------
+r705 | ketaiorg | 2009-04-17 23:50:23 -0700 (Fri, 17 Apr 2009) | 2 lines
+
+version 0.1 release
+
+------------------------------------------------------------------------
+r674 | openpear | 2009-04-17 21:34:45 -0700 (Fri, 17 Apr 2009) | 1 line
+
+[Create Base Directory] Net_Pocketbell
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Net" name="/">
+   <file baseinstalldir="/Net" md5sum="972b72a49e20c669603f1130e4337119" name="Pocketbell.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-04-18</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r714 | ketaiorg | 2009-04-18 00:09:39 -0700 (Sat, 18 Apr 2009) | 2 lines
+
+?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\230?\167?\139?\233?\128?\160?\227?\130?\146?\229?\164?\137?\230?\155?\180
+
+------------------------------------------------------------------------
+r705 | ketaiorg | 2009-04-17 23:50:23 -0700 (Fri, 17 Apr 2009) | 2 lines
+
+version 0.1 release
+
+------------------------------------------------------------------------
+r674 | openpear | 2009-04-17 21:34:45 -0700 (Fri, 17 Apr 2009) | 1 line
+
+[Create Base Directory] Net_Pocketbell
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

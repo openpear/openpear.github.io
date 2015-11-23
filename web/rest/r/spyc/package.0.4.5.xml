@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Spyc</name>
+ <channel>openpear.org</channel>
+ <summary>This is unofficial mirror of [http://code.google.com/p/spyc/:title=spyc].
+This allows you to install Spyc via pear command.</summary>
+ <description>This is unofficial mirror of [http://code.google.com/p/spyc/:title=spyc].
+This allows you to install Spyc via pear command.</description>
+ <lead>
+  <name>MugeSo</name>
+  <user>MugeSo</user>
+  <email>mugeso@mugeso.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-03-29</date>
+ <time>19:17:23</time>
+ <version>
+  <release>0.4.5</release>
+  <api>0.4.5</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1757 | MugeSo | 2010-03-29 13:21:18 +0900 (月, 29  3月 2010) | 1 line
+
+リビジョン固定しておくんだぜ
+------------------------------------------------------------------------
+r1756 | MugeSo | 2010-03-29 13:16:53 +0900 (月, 29  3月 2010) | 1 line
+
+trunkそのものをexternalにすることはできないっぽいので修正
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="013ea7fe6257e8cebe0f17dbf2115bb7" name="Spyc/php4/spyc.php4" role="data" />
+   <file baseinstalldir="/" md5sum="e7f605110f596ff0344431a08dc77b10" name="Spyc/php4/test.php4" role="data" />
+   <file baseinstalldir="/" md5sum="a8ad2909e13727eac85b0ba7f04b93ab" name="Spyc/README" role="doc" />
+   <file baseinstalldir="/" md5sum="db62f8bc9300afd9bf58733b328c99e4" name="Spyc/spyc.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="spyc.php" name="Spyc/spyc.php" />
+   <install as="README" name="Spyc/README" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.4.5</release>
+    <api>0.4.5</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-03-29</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1757 | MugeSo | 2010-03-29 13:21:18 +0900 (月, 29  3月 2010) | 1 line
+
+リビジョン固定しておくんだぜ
+------------------------------------------------------------------------
+r1756 | MugeSo | 2010-03-29 13:16:53 +0900 (月, 29  3月 2010) | 1 line
+
+trunkそのものをexternalにすることはできないっぽいので修正
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

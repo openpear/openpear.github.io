@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_thanks">Services_Thanks</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <st>alpha</st>
+    <l>BSD License</l>
+    <m>tknzk</m>
+    <s>THANKSのAPIを叩く
+
+alphaとしてリリース
+
+[http://thanks.kayac.com]</s>
+    <d>THANKSのAPIを叩く
+
+alphaとしてリリース
+
+[http://thanks.kayac.com]</d>
+    <da>2010-08-08 22:24:05</da>
+    <n>
+------------------------------------------------------------------------
+r2000 | tknzk | 2010-08-08 22:20:17 +0900 (日, 08  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r1999 | tknzk | 2010-08-08 22:16:12 +0900 (日, 08  8月 2010) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r1963 | openpear | 2010-07-13 16:45:04 +0900 (火, 13  7月 2010) | 1 line
+
+[New Package] Services_Thanks
+------------------------------------------------------------------------
+ </n>
+    <f>2060</f>
+    <g>http://openpear.org/get/Services_Thanks-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

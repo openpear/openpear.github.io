@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_URL_Dispatcher</name>
+ <channel>openpear.org</channel>
+ <summary>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</summary>
+ <description>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-01-10</date>
+ <time>06:47:26</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r334 | heavenshell | 2009-01-10 05:52:44 -0800 (Sat, 10 Jan 2009) | 1 line
+
+Modify header comment
+------------------------------------------------------------------------
+r322 | heavenshell | 2009-01-07 05:31:48 -0800 (Wed, 07 Jan 2009) | 1 line
+
+add __call
+------------------------------------------------------------------------
+r306 | heavenshell | 2009-01-03 00:31:49 -0800 (Sat, 03 Jan 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Net/URL" name="/">
+   <file baseinstalldir="/Net/URL" md5sum="d41b6a25786046ac320f0f4d51ff8043" name="Dispatcher/Abstract.php" role="php" />
+   <file baseinstalldir="/Net/URL" md5sum="3e070da314999047e722eb1a1fb9793f" name="Dispatcher/Action.php" role="php" />
+   <file baseinstalldir="/Net/URL" md5sum="230c6cfcee597cb4489e4ef66a7e5855" name="Dispatcher/Controller.php" role="php" />
+   <file baseinstalldir="/Net/URL" md5sum="b52aa81bbb4ad5cb27b79175d4058637" name="Dispatcher/Exception.php" role="php" />
+   <file baseinstalldir="/Net/URL" md5sum="fc030c2e1a2f592b472b03427f2321d7" name="Dispatcher.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-01-10</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r334 | heavenshell | 2009-01-10 05:52:44 -0800 (Sat, 10 Jan 2009) | 1 line
+
+Modify header comment
+------------------------------------------------------------------------
+r322 | heavenshell | 2009-01-07 05:31:48 -0800 (Wed, 07 Jan 2009) | 1 line
+
+add __call
+------------------------------------------------------------------------
+r306 | heavenshell | 2009-01-03 00:31:49 -0800 (Sat, 03 Jan 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/pear_packageprojector">PEAR_PackageProjector</p>
+    <c>openpear.org</c>
+    <v>0.2.0</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>sakamoto</m>
+    <s>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</s>
+    <d>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</d>
+    <da>2009-05-19 08:26:50</da>
+    <n>------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 03:52:22 -0700 (Sat, 16 May 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 02:25:12 -0700 (Sat, 16 May 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-15 20:02:35 -0700 (Fri, 15 May 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-15 19:47:03 -0700 (Fri, 15 May 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 00:17:49 -0800 (Sat, 27 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</n>
+    <f>17402</f>
+    <g>http://openpear.org/get/PEAR_PackageProjector-0.2.0</g>
+    <x xlink:href="package.0.2.0.xml"/>
+</r>

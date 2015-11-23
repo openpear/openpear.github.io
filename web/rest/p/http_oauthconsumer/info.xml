@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>HTTP_OAuthConsumer</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthConsumer/trunk/example</s>
+<d>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthConsumer/trunk/example</d>
+<r xlink:href="/rest/r/http_oauthconsumer" />
+</p>

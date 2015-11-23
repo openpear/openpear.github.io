@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>NullFilehandleIterator</name>
+ <channel>openpear.org</channel>
+ <summary>Perlのnull filehandleオペレータ「&lt;&gt;」と同じ動作を行うイテレータです。
+
+
+* 動作例
+
+Perlでは、「&lt;&gt;」オペレータを使ってフィルタプログラムが簡単に記述できます。例えば、全ての英大文字を英小文字に書き換えるフィルタは下記のように書けます。
+
+&gt;||
+#!/usr/bin/perl
+while (&lt;&gt;) {
+  tr/A-Z/a-z/;
+  print;
+}
+||&lt;
+
+このスクリプトは、引数が無い場合は標準入力に対するフィルタとして動作します。引数がある場合は、与えられた引数をファイル名とみなし、全てのファイルに対して順にフィルタを適用します。
+
+この動作を真似たイテレータがNullFilehandleIteratorです。これを使うと、上記のPerlスクリプトと同じことがPHPでも比較的簡潔に記述できます。
+
+&gt;||
+&lt;?php
+require_once(&apos;NullFilehandleIterator.php&apos;);
+
+$it = new NullFilehandleIterator();
+foreach ($it as $line) {
+  print strtolower($line);
+}
+||&lt;
+
+
+* 依存関係
+
+以下のクラスを利用しています。
+
+- [http://openpear.org/package/LazyFileIterator:title=LazyFileIterator]
+- [http://openpear.org/package/LoggerIterator:title=LoggerIterator]
+- [http://openpear.org/package/IgnoreExceptionIterator:title=IgnoreExceptionIterator]
+
+また、PHP5.1.0以降で利用できる、以下のSPLのイテレータクラスを利用しています。
+
+- [http://www.php.net/~helly/php/ext/spl/classAppendIterator.html:title=AppendIterator]
+
+
+* ソースコード
+
+[http://openpear.org/repository/NullFilehandleIterator/trunk/src/NullFilehandleIterator.php]</summary>
+ <description>Perlのnull filehandleオペレータ「&lt;&gt;」と同じ動作を行うイテレータです。
+
+
+* 動作例
+
+Perlでは、「&lt;&gt;」オペレータを使ってフィルタプログラムが簡単に記述できます。例えば、全ての英大文字を英小文字に書き換えるフィルタは下記のように書けます。
+
+&gt;||
+#!/usr/bin/perl
+while (&lt;&gt;) {
+  tr/A-Z/a-z/;
+  print;
+}
+||&lt;
+
+このスクリプトは、引数が無い場合は標準入力に対するフィルタとして動作します。引数がある場合は、与えられた引数をファイル名とみなし、全てのファイルに対して順にフィルタを適用します。
+
+この動作を真似たイテレータがNullFilehandleIteratorです。これを使うと、上記のPerlスクリプトと同じことがPHPでも比較的簡潔に記述できます。
+
+&gt;||
+&lt;?php
+require_once(&apos;NullFilehandleIterator.php&apos;);
+
+$it = new NullFilehandleIterator();
+foreach ($it as $line) {
+  print strtolower($line);
+}
+||&lt;
+
+
+* 依存関係
+
+以下のクラスを利用しています。
+
+- [http://openpear.org/package/LazyFileIterator:title=LazyFileIterator]
+- [http://openpear.org/package/LoggerIterator:title=LoggerIterator]
+- [http://openpear.org/package/IgnoreExceptionIterator:title=IgnoreExceptionIterator]
+
+また、PHP5.1.0以降で利用できる、以下のSPLのイテレータクラスを利用しています。
+
+- [http://www.php.net/~helly/php/ext/spl/classAppendIterator.html:title=AppendIterator]
+
+
+* ソースコード
+
+[http://openpear.org/repository/NullFilehandleIterator/trunk/src/NullFilehandleIterator.php]</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-01</date>
+ <time>10:15:25</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r909 | hnw | 2009-06-01 10:13:20 -0700 (Mon, 01 Jun 2009) | 1 line
+
+remove debug code
+------------------------------------------------------------------------
+r908 | hnw | 2009-06-01 10:05:43 -0700 (Mon, 01 Jun 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="ae8cd7ca7c1e85360d714146a96e49e0" name="NullFilehandleIterator.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>IgnoreExceptionIterator</name>
+    <channel>openpear.org</channel>
+   </package>
+   <package>
+    <name>LoggerIterator</name>
+    <channel>openpear.org</channel>
+   </package>
+   <package>
+    <name>LazyFileIterator</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-06-01</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r909 | hnw | 2009-06-01 10:13:20 -0700 (Mon, 01 Jun 2009) | 1 line
+
+remove debug code
+------------------------------------------------------------------------
+r908 | hnw | 2009-06-01 10:05:43 -0700 (Mon, 01 Jun 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,7 @@
+{
+  "name": "openpear/openpear.github.io",
+  "require": {
+    "pirum/pirum": "^1.1",
+    "hatenasyntax/hatenasyntax": "^1.0"
+  }
+}

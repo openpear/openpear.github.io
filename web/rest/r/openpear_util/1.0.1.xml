@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/openpear_util">Openpear_Util</p>
+    <c>openpear.org</c>
+    <v>1.0.1</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>皆で共通化するとうれしい部分をパッケージ化しましょう。誰でも変更可に設定してありますので、汎用的に使う関数やクラスがあったら、じゃんじゃん追加して下さい。
+
+* 共通化したライブラリのロード
+&gt;|
+Openpear_Util::import(&quot;library_name&quot;);
+|&lt;
+でライブラリをロードできます。上記の構文は、Openpear/Util/library_name.php を include します。
+
+* 現在有効なパッケージ
+** array_val
+** ExceptionWrapper</s>
+    <d>皆で共通化するとうれしい部分をパッケージ化しましょう。誰でも変更可に設定してありますので、汎用的に使う関数やクラスがあったら、じゃんじゃん追加して下さい。
+
+* 共通化したライブラリのロード
+&gt;|
+Openpear_Util::import(&quot;library_name&quot;);
+|&lt;
+でライブラリをロードできます。上記の構文は、Openpear/Util/library_name.php を include します。
+
+* 現在有効なパッケージ
+** array_val
+** ExceptionWrapper</d>
+    <da>2009-11-19 19:39:04</da>
+    <n>
+------------------------------------------------------------------------
+r1409 | koyhoge | 2009-11-19 19:34:51 +0900 (木, 19 11月 2009) | 3 lines
+
+* fix:
+  - support ArrayAccess Interface.
+
+------------------------------------------------------------------------
+r414 | koyhoge | 2009-02-23 18:47:19 +0900 (月, 23  2月 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r413 | openpear | 2009-02-23 18:44:41 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Openpear_Util
+------------------------------------------------------------------------
+ </n>
+    <f>2580</f>
+    <g>http://openpear.org/get/Openpear_Util-1.0.1</g>
+    <x xlink:href="package.1.0.1.xml"/>
+</r>

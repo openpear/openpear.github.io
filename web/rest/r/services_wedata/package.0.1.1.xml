@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Wedata</name>
+ <channel>openpear.org</channel>
+ <summary>AutoPagerizeのバックエンドに用いられることで知られる、WedataのAPIを利用するためのライブラリです。
+自作のZFベースのものを、PEARのHttp_Request使用に移植したパッケージです。
+かつては、アイドル情報を参照するにはAcme_○○というコンポーネントを用意する必要がありました。
+今は、idoldbを参照すればいいのです。
+
+
+使い方
+&gt;||
+&lt;?php
+require_once &apos;Services/Wedata.php&apos;;
+var_dump(Services_Wedata::getDatabase(&apos;AutoPagerize&apos;));
+?&gt;
+||&lt;</summary>
+ <description>AutoPagerizeのバックエンドに用いられることで知られる、WedataのAPIを利用するためのライブラリです。
+自作のZFベースのものを、PEARのHttp_Request使用に移植したパッケージです。
+かつては、アイドル情報を参照するにはAcme_○○というコンポーネントを用意する必要がありました。
+今は、idoldbを参照すればいいのです。
+
+
+使い方
+&gt;||
+&lt;?php
+require_once &apos;Services/Wedata.php&apos;;
+var_dump(Services_Wedata::getDatabase(&apos;AutoPagerize&apos;));
+?&gt;
+||&lt;</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-09</date>
+ <time>18:47:40</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r814 | sasezaki | 2009-05-09 18:45:35 -0700 (Sat, 09 May 2009) | 1 line
+
+Net_Socket_Tiarra?\227?\129?\174?\227?\131?\169?\227?\130?\164?\227?\130?\187?\227?\131?\179?\227?\130?\185?\227?\129?\174URL?\227?\129?\170?\227?\130?\147?\227?\130?\132?\227?\129?\173?\227?\130?\147?\227?\129?\163?\227?\129?\166?\230?\128?\157?\227?\129?\163?\227?\129?\159?\227?\129?\140?\227?\129?\147?\227?\129?\163?\227?\129?\161?\227?\130?\130?\227?\129?\160?\227?\129?\163?\227?\129?\159?\227?\128?\130?\227?\129?\130?\227?\131?\188?\227?\129?\166?\227?\129?\139?\227?\129?\147?\227?\130?\140?\231?\167?\129?\227?\131?\161?\227?\131?\179?\227?\131?\134?\227?\129?\153?\227?\130?\139?\230?\176?\151?\227?\129?\130?\227?\130?\147?\227?\129?\190?\227?\129?\170?\227?\129?\132?\227?\130?\147?\227?\129?\160?\227?\129?\145?\227?\129?\169
+------------------------------------------------------------------------
+r41 | sasezaki | 2008-11-02 05:56:22 -0800 (Sun, 02 Nov 2008) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r39 | openpear | 2008-11-02 05:50:56 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Services_Wedata
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="381cfaae0e33f15f74a07d9abce1d237" name="Wedata/Exception.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="de080e9236c33ed2b458c33d51c28c7e" name="Wedata.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-05-09</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r814 | sasezaki | 2009-05-09 18:45:35 -0700 (Sat, 09 May 2009) | 1 line
+
+Net_Socket_Tiarra?\227?\129?\174?\227?\131?\169?\227?\130?\164?\227?\130?\187?\227?\131?\179?\227?\130?\185?\227?\129?\174URL?\227?\129?\170?\227?\130?\147?\227?\130?\132?\227?\129?\173?\227?\130?\147?\227?\129?\163?\227?\129?\166?\230?\128?\157?\227?\129?\163?\227?\129?\159?\227?\129?\140?\227?\129?\147?\227?\129?\163?\227?\129?\161?\227?\130?\130?\227?\129?\160?\227?\129?\163?\227?\129?\159?\227?\128?\130?\227?\129?\130?\227?\131?\188?\227?\129?\166?\227?\129?\139?\227?\129?\147?\227?\130?\140?\231?\167?\129?\227?\131?\161?\227?\131?\179?\227?\131?\134?\227?\129?\153?\227?\130?\139?\230?\176?\151?\227?\129?\130?\227?\130?\147?\227?\129?\190?\227?\129?\170?\227?\129?\132?\227?\130?\147?\227?\129?\160?\227?\129?\145?\227?\129?\169
+------------------------------------------------------------------------
+r41 | sasezaki | 2008-11-02 05:56:22 -0800 (Sun, 02 Nov 2008) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r39 | openpear | 2008-11-02 05:50:56 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Services_Wedata
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

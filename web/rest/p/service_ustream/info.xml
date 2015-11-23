@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Service_Ustream</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once 'Service/Ustream.php';
+
+$cmd = 'stream'; // user, channel, video, stream, system
+$apiKey = 'your_apikey_here';
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</s>
+<d>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once 'Service/Ustream.php';
+
+$cmd = 'stream'; // user, channel, video, stream, system
+$apiKey = 'your_apikey_here';
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</d>
+<r xlink:href="/rest/r/service_ustream" />
+</p>

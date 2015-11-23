@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_yahoo_jp_furigana">Services_Yahoo_JP_Furigana</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>BSD</l>
+    <m>shimooka</m>
+    <s>*概要
+Service_Yahooのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/furigana/v1/furigana.html:title=ルビ振りAPI]へのアクセスを容易にします。
+
+*インストール
+&gt;||
+$ sudo pear install -a Services_Yahoo_JP_Furigana
+||&lt;
+
+*サンプルコード
+&gt;||
+&lt;?php
+require_once 'Services/Yahoo/JP/Furigana.php';
+
+try {
+    $yahoo = Services_Yahoo_JP_Furigana::factory('furigana');
+    $yahoo-&gt;withAppID(getenv('YAHOO_APP_ID'));
+    $yahoo-&gt;setSentence('うちの庭には鶏がいます。');
+    $yahoo-&gt;setGrade(1);
+    $result = $yahoo-&gt;submit();
+
+    $str = null;
+    foreach ($result as $word) {
+        $str .= isset($word['Furigana']) ? $word['Furigana'] : $word['Surface'];
+    }
+    echo $str . PHP_EOL;
+} catch (Services_Yahoo_Exception $e) {
+    die($e-&gt;getMessage());
+}
+||&lt;
+
+*その他
+-Services_Yahoo_JPに取り込まれたい</s>
+    <d>*概要
+Service_Yahooのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/furigana/v1/furigana.html:title=ルビ振りAPI]へのアクセスを容易にします。
+
+*インストール
+&gt;||
+$ sudo pear install -a Services_Yahoo_JP_Furigana
+||&lt;
+
+*サンプルコード
+&gt;||
+&lt;?php
+require_once 'Services/Yahoo/JP/Furigana.php';
+
+try {
+    $yahoo = Services_Yahoo_JP_Furigana::factory('furigana');
+    $yahoo-&gt;withAppID(getenv('YAHOO_APP_ID'));
+    $yahoo-&gt;setSentence('うちの庭には鶏がいます。');
+    $yahoo-&gt;setGrade(1);
+    $result = $yahoo-&gt;submit();
+
+    $str = null;
+    foreach ($result as $word) {
+        $str .= isset($word['Furigana']) ? $word['Furigana'] : $word['Surface'];
+    }
+    echo $str . PHP_EOL;
+} catch (Services_Yahoo_Exception $e) {
+    die($e-&gt;getMessage());
+}
+||&lt;
+
+*その他
+-Services_Yahoo_JPに取り込まれたい</d>
+    <da>2009-03-20 06:18:27</da>
+    <n>------------------------------------------------------------------------
+r603 | shimooka | 2009-03-20 06:12:37 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</n>
+    <f>4590</f>
+    <g>http://openpear.org/get/Services_Yahoo_JP_Furigana-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

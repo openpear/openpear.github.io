@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HatenaSyntax</name>
+ <channel>openpear.org</channel>
+ <summary>はてな記法パーサ&amp;レンダラ。
+[http://coderepos.org/share/wiki/HatenaSyntax]の後継。
+[http://openpear.org/package/PEG:title=PEGパッケージ]を用いて構築されており、より多くの記法対応と細かな制御を目的としている。
+
+
+[http://openpear.org/repository/HatenaSyntax/trunk/sample/sample1.php:title=サンプル]</summary>
+ <description>はてな記法パーサ&amp;レンダラ。
+[http://coderepos.org/share/wiki/HatenaSyntax]の後継。
+[http://openpear.org/package/PEG:title=PEGパッケージ]を用いて構築されており、より多くの記法対応と細かな制御を目的としている。
+
+
+[http://openpear.org/repository/HatenaSyntax/trunk/sample/sample1.php:title=サンプル]</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-01</date>
+ <time>05:08:40</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r464 | anatoo | 2009-03-01 04:56:52 -0800 (Sun, 01 Mar 2009) | 1 line
+
+?\229?\189?\162?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r24 | anatoo | 2008-11-01 00:58:13 -0700 (Sat, 01 Nov 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="620935705626813b13aab9cb4f3ad36e" name="HatenaSyntax/Factory.php" role="php" />
+   <file baseinstalldir="/" md5sum="b0ca4c3d158eb1b58f3ce3a54d189475" name="HatenaSyntax/Locator.php" role="php" />
+   <file baseinstalldir="/" md5sum="db448ffa28b9232edfa2c7c7dfa583da" name="HatenaSyntax/Node.php" role="php" />
+   <file baseinstalldir="/" md5sum="a2865e925253fa1924a50e428b2699e2" name="HatenaSyntax/NodeCreater.php" role="php" />
+   <file baseinstalldir="/" md5sum="0ac6dd728750c6667ad80a13d92b9699" name="HatenaSyntax/Renderer.php" role="php" />
+   <file baseinstalldir="/" md5sum="5548b68feb94c597e384ccf4a0655d4b" name="HatenaSyntax/Util.php" role="php" />
+   <file baseinstalldir="/" md5sum="f5ceb75a9aadc6aea513dc4af9a5c88d" name="HatenaSyntax.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-03-01</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r464 | anatoo | 2009-03-01 04:56:52 -0800 (Sun, 01 Mar 2009) | 1 line
+
+?\229?\189?\162?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r24 | anatoo | 2008-11-01 00:58:13 -0700 (Sat, 01 Nov 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

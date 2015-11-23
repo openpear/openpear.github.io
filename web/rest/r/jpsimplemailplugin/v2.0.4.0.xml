@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/jpsimplemailplugin">jpSimpleMailPlugin</p>
+    <c>openpear.org</c>
+    <v>0.4.0</v>
+    <a>0.4.0</a>
+    <mp>5.1.6</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>brtriver</m>
+    <s>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</s>
+    <d>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</d>
+    <da>2010-12-31 19:28:02</da>
+    <n>
+簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン  インストール方法    * svnでチェックアウト  $ svn checkout http://svn.openpear.org/jpSimpleMailPlugin/tags/0.3.0-beta ./plug..
+ </n>
+    <f>10106</f>
+    <g>http://openpear.org/get/jpSimpleMailPlugin-0.4.0</g>
+    <x xlink:href="package.0.4.0.xml"/>
+</r>

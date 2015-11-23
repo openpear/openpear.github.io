@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTTP_OAuthConsumer</name>
+ <channel>openpear.org</channel>
+ <summary>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。</summary>
+ <description>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。</description>
+ <lead>
+  <name>eth0jp</name>
+  <user>eth0jp</user>
+  <email>tetu@eth0.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-07</date>
+ <time>05:54:03</time>
+ <version>
+  <release>1.0.3</release>
+  <api>1.0.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1992 | eth0jp | 2010-08-07 05:51:41 +0900 (土, 07  8月 2010) | 1 line
+
+add http_build_query_rfc3986
+------------------------------------------------------------------------
+r1989 | eth0jp | 2010-08-05 04:51:46 +0900 (木, 05  8月 2010) | 1 line
+
+mod file_exists=&gt;is_file
+------------------------------------------------------------------------
+r1988 | eth0jp | 2010-08-05 04:36:10 +0900 (木, 05  8月 2010) | 1 line
+
+add generate_rsa_key.txt
+------------------------------------------------------------------------
+r1986 | eth0jp | 2010-08-05 02:29:01 +0900 (木, 05  8月 2010) | 1 line
+
+mod RSA-SHA1 setConsumer()
+------------------------------------------------------------------------
+r1985 | eth0jp | 2010-08-05 02:26:18 +0900 (木, 05  8月 2010) | 1 line
+
+add RSA-SHA1 example
+------------------------------------------------------------------------
+r1984 | eth0jp | 2010-08-05 02:24:41 +0900 (木, 05  8月 2010) | 1 line
+
+add HTTP_OAuthConsumer_Exception, add RSA-SHA1 example
+------------------------------------------------------------------------
+r1983 | eth0jp | 2010-08-04 21:43:14 +0900 (水, 04  8月 2010) | 1 line
+
+mod get query
+------------------------------------------------------------------------
+r1980 | eth0jp | 2010-08-04 16:08:23 +0900 (水, 04  8月 2010) | 1 line
+
+add addGetParameter()
+------------------------------------------------------------------------
+r1975 | eth0jp | 2010-08-04 05:34:07 +0900 (水, 04  8月 2010) | 1 line
+
+mv dir
+------------------------------------------------------------------------
+r1973 | eth0jp | 2010-08-04 05:29:40 +0900 (水, 04  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1972 | openpear | 2010-08-04 05:24:01 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthConsumer
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="bb8f9d3de6da78896349bdd5a03dd599" name="HTTP/OAuthConsumer/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="542f6cb71bfd1c70d73c279d5715172e" name="HTTP/OAuthConsumer/HMAC_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="ad9661a2e748945929e8a6dd9ef5ebfd" name="HTTP/OAuthConsumer/RSA_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="30ded307122c89479dd8ebe81f0b3e5d" name="HTTP/OAuthConsumer.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.3</release>
+    <api>1.0.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-08-07</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1992 | eth0jp | 2010-08-07 05:51:41 +0900 (土, 07  8月 2010) | 1 line
+
+add http_build_query_rfc3986
+------------------------------------------------------------------------
+r1989 | eth0jp | 2010-08-05 04:51:46 +0900 (木, 05  8月 2010) | 1 line
+
+mod file_exists=&gt;is_file
+------------------------------------------------------------------------
+r1988 | eth0jp | 2010-08-05 04:36:10 +0900 (木, 05  8月 2010) | 1 line
+
+add generate_rsa_key.txt
+------------------------------------------------------------------------
+r1986 | eth0jp | 2010-08-05 02:29:01 +0900 (木, 05  8月 2010) | 1 line
+
+mod RSA-SHA1 setConsumer()
+------------------------------------------------------------------------
+r1985 | eth0jp | 2010-08-05 02:26:18 +0900 (木, 05  8月 2010) | 1 line
+
+add RSA-SHA1 example
+------------------------------------------------------------------------
+r1984 | eth0jp | 2010-08-05 02:24:41 +0900 (木, 05  8月 2010) | 1 line
+
+add HTTP_OAuthConsumer_Exception, add RSA-SHA1 example
+------------------------------------------------------------------------
+r1983 | eth0jp | 2010-08-04 21:43:14 +0900 (水, 04  8月 2010) | 1 line
+
+mod get query
+------------------------------------------------------------------------
+r1980 | eth0jp | 2010-08-04 16:08:23 +0900 (水, 04  8月 2010) | 1 line
+
+add addGetParameter()
+------------------------------------------------------------------------
+r1975 | eth0jp | 2010-08-04 05:34:07 +0900 (水, 04  8月 2010) | 1 line
+
+mv dir
+------------------------------------------------------------------------
+r1973 | eth0jp | 2010-08-04 05:29:40 +0900 (水, 04  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1972 | openpear | 2010-08-04 05:24:01 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthConsumer
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

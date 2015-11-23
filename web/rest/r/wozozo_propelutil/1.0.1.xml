@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/wozozo_propelutil">Wozozo_PropelUtil</p>
+    <c>openpear.org</c>
+    <v>1.0.1</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>fivestar</m>
+    <s>wozozoがんばってね</s>
+    <d>wozozoがんばってね</d>
+    <da>2010-05-19 14:17:02</da>
+    <n>
+------------------------------------------------------------------------
+r1877 | fivestar | 2010-05-19 14:14:56 +0900 (水, 19  5月 2010) | 2 lines
+
+fixed bug
+
+------------------------------------------------------------------------
+r1875 | fivestar | 2010-05-19 14:05:23 +0900 (水, 19  5月 2010) | 2 lines
+
+propel sucks.
+
+------------------------------------------------------------------------
+r1874 | fivestar | 2010-05-19 11:05:19 +0900 (水, 19  5月 2010) | 2 lines
+
+Added class file.
+
+------------------------------------------------------------------------
+r1873 | openpear | 2010-05-19 11:04:03 +0900 (水, 19  5月 2010) | 1 line
+
+[New Package] Wozozo_PropelUtil
+------------------------------------------------------------------------
+ </n>
+    <f>1399</f>
+    <g>http://openpear.org/get/Wozozo_PropelUtil-1.0.1</g>
+    <x xlink:href="package.1.0.1.xml"/>
+</r>

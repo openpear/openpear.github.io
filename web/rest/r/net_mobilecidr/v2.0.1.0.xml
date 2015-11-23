@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_mobilecidr">Net_MobileCIDR</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>4.3.3</mp>
+    <st>stable</st>
+    <l>MIT</l>
+    <m>shuheitanuma</m>
+    <s>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DOCOMO);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DOCOMO,SOFTBANK,EZWEB,WILLCOM,EMOBILE
+
+ご利用は計画的に。
+
+修正点：
+12/26　Willcomのアドレスが間違ってたっぽいので修正
+12/19　コードを短く＆紛らわしいのでconstを大文字表記に統一</s>
+    <d>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DOCOMO);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DOCOMO,SOFTBANK,EZWEB,WILLCOM,EMOBILE
+
+ご利用は計画的に。
+
+修正点：
+12/26　Willcomのアドレスが間違ってたっぽいので修正
+12/19　コードを短く＆紛らわしいのでconstを大文字表記に統一</d>
+    <da>2008-12-18 07:15:58</da>
+    <n>------------------------------------------------------------------------
+r233 | shuheitanuma | 2008-12-18 07:13:49 -0800 (Thu, 18 Dec 2008) | 1 line
+
+inital commit
+------------------------------------------------------------------------</n>
+    <f>2904</f>
+    <g>http://openpear.org/get/Net_MobileCIDR-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

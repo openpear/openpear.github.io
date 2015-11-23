@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Wozozo_WWW_YouTube</name>
+ <channel>openpear.org</channel>
+ <summary>Download YouTube&apos;s video</summary>
+ <description>Download YouTube&apos;s video</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-04-16</date>
+ <time>00:33:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1795 | sasezaki | 2010-04-16 00:18:25 +0900 (金, 16  4月 2010) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r1794 | openpear | 2010-04-15 23:31:03 +0900 (木, 15  4月 2010) | 1 line
+
+[New Package] Wozozo_WWW_YouTube
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="de170d07f015119c0047699664427bf8" name="Wozozo/WWW/YouTube/Tool/YoutubeProvider.php" role="php" />
+   <file baseinstalldir="/" md5sum="d90b04e8d55020d77f91bd0d4930d9a2" name="Wozozo/WWW/YouTube/HttpSocketProgressBar.php" role="php" />
+   <file baseinstalldir="/" md5sum="803dab7f8959c2e3760c56fdb737fae9" name="Wozozo/WWW/YouTube/VideoInfo.php" role="php" />
+   <file baseinstalldir="/" md5sum="9fd65e94d2cdaafd2741c90e1d7c3f5e" name="Wozozo/WWW/YouTube.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-04-16</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1795 | sasezaki | 2010-04-16 00:18:25 +0900 (金, 16  4月 2010) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r1794 | openpear | 2010-04-15 23:31:03 +0900 (木, 15  4月 2010) | 1 line
+
+[New Package] Wozozo_WWW_YouTube
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

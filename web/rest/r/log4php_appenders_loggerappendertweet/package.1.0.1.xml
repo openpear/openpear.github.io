@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>log4php_appenders_LoggerAppenderTweet</name>
+ <channel>openpear.org</channel>
+ <summary>log4phpのtwitterにポストするAppender。
+
+log4phpとZend_Service_Twitterに依存してます。</summary>
+ <description>log4phpのtwitterにポストするAppender。
+
+log4phpとZend_Service_Twitterに依存してます。</description>
+ <lead>
+  <name>里　洋平</name>
+  <user>yokkuns</user>
+  <email>yokkus@tkul.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-02-18</date>
+ <time>06:36:21</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+ <notes>
+------------------------------------------------------------------------
+r1650 | yokkuns | 2010-02-18 06:14:44 +0900 (木, 18  2月 2010) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1649 | yokkuns | 2010-02-18 05:48:15 +0900 (木, 18  2月 2010) | 1 line
+
+add log4php appenders directory
+------------------------------------------------------------------------
+r1648 | openpear | 2010-02-18 05:47:02 +0900 (木, 18  2月 2010) | 1 line
+
+[New Package] log4php_appenders_LoggerAppenderTweet
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/log4php/appenders" name="/">
+   <file baseinstalldir="/log4php/appenders" md5sum="1fcc37087c4a05b7978a2816e2009eb8" name="LoggerAppenderTweet.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+  <optional>
+   <package>
+    <name>log4php-beta</name>
+    <channel>phpcommons.sourceforge.jp/pear</channel>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-02-18</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+   <notes>
+------------------------------------------------------------------------
+r1650 | yokkuns | 2010-02-18 06:14:44 +0900 (木, 18  2月 2010) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1649 | yokkuns | 2010-02-18 05:48:15 +0900 (木, 18  2月 2010) | 1 line
+
+add log4php appenders directory
+------------------------------------------------------------------------
+r1648 | openpear | 2010-02-18 05:47:02 +0900 (木, 18  2月 2010) | 1 line
+
+[New Package] log4php_appenders_LoggerAppenderTweet
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

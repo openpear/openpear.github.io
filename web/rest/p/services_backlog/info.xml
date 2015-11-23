@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Backlog</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>*これはなあに？
+プロジェクト管理ツールBacklog(http://backlog.jp/)のAPIを操作します。
+
+*使い方
+&gt;||
+&lt;?php
+require_once 'Services/Backlog.php';
+$backlog = new Services_Backlog('demo.backlog.jp', 'demo', 'demo');
+$result = $backlog-&gt;getProjects();
+||&lt;
+*依存パッケージ
+:XML_RPC:http://pear.php.net/package/XML_RPC</s>
+<d>*これはなあに？
+プロジェクト管理ツールBacklog(http://backlog.jp/)のAPIを操作します。
+
+*使い方
+&gt;||
+&lt;?php
+require_once 'Services/Backlog.php';
+$backlog = new Services_Backlog('demo.backlog.jp', 'demo', 'demo');
+$result = $backlog-&gt;getProjects();
+||&lt;
+*依存パッケージ
+:XML_RPC:http://pear.php.net/package/XML_RPC</d>
+<r xlink:href="/rest/r/services_backlog" />
+</p>

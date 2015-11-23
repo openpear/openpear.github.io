@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_ShortURL_Googl</name>
+ <channel>openpear.org</channel>
+ <summary>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</summary>
+ <description>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-01-11</date>
+ <time>19:26:02</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="2cbe5c51be42dfd0f5727910bea8ae58" name="doc/Services_ShortURL_Googl/sample.php" role="php" />
+   <file baseinstalldir="." md5sum="df1dd06d75ac7b15e8cd9012273dd01b" name="Services/ShortURL/Googl.php" role="php" />
+   <file baseinstalldir="." md5sum="cf210bb7001dc5f5dc47d56ae4f1fc2a" name="test/Services_ShortURL_Googl/Services_ShortURL_GooglTest.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+  <optional>
+   <package>
+    <name>Services_ShortURL</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-01-11</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..
+   </notes>
+  </release>
+ </changelog>
+</package>

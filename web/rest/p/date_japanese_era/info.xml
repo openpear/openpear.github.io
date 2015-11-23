@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Date_Japanese_Era</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>和暦変換をするライブラリです。
+Peal の Date::Japanese::Era をポーティングしたもの。
+
+&gt;||
+&lt;?php
+$era = new Date_Japanese_Era(array(2009, 7, 11));
+echo $era-&gt;name; // 平成
+echo $era-&gt;gengou; // name のエイリアス
+echo $era-&gt;year;   // 21
+echo $era-&gt;nameAscii; // heisei
+
+$era = new Date_Japanese_Era(array('平成', 21));
+echo $era-&gt;gregorianYear; // 2009
+||&lt;</s>
+<d>和暦変換をするライブラリです。
+Peal の Date::Japanese::Era をポーティングしたもの。
+
+&gt;||
+&lt;?php
+$era = new Date_Japanese_Era(array(2009, 7, 11));
+echo $era-&gt;name; // 平成
+echo $era-&gt;gengou; // name のエイリアス
+echo $era-&gt;year;   // 21
+echo $era-&gt;nameAscii; // heisei
+
+$era = new Date_Japanese_Era(array('平成', 21));
+echo $era-&gt;gregorianYear; // 2009
+||&lt;</d>
+<r xlink:href="/rest/r/date_japanese_era" />
+</p>

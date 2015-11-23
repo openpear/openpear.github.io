@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_cicindela">Net_Cicindela</p>
+    <c>openpear.org</c>
+    <v>0.2.0</v>
+    <a>0.2.0</a>
+    <mp>5.1.6</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>MugeSo</m>
+    <s>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</s>
+    <d>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</d>
+    <da>2009-08-20 14:34:02</da>
+    <n>
+対応バージョンを下げた
+ </n>
+    <f>3033</f>
+    <g>http://openpear.org/get/Net_Cicindela-0.2.0</g>
+    <x xlink:href="package.0.2.0.xml"/>
+</r>

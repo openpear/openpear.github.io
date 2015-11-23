@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Maple4_DocTest</name>
+ <channel>openpear.org</channel>
+ <summary>*DocTest
+
+クラスやメソッドの Doc コメントにテストを記述することで自動的に UnitTest を作成し実行することができるようになります。
+
+
+**ポインタ
+-TOM先生のテスト講座
+--http://www.phppro.jp/school/test/
+-PHPUnitポケットガイド
+--http://www.phpunit.de/pocket_guide/3.2/ja/index.html
+-kunitさんの日記
+--http://d.hatena.ne.jp/kunit/20080205#1202142580
+
+
+**Docコメント
+クラス定義の上、またはメソッド定義の上にあり、「/**」で始まり「*/」で終わる形式のコメント
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return &apos;sample&apos;;
+    }
+}
+?&gt;
+||&lt;
+
+
+**テストの記述
+- Docコメントに&lt;code&gt;~&lt;/code&gt;で囲まれた内容がテストクラスに出力されます。
+- &lt;code&gt;の直前に「#test &lt;テストメソッド名&gt;」を記述することでテストメソッド名を指定できます。省略した場合は、コメントの対象となるメソッド名が使用されます。
+- &lt;code&gt;ブロックは複数の場所に記述可能です。
+- # を使用した省略形があります（詳細は以下参照）
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * #test
+     * &lt;code&gt;
+     * #eq(&apos;sample&apos;, #f(&apos;arg&apos;));
+     * &lt;/code&gt;
+     *
+     * #test method_has_name
+     * &lt;code&gt;
+     * #ne(&apos;sample&apos;, #f(&apos;arg&apos;));
+     * &lt;/code&gt;
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return &apos;sample&apos;;
+    }
+}
+?&gt;
+||&lt;
+&gt;||
+&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    private $obj;
+
+    public function setUp()
+    {
+        $this-&gt;obj = new Sample;
+    }
+
+    public function tearDown()
+    {
+        $this-&gt;obj = null;
+    }
+
+    public function testMethod()
+    {
+        $this-&gt;assertEquals(&apos;sample&apos;, $this-&gt;obj-&gt;method(&apos;arg&apos;));
+    }
+
+    public function testMethod_has_name()
+    {
+        $this-&gt;assertNotEquals(&apos;sample&apos;, $this-&gt;obj-&gt;method(&apos;arg&apos;));
+    }
+}
+?&gt;
+||&lt;
+
+
+**省略形一覧
+- #eq(); =&gt; $this-&gt;assertEquals();
+- #ne(); =&gt; $this-&gt;assertNotEquals();
+- #true(); =&gt; $this-&gt;assertTrue();
+- #false(); =&gt; $this-&gt;assertFalse();
+- #null(); =&gt; $this-&gt;assertNull();
+- #notnull(); =&gt; $this-&gt;assertNotNull();
+- #class =&gt; クラス名
+- #f =&gt; $this-&gt;obj-&gt;&lt;メソッド名&gt;();</summary>
+ <description>*DocTest
+
+クラスやメソッドの Doc コメントにテストを記述することで自動的に UnitTest を作成し実行することができるようになります。
+
+
+**ポインタ
+-TOM先生のテスト講座
+--http://www.phppro.jp/school/test/
+-PHPUnitポケットガイド
+--http://www.phpunit.de/pocket_guide/3.2/ja/index.html
+-kunitさんの日記
+--http://d.hatena.ne.jp/kunit/20080205#1202142580
+
+
+**Docコメント
+クラス定義の上、またはメソッド定義の上にあり、「/**」で始まり「*/」で終わる形式のコメント
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return &apos;sample&apos;;
+    }
+}
+?&gt;
+||&lt;
+
+
+**テストの記述
+- Docコメントに&lt;code&gt;~&lt;/code&gt;で囲まれた内容がテストクラスに出力されます。
+- &lt;code&gt;の直前に「#test &lt;テストメソッド名&gt;」を記述することでテストメソッド名を指定できます。省略した場合は、コメントの対象となるメソッド名が使用されます。
+- &lt;code&gt;ブロックは複数の場所に記述可能です。
+- # を使用した省略形があります（詳細は以下参照）
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * #test
+     * &lt;code&gt;
+     * #eq(&apos;sample&apos;, #f(&apos;arg&apos;));
+     * &lt;/code&gt;
+     *
+     * #test method_has_name
+     * &lt;code&gt;
+     * #ne(&apos;sample&apos;, #f(&apos;arg&apos;));
+     * &lt;/code&gt;
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return &apos;sample&apos;;
+    }
+}
+?&gt;
+||&lt;
+&gt;||
+&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    private $obj;
+
+    public function setUp()
+    {
+        $this-&gt;obj = new Sample;
+    }
+
+    public function tearDown()
+    {
+        $this-&gt;obj = null;
+    }
+
+    public function testMethod()
+    {
+        $this-&gt;assertEquals(&apos;sample&apos;, $this-&gt;obj-&gt;method(&apos;arg&apos;));
+    }
+
+    public function testMethod_has_name()
+    {
+        $this-&gt;assertNotEquals(&apos;sample&apos;, $this-&gt;obj-&gt;method(&apos;arg&apos;));
+    }
+}
+?&gt;
+||&lt;
+
+
+**省略形一覧
+- #eq(); =&gt; $this-&gt;assertEquals();
+- #ne(); =&gt; $this-&gt;assertNotEquals();
+- #true(); =&gt; $this-&gt;assertTrue();
+- #false(); =&gt; $this-&gt;assertFalse();
+- #null(); =&gt; $this-&gt;assertNull();
+- #notnull(); =&gt; $this-&gt;assertNotNull();
+- #class =&gt; クラス名
+- #f =&gt; $this-&gt;obj-&gt;&lt;メソッド名&gt;();</description>
+ <lead>
+  <name>ぼぶちん</name>
+  <user>bobchin</user>
+  <email>bobchin.ryu@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-10</date>
+ <time>04:12:51</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r190 | bobchin | 2008-12-08 15:48:23 -0800 (Mon, 08 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Maple4" name="/">
+   <file baseinstalldir="/Maple4" md5sum="bd6e40fa8766e2781fb4466075a16a00" name="Maple4/DocTest/Builder/class.tpl" role="data" />
+   <file baseinstalldir="/Maple4" md5sum="f68378279f5521a40fbb3c4550f7949d" name="Maple4/DocTest/Builder/file.tpl" role="data" />
+   <file baseinstalldir="/Maple4" md5sum="383daa103218a4b919a2cca05b5bf9bd" name="Maple4/DocTest/Builder/method.tpl" role="data" />
+   <file baseinstalldir="/Maple4" md5sum="5f01d9789efc65750a5526718c0f38c4" name="Maple4/DocTest/Builder/specialMethod.tpl" role="data" />
+   <file baseinstalldir="/Maple4" md5sum="d555b2589f7a061e2ea823368a46e324" name="Maple4/DocTest/Runner/ResultPrinter.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="dc8b29992f82a1b451db6012f87eb096" name="Maple4/DocTest/Builder.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="2c7bb503b8fc042bc34c7c59c5b4bcf9" name="Maple4/DocTest/Finder.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="3ab2eda12880226018d14bfbc7a7e7c6" name="Maple4/DocTest/Parser.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="1d52601d16408ac25d91a2a2c77e8993" name="Maple4/DocTest/PHPFinder.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="280330a07492f4413d6b2d05aea43f77" name="Maple4/DocTest/Runner.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="463c02bdb98fc7e8a96bf27bb8450303" name="Maple4/DocTest/TestCaseFinder.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="0ed38b98066128296b3f693817d456b1" name="Maple4/DocTest/UpdateChecker.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="5d8bc479e191080827887dd081eae70b" name="Maple4/Utils/Array.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="0479acaa8627aa289161e24037ff3974" name="Maple4/Utils/Class.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="44e7994bb306b3854878ca9fd6e8e656" name="Maple4/Utils/File.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="48564dcda1557270e75823a5621ecdd2" name="Maple4/DocTest.php" role="php" />
+   <file baseinstalldir="/Maple4" md5sum="bccaf2bcc75d425db386f99003eb44be" name="Maple4/Exception.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.3</min>
+   </pearinstaller>
+   <package>
+    <name>PEAR</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>PHPUnit</name>
+    <channel>pear.phpunit.de</channel>
+   </package>
+  </required>
+  <optional>
+   <package>
+    <name>Net_Growl</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-12-10</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r190 | bobchin | 2008-12-08 15:48:23 -0800 (Mon, 08 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

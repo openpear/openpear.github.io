@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/io_swf">IO_SWF</p>
+    <c>openpear.org</c>
+    <v>1.0.4</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>yoya</m>
+    <s>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</s>
+    <d>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</d>
+    <da>2010-09-13 13:30:17</da>
+    <n>
+- DefineBitsJPEG3(with alphadata) 対応
+- tag replace 系 function で入れ替え対象の tag code 複数指定に対応。
+- replaceTagByCharacterId の実装 (TagCode と Content を入れ替える)
+ </n>
+    <f>5476</f>
+    <g>http://openpear.org/get/IO_SWF-1.0.4</g>
+    <x xlink:href="package.1.0.4.xml"/>
+</r>

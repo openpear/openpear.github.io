@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Wozozo_OneClickFraud</name>
+ <channel>openpear.org</channel>
+ <summary>wozozoさんのためのライブラリ</summary>
+ <description>wozozoさんのためのライブラリ</description>
+ <lead>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-07</date>
+ <time>14:41:03</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1369 | halt | 2009-11-07 14:39:01 +0900 (土, 07 11月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1368 | openpear | 2009-11-07 14:35:02 +0900 (土, 07 11月 2009) | 1 line
+
+[New Package] Wozozo_OneClickFraud
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="82ec7c805e5282e21b2818d7469763af" name="Wozozo/OneClickFraud.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-07</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1369 | halt | 2009-11-07 14:39:01 +0900 (土, 07 11月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1368 | openpear | 2009-11-07 14:35:02 +0900 (土, 07 11月 2009) | 1 line
+
+[New Package] Wozozo_OneClickFraud
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

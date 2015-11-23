@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/diggin">Diggin</p>
+    <c>openpear.org</c>
+    <v>0.6.4</v>
+    <a>0.6.4</a>
+    <mp>5.2.1</mp>
+    <st>alpha</st>
+    <l>New BSD License</l>
+    <m>sasezaki</m>
+    <s>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</s>
+    <d>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</d>
+    <da>2009-04-27 08:53:35</da>
+    <n>------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 05:55:29 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\229?\191?\131?\227?\129?\175?\239?\188?\147?\239?\188?\144?\227?\129?\171?\227?\129?\170?\227?\129?\163?\227?\129?\166?\227?\130?\130?\227?\130?\170?\227?\131?\170?\227?\131?\188?\227?\131?\150?\229?\176?\145?\229?\165?\179?\227?\129?\160?\227?\129?\139?\227?\130?\137?\227?\129?\132?\227?\129?\132?\227?\129?\139
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 05:38:25 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\230?\156?\172?\231?\149?\170?\227?\129?\167?\229?\139?\149?\228?\189?\156?\231?\162?\186?\232?\170?\141?\227?\129?\153?\227?\130?\139?\231?\148?\183?\227?\129?\174?\228?\186?\186?\227?\129?\163?\227?\129?\166
+------------------------------------------------------------------------</n>
+    <f>31486</f>
+    <g>http://openpear.org/get/Diggin-0.6.4</g>
+    <x xlink:href="package.0.6.4.xml"/>
+</r>

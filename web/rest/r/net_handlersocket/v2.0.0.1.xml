@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_handlersocket">Net_HandlerSocket</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>takada-at</m>
+    <s>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket('somehost', '9998');
+  $hs-&gt;openIndex(1, 'somedb', 'table1', 'PRIMARY', array('id', 'enable', 'body'));
+  $r = $hs-&gt;executeSingle(1, '=', array(1));</s>
+    <d>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket('somehost', '9998');
+  $hs-&gt;openIndex(1, 'somedb', 'table1', 'PRIMARY', array('id', 'enable', 'body'));
+  $r = $hs-&gt;executeSingle(1, '=', array(1));</d>
+    <da>2010-10-29 01:05:03</da>
+    <n>
+------------------------------------------------------------------------
+r2208 | takada-at | 2010-10-29 01:01:42 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2207 | takada-at | 2010-10-29 00:56:58 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2206 | takada-at | 2010-10-29 00:35:36 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2205 | takada-at | 2010-10-29 00:34:17 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2197 | takada-at | 2010-10-28 07:29:16 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2196 | takada-at | 2010-10-28 07:11:15 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2195 | takada-at | 2010-10-28 06:48:30 +0900 (木, 28 10月 2010) | 1 line
+
+fix bug: update&amp;delete
+------------------------------------------------------------------------
+r2194 | takada-at | 2010-10-28 00:09:55 +0900 (木, 28 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2193 | takada-at | 2010-10-27 23:22:58 +0900 (水, 27 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2192 | takada-at | 2010-10-27 22:54:59 +0900 (水, 27 10月 2010) | 1 line
+
+create&amp;add
+------------------------------------------------------------------------
+r2191 | openpear | 2010-10-27 22:32:11 +0900 (水, 27 10月 2010) | 1 line
+
+[New Package] Net_HandlerSocket
+------------------------------------------------------------------------
+ </n>
+    <f>4120</f>
+    <g>http://openpear.org/get/Net_HandlerSocket-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

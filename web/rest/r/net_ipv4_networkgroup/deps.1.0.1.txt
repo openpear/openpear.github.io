@@ -1,0 +1,1 @@
+a:1:{s:8:"required";a:3:{s:3:"php";a:1:{s:3:"min";s:5:"5.2.0";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.8.0";}s:7:"package";a:3:{i:0;a:2:{s:4:"name";s:10:"Cache_Lite";s:7:"channel";s:4:"pear";}i:1;a:2:{s:4:"name";s:8:"Net_IPv4";s:7:"channel";s:4:"pear";}i:2;a:2:{s:4:"name";s:4:"Spyc";s:7:"channel";s:8:"openpear";}}}}

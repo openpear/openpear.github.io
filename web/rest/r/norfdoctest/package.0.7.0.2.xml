@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>NorfDocTest</name>
+ <channel>openpear.org</channel>
+ <summary>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</summary>
+ <description>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</description>
+ <lead>
+  <name>szktty</name>
+  <user>szktty</user>
+  <email>suzuki@spice-of-life.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-27</date>
+ <time>06:36:11</time>
+ <version>
+  <release>0.7.0.2</release>
+  <api>0.7.0.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/MIT/">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r764 | szktty | 2009-04-27 06:33:31 -0700 (Mon, 27 Apr 2009) | 1 line
+
+fixed NorfDocTestBlock::prepareSourceCode()
+------------------------------------------------------------------------
+r535 | szktty | 2009-03-08 17:52:20 -0700 (Sun, 08 Mar 2009) | 1 line
+
+imported
+------------------------------------------------------------------------
+r428 | openpear | 2009-02-23 10:06:10 -0800 (Mon, 23 Feb 2009) | 1 line
+
+[Create Base Directory] NorfDocTest
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/NorfDocTest" name="/">
+   <file baseinstalldir="/NorfDocTest" md5sum="0a9a52efdf428887b10887b19bcb60ee" name="doc/doctest.css" role="data" />
+   <file baseinstalldir="/NorfDocTest" md5sum="7ac19c783c7f4bed4065f4b31e552f07" name="doc/doctest_en.txt" role="data" />
+   <file baseinstalldir="/NorfDocTest" md5sum="d40ff78023f281dc0e589dce670a9e13" name="doc/doctest_ja.txt" role="data" />
+   <file baseinstalldir="/NorfDocTest" md5sum="fba79b6c25056a5ad94bab623b8d94e3" name="doc/Makefile" role="data" />
+   <file baseinstalldir="/NorfDocTest" md5sum="912549c5b9861a538292fe33d9e17ca9" name="examples/fib.php" role="doc" />
+   <file baseinstalldir="/NorfDocTest" md5sum="f3e4fe68af05589008157ff886090fec" name="examples/fibtest.php" role="doc" />
+   <file baseinstalldir="/NorfDocTest" md5sum="a788bbd5b54fd3c3b787321b5f388529" name="NorfArray.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="3b51e5de1ff5e64548385b098a43f09f" name="NorfBounded.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="dd3d2f4464fbfa3c78326f291934e8db" name="NorfClassUtilities.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="f096e0592ee5aabedfdcab99aeb55d4c" name="NorfComparator.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="81b8f1f019aa6033dfed2a529463f710" name="NorfDictionary.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="662dc4cca77a958642c57dc6f62ffb5e" name="NorfDocTest.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="2b3bb7fb67162c5051c16fa8027eba22" name="NorfDocTestBlock.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="3ab1522ad0aa005ac8327c006e780fc7" name="NorfDocTestBlockStore.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="200114adbc1071fa73a0e38be7fa4481" name="NorfDocTestClassDescription.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="3bd8d43784e94ec9440ec29fd14fef29" name="NorfDocTestContext.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="6eb6c006a9093fd987205015334af4e4" name="NorfDocTestDifferences.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="d8309bbf2c9e40341b305192b246163e" name="NorfDocTestEvaluationResult.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="cf1a4e2c85fa83cc73b7a12047412916" name="NorfDocTestFunctionDescription.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="0b44a1b47d3a990e5a2baf67c3fb703f" name="NorfDocTestLogger.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="5114aa87a79322d6c67bebf6c99ed626" name="NorfDocTestMethodDescription.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="ac3ce0bea0b7125cd345c6593f6ed12e" name="NorfDocTestModule.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="9cefd7f1b93b341a9fd972183ee5f446" name="NorfDocTestModuleGroup.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="6231e7e00aad03b11c89e182a2efa128" name="NorfDocTestParser.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="93ed73151ff5977cfb74e1d5354e2644" name="NorfDocTestRequest.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="1d0e255e59e40118e865c492ac837f5d" name="NorfDocTestScanner.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="857f341d28e7dae2695da475dc1a00c5" name="NorfDocTestSearchElement.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="7bdff03d6f3c252d5e6ad9e214ae2d97" name="NorfDocTestToken.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="2d7b77aafe11544cd96546375c98b825" name="NorfDocTestUtilities.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="f31949b263425872e54587825500ae3c" name="NorfGenerator.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="16c7d1fec6d4893474c20c76dff73e39" name="NorfJSONSerialization.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="a0ef4b944ae97ebde13fb8264f0e4880" name="NorfPathUtilities.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="4bc6b638d18fcac64329c24e43f0ec16" name="NorfPHPScanner.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="82ae0e38e063d7c4a2f3f4b1ea1684dc" name="NorfPHPToken.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="5d539699ca43aaf5ad2bfb795b774714" name="NorfProcedure.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="8ef3afb2073089a8c353e5877e0bbcdf" name="NorfRange.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="770f310cab88256ca89ef203482f8515" name="NorfStringScanner.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="58c9be2b72f9e44cb8ae206642bf35c3" name="NorfStringUtilities.php" role="php" />
+   <file baseinstalldir="/NorfDocTest" md5sum="e5e0dd7b9df3278a5aef3d85429f9237" name="README" role="data" />
+   <file baseinstalldir="/NorfDocTest" md5sum="9c831ff5ad5cb6bb84e0d6e592918570" name="README.ja" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.7.0.2</release>
+    <api>0.7.0.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-04-27</date>
+   <license uri="http://creativecommons.org/licenses/MIT/">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r764 | szktty | 2009-04-27 06:33:31 -0700 (Mon, 27 Apr 2009) | 1 line
+
+fixed NorfDocTestBlock::prepareSourceCode()
+------------------------------------------------------------------------
+r535 | szktty | 2009-03-08 17:52:20 -0700 (Sun, 08 Mar 2009) | 1 line
+
+imported
+------------------------------------------------------------------------
+r428 | openpear | 2009-02-23 10:06:10 -0800 (Mon, 23 Feb 2009) | 1 line
+
+[Create Base Directory] NorfDocTest
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

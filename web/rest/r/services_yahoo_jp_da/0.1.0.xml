@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_yahoo_jp_da">Services_Yahoo_JP_DA</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>BSD</l>
+    <m>shimooka</m>
+    <s>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</s>
+    <d>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</d>
+    <da>2009-03-20 05:50:45</da>
+    <n>------------------------------------------------------------------------
+r600 | shimooka | 2009-03-20 05:44:18 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- renamed from Services_Yahoo_JP_Text
+------------------------------------------------------------------------</n>
+    <f>4230</f>
+    <g>http://openpear.org/get/Services_Yahoo_JP_DA-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

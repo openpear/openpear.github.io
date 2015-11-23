@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Rakuten</name>
+ <channel>openpear.org</channel>
+ <summary>楽天ウェブサービスのAPIをPHPから利用するライブラリです。</summary>
+ <description>楽天ウェブサービスのAPIをPHPから利用するライブラリです。</description>
+ <lead>
+  <name>Masashi Shinbara</name>
+  <user>shin1x1</user>
+  <email>shin1x1@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-12-30</date>
+ <time>21:37:03</time>
+ <version>
+  <release>0.2.2</release>
+  <api>0.2.2</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1480 | shin1x1 | 2009-12-30 21:33:03 +0900 (水, 30 12月 2009) | 2 lines
+
+moved src/ Services/
+
+------------------------------------------------------------------------
+r1478 | shin1x1 | 2009-12-30 21:11:46 +0900 (水, 30 12月 2009) | 2 lines
+
+initial import 0.2.2
+
+------------------------------------------------------------------------
+r1477 | openpear | 2009-12-30 20:56:02 +0900 (水, 30 12月 2009) | 1 line
+
+[New Package] Services_Rakuten
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="49a40a8e31e07bd8ba0b2e6c28962af8" name="examples/auction.php" role="doc" />
+   <file baseinstalldir="/" md5sum="046d5225c4cbe0f0395c7a48028cd7e8" name="examples/books.php" role="doc" />
+   <file baseinstalldir="/" md5sum="beacad790fdad746ef0b2e2b3ad7aa2b" name="examples/example.php" role="doc" />
+   <file baseinstalldir="/" md5sum="9bcf43a93d4cc7c00c51359f3342f29e" name="examples/other.php" role="doc" />
+   <file baseinstalldir="/" md5sum="73c9e7e50070f5a2b100c618a29f7f97" name="examples/travel.php" role="doc" />
+   <file baseinstalldir="/" md5sum="f6f241acd52e4734a10a309f1408da7d" name="Services/Rakuten/AuctionItemCodeSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="ae22cd727419770445694f2a747ac46c" name="Services/Rakuten/AuctionItemSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="c8eeb45db885104f557472dd3d1d7298" name="Services/Rakuten/Basic.php" role="php" />
+   <file baseinstalldir="/" md5sum="cbf5f72dd56390bdf7f5d7552792a621" name="Services/Rakuten/BookSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="2bf182b48302c63fda5d39292e6fadf6" name="Services/Rakuten/CatalogSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="27852900bcefafbea7b2dd5cf7a081f7" name="Services/Rakuten/CDSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="e8533e9fcd0bf37d4fc38a9b9faa319a" name="Services/Rakuten/DVDSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="c7e7cf636f3a3cb411ab59fc87676930" name="Services/Rakuten/DynamicAd.php" role="php" />
+   <file baseinstalldir="/" md5sum="a3b7a592380489498683a1d29c16b977" name="Services/Rakuten/GenreSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="8beed4e6033d28fb536ce0ad8096b47d" name="Services/Rakuten/GetAreaClass.php" role="php" />
+   <file baseinstalldir="/" md5sum="dbde1d783e93933023495f52e73955a5" name="Services/Rakuten/HotelDetailSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="a3a37071e8ba9263cf8f772f3f92faa6" name="Services/Rakuten/ItemCodeSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="e896685a892903415c11362fd0994352" name="Services/Rakuten/ItemSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="9ca5f2e5d0890acccdd33e7932a92042" name="Services/Rakuten/KeywordHotelSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="7a646984b128159f24b0f1eec31731ae" name="Services/Rakuten/SimpleHotelSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="9dbdc24be148df7d4c44f61413b26edc" name="Services/Rakuten/VacantHotelSearch.php" role="php" />
+   <file baseinstalldir="/" md5sum="847e5f9ba014a16c0a3e13312262584c" name="Services/Rakuten.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.9</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>XML_Serializer</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-12-30</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1480 | shin1x1 | 2009-12-30 21:33:03 +0900 (水, 30 12月 2009) | 2 lines
+
+moved src/ Services/
+
+------------------------------------------------------------------------
+r1478 | shin1x1 | 2009-12-30 21:11:46 +0900 (水, 30 12月 2009) | 2 lines
+
+initial import 0.2.2
+
+------------------------------------------------------------------------
+r1477 | openpear | 2009-12-30 20:56:02 +0900 (水, 30 12月 2009) | 1 line
+
+[New Package] Services_Rakuten
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

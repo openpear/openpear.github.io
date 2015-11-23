@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/html_domparser">HTML_DomParser</p>
+    <c>openpear.org</c>
+    <v>1.10.1</v>
+    <a>1.10.1</a>
+    <mp>4.3.3</mp>
+    <st>stable</st>
+    <l>MIT Licence</l>
+    <m>shuheitanuma</m>
+    <s>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</s>
+    <d>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</d>
+    <da>2008-11-14 10:24:46</da>
+    <n>------------------------------------------------------------------------
+r96 | shuheitanuma | 2008-11-14 10:23:56 -0800 (Fri, 14 Nov 2008) | 1 line
+
+fix typo
+------------------------------------------------------------------------
+r94 | shuheitanuma | 2008-11-14 09:25:59 -0800 (Fri, 14 Nov 2008) | 1 line
+
+move directory
+------------------------------------------------------------------------</n>
+    <f>8093</f>
+    <g>http://openpear.org/get/HTML_DomParser-1.10.1</g>
+    <x xlink:href="package.1.10.1.xml"/>
+</r>

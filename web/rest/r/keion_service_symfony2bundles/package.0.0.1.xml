@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Keion_Service_Symfony2Bundles</name>
+ <channel>openpear.org</channel>
+ <summary>あずにゃんペロペロ</summary>
+ <description>あずにゃんペロペロ</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-28</date>
+ <time>00:27:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://diggin.musicrider.com/LICENSE">New BSD License</license>
+ <notes>
+https://github.com/sasezaki/Keion_Service_Symfony2Bundles
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="1a5c050ac590dd629364351557426055" name="Keion/Service/Symfony2Bundles/Exception/InvalidArgumentException.php" role="php" />
+   <file baseinstalldir="/" md5sum="e563b7a4d9656b8d6be5f79a071a21de" name="Keion/Service/Symfony2Bundles/Tool/Symfony2bundlesProvider.php" role="php" />
+   <file baseinstalldir="/" md5sum="0f2c647c6f810e5316ea49a861319d99" name="Keion/Service/Symfony2Bundles/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="3eac2c3533c7a558326fdc26d311fdad" name="Keion/Service/Symfony2Bundles/Symfony2Bundles.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-11-28</date>
+   <license uri="http://diggin.musicrider.com/LICENSE">New BSD License</license>
+   <notes>
+https://github.com/sasezaki/Keion_Service_Symfony2Bundles
+   </notes>
+  </release>
+ </changelog>
+</package>

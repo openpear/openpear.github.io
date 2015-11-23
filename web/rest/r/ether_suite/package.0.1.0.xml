@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Ether_Suite</name>
+ <channel>openpear.org</channel>
+ <summary>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</summary>
+ <description>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-03</date>
+ <time>00:50:52</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r167 | sotarok | 2008-12-03 00:46:17 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * mv data files
+
+------------------------------------------------------------------------
+r166 | sotarok | 2008-12-03 00:10:41 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * add files
+
+------------------------------------------------------------------------
+r165 | openpear | 2008-12-02 23:53:01 -0800 (Tue, 02 Dec 2008) | 1 line
+
+[Create Base Directory] Ether_Suite
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="3576ba846cf86580ac15d8b44b20ff9c" name="data/Ether/www/ether_suite/css/ether.css" role="data" />
+   <file baseinstalldir="/" md5sum="4c98656266d8c52bba124782fef3b09a" name="data/Ether/www/ether_suite/js/ether.js" role="data" />
+   <file baseinstalldir="/" md5sum="2025acde2a7cd74467203ea8284548ab" name="Ethna/class/Plugin/Filter/Ether_Plugin_Filter_EthnaVersion.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Ethna</name>
+    <channel>pear.ethna.jp</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-12-03</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r167 | sotarok | 2008-12-03 00:46:17 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * mv data files
+
+------------------------------------------------------------------------
+r166 | sotarok | 2008-12-03 00:10:41 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * add files
+
+------------------------------------------------------------------------
+r165 | openpear | 2008-12-02 23:53:01 -0800 (Tue, 02 Dec 2008) | 1 line
+
+[Create Base Directory] Ether_Suite
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

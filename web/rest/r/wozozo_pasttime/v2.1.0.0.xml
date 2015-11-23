@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_pasttime">Wozozo_PastTime</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>指定した時刻がどのくらい過去かを分かり易く返します。</s>
+    <d>指定した時刻がどのくらい過去かを分かり易く返します。</d>
+    <da>2009-10-01 19:09:02</da>
+    <n>
+最初のリリース。
+ </n>
+    <f>1401</f>
+    <g>http://openpear.org/get/Wozozo_PastTime-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

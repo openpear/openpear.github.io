@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>phpman</name>
+ <channel>openpear.org</channel>
+ <summary>command line interface to look up the PHP manual.
+
+To install:
+&gt;||
+% pear install openpear/phpman-beta
+% pear run-scripts openpear/phpman
+||&lt;
+
+
+Manual lookup (ex.):
+&gt;||
+% phpman in_array
+// manual page found
+% phpman mysql_q
+// prefix match
+% phpman @
+// language reference alias
+% phpman mysql
+// module top page
+% phpman http
+// multiple pages found
+||&lt;
+
+
+Help:
+&gt;||
+% phpman -h
+||&lt;
+
+
+To sync manual:
+&gt;||
+% phpman -s
+||&lt;
+
+
+zsh completion:
+- [http://twitter.com/rsky/status/4826659830]</summary>
+ <description>command line interface to look up the PHP manual.
+
+To install:
+&gt;||
+% pear install openpear/phpman-beta
+% pear run-scripts openpear/phpman
+||&lt;
+
+
+Manual lookup (ex.):
+&gt;||
+% phpman in_array
+// manual page found
+% phpman mysql_q
+// prefix match
+% phpman @
+// language reference alias
+% phpman mysql
+// module top page
+% phpman http
+// multiple pages found
+||&lt;
+
+
+Help:
+&gt;||
+% phpman -h
+||&lt;
+
+
+To sync manual:
+&gt;||
+% phpman -s
+||&lt;
+
+
+zsh completion:
+- [http://twitter.com/rsky/status/4826659830]</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-21</date>
+ <time>10:23:02</time>
+ <version>
+  <release>0.1.4</release>
+  <api>0.1.4</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1967 | rsk | 2010-07-27 07:15:20 +0900 (火, 27  7月 2010) | 1 line
+
+PHPマニュアルのディレクトリ名をhtmlからphp-chunked-xhtmlに修正。
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="52202294327cefd07a4e603e5b252bdb" name="bin/phpman" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="556b26dc6b6d6aa4fd98ae02954918e0" name="phpman/Command.php" role="php" />
+   <file baseinstalldir="/" md5sum="868a5017b6e6fd1915d366f674abe532" name="phpman/Download.php" role="php" />
+   <file baseinstalldir="/" md5sum="2fea1a1140482966f65b0fa40de082b3" name="phpman/Setup.php" role="php">
+    <tasks:postinstallscript>
+     <tasks:paramgroup>
+      <tasks:id>downloadhtml</tasks:id>
+      <tasks:instructions>Download Manual HTML</tasks:instructions>
+      <tasks:param>
+       <tasks:name>lang</tasks:name>
+       <tasks:prompt>Your language? (choose from: http://php.net/download-docs.php)</tasks:prompt>
+       <tasks:type>string</tasks:type>
+       <tasks:default>ja</tasks:default>
+      </tasks:param>
+      <tasks:param>
+       <tasks:name>mirror</tasks:name>
+       <tasks:prompt>Mirror site?</tasks:prompt>
+       <tasks:type>string</tasks:type>
+       <tasks:default>www.php.net</tasks:default>
+      </tasks:param>
+     </tasks:paramgroup>
+    </tasks:postinstallscript>
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="d6e6b53bbcb8961ceb14d7743e63908f" name="phpman.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+   <package>
+    <name>Archive_Tar</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="phpman" name="bin/phpman" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.4</release>
+    <api>0.1.4</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-12-21</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1967 | rsk | 2010-07-27 07:15:20 +0900 (火, 27  7月 2010) | 1 line
+
+PHPマニュアルのディレクトリ名をhtmlからphp-chunked-xhtmlに修正。
+   </notes>
+  </release>
+ </changelog>
+</package>

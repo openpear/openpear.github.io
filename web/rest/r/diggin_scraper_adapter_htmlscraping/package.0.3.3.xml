@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin_Scraper_Adapter_Htmlscraping</name>
+ <channel>openpear.org</channel>
+ <summary>Digginライブラリ((http://diggin.musicrider.com/))のスクレイパーでのアダプターの一つです。
+ライセンスの関係上、HTMLScrapingライブラリ((http://www.rcdtokyo.com/etc/htmlscraping/)))から改変したものをこのパッケージにてまとめています。
+
+
+なお同梱のDiggin_Http_Response_Encoderは、下記デモのように、
+単体でレスポンスのUTF-8への変換用途にも使用可能です。
+http://openpear.org/repository/Diggin_Scraper_Adapter_Htmlscraping/trunk/demos/Diggin/Http/Response/Encoder/shiftJisEncoding.php</summary>
+ <description>Digginライブラリ((http://diggin.musicrider.com/))のスクレイパーでのアダプターの一つです。
+ライセンスの関係上、HTMLScrapingライブラリ((http://www.rcdtokyo.com/etc/htmlscraping/)))から改変したものをこのパッケージにてまとめています。
+
+
+なお同梱のDiggin_Http_Response_Encoderは、下記デモのように、
+単体でレスポンスのUTF-8への変換用途にも使用可能です。
+http://openpear.org/repository/Diggin_Scraper_Adapter_Htmlscraping/trunk/demos/Diggin/Http/Response/Encoder/shiftJisEncoding.php</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-05</date>
+ <time>10:37:41</time>
+ <version>
+  <release>0.3.3</release>
+  <api>0.3.3</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">GNU Lesser General Public Licence</license>
+ <notes>------------------------------------------------------------------------
+r182 | sasezaki | 2008-12-05 10:33:30 -0800 (Fri, 05 Dec 2008) | 1 line
+
+?\229?\188?\149?\230?\149?\176?\229?\164?\137?\230?\155?\180?\229?\136?\134
+------------------------------------------------------------------------
+r180 | sasezaki | 2008-12-05 10:22:53 -0800 (Fri, 05 Dec 2008) | 1 line
+
+detect?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160?\227?\129?\171?\227?\130?\136?\227?\130?\139?\229?\135?\166?\231?\144?\134?\229?\136?\134?\229?\137?\178?\227?\131?\187?\229?\188?\149?\230?\149?\176?\229?\164?\137?\230?\155?\180?\227?\129?\170?\227?\129?\169
+------------------------------------------------------------------------
+r171 | sasezaki | 2008-12-03 03:17:52 -0800 (Wed, 03 Dec 2008) | 1 line
+
+Exception?\232?\182?\179?\227?\129?\151?\227?\130?\143?\227?\129?\153?\227?\130?\140?\227?\129?\168?\227?\129?\139
+------------------------------------------------------------------------
+r169 | sasezaki | 2008-12-03 02:49:46 -0800 (Wed, 03 Dec 2008) | 1 line
+
+exception?\227?\129?\174?\231?\182?\153?\230?\137?\191?\233?\131?\168?\229?\136?\134?\227?\128?\129?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r159 | sasezaki | 2008-12-02 08:20:48 -0800 (Tue, 02 Dec 2008) | 1 line
+
+copyright?\230?\155?\184?\227?\129?\132?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\129?\167?\230?\182?\136?\227?\129?\153	
+------------------------------------------------------------------------
+r155 | sasezaki | 2008-12-02 06:46:40 -0800 (Tue, 02 Dec 2008) | 1 line
+
+utf-8?\227?\130?\168?\227?\131?\179?\227?\130?\179?\227?\131?\188?\227?\131?\137?\229?\135?\166?\231?\144?\134?\227?\130?\146Response_Encoder?\227?\129?\168?\227?\129?\151?\227?\129?\166?\229?\136?\134?\229?\137?\178?\227?\129?\151?\227?\129?\159?\229?\134?\141?\231?\183?\168?\230?\136?\144?\227?\130?\130?\227?\129?\174?\227?\130?\146openpear?\231?\148?\168?\227?\129?\171?\227?\129?\190?\227?\129?\168?\227?\130?\129?\227?\129?\166?\229?\136?\157?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="1ea04271a582f3cb4a3a642b42e6d614" name="Diggin/Http/Response/Encoder/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="2fa43edaf8ce44fbb557ae4872f50085" name="Diggin/Http/Response/Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="e3011c8f839c1360a16833023ad29925" name="Diggin/Http/Response/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b97091db50e93532e539a9c94946d47" name="Diggin/Http/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="6dcfae3646c5064a4f162e6df978b278" name="Diggin/Scraper/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="b24c8f53c878ff3b73669f1de03bf04e" name="Diggin/Scraper/Adapter/Htmlscraping.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a1259a302fc7b03db1aa530611926ea" name="Diggin/Scraper/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="3db3802612bb94b5e12a65a0176db2c2" name="Diggin/Exception.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.3.3</release>
+    <api>0.3.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-12-05</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">GNU Lesser General Public Licence</license>
+   <notes>------------------------------------------------------------------------
+r182 | sasezaki | 2008-12-05 10:33:30 -0800 (Fri, 05 Dec 2008) | 1 line
+
+?\229?\188?\149?\230?\149?\176?\229?\164?\137?\230?\155?\180?\229?\136?\134
+------------------------------------------------------------------------
+r180 | sasezaki | 2008-12-05 10:22:53 -0800 (Fri, 05 Dec 2008) | 1 line
+
+detect?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160?\227?\129?\171?\227?\130?\136?\227?\130?\139?\229?\135?\166?\231?\144?\134?\229?\136?\134?\229?\137?\178?\227?\131?\187?\229?\188?\149?\230?\149?\176?\229?\164?\137?\230?\155?\180?\227?\129?\170?\227?\129?\169
+------------------------------------------------------------------------
+r171 | sasezaki | 2008-12-03 03:17:52 -0800 (Wed, 03 Dec 2008) | 1 line
+
+Exception?\232?\182?\179?\227?\129?\151?\227?\130?\143?\227?\129?\153?\227?\130?\140?\227?\129?\168?\227?\129?\139
+------------------------------------------------------------------------
+r169 | sasezaki | 2008-12-03 02:49:46 -0800 (Wed, 03 Dec 2008) | 1 line
+
+exception?\227?\129?\174?\231?\182?\153?\230?\137?\191?\233?\131?\168?\229?\136?\134?\227?\128?\129?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r159 | sasezaki | 2008-12-02 08:20:48 -0800 (Tue, 02 Dec 2008) | 1 line
+
+copyright?\230?\155?\184?\227?\129?\132?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\129?\167?\230?\182?\136?\227?\129?\153	
+------------------------------------------------------------------------
+r155 | sasezaki | 2008-12-02 06:46:40 -0800 (Tue, 02 Dec 2008) | 1 line
+
+utf-8?\227?\130?\168?\227?\131?\179?\227?\130?\179?\227?\131?\188?\227?\131?\137?\229?\135?\166?\231?\144?\134?\227?\130?\146Response_Encoder?\227?\129?\168?\227?\129?\151?\227?\129?\166?\229?\136?\134?\229?\137?\178?\227?\129?\151?\227?\129?\159?\229?\134?\141?\231?\183?\168?\230?\136?\144?\227?\130?\130?\227?\129?\174?\227?\130?\146openpear?\231?\148?\168?\227?\129?\171?\227?\129?\190?\227?\129?\168?\227?\130?\129?\227?\129?\166?\229?\136?\157?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

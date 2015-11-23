@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Db_Fixture</name>
+ <channel>openpear.org</channel>
+ <summary>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。</summary>
+ <description>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-21</date>
+ <time>06:12:18</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r611 | heavenshell | 2009-03-21 06:09:29 -0700 (Sat, 21 Mar 2009) | 1 line
+
+Increment version number
+------------------------------------------------------------------------
+r610 | heavenshell | 2009-03-21 06:05:10 -0700 (Sat, 21 Mar 2009) | 1 line
+
+Change fixture() to fixtures()
+------------------------------------------------------------------------
+r608 | heavenshell | 2009-03-20 22:39:15 -0700 (Fri, 20 Mar 2009) | 1 line
+
+Add version number
+------------------------------------------------------------------------
+r607 | heavenshell | 2009-03-20 20:32:54 -0700 (Fri, 20 Mar 2009) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Db" name="/">
+   <file baseinstalldir="/Db" md5sum="bccf298d19927939b46ae6cb7f90c983" name="Fixture/Parser/Interface.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="a5e0acef38fe340cd39671314efe3282" name="Fixture/Parser/Json.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="ac5f405ccbc215b416ffd049e2837670" name="Fixture/Exception.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="28dae8fb15a68796885d9dc69371c43e" name="Fixture.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-03-21</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r611 | heavenshell | 2009-03-21 06:09:29 -0700 (Sat, 21 Mar 2009) | 1 line
+
+Increment version number
+------------------------------------------------------------------------
+r610 | heavenshell | 2009-03-21 06:05:10 -0700 (Sat, 21 Mar 2009) | 1 line
+
+Change fixture() to fixtures()
+------------------------------------------------------------------------
+r608 | heavenshell | 2009-03-20 22:39:15 -0700 (Fri, 20 Mar 2009) | 1 line
+
+Add version number
+------------------------------------------------------------------------
+r607 | heavenshell | 2009-03-20 20:32:54 -0700 (Fri, 20 Mar 2009) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

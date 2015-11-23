@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Code_HogeNumber</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>10進数の数値を任意（HOGE）進数に変換します。
+
+
+
+用途は下記を想定しております。
+・連番のユーザーIDをそのまま表示したくない
+・AUTO_INCREMENT番号をURIなどで使用する
+・ユーザーごとに連番でないユニークなIDがほしい
+
+
+今後の予定
+エラーチェック（現在は引数が10進数か確認していません）
+
+
+
+使用例・詳細　http://wiki.dinoz.jp/PHP%B4%D8%CF%A2/function/Code_HogeNumber.php/</s>
+<d>10進数の数値を任意（HOGE）進数に変換します。
+
+
+
+用途は下記を想定しております。
+・連番のユーザーIDをそのまま表示したくない
+・AUTO_INCREMENT番号をURIなどで使用する
+・ユーザーごとに連番でないユニークなIDがほしい
+
+
+今後の予定
+エラーチェック（現在は引数が10進数か確認していません）
+
+
+
+使用例・詳細　http://wiki.dinoz.jp/PHP%B4%D8%CF%A2/function/Code_HogeNumber.php/</d>
+<r xlink:href="/rest/r/code_hogenumber" />
+</p>

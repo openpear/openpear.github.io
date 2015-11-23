@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_libido_tool_provider_yourfilehostprovider">Wozozo_Libido_Tool_Provider_YourfilehostProvider</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>sasezaki</m>
+    <s>あなたのZend FrameworkによるRADを猛烈に後退させる
+zfコマンドようプロパイダーです。
+
+つかいかた
+&gt;||
+ $ zf download yourfilehost &quot;http://www.yourfilehost.com/media.php?cat=video&amp;file=hogehoge.wmv&quot;
+||&lt;</s>
+    <d>あなたのZend FrameworkによるRADを猛烈に後退させる
+zfコマンドようプロパイダーです。
+
+つかいかた
+&gt;||
+ $ zf download yourfilehost &quot;http://www.yourfilehost.com/media.php?cat=video&amp;file=hogehoge.wmv&quot;
+||&lt;</d>
+    <da>2009-12-10 23:03:08</da>
+    <n>
+------------------------------------------------------------------------
+r1441 | sasezaki | 2009-12-10 22:58:41 +0900 (木, 10 12月 2009) | 1 line
+
+initial commit &quot;Wozozo_Libido_Tool_Provider_YourfilehostProvider&quot;
+------------------------------------------------------------------------
+r1440 | openpear | 2009-12-10 22:51:02 +0900 (木, 10 12月 2009) | 1 line
+
+[New Package] Wozozo_Libido_Tool_Provider_YourfilehostProvider
+------------------------------------------------------------------------
+ </n>
+    <f>3641</f>
+    <g>http://openpear.org/get/Wozozo_Libido_Tool_Provider_YourfilehostProvider-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

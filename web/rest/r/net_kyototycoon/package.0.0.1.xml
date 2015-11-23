@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_KyotoTycoon</name>
+ <channel>openpear.org</channel>
+ <summary>Kyoto Tycoon client library for PHP.
+
+*System requirement.
+-PHP5.3 
+-HTTP_Request2
+-PHPUnit3.5
+
+*Usage
+&gt;||
+&lt;?php
+require_once &apos;Net/KyotoTycoon.php&apos;;
+$kt = new \Net\KyotoTycoon(array(&apos;port&apos; =&gt; 19780));
+$kt-&gt;set(&apos;test_php&apos;, &apos;Hello KyotoTycoon!!&apos;);
+var_dump($kt-&gt;get(&apos;test_php&apos;)); // Hello KyotoTYcoon!!
+||&lt;</summary>
+ <description>Kyoto Tycoon client library for PHP.
+
+*System requirement.
+-PHP5.3 
+-HTTP_Request2
+-PHPUnit3.5
+
+*Usage
+&gt;||
+&lt;?php
+require_once &apos;Net/KyotoTycoon.php&apos;;
+$kt = new \Net\KyotoTycoon(array(&apos;port&apos; =&gt; 19780));
+$kt-&gt;set(&apos;test_php&apos;, &apos;Hello KyotoTycoon!!&apos;);
+var_dump($kt-&gt;get(&apos;test_php&apos;)); // Hello KyotoTYcoon!!
+||&lt;</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-09</date>
+ <time>22:39:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r2236 | heavenshell | 2010-11-09 22:31:48 +0900 (火, 09 11月 2010) | 1 line
+
+Fix mb_strlen to strlen to get bytes. Thx to yuya-takeyama.
+------------------------------------------------------------------------
+r2231 | heavenshell | 2010-11-08 22:37:53 +0900 (月, 08 11月 2010) | 1 line
+
+Merge yuya-takeyama&apos;s master. Thx
+------------------------------------------------------------------------
+r2225 | heavenshell | 2010-11-05 01:39:31 +0900 (金, 05 11月 2010) | 1 line
+
+Import from https://github.com/heavenshell/php-net-kyototycoon/tree/0.0.1
+------------------------------------------------------------------------
+r2224 | openpear | 2010-11-04 23:23:03 +0900 (木, 04 11月 2010) | 1 line
+
+[New Package] Net_KyotoTycoon
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="70b65e0d0289f47a43f976d62c02c2f3" name="HTTP/TsvRpc/Client.php" role="php" />
+   <file baseinstalldir="/" md5sum="80aa2cd7f0849d4971cdaa03bf6757b0" name="HTTP/TsvRpc/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="7074047db7b2e7a3d84f4f7ceeb9e004" name="HTTP/TsvRpc/Parser.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a79f608809d52c9cc55b9c2ecf572a6" name="HTTP/TsvRpc/Util.php" role="php" />
+   <file baseinstalldir="/" md5sum="0fca5fb4118defced69e09a5008b1cf2" name="Net/KyotoTycoon/Cursor.php" role="php" />
+   <file baseinstalldir="/" md5sum="50ba32c3d812ed363c4cca79bcbcfb3e" name="Net/KyotoTycoon/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="7e32c0802494db75a352a413ba6262a2" name="Net/KyotoTycoon/StatusCode.php" role="php" />
+   <file baseinstalldir="/" md5sum="caa0ed4842059a16aa62acdf3f754a2b" name="Net/KyotoTycoon.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-11-09</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r2236 | heavenshell | 2010-11-09 22:31:48 +0900 (火, 09 11月 2010) | 1 line
+
+Fix mb_strlen to strlen to get bytes. Thx to yuya-takeyama.
+------------------------------------------------------------------------
+r2231 | heavenshell | 2010-11-08 22:37:53 +0900 (月, 08 11月 2010) | 1 line
+
+Merge yuya-takeyama&apos;s master. Thx
+------------------------------------------------------------------------
+r2225 | heavenshell | 2010-11-05 01:39:31 +0900 (金, 05 11月 2010) | 1 line
+
+Import from https://github.com/heavenshell/php-net-kyototycoon/tree/0.0.1
+------------------------------------------------------------------------
+r2224 | openpear | 2010-11-04 23:23:03 +0900 (木, 04 11月 2010) | 1 line
+
+[New Package] Net_KyotoTycoon
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

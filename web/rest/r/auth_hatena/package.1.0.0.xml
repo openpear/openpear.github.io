@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Auth_Hatena</name>
+ <channel>openpear.org</channel>
+ <summary>[http://auth.hatena.ne.jp/:title=はてな認証API]を利用する為のライブラリ</summary>
+ <description>[http://auth.hatena.ne.jp/:title=はてな認証API]を利用する為のライブラリ</description>
+ <lead>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-10</date>
+ <time>01:52:04</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1311 | halt | 2009-10-10 01:34:38 +0900 (土, 10 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1310 | halt | 2009-10-10 01:33:58 +0900 (土, 10 10月 2009) | 1 line
+
+added example
+------------------------------------------------------------------------
+r1309 | openpear | 2009-10-10 01:30:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] Auth_Hatena
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="11e4a247217f8da90425ad219eab2439" name="Auth/Hatena.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.6.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-10-10</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1311 | halt | 2009-10-10 01:34:38 +0900 (土, 10 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1310 | halt | 2009-10-10 01:33:58 +0900 (土, 10 10月 2009) | 1 line
+
+added example
+------------------------------------------------------------------------
+r1309 | openpear | 2009-10-10 01:30:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] Auth_Hatena
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

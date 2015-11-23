@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_recruit">Services_Recruit</p>
+    <c>openpear.org</c>
+    <v>0.2.1</v>
+    <a>0.1.0</a>
+    <mp>4.4.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>elf</m>
+    <s>とりあえずこの辺のものをコピーしておく
+
+- [http://blog.poyo.jp/archives/id-1201153716]
+- [http://blog.poyo.jp/archives/id-1202983271]</s>
+    <d>とりあえずこの辺のものをコピーしておく
+
+- [http://blog.poyo.jp/archives/id-1201153716]
+- [http://blog.poyo.jp/archives/id-1202983271]</d>
+    <da>2009-12-04 20:50:03</da>
+    <n>
+[0.2.1]
+- version 0.2.1.
+- based 0.2.0.
+
+[0.1.1]
+- Release again.
+- on openpear.org.
+
+[0.1.0]
+- Initial release
+ </n>
+    <f>5709</f>
+    <g>http://openpear.org/get/Services_Recruit-0.2.1</g>
+    <x xlink:href="package.0.2.1.xml"/>
+</r>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/ethna_plugin_htmlemoji">Ethna_Plugin_HTMLEmoji</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <a>0.1.1</a>
+    <mp>5.1.6</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>okonomi</m>
+    <s>HTML_Emojiを利用するEthnaプラグインです。</s>
+    <d>HTML_Emojiを利用するEthnaプラグインです。</d>
+    <da>2011-02-05 17:48:09</da>
+    <n>
+HTML_Emojiを利用するEthnaプラグインです。
+ </n>
+    <f>1545</f>
+    <g>http://openpear.org/get/Ethna_Plugin_HTMLEmoji-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

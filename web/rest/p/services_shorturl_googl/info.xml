@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_ShortURL_Googl</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</s>
+<d>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</d>
+<r xlink:href="/rest/r/services_shorturl_googl" />
+</p>

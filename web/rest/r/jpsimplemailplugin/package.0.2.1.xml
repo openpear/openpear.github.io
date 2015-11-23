@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>jpSimpleMailPlugin</name>
+ <channel>openpear.org</channel>
+ <summary>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン
+
+*インストール方法
+
+&gt;|
+$ ./symfony plugin:add-channel openpear.org
+$ ./symfony plugin:install --force-license --release=0.2.1 openpear.org/jpSimpleMailPlugin
+|&lt;
+
+* アンインストール方法
+&gt;|
+$ ./symfony plugin:uninstall openpear/jpSimpleMailPlugin
+|&lt;
+
+* 利用方法
+http://develop.ddo.jp/new-tech/php/framework/symfony/plugin/jpsimplemailpluginを参照してください。</summary>
+ <description>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン
+
+*インストール方法
+
+&gt;|
+$ ./symfony plugin:add-channel openpear.org
+$ ./symfony plugin:install --force-license --release=0.2.1 openpear.org/jpSimpleMailPlugin
+|&lt;
+
+* アンインストール方法
+&gt;|
+$ ./symfony plugin:uninstall openpear/jpSimpleMailPlugin
+|&lt;
+
+* 利用方法
+http://develop.ddo.jp/new-tech/php/framework/symfony/plugin/jpsimplemailpluginを参照してください。</description>
+ <lead>
+  <name>brtRiver</name>
+  <user>brtriver</user>
+  <email>brt.river@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-03-22</date>
+ <time>22:35:35</time>
+ <version>
+  <release>0.2.1</release>
+  <api>0.2.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1725 | brtriver | 2010-03-22 22:32:49 +0900 (月, 22  3 2010) | 1 line
+
+fix mime_encode in jpSwiftMailer4 class
+------------------------------------------------------------------------
+r1723 | brtriver | 2010-03-22 21:55:50 +0900 (月, 22  3 2010) | 1 line
+
+add jpSwiftMailer4 class
+------------------------------------------------------------------------
+r133 | brtriver | 2008-11-30 02:46:42 +0900 (日, 30 11月 2008) | 1 line
+
+add LICENCE file for symfony
+------------------------------------------------------------------------
+r132 | brtriver | 2008-11-30 02:45:59 +0900 (日, 30 11月 2008) | 1 line
+
+fix typo jpSimpleMail.class.php
+------------------------------------------------------------------------
+r130 | brtriver | 2008-11-30 02:10:22 +0900 (日, 30 11月 2008) | 1 line
+
+rename files (desc.txt and notes.txt)
+------------------------------------------------------------------------
+r129 | brtriver | 2008-11-30 02:03:40 +0900 (日, 30 11月 2008) | 1 line
+
+commit /lib for release 0.1.0
+------------------------------------------------------------------------
+r128 | brtriver | 2008-11-30 02:02:45 +0900 (日, 30 11月 2008) | 1 line
+
+first commit for release 0.1.0
+------------------------------------------------------------------------
+r127 | openpear | 2008-11-29 19:54:26 +0900 (土, 29 11月 2008) | 1 line
+
+[Create Base Directory] jpSimpleMailPlugin
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="904c37d1d9b242de5d71d9898f52c594" name="config/jpSimpleMailPluginConfiguration.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="dbb1f1309a92782a68a6c59c2665126b" name="lib/exception/jpSendMailException.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="5de679bbb68d1f7c6e0a637c2186d499" name="lib/mailer/jpMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="948793f4984793af9578c5bf224bb79e" name="lib/mailer/jpPHPMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="d55c112723b153f42dcecefd242eba8f" name="lib/mailer/jpQdmail.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9635e3c735e95521c7f4cca49c06651" name="lib/mailer/jpSwiftMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="8b06ac60e2d85a0d1827e0e284aa4a3b" name="lib/jpSimpleMail.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="f5a7ca76107ae487912afab0574900b0" name="test/bin/prove.php" role="php" />
+   <file baseinstalldir="/" md5sum="d957c39b462e2644d5416212e774f30a" name="test/bootstrap/functional.php" role="php" />
+   <file baseinstalldir="/" md5sum="5a662b7b3f575aed70e3c1bc07e6edd5" name="test/bootstrap/unit.php" role="php" />
+   <file baseinstalldir="/" md5sum="beb90d2c297c38c3f4e16cc336c540c7" name="test/functional/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9fa084378c9838d21b09f688bce08b3" name="test/functional/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="76e4b954f637d61c65c8fd6ce1788be1" name="test/functional/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="c304a0a529e9ada2340fe303dd7ed1e2" name="test/unit/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="360f557c5a4e89040325e2c665b64c07" name="test/unit/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="4ecb5a5033838f8e671e43c1efef66e7" name="test/unit/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="4caca74aa092bc5aac8c47815b179594" name="desc.txt" role="data" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="LICENCE" role="data" />
+   <file baseinstalldir="/" md5sum="939c66cf8dfdf0f77f9088e00f674c5c" name="notes.txt" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.2.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-03-22</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1725 | brtriver | 2010-03-22 22:32:49 +0900 (月, 22  3 2010) | 1 line
+
+fix mime_encode in jpSwiftMailer4 class
+------------------------------------------------------------------------
+r1723 | brtriver | 2010-03-22 21:55:50 +0900 (月, 22  3 2010) | 1 line
+
+add jpSwiftMailer4 class
+------------------------------------------------------------------------
+r133 | brtriver | 2008-11-30 02:46:42 +0900 (日, 30 11月 2008) | 1 line
+
+add LICENCE file for symfony
+------------------------------------------------------------------------
+r132 | brtriver | 2008-11-30 02:45:59 +0900 (日, 30 11月 2008) | 1 line
+
+fix typo jpSimpleMail.class.php
+------------------------------------------------------------------------
+r130 | brtriver | 2008-11-30 02:10:22 +0900 (日, 30 11月 2008) | 1 line
+
+rename files (desc.txt and notes.txt)
+------------------------------------------------------------------------
+r129 | brtriver | 2008-11-30 02:03:40 +0900 (日, 30 11月 2008) | 1 line
+
+commit /lib for release 0.1.0
+------------------------------------------------------------------------
+r128 | brtriver | 2008-11-30 02:02:45 +0900 (日, 30 11月 2008) | 1 line
+
+first commit for release 0.1.0
+------------------------------------------------------------------------
+r127 | openpear | 2008-11-29 19:54:26 +0900 (土, 29 11月 2008) | 1 line
+
+[Create Base Directory] jpSimpleMailPlugin
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

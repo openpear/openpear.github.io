@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "Honoka": "git+https://github.com/windyakin/Honoka.git",
+    "bootstrap-sass": "^3.3.5",
+    "gulp": "^3.9.0",
+    "gulp-pleeease": "^2.0.2"
+  }
+}

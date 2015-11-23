@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Wozozo_Libido_Tool_Provider_YourfilehostProvider</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>あなたのZend FrameworkによるRADを猛烈に後退させる
+zfコマンドようプロパイダーです。
+
+つかいかた
+&gt;||
+ $ zf download yourfilehost &quot;http://www.yourfilehost.com/media.php?cat=video&amp;file=hogehoge.wmv&quot;
+||&lt;</s>
+<d>あなたのZend FrameworkによるRADを猛烈に後退させる
+zfコマンドようプロパイダーです。
+
+つかいかた
+&gt;||
+ $ zf download yourfilehost &quot;http://www.yourfilehost.com/media.php?cat=video&amp;file=hogehoge.wmv&quot;
+||&lt;</d>
+<r xlink:href="/rest/r/wozozo_libido_tool_provider_yourfilehostprovider" />
+</p>

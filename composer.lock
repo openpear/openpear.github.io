@@ -1,0 +1,144 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "50a2e06d6dd20341270f12b83c916b93",
+    "content-hash": "9de8387f72de2abfb5f3b406a96eee26",
+    "packages": [
+        {
+            "name": "hatenasyntax/hatenasyntax",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anatoo/HatenaSyntax.git",
+                "reference": "1483857fc0011db9900800a8b4150758bc42062f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anatoo/HatenaSyntax/zipball/1483857fc0011db9900800a8b4150758bc42062f",
+                "reference": "1483857fc0011db9900800a8b4150758bc42062f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0",
+                "phppeg/phppeg": "1.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HatenaSyntax": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitsunori Kubota",
+                    "email": "anatoo.jp@gmail.com",
+                    "homepage": "http://anatoo.jp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hatena Notation Parser",
+            "homepage": "http://github.com/anatoo/HatenaSyntax",
+            "keywords": [
+                "hatena",
+                "parser"
+            ],
+            "time": "2012-11-23 14:05:51"
+        },
+        {
+            "name": "phppeg/phppeg",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anatoo/PHPPEG.git",
+                "reference": "1918937a43cd96a9752d6017cd33ad8260a019fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anatoo/PHPPEG/zipball/1918937a43cd96a9752d6017cd33ad8260a019fa",
+                "reference": "1918937a43cd96a9752d6017cd33ad8260a019fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PEG": "code/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitsunori Kubota",
+                    "email": "anatoo.jp@gmail.com",
+                    "homepage": "http://anatoo.jp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PEG Parser Combinator for PHP5",
+            "homepage": "http://github.com/anatoo/PHPPEG",
+            "keywords": [
+                "parser",
+                "peg"
+            ],
+            "time": "2012-11-23 13:33:24"
+        },
+        {
+            "name": "pirum/pirum",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot-graveyard/Pirum.git",
+                "reference": "2d76c79aeb27d7d1278af3583bff08629c9fcafe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot-graveyard/Pirum/zipball/2d76c79aeb27d7d1278af3583bff08629c9fcafe",
+                "reference": "2d76c79aeb27d7d1278af3583bff08629c9fcafe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "bin": [
+                "pirum"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pirum, the simple PEAR Channel Server Manager",
+            "homepage": "http://pirum.sensiolabs.org",
+            "keywords": [
+                "PEAR"
+            ],
+            "time": "2013-05-07 17:52:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

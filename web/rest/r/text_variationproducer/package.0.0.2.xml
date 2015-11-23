@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Text_VariationProducer</name>
+ <channel>openpear.org</channel>
+ <summary>指定した全組み合わせを作り出すイテレータ。次のような使い方ができます。
+
+&gt;||
+$strings = new Text_VariationProducer(&apos;{ab,cd}{01,23}&apos;);
+foreach ($strings as $string) {
+  var_dump($string);
+}
+||&lt;</summary>
+ <description>指定した全組み合わせを作り出すイテレータ。次のような使い方ができます。
+
+&gt;||
+$strings = new Text_VariationProducer(&apos;{ab,cd}{01,23}&apos;);
+foreach ($strings as $string) {
+  var_dump($string);
+}
+||&lt;</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-26</date>
+ <time>19:09:38</time>
+ <version>
+  <release>0.0.2</release>
+  <api>0.0.2</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r756 | hnw | 2009-04-26 18:58:09 -0700 (Sun, 26 Apr 2009) | 1 line
+
+fixed typo: old class name
+------------------------------------------------------------------------
+r755 | hnw | 2009-04-26 18:40:05 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first version
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Text" name="/">
+   <file baseinstalldir="/Text" md5sum="c03f88449210a9bf981dedc7966a9daf" name="VariationProducer.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-04-26</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r756 | hnw | 2009-04-26 18:58:09 -0700 (Sun, 26 Apr 2009) | 1 line
+
+fixed typo: old class name
+------------------------------------------------------------------------
+r755 | hnw | 2009-04-26 18:40:05 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first version
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

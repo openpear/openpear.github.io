@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/sfjpmobileplugin">sfJpMobilePlugin</p>
+    <c>openpear.org</c>
+    <v>0.0.3</v>
+    <st>beta</st>
+    <l>MIT License</l>
+    <m>vector</m>
+    <s>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</s>
+    <d>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</d>
+    <da>2009-07-08 10:47:24</da>
+    <n>------------------------------------------------------------------------
+r1001 | vector | 2009-07-08 10:45:25 -0700 (Wed, 08 Jul 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r1000 | vector | 2009-07-08 10:45:06 -0700 (Wed, 08 Jul 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r938 | vector | 2009-06-08 10:49:07 -0700 (Mon, 08 Jun 2009) | 1 line
+
+plugin?\229?\134?\133?\227?\129?\174config_handlers?\227?\129?\140debug=off?\227?\129?\174?\230?\153?\130?\227?\129?\171?\229?\139?\149?\228?\189?\156?\227?\129?\151?\227?\129?\170?\227?\129?\139?\227?\129?\163?\227?\129?\159?\227?\129?\174?\227?\129?\167?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r925 | vector | 2009-06-04 10:20:59 -0700 (Thu, 04 Jun 2009) | 1 line
+
+Merge branch 'master' of git@github.com:vectorxenon/sfJpMobilePlugin into github
+------------------------------------------------------------------------
+r921 | openpear | 2009-06-03 23:15:55 -0700 (Wed, 03 Jun 2009) | 1 line
+
+[Create Base Directory] sfJpMobilePlugin
+------------------------------------------------------------------------</n>
+    <f>17518</f>
+    <g>http://openpear.org/get/sfJpMobilePlugin-0.0.3</g>
+    <x xlink:href="package.0.0.3.xml"/>
+</r>

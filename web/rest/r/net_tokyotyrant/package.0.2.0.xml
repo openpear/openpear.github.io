@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_TokyoTyrant</name>
+ <channel>openpear.org</channel>
+ <summary>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</summary>
+ <description>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</description>
+ <lead>
+  <name>個々一番</name>
+  <user>cocoiti</user>
+  <email>cocoiti@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-09-05</date>
+ <time>18:11:03</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1121 | cocoiti | 2009-08-18 02:15:31 +0900 (火, 18  8月 2009) | 1 line
+
+add pecl benchmark
+------------------------------------------------------------------------
+r1097 | cocoiti | 2009-08-09 02:55:58 +0900 (日, 09  8月 2009) | 3 lines
+
+to unsignd char (thx Ulrich Mierendorff)
+2 and ixed typo .....
+
+------------------------------------------------------------------------
+r1026 | cocoiti | 2009-07-21 02:18:42 +0900 (火, 21  7月 2009) | 3 lines
+
+RDB機能をサポートを追加(リファクタするかもしれません)
+コメントを少しつけた
+
+------------------------------------------------------------------------
+r1023 | cocoiti | 2009-07-19 16:23:33 +0900 (日, 19  7月 2009) | 2 lines
+
+fixes bigsize packet(thx http://petewarden.typepad.com/searchbrowser/2009/06/how-to-get-tokyo-tyrant-working-in-php.html)
+
+------------------------------------------------------------------------
+r744 | cocoiti | 2009-04-25 23:22:21 +0900 (土, 25  4月 2009) | 1 line
+
+new protcol TokyoTyrant
+------------------------------------------------------------------------
+r659 | cocoiti | 2009-04-13 02:02:48 +0900 (月, 13  4月 2009) | 3 lines
+
+add test code.(data size)
+fixed bug timeout.
+
+------------------------------------------------------------------------
+r58 | cocoiti | 2008-11-03 15:25:10 +0900 (月, 03 11月 2008) | 2 lines
+
+型情報を付与
+
+------------------------------------------------------------------------
+r57 | cocoiti | 2008-11-03 02:31:35 +0900 (月, 03 11月 2008) | 2 lines
+
+ごみを消した
+
+------------------------------------------------------------------------
+r56 | cocoiti | 2008-11-03 01:50:48 +0900 (月, 03 11月 2008) | 2 lines
+
+ベンチマークを追加
+
+------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 23:29:28 +0900 (日, 02 11月 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------
+r19 | openpear | 2008-11-01 13:04:08 +0900 (土, 01 11月 2008) | 1 line
+
+[Create Base Directory] Net_TokyoTyrant
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d4ed2ea3591c9fbcf2534871255de401" name="TokyoTyrant/Query.php" role="php" />
+   <file baseinstalldir="/" md5sum="588c8726f42f2be1616078eb9805abe2" name="TokyoTyrant/Table.php" role="php" />
+   <file baseinstalldir="/" md5sum="395121a1f4ba42dd8c2420aeeaa9f79a" name="TokyoTyrant.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-09-05</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1121 | cocoiti | 2009-08-18 02:15:31 +0900 (火, 18  8月 2009) | 1 line
+
+add pecl benchmark
+------------------------------------------------------------------------
+r1097 | cocoiti | 2009-08-09 02:55:58 +0900 (日, 09  8月 2009) | 3 lines
+
+to unsignd char (thx Ulrich Mierendorff)
+2 and ixed typo .....
+
+------------------------------------------------------------------------
+r1026 | cocoiti | 2009-07-21 02:18:42 +0900 (火, 21  7月 2009) | 3 lines
+
+RDB機能をサポートを追加(リファクタするかもしれません)
+コメントを少しつけた
+
+------------------------------------------------------------------------
+r1023 | cocoiti | 2009-07-19 16:23:33 +0900 (日, 19  7月 2009) | 2 lines
+
+fixes bigsize packet(thx http://petewarden.typepad.com/searchbrowser/2009/06/how-to-get-tokyo-tyrant-working-in-php.html)
+
+------------------------------------------------------------------------
+r744 | cocoiti | 2009-04-25 23:22:21 +0900 (土, 25  4月 2009) | 1 line
+
+new protcol TokyoTyrant
+------------------------------------------------------------------------
+r659 | cocoiti | 2009-04-13 02:02:48 +0900 (月, 13  4月 2009) | 3 lines
+
+add test code.(data size)
+fixed bug timeout.
+
+------------------------------------------------------------------------
+r58 | cocoiti | 2008-11-03 15:25:10 +0900 (月, 03 11月 2008) | 2 lines
+
+型情報を付与
+
+------------------------------------------------------------------------
+r57 | cocoiti | 2008-11-03 02:31:35 +0900 (月, 03 11月 2008) | 2 lines
+
+ごみを消した
+
+------------------------------------------------------------------------
+r56 | cocoiti | 2008-11-03 01:50:48 +0900 (月, 03 11月 2008) | 2 lines
+
+ベンチマークを追加
+
+------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 23:29:28 +0900 (日, 02 11月 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------
+r19 | openpear | 2008-11-01 13:04:08 +0900 (土, 01 11月 2008) | 1 line
+
+[Create Base Directory] Net_TokyoTyrant
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

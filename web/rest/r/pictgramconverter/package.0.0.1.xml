@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PictgramConverter</name>
+ <channel>openpear.org</channel>
+ <summary>携帯絵文字変換ライブラリ
+
+
+想定するユースケース
+-サイトのエンコーディングがShiftJIS(cp932)
+-DBに格納する文字列はutf-8エンコーディング
+
+
+サポートする機能
+-絵文字sjisバイナリをutf-8バイナリに変換
+-キャリア間の絵文字変換</summary>
+ <description>携帯絵文字変換ライブラリ
+
+
+想定するユースケース
+-サイトのエンコーディングがShiftJIS(cp932)
+-DBに格納する文字列はutf-8エンコーディング
+
+
+サポートする機能
+-絵文字sjisバイナリをutf-8バイナリに変換
+-キャリア間の絵文字変換</description>
+ <lead>
+  <name>takada-at</name>
+  <user>takada-at</user>
+  <email>takada-at@klab.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-12</date>
+ <time>12:16:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1395 | takada-at | 2009-11-12 11:24:55 +0900 (木, 12 11月 2009) | 1 line
+
+テストなどを整える
+------------------------------------------------------------------------
+r1394 | takada-at | 2009-11-12 11:24:50 +0900 (木, 12 11月 2009) | 1 line
+
+doc修正
+------------------------------------------------------------------------
+r1393 | takada-at | 2009-11-12 11:24:47 +0900 (木, 12 11月 2009) | 1 line
+
+doc修正
+------------------------------------------------------------------------
+r1392 | takada-at | 2009-11-12 11:24:43 +0900 (木, 12 11月 2009) | 1 line
+
+pear化
+------------------------------------------------------------------------
+r1391 | takada-at | 2009-11-12 11:24:39 +0900 (木, 12 11月 2009) | 1 line
+
+ドキュメント追加
+------------------------------------------------------------------------
+r1390 | takada-at | 2009-11-12 11:24:35 +0900 (木, 12 11月 2009) | 1 line
+
+pear化
+------------------------------------------------------------------------
+r1389 | takada-at | 2009-11-12 11:24:28 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1388 | takada-at | 2009-11-12 11:24:24 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1387 | takada-at | 2009-11-12 11:24:17 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1386 | takada-at | 2009-11-12 11:24:13 +0900 (木, 12 11月 2009) | 1 line
+
+pear-package
+------------------------------------------------------------------------
+r1385 | takada-at | 2009-11-12 11:24:09 +0900 (木, 12 11月 2009) | 1 line
+
+微妙に変更
+------------------------------------------------------------------------
+r1384 | takada-at | 2009-11-12 11:24:03 +0900 (木, 12 11月 2009) | 1 line
+
+キャッシュ仕様
+------------------------------------------------------------------------
+r1383 | takada-at | 2009-11-12 11:23:57 +0900 (木, 12 11月 2009) | 1 line
+
+追加
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="716510f743e88135d1d3ad47838bca52" name="Text/PictgramConverter/data/docomo_convert.json" role="php" />
+   <file baseinstalldir="/" md5sum="22f838abf134bd69a2de0acadb30ebb0" name="Text/PictgramConverter/data/docomo_emoji.json" role="php" />
+   <file baseinstalldir="/" md5sum="4b8b67a7217baa9b052883bcaa8a4dd8" name="Text/PictgramConverter/data/ezweb_convert.json" role="php" />
+   <file baseinstalldir="/" md5sum="d6ecf77e6b25e3387118ecccca4b0c85" name="Text/PictgramConverter/data/ezweb_emoji.json" role="php" />
+   <file baseinstalldir="/" md5sum="bbf4b711f3f51b4a58d6c174edcfdad1" name="Text/PictgramConverter/data/softbank_convert.json" role="php" />
+   <file baseinstalldir="/" md5sum="b11041f01dc72befd58f0279d606a531" name="Text/PictgramConverter/data/softbank_emoji.json" role="php" />
+   <file baseinstalldir="/" md5sum="f1895fdb6dadfe08ce156102bdfd88bf" name="Text/PictgramConverter.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.11</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-11-11</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.1.0]
+- First release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-11-12</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1395 | takada-at | 2009-11-12 11:24:55 +0900 (木, 12 11月 2009) | 1 line
+
+テストなどを整える
+------------------------------------------------------------------------
+r1394 | takada-at | 2009-11-12 11:24:50 +0900 (木, 12 11月 2009) | 1 line
+
+doc修正
+------------------------------------------------------------------------
+r1393 | takada-at | 2009-11-12 11:24:47 +0900 (木, 12 11月 2009) | 1 line
+
+doc修正
+------------------------------------------------------------------------
+r1392 | takada-at | 2009-11-12 11:24:43 +0900 (木, 12 11月 2009) | 1 line
+
+pear化
+------------------------------------------------------------------------
+r1391 | takada-at | 2009-11-12 11:24:39 +0900 (木, 12 11月 2009) | 1 line
+
+ドキュメント追加
+------------------------------------------------------------------------
+r1390 | takada-at | 2009-11-12 11:24:35 +0900 (木, 12 11月 2009) | 1 line
+
+pear化
+------------------------------------------------------------------------
+r1389 | takada-at | 2009-11-12 11:24:28 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1388 | takada-at | 2009-11-12 11:24:24 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1387 | takada-at | 2009-11-12 11:24:17 +0900 (木, 12 11月 2009) | 1 line
+
+pear
+------------------------------------------------------------------------
+r1386 | takada-at | 2009-11-12 11:24:13 +0900 (木, 12 11月 2009) | 1 line
+
+pear-package
+------------------------------------------------------------------------
+r1385 | takada-at | 2009-11-12 11:24:09 +0900 (木, 12 11月 2009) | 1 line
+
+微妙に変更
+------------------------------------------------------------------------
+r1384 | takada-at | 2009-11-12 11:24:03 +0900 (木, 12 11月 2009) | 1 line
+
+キャッシュ仕様
+------------------------------------------------------------------------
+r1383 | takada-at | 2009-11-12 11:23:57 +0900 (木, 12 11月 2009) | 1 line
+
+追加
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

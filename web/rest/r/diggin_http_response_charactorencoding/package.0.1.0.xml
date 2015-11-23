@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin_Http_Response_CharactorEncoding</name>
+ <channel>openpear.org</channel>
+ <summary>HttpレスポンスからUTF-8へ自動変換を行うのを目的としたものです。
+
+
+エンコードの取得はHttpレスポンスヘッダ、metaタグ、(mbstringが利用可能な場合)レスポンスボディの順に行います。
+
+各レスポンスインスタンスから、getBodyされたときにUTF-8に自動変換するためのラッパーを用意しています。(現在はZend_Http_Responseのみ)
+
+＊HTMLScraping Classをベースにしております。
+
+
+参考コード：
+&gt;||
+$client = new Zend_Http_Client($url);
+$response = $client-&gt;request();
+ 
+$wrapper = Diggin_Http_Response_CharactorEncoding::createWrapper($response);
+var_dump($wrapper instanceof Zend_Http_Response); //true
+var_dump($wrapper-&gt;getBody()); //UTF-8
+||&lt;</summary>
+ <description>HttpレスポンスからUTF-8へ自動変換を行うのを目的としたものです。
+
+
+エンコードの取得はHttpレスポンスヘッダ、metaタグ、(mbstringが利用可能な場合)レスポンスボディの順に行います。
+
+各レスポンスインスタンスから、getBodyされたときにUTF-8に自動変換するためのラッパーを用意しています。(現在はZend_Http_Responseのみ)
+
+＊HTMLScraping Classをベースにしております。
+
+
+参考コード：
+&gt;||
+$client = new Zend_Http_Client($url);
+$response = $client-&gt;request();
+ 
+$wrapper = Diggin_Http_Response_CharactorEncoding::createWrapper($response);
+var_dump($wrapper instanceof Zend_Http_Response); //true
+var_dump($wrapper-&gt;getBody()); //UTF-8
+||&lt;</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-12-20</date>
+ <time>06:58:03</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+------------------------------------------------------------------------
+r1467 | sasezaki | 2009-12-20 06:52:22 +0900 (日, 20 12月 2009) | 1 line
+
+modify createWrapper()
+------------------------------------------------------------------------
+r1466 | sasezaki | 2009-12-20 05:29:17 +0900 (日, 20 12月 2009) | 1 line
+
+add test 
+------------------------------------------------------------------------
+r1449 | sasezaki | 2009-12-13 00:34:07 +0900 (日, 13 12月 2009) | 1 line
+
+github用別に作ってたの忘れてたーー
+------------------------------------------------------------------------
+r1446 | sasezaki | 2009-12-13 00:25:41 +0900 (日, 13 12月 2009) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r1255 | openpear | 2009-10-05 21:32:02 +0900 (月, 05 10月 2009) | 1 line
+
+[New Package] Diggin_Http_Response_CharactorEncoding
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="326113f87bb8af9cd359628c31c81335" name="Diggin/Http/Response/CharactorEncoding/Wrapper/WrapperInterface.php" role="php" />
+   <file baseinstalldir="/" md5sum="49bd3106580189f2635cc34ceaba6927" name="Diggin/Http/Response/CharactorEncoding/Wrapper/Zf.php" role="php" />
+   <file baseinstalldir="/" md5sum="526d0977e43c142312f6f8fd382e07cd" name="Diggin/Http/Response/CharactorEncoding/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="e5aab46701ccd3e2a8494c8113d960ff" name="Diggin/Http/Response/CharactorEncoding.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-12-20</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+------------------------------------------------------------------------
+r1467 | sasezaki | 2009-12-20 06:52:22 +0900 (日, 20 12月 2009) | 1 line
+
+modify createWrapper()
+------------------------------------------------------------------------
+r1466 | sasezaki | 2009-12-20 05:29:17 +0900 (日, 20 12月 2009) | 1 line
+
+add test 
+------------------------------------------------------------------------
+r1449 | sasezaki | 2009-12-13 00:34:07 +0900 (日, 13 12月 2009) | 1 line
+
+github用別に作ってたの忘れてたーー
+------------------------------------------------------------------------
+r1446 | sasezaki | 2009-12-13 00:25:41 +0900 (日, 13 12月 2009) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r1255 | openpear | 2009-10-05 21:32:02 +0900 (月, 05 10月 2009) | 1 line
+
+[New Package] Diggin_Http_Response_CharactorEncoding
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

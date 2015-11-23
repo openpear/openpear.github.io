@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/http_oauthconsumer">HTTP_OAuthConsumer</p>
+    <c>openpear.org</c>
+    <v>1.0.2</v>
+    <a>1.0.2</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>eth0jp</m>
+    <s>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthConsumer/trunk/example</s>
+    <d>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthConsumer/trunk/example</d>
+    <da>2010-08-05 02:32:03</da>
+    <n>
+------------------------------------------------------------------------
+r1986 | eth0jp | 2010-08-05 02:29:01 +0900 (木, 05  8月 2010) | 1 line
+
+mod RSA-SHA1 setConsumer()
+------------------------------------------------------------------------
+r1985 | eth0jp | 2010-08-05 02:26:18 +0900 (木, 05  8月 2010) | 1 line
+
+add RSA-SHA1 example
+------------------------------------------------------------------------
+r1984 | eth0jp | 2010-08-05 02:24:41 +0900 (木, 05  8月 2010) | 1 line
+
+add HTTP_OAuthConsumer_Exception, add RSA-SHA1 example
+------------------------------------------------------------------------
+r1983 | eth0jp | 2010-08-04 21:43:14 +0900 (水, 04  8月 2010) | 1 line
+
+mod get query
+------------------------------------------------------------------------
+r1980 | eth0jp | 2010-08-04 16:08:23 +0900 (水, 04  8月 2010) | 1 line
+
+add addGetParameter()
+------------------------------------------------------------------------
+r1975 | eth0jp | 2010-08-04 05:34:07 +0900 (水, 04  8月 2010) | 1 line
+
+mv dir
+------------------------------------------------------------------------
+r1973 | eth0jp | 2010-08-04 05:29:40 +0900 (水, 04  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1972 | openpear | 2010-08-04 05:24:01 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthConsumer
+------------------------------------------------------------------------
+ </n>
+    <f>3293</f>
+    <g>http://openpear.org/get/HTTP_OAuthConsumer-1.0.2</g>
+    <x xlink:href="package.1.0.2.xml"/>
+</r>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Shitaraba</name>
+ <channel>openpear.org</channel>
+ <summary>したらばBBSにおいて以下のことを行う
+
+・NGワードによる一括削除
+・1000行ったスレを倉庫送り
+・スレッド、レスの取得
+
+
+以下に依存しています
+
+・Zend_Http_Client
+・Zend_Http_Cookie
+
+
+その他
+・Pearコーディング規約に沿ってないので修正必須
+・PHPとPearのバージョンは初期値のままなんでもっと昔のでも動くと思う
+・楽に削除、倉庫送りしたいという理由で開発したので書き込み機能はありません
+・したらばはAPIが無いのでブラウザの挙動を無理矢理真似させています。よって管理画面が少し変わっただけで動かなくなる可能性大。
+
+
+使用例
+
+//OpenPear/Services/Shitaraba
+    require_once(&apos;Services/Shitaraba.php&apos;);
+//引数はジャンル、掲示板番号、管理画面パスワード
+    $shitaraba=new Services_Shitaraba(&apos;gerne&apos;,&apos;123456789&apos;,&apos;password&apos;);
+
+//各パラメータを個別にセット
+    $shitaraba-&gt;setGerne(&apos;gerne&apos;);
+    $shitaraba-&gt;setBbsnum(&apos;123456789&apos;);
+    $shitaraba-&gt;setPw(&apos;password&apos;);
+
+//全スレッドリストを取得
+    $ret=$shitaraba-&gt;getThreadList();
+    
+//特定のスレッドを取得
+    $ret=$shitaraba-&gt;getThread(&apos;123456789&apos;);
+    
+//全スレッドの全データを取得
+    $ret=$shitaraba-&gt;getAllThreadData();
+
+//NGワードが含まれる発言を取得
+    $ret=$shitaraba-&gt;getNGThreadData(&apos;あああああ&apos;);
+
+//NGワードが含まれる発言を削除
+    $ret=$shitaraba-&gt;deleteNGThreadData(
+        $shitaraba-&gt;getNGThreadData(&apos;あああああ&apos;)
+    );
+
+//全発言数を指定(1000以外に変更している場合に使用)
+    $ret=$shitaraba-&gt;setMaxNumber(2000);
+
+//1000(setMaxNumber)行ったスレを取得
+    $ret=$shitaraba-&gt;getDatThreadList();
+
+//1000(setMaxNumber)行ったスレをdat落ちさせる
+    $ret=$shitaraba-&gt;datThread(
+        $shitaraba-&gt;getDatThreadList()
+    );
+
+//特定のスレをdat落ちさせる
+    $ret=$shitaraba-&gt;datThread(
+        array(123456,234567)
+    );</summary>
+ <description>したらばBBSにおいて以下のことを行う
+
+・NGワードによる一括削除
+・1000行ったスレを倉庫送り
+・スレッド、レスの取得
+
+
+以下に依存しています
+
+・Zend_Http_Client
+・Zend_Http_Cookie
+
+
+その他
+・Pearコーディング規約に沿ってないので修正必須
+・PHPとPearのバージョンは初期値のままなんでもっと昔のでも動くと思う
+・楽に削除、倉庫送りしたいという理由で開発したので書き込み機能はありません
+・したらばはAPIが無いのでブラウザの挙動を無理矢理真似させています。よって管理画面が少し変わっただけで動かなくなる可能性大。
+
+
+使用例
+
+//OpenPear/Services/Shitaraba
+    require_once(&apos;Services/Shitaraba.php&apos;);
+//引数はジャンル、掲示板番号、管理画面パスワード
+    $shitaraba=new Services_Shitaraba(&apos;gerne&apos;,&apos;123456789&apos;,&apos;password&apos;);
+
+//各パラメータを個別にセット
+    $shitaraba-&gt;setGerne(&apos;gerne&apos;);
+    $shitaraba-&gt;setBbsnum(&apos;123456789&apos;);
+    $shitaraba-&gt;setPw(&apos;password&apos;);
+
+//全スレッドリストを取得
+    $ret=$shitaraba-&gt;getThreadList();
+    
+//特定のスレッドを取得
+    $ret=$shitaraba-&gt;getThread(&apos;123456789&apos;);
+    
+//全スレッドの全データを取得
+    $ret=$shitaraba-&gt;getAllThreadData();
+
+//NGワードが含まれる発言を取得
+    $ret=$shitaraba-&gt;getNGThreadData(&apos;あああああ&apos;);
+
+//NGワードが含まれる発言を削除
+    $ret=$shitaraba-&gt;deleteNGThreadData(
+        $shitaraba-&gt;getNGThreadData(&apos;あああああ&apos;)
+    );
+
+//全発言数を指定(1000以外に変更している場合に使用)
+    $ret=$shitaraba-&gt;setMaxNumber(2000);
+
+//1000(setMaxNumber)行ったスレを取得
+    $ret=$shitaraba-&gt;getDatThreadList();
+
+//1000(setMaxNumber)行ったスレをdat落ちさせる
+    $ret=$shitaraba-&gt;datThread(
+        $shitaraba-&gt;getDatThreadList()
+    );
+
+//特定のスレをdat落ちさせる
+    $ret=$shitaraba-&gt;datThread(
+        array(123456,234567)
+    );</description>
+ <lead>
+  <name>風雅</name>
+  <user>NurseAngel</user>
+  <email>m@m.ll.to</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-09-10</date>
+ <time>10:55:06</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1179 | NurseAngel | 2009-09-10 09:54:13 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1178 | NurseAngel | 2009-09-10 09:50:55 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1177 | NurseAngel | 2009-09-10 09:43:52 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1176 | NurseAngel | 2009-09-10 09:40:43 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1175 | NurseAngel | 2009-09-10 09:38:54 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1170 | NurseAngel | 2009-09-09 12:45:49 +0900 (水, 09  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1169 | openpear | 2009-09-08 21:43:02 +0900 (火, 08  9月 2009) | 1 line
+
+[New Package] Services_Shitaraba
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="93aa7cc50fa24cdd6fae233e440b9a90" name="Services/Shitaraba/Model.php" role="php" />
+   <file baseinstalldir="/" md5sum="aec534c1041080f50aadfc7c21d9025e" name="Services/Shitaraba/version.txt" role="data" />
+   <file baseinstalldir="/" md5sum="65044b39199d38882495fac1da1de40e" name="Services/Shitaraba.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-09-10</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1179 | NurseAngel | 2009-09-10 09:54:13 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1178 | NurseAngel | 2009-09-10 09:50:55 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1177 | NurseAngel | 2009-09-10 09:43:52 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1176 | NurseAngel | 2009-09-10 09:40:43 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1175 | NurseAngel | 2009-09-10 09:38:54 +0900 (木, 10  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1170 | NurseAngel | 2009-09-09 12:45:49 +0900 (水, 09  9月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1169 | openpear | 2009-09-08 21:43:02 +0900 (火, 08  9月 2009) | 1 line
+
+[New Package] Services_Shitaraba
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

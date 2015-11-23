@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTML_CSS_Mobile</name>
+ <channel>openpear.org</channel>
+ <summary>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</summary>
+ <description>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>yudoufu</name>
+  <user>yudoufu</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2009-01-29</date>
+ <time>09:54:40</time>
+ <version>
+  <release>0.1.5</release>
+  <api>0.1.5</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>------------------------------------------------------------------------
+r377 | sotarok | 2009-01-29 09:53:30 -0800 (Thu, 29 Jan 2009) | 2 lines
+
+ * ?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\227?\129?\174?\230?\149?\180?\231?\144?\134?\227?\129?\170?\227?\129?\169
+
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="f71e67fec9f486bb4a3698aca7f25f33" name="HTML/CSS/lib/selectorToXPath.php" role="php" />
+   <file baseinstalldir="/" md5sum="880c6cee29f9b4b463e0422a81f5622c" name="HTML/CSS/Mobile.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.5</release>
+    <api>0.1.5</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-01-29</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>------------------------------------------------------------------------
+r377 | sotarok | 2009-01-29 09:53:30 -0800 (Thu, 29 Jan 2009) | 2 lines
+
+ * ?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\227?\129?\174?\230?\149?\180?\231?\144?\134?\227?\129?\170?\227?\129?\169
+
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

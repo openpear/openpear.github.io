@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Acme_BrainPhack</name>
+ <channel>openpear.org</channel>
+ <summary>&quot;BrainF*ck&quot; interpreter sample implementation by PHP.</summary>
+ <description>&quot;BrainF*ck&quot; interpreter sample implementation by PHP.</description>
+ <lead>
+  <name>msakamoto-sf</name>
+  <user>msakamoto-sf</user>
+  <email>sakamoto-gsyc-3s@glamenv-septzen.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-20</date>
+ <time>00:52:03</time>
+ <version>
+  <release>0.0.2</release>
+  <api>0.0.2</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</license>
+ <notes>
+------------------------------------------------------------------------
+r1543 | msakamoto-sf | 2010-01-20 00:34:13 +0900 (水, 20  1月 2010) | 1 line
+
+- add scripts files.
+------------------------------------------------------------------------
+r1542 | msakamoto-sf | 2010-01-20 00:19:30 +0900 (水, 20  1月 2010) | 1 line
+
+- temporarily moved &apos;test&apos; directory to &apos;Acme/BrainPhack/test&apos;.(delete old one)
+------------------------------------------------------------------------
+r1541 | msakamoto-sf | 2010-01-20 00:16:24 +0900 (水, 20  1月 2010) | 1 line
+
+- temporarily moved &apos;test&apos; directory to &apos;Acme/BrainPhack/test&apos;.
+------------------------------------------------------------------------
+r1532 | msakamoto-sf | 2010-01-18 20:29:07 +0900 (月, 18  1月 2010) | 1 line
+
+- add Acme/BrainPhack/Translator.php and its test cases.
+------------------------------------------------------------------------
+r1531 | msakamoto-sf | 2010-01-17 23:00:17 +0900 (日, 17  1月 2010) | 1 line
+
+- add own directory to include_path in all_test.php.
+------------------------------------------------------------------------
+r1530 | msakamoto-sf | 2010-01-17 22:48:21 +0900 (日, 17  1月 2010) | 1 line
+
+- completed Acme_BrainPhack_Interpreter class and its test cases.
+------------------------------------------------------------------------
+r1526 | msakamoto-sf | 2010-01-17 18:57:21 +0900 (日, 17  1月 2010) | 1 line
+
+- add clear_reset() method to MemoryStack, add its test case.
+------------------------------------------------------------------------
+r1525 | msakamoto-sf | 2010-01-17 17:51:32 +0900 (日, 17  1月 2010) | 2 lines
+
+- add Interpreter.php, Interpreter_TestCase.php for interpreter module.
+- fix copyright year.
+------------------------------------------------------------------------
+r1523 | msakamoto-sf | 2010-01-17 16:43:09 +0900 (日, 17  1月 2010) | 1 line
+
+- add BrainF*ck memory stack model, and test cases.
+------------------------------------------------------------------------
+r1521 | msakamoto-sf | 2010-01-17 11:52:34 +0900 (日, 17  1月 2010) | 1 line
+
+- add LICENSE, README files, build directory trees.
+------------------------------------------------------------------------
+r1516 | openpear | 2010-01-15 16:26:02 +0900 (金, 15  1月 2010) | 1 line
+
+[New Package] Acme_BrainPhack
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="e21ddcd492bad6b3837e7c52d5269d70" name="Acme/BrainPhack/test/all_test.php" role="php" />
+   <file baseinstalldir="/" md5sum="d603d3d5dd2aafaa32577658c0e81ed6" name="Acme/BrainPhack/test/Interpreter_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="d4294ee995e461a9e37a7ec68f77c14f" name="Acme/BrainPhack/test/MemoryStack_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="8e86ae528f04845698c9d8ee4aff9658" name="Acme/BrainPhack/test/README" role="data" />
+   <file baseinstalldir="/" md5sum="a3e748469fed76fe951c1661f3f24082" name="Acme/BrainPhack/test/stdin_test.php" role="php" />
+   <file baseinstalldir="/" md5sum="ad6ad03be749bcbbc055641a727af871" name="Acme/BrainPhack/test/Translator_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="12bf643f516e931247471cdeefd516b5" name="Acme/BrainPhack/Interpreter.php" role="php" />
+   <file baseinstalldir="/" md5sum="d015eeb969d3fa7de726781298bf94ce" name="Acme/BrainPhack/MemoryStack.php" role="php" />
+   <file baseinstalldir="/" md5sum="a3d46979d3fa744e830bab510df627b9" name="Acme/BrainPhack/Translator.php" role="php" />
+   <file baseinstalldir="/" md5sum="92ef8ec3b8871c16c8961d221446bd8a" name="scripts/brainphack.bat" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="68a3e52a6930c6919e39d54e6d6ed411" name="scripts/brainphack.sh" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+   <file baseinstalldir="/" md5sum="2a066feaf8fcc9f0af9044002c5992e9" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="brainphack" name="scripts/brainphack.sh" />
+   <install as="brainphack.bat" name="scripts/brainphack.bat" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-01-20</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</license>
+   <notes>
+------------------------------------------------------------------------
+r1543 | msakamoto-sf | 2010-01-20 00:34:13 +0900 (水, 20  1月 2010) | 1 line
+
+- add scripts files.
+------------------------------------------------------------------------
+r1542 | msakamoto-sf | 2010-01-20 00:19:30 +0900 (水, 20  1月 2010) | 1 line
+
+- temporarily moved &apos;test&apos; directory to &apos;Acme/BrainPhack/test&apos;.(delete old one)
+------------------------------------------------------------------------
+r1541 | msakamoto-sf | 2010-01-20 00:16:24 +0900 (水, 20  1月 2010) | 1 line
+
+- temporarily moved &apos;test&apos; directory to &apos;Acme/BrainPhack/test&apos;.
+------------------------------------------------------------------------
+r1532 | msakamoto-sf | 2010-01-18 20:29:07 +0900 (月, 18  1月 2010) | 1 line
+
+- add Acme/BrainPhack/Translator.php and its test cases.
+------------------------------------------------------------------------
+r1531 | msakamoto-sf | 2010-01-17 23:00:17 +0900 (日, 17  1月 2010) | 1 line
+
+- add own directory to include_path in all_test.php.
+------------------------------------------------------------------------
+r1530 | msakamoto-sf | 2010-01-17 22:48:21 +0900 (日, 17  1月 2010) | 1 line
+
+- completed Acme_BrainPhack_Interpreter class and its test cases.
+------------------------------------------------------------------------
+r1526 | msakamoto-sf | 2010-01-17 18:57:21 +0900 (日, 17  1月 2010) | 1 line
+
+- add clear_reset() method to MemoryStack, add its test case.
+------------------------------------------------------------------------
+r1525 | msakamoto-sf | 2010-01-17 17:51:32 +0900 (日, 17  1月 2010) | 2 lines
+
+- add Interpreter.php, Interpreter_TestCase.php for interpreter module.
+- fix copyright year.
+------------------------------------------------------------------------
+r1523 | msakamoto-sf | 2010-01-17 16:43:09 +0900 (日, 17  1月 2010) | 1 line
+
+- add BrainF*ck memory stack model, and test cases.
+------------------------------------------------------------------------
+r1521 | msakamoto-sf | 2010-01-17 11:52:34 +0900 (日, 17  1月 2010) | 1 line
+
+- add LICENSE, README files, build directory trees.
+------------------------------------------------------------------------
+r1516 | openpear | 2010-01-15 16:26:02 +0900 (金, 15  1月 2010) | 1 line
+
+[New Package] Acme_BrainPhack
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

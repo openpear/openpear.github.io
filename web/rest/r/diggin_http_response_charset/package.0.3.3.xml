@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin_Http_Response_Charset</name>
+ <channel>openpear.org</channel>
+ <summary>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</summary>
+ <description>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-24</date>
+ <time>21:32:02</time>
+ <version>
+  <release>0.3.3</release>
+  <api>0.3.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+------------------------------------------------------------------------
+r2244 | sasezaki | 2010-11-24 21:30:21 +0900 (水, 24 11月 2010) | 1 line
+
+invalid checking interface
+------------------------------------------------------------------------
+r2229 | sasezaki | 2010-11-05 21:31:07 +0900 (金, 05 11月 2010) | 1 line
+
+crazy inteface checking
+------------------------------------------------------------------------
+r2228 | sasezaki | 2010-11-05 21:07:09 +0900 (金, 05 11月 2010) | 1 line
+
+callback compatible
+------------------------------------------------------------------------
+r2222 | sasezaki | 2010-11-01 20:42:52 +0900 (月, 01 11月 2010) | 1 line
+
+missing, PeclHttpMessage wrapper
+------------------------------------------------------------------------
+r2221 | sasezaki | 2010-11-01 20:40:49 +0900 (月, 01 11月 2010) | 1 line
+
+merged from github
+------------------------------------------------------------------------
+r2202 | sasezaki | 2010-10-28 23:26:53 +0900 (木, 28 10月 2010) | 1 line
+
+remove, oldstyle sandbox
+------------------------------------------------------------------------
+r2201 | sasezaki | 2010-10-28 23:26:21 +0900 (木, 28 10月 2010) | 1 line
+
+remove, oldstyle sandbox
+------------------------------------------------------------------------
+r2200 | sasezaki | 2010-10-28 23:11:15 +0900 (木, 28 10月 2010) | 1 line
+
+Diggin_Http_Response_Charset : add tests
+------------------------------------------------------------------------
+r2199 | sasezaki | 2010-10-28 23:10:03 +0900 (木, 28 10月 2010) | 1 line
+
+using iconv, if not dealing with mbstring
+------------------------------------------------------------------------
+r2173 | sasezaki | 2010-10-08 21:46:25 +0900 (金, 08 10月 2010) | 1 line
+
+add clearCharsetHeaders
+------------------------------------------------------------------------
+r1958 | sasezaki | 2010-07-02 21:40:28 +0900 (金, 02  7月 2010) | 1 line
+
+add Exceptions
+------------------------------------------------------------------------
+r1957 | sasezaki | 2010-07-02 21:37:42 +0900 (金, 02  7月 2010) | 1 line
+
+rename &quot;encode&quot; to &quot;convert&quot;
+------------------------------------------------------------------------
+r1956 | sasezaki | 2010-07-02 21:35:31 +0900 (金, 02  7月 2010) | 1 line
+
+rename &quot;encode&quot; to &quot;convert&quot;
+------------------------------------------------------------------------
+r1955 | sasezaki | 2010-07-02 21:33:52 +0900 (金, 02  7月 2010) | 1 line
+
+delete Encoder
+------------------------------------------------------------------------
+r1954 | sasezaki | 2010-07-02 21:32:29 +0900 (金, 02  7月 2010) | 1 line
+
+-r
+------------------------------------------------------------------------
+r1951 | sasezaki | 2010-07-02 20:43:20 +0900 (金, 02  7月 2010) | 1 line
+
+EncoderAbstract : accept array(), and Encoder_Html:fixed typo
+------------------------------------------------------------------------
+r1931 | sasezaki | 2010-06-27 23:41:56 +0900 (日, 27  6月 2010) | 1 line
+
+oops, missing modify changed-key
+------------------------------------------------------------------------
+r1927 | sasezaki | 2010-06-27 22:53:04 +0900 (日, 27  6月 2010) | 1 line
+
+addEncoder with Zend_Loader
+------------------------------------------------------------------------
+r1926 | sasezaki | 2010-06-27 21:33:24 +0900 (日, 27  6月 2010) | 1 line
+
+change, some-key
+------------------------------------------------------------------------
+r1924 | sasezaki | 2010-06-24 00:23:53 +0900 (木, 24  6月 2010) | 1 line
+
+add return  in addEncoder
+------------------------------------------------------------------------
+r1923 | sasezaki | 2010-06-23 22:26:13 +0900 (水, 23  6月 2010) | 1 line
+
+add LICENSE doc-comment &amp; not static
+------------------------------------------------------------------------
+r1922 | sasezaki | 2010-06-23 21:17:53 +0900 (水, 23  6月 2010) | 1 line
+
+adding. wrapping Response
+------------------------------------------------------------------------
+r1904 | sasezaki | 2010-06-12 01:01:50 +0900 (土, 12  6月 2010) | 1 line
+
+add Encoder Fixedfrom
+------------------------------------------------------------------------
+r1903 | sasezaki | 2010-06-12 01:01:09 +0900 (土, 12  6月 2010) | 1 line
+
+change - default detect list
+------------------------------------------------------------------------
+r1902 | sasezaki | 2010-06-08 23:30:19 +0900 (火, 08  6月 2010) | 1 line
+
+init commit
+------------------------------------------------------------------------
+r1901 | openpear | 2010-06-08 23:29:03 +0900 (火, 08  6月 2010) | 1 line
+
+[New Package] Diggin_Http_Response_Charset
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a4d894c84d188461f54b9ab252108d9d" name="Diggin/Http/Response/Charset/Converter/ConverterAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="fd8f39e3e1b1db0288137751f58dec74" name="Diggin/Http/Response/Charset/Converter/ConverterInterface.php" role="php" />
+   <file baseinstalldir="/" md5sum="eae935088be1894d4b4692cbf000b819" name="Diggin/Http/Response/Charset/Converter/Fixedfrom.php" role="php" />
+   <file baseinstalldir="/" md5sum="4a58ad15294ea1f7a38d47647ef364ce" name="Diggin/Http/Response/Charset/Converter/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="9e7001127852d849a0cd31867a5d584f" name="Diggin/Http/Response/Charset/Detector/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="b841dac5257c1bc3682ea8c6e37ba210" name="Diggin/Http/Response/Charset/Detector/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="4892b426cc7b6afdc3c8c8607f1dbaa0" name="Diggin/Http/Response/Charset/Front/ConvertInterface.php" role="php" />
+   <file baseinstalldir="/" md5sum="72acde9175e01d03b88ef3bffcfe0a87" name="Diggin/Http/Response/Charset/Front/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="bd7a24fdbd530c9f41f70f4cfa53553c" name="Diggin/Http/Response/Charset/Front/UrlRegex.php" role="php" />
+   <file baseinstalldir="/" md5sum="fa47062000f24214b720e45b5db485f3" name="Diggin/Http/Response/Charset/Wrapper/PeclHttpMessage.php" role="php" />
+   <file baseinstalldir="/" md5sum="3b41333383fb6cecaa0d6615864991d1" name="Diggin/Http/Response/Charset/Wrapper/Zf.php" role="php" />
+   <file baseinstalldir="/" md5sum="6c8a42f9a5513d989603783f51f2e78b" name="Diggin/Http/Response/Charset/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="03cfe266b13165345169fde02071df28" name="Diggin/Http/Response/Charset.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.3.3</release>
+    <api>0.3.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-11-24</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+------------------------------------------------------------------------
+r2244 | sasezaki | 2010-11-24 21:30:21 +0900 (水, 24 11月 2010) | 1 line
+
+invalid checking interface
+------------------------------------------------------------------------
+r2229 | sasezaki | 2010-11-05 21:31:07 +0900 (金, 05 11月 2010) | 1 line
+
+crazy inteface checking
+------------------------------------------------------------------------
+r2228 | sasezaki | 2010-11-05 21:07:09 +0900 (金, 05 11月 2010) | 1 line
+
+callback compatible
+------------------------------------------------------------------------
+r2222 | sasezaki | 2010-11-01 20:42:52 +0900 (月, 01 11月 2010) | 1 line
+
+missing, PeclHttpMessage wrapper
+------------------------------------------------------------------------
+r2221 | sasezaki | 2010-11-01 20:40:49 +0900 (月, 01 11月 2010) | 1 line
+
+merged from github
+------------------------------------------------------------------------
+r2202 | sasezaki | 2010-10-28 23:26:53 +0900 (木, 28 10月 2010) | 1 line
+
+remove, oldstyle sandbox
+------------------------------------------------------------------------
+r2201 | sasezaki | 2010-10-28 23:26:21 +0900 (木, 28 10月 2010) | 1 line
+
+remove, oldstyle sandbox
+------------------------------------------------------------------------
+r2200 | sasezaki | 2010-10-28 23:11:15 +0900 (木, 28 10月 2010) | 1 line
+
+Diggin_Http_Response_Charset : add tests
+------------------------------------------------------------------------
+r2199 | sasezaki | 2010-10-28 23:10:03 +0900 (木, 28 10月 2010) | 1 line
+
+using iconv, if not dealing with mbstring
+------------------------------------------------------------------------
+r2173 | sasezaki | 2010-10-08 21:46:25 +0900 (金, 08 10月 2010) | 1 line
+
+add clearCharsetHeaders
+------------------------------------------------------------------------
+r1958 | sasezaki | 2010-07-02 21:40:28 +0900 (金, 02  7月 2010) | 1 line
+
+add Exceptions
+------------------------------------------------------------------------
+r1957 | sasezaki | 2010-07-02 21:37:42 +0900 (金, 02  7月 2010) | 1 line
+
+rename &quot;encode&quot; to &quot;convert&quot;
+------------------------------------------------------------------------
+r1956 | sasezaki | 2010-07-02 21:35:31 +0900 (金, 02  7月 2010) | 1 line
+
+rename &quot;encode&quot; to &quot;convert&quot;
+------------------------------------------------------------------------
+r1955 | sasezaki | 2010-07-02 21:33:52 +0900 (金, 02  7月 2010) | 1 line
+
+delete Encoder
+------------------------------------------------------------------------
+r1954 | sasezaki | 2010-07-02 21:32:29 +0900 (金, 02  7月 2010) | 1 line
+
+-r
+------------------------------------------------------------------------
+r1951 | sasezaki | 2010-07-02 20:43:20 +0900 (金, 02  7月 2010) | 1 line
+
+EncoderAbstract : accept array(), and Encoder_Html:fixed typo
+------------------------------------------------------------------------
+r1931 | sasezaki | 2010-06-27 23:41:56 +0900 (日, 27  6月 2010) | 1 line
+
+oops, missing modify changed-key
+------------------------------------------------------------------------
+r1927 | sasezaki | 2010-06-27 22:53:04 +0900 (日, 27  6月 2010) | 1 line
+
+addEncoder with Zend_Loader
+------------------------------------------------------------------------
+r1926 | sasezaki | 2010-06-27 21:33:24 +0900 (日, 27  6月 2010) | 1 line
+
+change, some-key
+------------------------------------------------------------------------
+r1924 | sasezaki | 2010-06-24 00:23:53 +0900 (木, 24  6月 2010) | 1 line
+
+add return  in addEncoder
+------------------------------------------------------------------------
+r1923 | sasezaki | 2010-06-23 22:26:13 +0900 (水, 23  6月 2010) | 1 line
+
+add LICENSE doc-comment &amp; not static
+------------------------------------------------------------------------
+r1922 | sasezaki | 2010-06-23 21:17:53 +0900 (水, 23  6月 2010) | 1 line
+
+adding. wrapping Response
+------------------------------------------------------------------------
+r1904 | sasezaki | 2010-06-12 01:01:50 +0900 (土, 12  6月 2010) | 1 line
+
+add Encoder Fixedfrom
+------------------------------------------------------------------------
+r1903 | sasezaki | 2010-06-12 01:01:09 +0900 (土, 12  6月 2010) | 1 line
+
+change - default detect list
+------------------------------------------------------------------------
+r1902 | sasezaki | 2010-06-08 23:30:19 +0900 (火, 08  6月 2010) | 1 line
+
+init commit
+------------------------------------------------------------------------
+r1901 | openpear | 2010-06-08 23:29:03 +0900 (火, 08  6月 2010) | 1 line
+
+[New Package] Diggin_Http_Response_Charset
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

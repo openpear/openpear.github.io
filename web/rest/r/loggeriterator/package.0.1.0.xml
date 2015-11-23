@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>LoggerIterator</name>
+ <channel>openpear.org</channel>
+ <summary>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+元のイテレータの全呼び出しを標準出力にログとして出力すること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+* 何の役に立つのか？
+
+- イテレータの挙動の把握
+- イテレータ関連のデバッグ
+
+* 利用例
+
+&gt;||
+&lt;?php
+
+require_once(&apos;LoggerIterator.php&apos;);
+
+$it = new LoggerIterator(new ArrayIterator(array(1,2)));
+foreach ($it as $value) {
+  var_dump($value);
+}
+||&lt;
+
+結果は次のようになります。
+
+&gt;||
+LoggerIterator: ArrayIterator::rewind() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(1)
+int(1)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(2)
+int(2)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(false)
+||&lt;
+
+この形式のforeachだとkey()は呼び出されないことがわかります。
+
+* TODO
+
+様々なログの出力形式に対応するとか。</summary>
+ <description>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+元のイテレータの全呼び出しを標準出力にログとして出力すること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+* 何の役に立つのか？
+
+- イテレータの挙動の把握
+- イテレータ関連のデバッグ
+
+* 利用例
+
+&gt;||
+&lt;?php
+
+require_once(&apos;LoggerIterator.php&apos;);
+
+$it = new LoggerIterator(new ArrayIterator(array(1,2)));
+foreach ($it as $value) {
+  var_dump($value);
+}
+||&lt;
+
+結果は次のようになります。
+
+&gt;||
+LoggerIterator: ArrayIterator::rewind() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(1)
+int(1)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(2)
+int(2)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(false)
+||&lt;
+
+この形式のforeachだとkey()は呼び出されないことがわかります。
+
+* TODO
+
+様々なログの出力形式に対応するとか。</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-24</date>
+ <time>08:49:35</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r878 | hnw | 2009-05-24 08:48:05 -0700 (Sun, 24 May 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9e04efa84b6bd739389e0e767b5c7d64" name="LoggerIterator.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-24</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r878 | hnw | 2009-05-24 08:48:05 -0700 (Sun, 24 May 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_memorycleaner">Wozozo_MemoryCleaner</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>halt</m>
+    <s>実行すると、メモリ使用量を減らす事ができる画期的なパッケージ。
+
+require_once 'Wozozo/MemoryClean.php';
+
+// example
+$data = array();
+foreach (range(0, strlen(__FILE__)) as $no_use) {
+    $data[] = file_get_contents(__FILE__);
+}
+
+echo 'before memory usage:' . memory_get_usage() . 'byte' . PHP_EOL;
+
+$wozozo = new Wozozo_MemoryCleaner();
+
+echo 'after memory usage:' . memory_get_usage() . 'byte' . PHP_EOL;</s>
+    <d>実行すると、メモリ使用量を減らす事ができる画期的なパッケージ。
+
+require_once 'Wozozo/MemoryClean.php';
+
+// example
+$data = array();
+foreach (range(0, strlen(__FILE__)) as $no_use) {
+    $data[] = file_get_contents(__FILE__);
+}
+
+echo 'before memory usage:' . memory_get_usage() . 'byte' . PHP_EOL;
+
+$wozozo = new Wozozo_MemoryCleaner();
+
+echo 'after memory usage:' . memory_get_usage() . 'byte' . PHP_EOL;</d>
+    <da>2009-09-30 22:26:02</da>
+    <n>
+------------------------------------------------------------------------
+r1228 | halt | 2009-09-30 22:25:30 +0900 (水, 30  9月 2009) | 1 line
+
+rename
+------------------------------------------------------------------------
+r1227 | halt | 2009-09-30 22:25:03 +0900 (水, 30  9月 2009) | 1 line
+
+rename
+------------------------------------------------------------------------
+r1226 | halt | 2009-09-30 22:24:41 +0900 (水, 30  9月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1225 | openpear | 2009-09-30 22:24:02 +0900 (水, 30  9月 2009) | 1 line
+
+[New Package] Wozozo_MemoryCleaner
+------------------------------------------------------------------------
+ </n>
+    <f>1331</f>
+    <g>http://openpear.org/get/Wozozo_MemoryCleaner-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

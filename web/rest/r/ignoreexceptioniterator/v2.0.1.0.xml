@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/ignoreexceptioniterator">IgnoreExceptionIterator</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.1.0</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>hnw</m>
+    <s>IgnoreExceptionIteratorは、SPLのイテレータで例外が発生しても無視するようなイテレータです。
+
+引数のイテレータ内の例外をcatchし、何もせずに破棄します。
+
+致命的な例外が発生しないとわかっている場合に、例外の破棄を簡潔に記述できます。
+
+とはいえ例外が発生したことに気づけなくなるのは危険なので、[http://openpear.org/package/LoggerIterator:title=LoggerIterator]などと組み合わせて使うのが良いと思います。
+
+一度例外を発生させたイテレータはエラー状態にあるとみなし、その後のメソッド呼び出しについては、本来のイテレータのメソッド呼び出しをしません。単に、valid()はfalseを、他のメソッドはnullを返します。
+
+
+* 動作例
+
+&gt;||
+&lt;?php
+require_once('IgnoreExceptionIterator.php');
+
+$it = new IgnoreExceptionIterator(new EmptyIterator());
+$it-&gt;current(); // returns null
+
+$it = new EmptyIterator();
+$it-&gt;current(); // throws exception
+||&lt;
+
+
+* ソースコード
+
+[http://openpear.org/repository/IgnoreExceptionIterator/trunk/src/IgnoreExceptionIterator.php]</s>
+    <d>IgnoreExceptionIteratorは、SPLのイテレータで例外が発生しても無視するようなイテレータです。
+
+引数のイテレータ内の例外をcatchし、何もせずに破棄します。
+
+致命的な例外が発生しないとわかっている場合に、例外の破棄を簡潔に記述できます。
+
+とはいえ例外が発生したことに気づけなくなるのは危険なので、[http://openpear.org/package/LoggerIterator:title=LoggerIterator]などと組み合わせて使うのが良いと思います。
+
+一度例外を発生させたイテレータはエラー状態にあるとみなし、その後のメソッド呼び出しについては、本来のイテレータのメソッド呼び出しをしません。単に、valid()はfalseを、他のメソッドはnullを返します。
+
+
+* 動作例
+
+&gt;||
+&lt;?php
+require_once('IgnoreExceptionIterator.php');
+
+$it = new IgnoreExceptionIterator(new EmptyIterator());
+$it-&gt;current(); // returns null
+
+$it = new EmptyIterator();
+$it-&gt;current(); // throws exception
+||&lt;
+
+
+* ソースコード
+
+[http://openpear.org/repository/IgnoreExceptionIterator/trunk/src/IgnoreExceptionIterator.php]</d>
+    <da>2009-05-31 17:37:34</da>
+    <n>------------------------------------------------------------------------
+r894 | hnw | 2009-05-31 17:34:02 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</n>
+    <f>1559</f>
+    <g>http://openpear.org/get/IgnoreExceptionIterator-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

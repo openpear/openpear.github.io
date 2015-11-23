@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin</name>
+ <channel>openpear.org</channel>
+ <summary>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。[http://diggin.musicrider.com/manual/ja/diggin.scraper.html:title=せつめい]
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+*Diggin_Http_CookieJar_Loader_Firefox3
+Firefox3で使われているクッキーをZend_Http_CookieJarとしてぶっこぬきます。
+
+……あとのコンポーネントの説明はめんどくさいので割愛
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。
+
+0.5系は↓から落とせます。
+http://code.google.com/p/diggin/downloads/list</summary>
+ <description>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。[http://diggin.musicrider.com/manual/ja/diggin.scraper.html:title=せつめい]
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+*Diggin_Http_CookieJar_Loader_Firefox3
+Firefox3で使われているクッキーをZend_Http_CookieJarとしてぶっこぬきます。
+
+……あとのコンポーネントの説明はめんどくさいので割愛
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。
+
+0.5系は↓から落とせます。
+http://code.google.com/p/diggin/downloads/list</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-21</date>
+ <time>12:13:16</time>
+ <version>
+  <release>0.6.7</release>
+  <api>0.6.7</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://diggin.musicrider.com/LICENSE">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r827 | sasezaki | 2009-05-15 23:33:14 -0700 (Fri, 15 May 2009) | 1 line
+
+?\227?\131?\161?\227?\130?\164?\227?\131?\179?\227?\131?\170?\227?\131?\157(googlecode?\229?\129?\180)?\227?\129?\167?\227?\129?\174?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\230?\167?\139?\230?\136?\144?\229?\164?\137?\230?\155?\180?\227?\129?\171?\228?\188?\180?\227?\129?\132
+------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 05:55:29 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\229?\191?\131?\227?\129?\175?\239?\188?\147?\239?\188?\144?\227?\129?\171?\227?\129?\170?\227?\129?\163?\227?\129?\166?\227?\130?\130?\227?\130?\170?\227?\131?\170?\227?\131?\188?\227?\131?\150?\229?\176?\145?\229?\165?\179?\227?\129?\160?\227?\129?\139?\227?\130?\137?\227?\129?\132?\227?\129?\132?\227?\129?\139
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 05:38:25 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\230?\156?\172?\231?\149?\170?\227?\129?\167?\229?\139?\149?\228?\189?\156?\231?\162?\186?\232?\170?\141?\227?\129?\153?\227?\130?\139?\231?\148?\183?\227?\129?\174?\228?\186?\186?\227?\129?\163?\227?\129?\166
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="0be618ee9e8c77da0a596a75f660d76b" name="Diggin/CDDB/Application/CDex.php" role="php" />
+   <file baseinstalldir="/" md5sum="c8906f93e19ac5fdea7fd6bed959056d" name="Diggin/CDDB/Application/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="2bb14aca83031c39c1a1cd10dba89a80" name="Diggin/CDDB/Disc/Decoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="a06f264393d4d0c67de1a1ded458cfbf" name="Diggin/CDDB/Disc/Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="f285c3fd15765800e2a4d8a99ef0e8a0" name="Diggin/CDDB/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="0b318f4f37875743de9daeac8742e63a" name="Diggin/Console/Wizard.php" role="php" />
+   <file baseinstalldir="/" md5sum="10373583258207e8698b5d5e46d52d51" name="Diggin/Felica/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a629cfe86756708aef19358b33fed8c" name="Diggin/Felica/Adapter/Sfcpeep.php" role="php" />
+   <file baseinstalldir="/" md5sum="00d4dad1dfba85894b1d4f8e922f21dd" name="Diggin/Felica/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="9193ac454d180ab87157953cce675657" name="Diggin/File/ZeroThreeNavi.php" role="php" />
+   <file baseinstalldir="/" md5sum="31d289fde622b818f7ba87c9912c9e85" name="Diggin/Http/Client/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="d96b6a08d0d7346dfa035322a3ac7ed5" name="Diggin/Http/Client/Adapter/TestPlus.php" role="php" />
+   <file baseinstalldir="/" md5sum="4b481d1196b391ae59a0d529b6c71e5e" name="Diggin/Http/Client/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="1bb6cc353eb406e2970cb53e9cc91ee5" name="Diggin/Http/CookieJar/Loader/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="374216e771bfab5681117a365c7558a9" name="Diggin/Http/CookieJar/Loader/Firefox3.php" role="php" />
+   <file baseinstalldir="/" md5sum="111e03caa5bfb85b9fb3367c7683369f" name="Diggin/Http/CookieJar/Loader/Interface.php" role="php" />
+   <file baseinstalldir="/" md5sum="e966a46edf8be1325c8cb48081f52cd0" name="Diggin/Http/CookieJar/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="1889e2f40b639141ece269829a9587e4" name="Diggin/Http/CookieJar/Loader.php" role="php" />
+   <file baseinstalldir="/" md5sum="13979a89916dcee040c00bcb607b3f18" name="Diggin/Http/Response/Encoding/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="101afb8e54e9d34fdd7c02ebc96d7170" name="Diggin/Http/Response/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="2bc0f12a32a1f09e47540514869a5391" name="Diggin/Http/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="da9e222f573f7f3a098db5bbf6a3cb0e" name="Diggin/Json/Expr/Webscraperjs.php" role="php" />
+   <file baseinstalldir="/" md5sum="da7bb4d620bba3ab1881d76017bbdab7" name="Diggin/Scraper/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="da5e9b4963da69c0785acb7e4eb1ce99" name="Diggin/Scraper/Adapter/Interface.php" role="php" />
+   <file baseinstalldir="/" md5sum="c65b6422b0b570dc18b0dd454b665d00" name="Diggin/Scraper/Adapter/Loadhtml.php" role="php" />
+   <file baseinstalldir="/" md5sum="c542d76d405b1fdca4c22ed7a6c1648b" name="Diggin/Scraper/Adapter/Normal.php" role="php" />
+   <file baseinstalldir="/" md5sum="f78d51f85274a32c2559ccca4e5fc8b6" name="Diggin/Scraper/Adapter/SimplexmlAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="ab72ed6b857e86cbd4e5d81825484293" name="Diggin/Scraper/Adapter/StringAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="ed9d8d4a1437c6b47ec9b34735bc406d" name="Diggin/Scraper/Filter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="07d5fb6ac86b403660f516e57573d942" name="Diggin/Scraper/Filter/Iterator.php" role="php" />
+   <file baseinstalldir="/" md5sum="f98e64fc26764e5edf6daf16fb5f130b" name="Diggin/Scraper/Helper/Simplexml/Autodiscovery.php" role="php" />
+   <file baseinstalldir="/" md5sum="1114f2985d481ef72a70afd06a07ba6c" name="Diggin/Scraper/Helper/Simplexml/HeadBaseHref.php" role="php" />
+   <file baseinstalldir="/" md5sum="fd303b2871c2cf266a8ea5c028216e7a" name="Diggin/Scraper/Helper/Simplexml/Pagerize.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b906a8ba8ec915dee67ed49b8493aa4" name="Diggin/Scraper/Helper/Simplexml/SimplexmlAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="62b119c7a84aa586004945170494f295" name="Diggin/Scraper/Helper/Simplexml/Title.php" role="php" />
+   <file baseinstalldir="/" md5sum="1ecefa8b4a4800a509c2095de861ce89" name="Diggin/Scraper/Helper/HelperAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="ad24578d6f194d18977033dfecb41e4c" name="Diggin/Scraper/Process/Aggregate.php" role="php" />
+   <file baseinstalldir="/" md5sum="6f822e95852321c287f99b56084a7add" name="Diggin/Scraper/Process/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="a95dadc5b8fe72627853231ce984e3af" name="Diggin/Scraper/Strategy/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c29e71ad04f1878de6b3a3ca50f80ba" name="Diggin/Scraper/Strategy/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="f8000443a1a91a2c840897bfd371e37b" name="Diggin/Scraper/Strategy/Flexible.php" role="php" />
+   <file baseinstalldir="/" md5sum="d73eddeba828e6be922f3430ba8b78b8" name="Diggin/Scraper/Strategy/Preg.php" role="php" />
+   <file baseinstalldir="/" md5sum="6949ed7539a8f4973a8c2d8256b6b5b5" name="Diggin/Scraper/Strategy/SimpleTag.php" role="php" />
+   <file baseinstalldir="/" md5sum="aefbc4bccc1fafa29c061f00a57fe87c" name="Diggin/Scraper/Context.php" role="php" />
+   <file baseinstalldir="/" md5sum="8dc4745ba64e972b60182dbe56961f16" name="Diggin/Scraper/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="9044b1f6e31e99a61643eab7443ed6f5" name="Diggin/Scraper/Filter.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9b0aac0e8eee5ba215000717771c513" name="Diggin/Scraper/Process.php" role="php" />
+   <file baseinstalldir="/" md5sum="6ee8d06da53c122a42c78f9493e5bacc" name="Diggin/Service/Tumblr/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="cbbf400fc6f7c55d305dd629a489ac7b" name="Diggin/Service/Tumblr/Read.php" role="php" />
+   <file baseinstalldir="/" md5sum="3f9478eb725e5a749c0bda1c9ee75267" name="Diggin/Service/Tumblr/Write.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf094a9bde983303f1fc2fbbb9918e6f" name="Diggin/Service/Eventcast.php" role="php" />
+   <file baseinstalldir="/" md5sum="dd7c52d89f396fad594ed1a84030635c" name="Diggin/Service/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="4cd8e8589b5758733482e72bb1b82680" name="Diggin/Service/Wedata.php" role="php" />
+   <file baseinstalldir="/" md5sum="263544aea59c6e5bb7ca507c256e60b5" name="Diggin/Uri/Http.php" role="php" />
+   <file baseinstalldir="/" md5sum="5be8129cbd75c613ff3a65faaa8bccda" name="Diggin/Debug.php" role="php" />
+   <file baseinstalldir="/" md5sum="e4cde6a09a2c1f518605dd7dafad4819" name="Diggin/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="b0e398d14931facbc9174461c097f71a" name="Diggin/Scraper.php" role="php" />
+   <file baseinstalldir="/" md5sum="ed9e6bcfab00c4bc69bddab99a3373c1" name="Diggin/Version.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Diggin_Scraper_Adapter_Htmlscraping</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.6.7</release>
+    <api>0.6.7</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-06-21</date>
+   <license uri="http://diggin.musicrider.com/LICENSE">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r827 | sasezaki | 2009-05-15 23:33:14 -0700 (Fri, 15 May 2009) | 1 line
+
+?\227?\131?\161?\227?\130?\164?\227?\131?\179?\227?\131?\170?\227?\131?\157(googlecode?\229?\129?\180)?\227?\129?\167?\227?\129?\174?\227?\131?\135?\227?\130?\163?\227?\131?\172?\227?\130?\175?\227?\131?\136?\227?\131?\170?\230?\167?\139?\230?\136?\144?\229?\164?\137?\230?\155?\180?\227?\129?\171?\228?\188?\180?\227?\129?\132
+------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 05:55:29 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\229?\191?\131?\227?\129?\175?\239?\188?\147?\239?\188?\144?\227?\129?\171?\227?\129?\170?\227?\129?\163?\227?\129?\166?\227?\130?\130?\227?\130?\170?\227?\131?\170?\227?\131?\188?\227?\131?\150?\229?\176?\145?\229?\165?\179?\227?\129?\160?\227?\129?\139?\227?\130?\137?\227?\129?\132?\227?\129?\132?\227?\129?\139
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 05:38:25 -0800 (Wed, 04 Mar 2009) | 1 line
+
+?\230?\156?\172?\231?\149?\170?\227?\129?\167?\229?\139?\149?\228?\189?\156?\231?\162?\186?\232?\170?\141?\227?\129?\153?\227?\130?\139?\231?\148?\183?\227?\129?\174?\228?\186?\186?\227?\129?\163?\227?\129?\166
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

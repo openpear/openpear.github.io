@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/wozozo_pathinfo">Wozozo_Pathinfo</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>PATH_INFOを配列にへんかーん</s>
+    <d>PATH_INFOを配列にへんかーん</d>
+    <da>2009-10-05 16:36:05</da>
+    <n>
+initial release.
+ </n>
+    <f>1247</f>
+    <g>http://openpear.org/get/Wozozo_Pathinfo-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

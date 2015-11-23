@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/net_pocketbell">Net_Pocketbell</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>ketaiorg</m>
+    <s>ポケベル打ちの数値とカナの変換ライブラリ</s>
+    <d>ポケベル打ちの数値とカナの変換ライブラリ</d>
+    <da>2009-04-17 23:51:39</da>
+    <n>------------------------------------------------------------------------
+r705 | ketaiorg | 2009-04-17 23:50:23 -0700 (Fri, 17 Apr 2009) | 2 lines
+
+version 0.1 release
+
+------------------------------------------------------------------------
+r674 | openpear | 2009-04-17 21:34:45 -0700 (Fri, 17 Apr 2009) | 1 line
+
+[Create Base Directory] Net_Pocketbell
+------------------------------------------------------------------------</n>
+    <f>2367</f>
+    <g>http://openpear.org/get/Net_Pocketbell-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

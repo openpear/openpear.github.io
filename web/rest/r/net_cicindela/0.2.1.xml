@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/net_cicindela">Net_Cicindela</p>
+    <c>openpear.org</c>
+    <v>0.2.1</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>MugeSo</m>
+    <s>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</s>
+    <d>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</d>
+    <da>2009-08-20 14:35:21</da>
+    <n>
+- ユーザエージェントを修正
+- リクエスト中のクエリストリング区切り文字がarg_separator.outputに左右されないように修正
+ </n>
+    <f>3196</f>
+    <g>http://openpear.org/get/Net_Cicindela-0.2.1</g>
+    <x xlink:href="package.0.2.1.xml"/>
+</r>

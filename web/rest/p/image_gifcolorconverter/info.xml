@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Image_GifColorConverter</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT License</l>
+<s>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+gifのカラーテーブルを書き換えるだけなので軽い(はず)。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put('0.gif', '0_converted.gif', array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put('1.gif', '1_converted.gif', array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</s>
+<d>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+gifのカラーテーブルを書き換えるだけなので軽い(はず)。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put('0.gif', '0_converted.gif', array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put('1.gif', '1_converted.gif', array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</d>
+<r xlink:href="/rest/r/image_gifcolorconverter" />
+</p>

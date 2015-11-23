@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/net_url_dispatcher">Net_URL_Dispatcher</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <st>beta</st>
+    <l>New BSD License</l>
+    <m>heavenshell</m>
+    <s>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</s>
+    <d>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</d>
+    <da>2009-01-10 06:47:26</da>
+    <n>------------------------------------------------------------------------
+r334 | heavenshell | 2009-01-10 05:52:44 -0800 (Sat, 10 Jan 2009) | 1 line
+
+Modify header comment
+------------------------------------------------------------------------
+r322 | heavenshell | 2009-01-07 05:31:48 -0800 (Wed, 07 Jan 2009) | 1 line
+
+add __call
+------------------------------------------------------------------------
+r306 | heavenshell | 2009-01-03 00:31:49 -0800 (Sat, 03 Jan 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------</n>
+    <f>5523</f>
+    <g>http://openpear.org/get/Net_URL_Dispatcher-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

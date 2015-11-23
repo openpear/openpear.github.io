@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Calil</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>BSD License</l>
+<s>図書館APIを叩くライブラリ
+
+[http://blog.calil.jp/p/api.html]</s>
+<d>図書館APIを叩くライブラリ
+
+[http://blog.calil.jp/p/api.html]</d>
+<r xlink:href="/rest/r/services_calil" />
+</p>

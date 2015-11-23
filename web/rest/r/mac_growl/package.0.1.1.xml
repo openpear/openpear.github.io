@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Mac_Growl</name>
+ <channel>openpear.org</channel>
+ <summary>AppleScript経由で[http://growl.info/:title=Growl]通知する。
+ネットワーク越しの通知をしたい場合や[http://www.growlforwindows.com/gfw/:title=Growl for Windows]に通知したい場合は[http://pear.php.net/package/Net_Growl/:title= Net_Growl]で。
+
+[http://openpear.org/package/Mac_AppleScript:title= Mac_AppleScript]に依存します。</summary>
+ <description>AppleScript経由で[http://growl.info/:title=Growl]通知する。
+ネットワーク越しの通知をしたい場合や[http://www.growlforwindows.com/gfw/:title=Growl for Windows]に通知したい場合は[http://pear.php.net/package/Net_Growl/:title= Net_Growl]で。
+
+[http://openpear.org/package/Mac_AppleScript:title= Mac_AppleScript]に依存します。</description>
+ <lead>
+  <name>Ryusuke SEKIYAMA</name>
+  <user>rsk</user>
+  <email>rsky0711@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-01</date>
+ <time>18:43:03</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+ <notes>
+パッケージ依存関係を修正。(channel:openpear -&gt; channel:openpear.org)
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="1a382554b5b76b6bee6089cb0524adc4" name="examples/icon.png" role="doc" />
+   <file baseinstalldir="/" md5sum="22b49ea9847a85e0ef96522d79a9a118" name="examples/sample1.php" role="doc" />
+   <file baseinstalldir="/" md5sum="534737f86c4dd3c11557c460273ca788" name="examples/sample2.php" role="doc" />
+   <file baseinstalldir="/" md5sum="4933eb4213d65f3948502b40893155b5" name="Mac/Growl.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Mac_AppleScript</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-10-01</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+   <notes>
+パッケージ依存関係を修正。(channel:openpear -&gt; channel:openpear.org)
+   </notes>
+  </release>
+ </changelog>
+</package>

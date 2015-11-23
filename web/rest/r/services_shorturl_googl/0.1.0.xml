@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_shorturl_googl">Services_ShortURL_Googl</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>shimooka</m>
+    <s>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</s>
+    <d>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。  とりあえずのアナウンスは、はてダを参照してください。      http://d.hatena.ne.jp/shimooka/20091218/12610..</d>
+    <da>2009-12-17 18:43:02</da>
+    <n>
+------------------------------------------------------------------------
+r1462 | shimooka | 2009-12-17 18:41:46 +0900 (木, 17 12月 2009) | 1 line
+
+- fixed directories
+------------------------------------------------------------------------
+r1458 | shimooka | 2009-12-17 18:21:25 +0900 (木, 17 12月 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r1457 | openpear | 2009-12-17 17:33:03 +0900 (木, 17 12月 2009) | 1 line
+
+[New Package] Services_ShortURL_Googl
+------------------------------------------------------------------------
+ </n>
+    <f>3856</f>
+    <g>http://openpear.org/get/Services_ShortURL_Googl-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_foursquare">Services_Foursquare</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <st>alpha</st>
+    <l>MIT</l>
+    <m>isamu</m>
+    <s>Services_Foursquare
+
+Implementation of foursquare API
+
+main repository is [https://github.com/isamu/php-foursquare]
+
+FoursquareのAPIのライブラリです。</s>
+    <d>Services_Foursquare
+
+Implementation of foursquare API
+
+main repository is [https://github.com/isamu/php-foursquare]
+
+FoursquareのAPIのライブラリです。</d>
+    <da>2010-11-26 10:15:02</da>
+    <n>
+------------------------------------------------------------------------
+r2262 | isamu | 2010-11-26 09:54:15 +0900 (金, 26 11月 2010) | 2 lines
+
+remove package2.xml
+
+------------------------------------------------------------------------
+r2261 | isamu | 2010-11-26 09:53:54 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2260 | isamu | 2010-11-26 09:51:35 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2259 | isamu | 2010-11-26 09:50:58 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2257 | isamu | 2010-11-26 09:38:20 +0900 (金, 26 11月 2010) | 2 lines
+
+first commit
+
+------------------------------------------------------------------------
+r2256 | openpear | 2010-11-26 09:25:02 +0900 (金, 26 11月 2010) | 1 line
+
+[New Package] Services_Foursquare
+------------------------------------------------------------------------
+ </n>
+    <f>2006</f>
+    <g>http://openpear.org/get/Services_Foursquare-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

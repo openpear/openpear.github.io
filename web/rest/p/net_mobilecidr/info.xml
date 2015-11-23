@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Net_MobileCIDR</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT</l>
+<s>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DOCOMO);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DOCOMO,SOFTBANK,EZWEB,WILLCOM,EMOBILE
+
+ご利用は計画的に。
+
+修正点：
+12/26　Willcomのアドレスが間違ってたっぽいので修正
+12/19　コードを短く＆紛らわしいのでconstを大文字表記に統一</s>
+<d>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DOCOMO);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DOCOMO,SOFTBANK,EZWEB,WILLCOM,EMOBILE
+
+ご利用は計画的に。
+
+修正点：
+12/26　Willcomのアドレスが間違ってたっぽいので修正
+12/19　コードを短く＆紛らわしいのでconstを大文字表記に統一</d>
+<r xlink:href="/rest/r/net_mobilecidr" />
+</p>

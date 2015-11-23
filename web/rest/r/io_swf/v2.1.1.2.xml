@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/io_swf">IO_SWF</p>
+    <c>openpear.org</c>
+    <v>1.1.2</v>
+    <a>1.1.2</a>
+    <mp>4.0.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>yoya</m>
+    <s>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</s>
+    <d>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</d>
+    <da>2011-02-04 22:35:05</da>
+    <n>
+SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。
+ </n>
+    <f>11993</f>
+    <g>http://openpear.org/get/IO_SWF-1.1.2</g>
+    <x xlink:href="package.1.1.2.xml"/>
+</r>

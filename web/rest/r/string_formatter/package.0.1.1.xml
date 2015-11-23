@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>String_Formatter</name>
+ <channel>openpear.org</channel>
+ <summary>ワタシが比較的管理しやすい文字列のフォーマットを行います。
+
+
+ArrayAccessを実装しているので文字列中のプレースホルダ
+に配列のようにアクセスすることができます。
+
+
+プレースホルダはリファレンスで設定してあります。
+
+
+$fmt = new StringFormatter();
+// Default left delimiter is &quot;[:&quot;
+// Default right delimiter is &quot;:]&quot;
+// Default internal delimiter is &quot;&quot;. 文字列に &quot;&quot; は入れないでね。
+// You can change delimiter.
+// $fmt-&gt;setConfig(&quot;ldelimiter&quot;,&quot;&lt;?&quot;);
+// $fmt-&gt;setConfig(&quot;rdelimiter&quot;,&quot;?&gt;&quot;);
+// $fmt-&gt;setConfig(&quot;delimiter&quot;,&quot;,&quot;); //内部の区切り文字列を変更することもできます。
+
+
+$stmt = $fmt-&gt;prepare(&quot;[:target:] is very [:saywhat:]n&quot;);
+// 引数はいくつでも受け取れます。toString()時にそのまま連結されて出力されます。
+// $fmt-prepare(&quot;[:moe1:]&quot;,&quot;[:moe2:]&quot;,&quot;[:moe3:]&quot;);
+
+
+$stmt[&quot;target&quot;] = &quot;PHP&quot;;
+$stmt[&quot;saywhat&quot;] = &quot;usefull!&quot;;
+
+
+echo $stmt-&gt;toString();
+// PHP is very usefull!
+
+
+openpearの使い方を見るためのテスト。すげぇｗｗちゃんとパッケージングされてるｗｗｗ</summary>
+ <description>ワタシが比較的管理しやすい文字列のフォーマットを行います。
+
+
+ArrayAccessを実装しているので文字列中のプレースホルダ
+に配列のようにアクセスすることができます。
+
+
+プレースホルダはリファレンスで設定してあります。
+
+
+$fmt = new StringFormatter();
+// Default left delimiter is &quot;[:&quot;
+// Default right delimiter is &quot;:]&quot;
+// Default internal delimiter is &quot;&quot;. 文字列に &quot;&quot; は入れないでね。
+// You can change delimiter.
+// $fmt-&gt;setConfig(&quot;ldelimiter&quot;,&quot;&lt;?&quot;);
+// $fmt-&gt;setConfig(&quot;rdelimiter&quot;,&quot;?&gt;&quot;);
+// $fmt-&gt;setConfig(&quot;delimiter&quot;,&quot;,&quot;); //内部の区切り文字列を変更することもできます。
+
+
+$stmt = $fmt-&gt;prepare(&quot;[:target:] is very [:saywhat:]n&quot;);
+// 引数はいくつでも受け取れます。toString()時にそのまま連結されて出力されます。
+// $fmt-prepare(&quot;[:moe1:]&quot;,&quot;[:moe2:]&quot;,&quot;[:moe3:]&quot;);
+
+
+$stmt[&quot;target&quot;] = &quot;PHP&quot;;
+$stmt[&quot;saywhat&quot;] = &quot;usefull!&quot;;
+
+
+echo $stmt-&gt;toString();
+// PHP is very usefull!
+
+
+openpearの使い方を見るためのテスト。すげぇｗｗちゃんとパッケージングされてるｗｗｗ</description>
+ <lead>
+  <name>chobie</name>
+  <user>shuheitanuma</user>
+  <email>shuhei.tanuma@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-07</date>
+ <time>12:14:31</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r68 | shuheitanuma | 2008-11-07 11:56:56 -0800 (Fri, 07 Nov 2008) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r67 | openpear | 2008-11-07 11:51:22 -0800 (Fri, 07 Nov 2008) | 1 line
+
+[Create Base Directory] String_Formatter
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/String" name="/">
+   <file baseinstalldir="/String" md5sum="4725584686f5053077934e25fa317f80" name="String_Formatter.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-11-07</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r68 | shuheitanuma | 2008-11-07 11:56:56 -0800 (Fri, 07 Nov 2008) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r67 | openpear | 2008-11-07 11:51:22 -0800 (Fri, 07 Nov 2008) | 1 line
+
+[Create Base Directory] String_Formatter
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

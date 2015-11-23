@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Acme_Hyde</name>
+ <channel>openpear.org</channel>
+ <summary>Acme_Hyde - Hyde Calculator
+[http://search.cpan.org/~nozzzzz/Acme-Hyde-0.04/]</summary>
+ <description>Acme_Hyde - Hyde Calculator
+[http://search.cpan.org/~nozzzzz/Acme-Hyde-0.04/]</description>
+ <lead>
+  <name>Keisuke SATO</name>
+  <user>riaf</user>
+  <email>riaf@nequal.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-02</date>
+ <time>06:50:31</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r43 | riaf | 2008-11-02 06:02:25 -0800 (Sun, 02 Nov 2008) | 3 lines
+
+post-commit ?\227?\129?\140?\227?\131?\144?\227?\130?\176?\227?\129?\163?\227?\129?\166?\227?\130?\139?\230?\176?\151?\227?\129?\140?\227?\129?\153?\227?\130?\139?\227?\128?\130
+?\227?\129?\159?\227?\129?\132?\227?\129?\184?\227?\130?\147?\227?\129?\160?\239?\188?\129
+
+------------------------------------------------------------------------
+r40 | riaf | 2008-11-02 05:51:23 -0800 (Sun, 02 Nov 2008) | 1 line
+
+?\229?\141?\152?\228?\189?\141
+------------------------------------------------------------------------
+r37 | riaf | 2008-11-02 05:42:37 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+added Hyde.php
+
+------------------------------------------------------------------------
+r36 | openpear | 2008-11-02 05:36:41 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Acme_Hyde
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Acme" name="/">
+   <file baseinstalldir="/Acme" md5sum="3d42471f31a308b1cf76cd661f2d1dd4" name="Hyde.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-11-02</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r43 | riaf | 2008-11-02 06:02:25 -0800 (Sun, 02 Nov 2008) | 3 lines
+
+post-commit ?\227?\129?\140?\227?\131?\144?\227?\130?\176?\227?\129?\163?\227?\129?\166?\227?\130?\139?\230?\176?\151?\227?\129?\140?\227?\129?\153?\227?\130?\139?\227?\128?\130
+?\227?\129?\159?\227?\129?\132?\227?\129?\184?\227?\130?\147?\227?\129?\160?\239?\188?\129
+
+------------------------------------------------------------------------
+r40 | riaf | 2008-11-02 05:51:23 -0800 (Sun, 02 Nov 2008) | 1 line
+
+?\229?\141?\152?\228?\189?\141
+------------------------------------------------------------------------
+r37 | riaf | 2008-11-02 05:42:37 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+added Hyde.php
+
+------------------------------------------------------------------------
+r36 | openpear | 2008-11-02 05:36:41 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Acme_Hyde
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

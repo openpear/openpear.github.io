@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Net_TokyoTyrant</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT</l>
+<s>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</s>
+<d>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</d>
+<r xlink:href="/rest/r/net_tokyotyrant" />
+</p>

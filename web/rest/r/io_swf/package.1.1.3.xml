@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>IO_SWF</name>
+ <channel>openpear.org</channel>
+ <summary>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</summary>
+ <description>SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-02-05</date>
+ <time>23:44:02</time>
+ <version>
+  <release>1.1.3</release>
+  <api>1.1.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="e5441a5b0029569c7d06a1010b60184a" name="IO/SWF/Dumper.php" role="php" />
+   <file baseinstalldir="." md5sum="9d2eb5ef7fb502160f91c6109bb124d6" name="IO/SWF/Editor.php" role="php" />
+   <file baseinstalldir="." md5sum="75cb55b72fe6e69c67d5cad4efcf67b5" name="IO/SWF/Former.php" role="php" />
+   <file baseinstalldir="." md5sum="1d8f1558b66f52d136d6ec5aa7591b57" name="IO/SWF/JPEG.php" role="php" />
+   <file baseinstalldir="." md5sum="59b1b39508983b50f9be71ec8fd92fe9" name="IO/SWF/Shape.php" role="php" />
+   <file baseinstalldir="." md5sum="6580d3b9538cea28ee7c5db57988f29a" name="IO/SWF/Type.php" role="php" />
+   <file baseinstalldir="." md5sum="05660745518a83f85ccd00dd0ac33f96" name="IO/SWF.php" role="php" />
+   <file baseinstalldir="." md5sum="bbdb614a0e1a73ba9611c2dd2f7098f5" name="sample/jpeg_dump.php" role="php" />
+   <file baseinstalldir="." md5sum="b7abce5187e1a336c11f4eefad278d00" name="sample/swfcopy.php" role="php" />
+   <file baseinstalldir="." md5sum="d17ad2cdbf4af57a2e0e9a5971e2500a" name="sample/swfdeformeshape.php" role="php" />
+   <file baseinstalldir="." md5sum="bf173d55674ed650a31b114bba223fc0" name="sample/swfdump.php" role="php" />
+   <file baseinstalldir="." md5sum="1116bb11dae7a8297287bac197ecdf87" name="sample/swfreplacegif.php" role="php" />
+   <file baseinstalldir="." md5sum="31ad783e712e92529b5fbb46f014ed51" name="sample/swfreplacejpeg.php" role="php" />
+   <file baseinstalldir="." md5sum="52618c5e5bbf1d63abc025aef5898bcd" name="sample/swfreplacepng.php" role="php" />
+   <file baseinstalldir="." md5sum="3d65b9414c74aac3c930fd6225603694" name="sample/swfsetbgcolor.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.1</min>
+   </pearinstaller>
+  </required>
+  <optional>
+   <package>
+    <name>IO_Bit</name>
+    <channel>openpear.org</channel>
+    <min>1.1.0</min>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.1.3</release>
+    <api>1.1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-02-05</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+SWF バイナリを解釈/編集する為のライブラリです。  IO_Bit が必要です。主に Flash Lite を対象にしています。
+   </notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/web_sessionsecurity">Web_SessionSecurity</p>
+    <c>openpear.org</c>
+    <v>0.5.0</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>sakamoto</m>
+    <s>SessionAdoptionやSessionハイジャックをブロックする為のライブラリです。
+これは、SessionAdoptionをブロックする為、一度、セッションの値を初期化します。
+
+Sessionハイジャックを検知したい場合は、
+Web_SessionSecurity::getAlert()で知ることができます。
+知った後の処理は、Webアプリへ委譲します。
+
+また、アラートを取り消したい場合は、Web_SessionSecurity::clearAlert()を呼び出してください。</s>
+    <d>SessionAdoptionやSessionハイジャックをブロックする為のライブラリです。
+これは、SessionAdoptionをブロックする為、一度、セッションの値を初期化します。
+
+Sessionハイジャックを検知したい場合は、
+Web_SessionSecurity::getAlert()で知ることができます。
+知った後の処理は、Webアプリへ委譲します。
+
+また、アラートを取り消したい場合は、Web_SessionSecurity::clearAlert()を呼び出してください。</d>
+    <da>2009-01-29 07:35:34</da>
+    <n>------------------------------------------------------------------------
+r374 | sakamoto | 2009-01-29 07:25:13 -0800 (Thu, 29 Jan 2009) | 2 lines
+
+First release
+
+------------------------------------------------------------------------</n>
+    <f>2659</f>
+    <g>http://openpear.org/get/Web_SessionSecurity-0.5.0</g>
+    <x xlink:href="package.0.5.0.xml"/>
+</r>

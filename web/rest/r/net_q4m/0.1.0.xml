@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/net_q4m">Net_Q4M</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>beta</st>
+    <l>The MIT Licence</l>
+    <m>castor</m>
+    <s>*Summary
+
+Provides interface to Q4M(Queue for MySQL).
+[http://q4m.31tools.com/]
+
+*License
+
+The MIT License
+[http://opensource.org/licenses/mit-license.html]
+
+*Usage
+
+&gt;||
+$queue = new Net_Q4M();
+$queue-&gt;connect('mysql://user:pass@localhost:3306/database');                                                  
+
+$row = $queue-&gt;dequeue('my_queue');
+//$row = $queue-&gt;dequeue('my_queue', 5);   // set timeout to 5 seconds
+//$row = $queue-&gt;dequeue('my_queue', 'my_queue2', 'my_queue3', 10);
+if (process_row($row)) {
+  $queue-&gt;end();
+} else {
+  $queue-&gt;abort();
+}
+$queue-&gt;disconnect();
+
+||&lt;</s>
+    <d>*Summary
+
+Provides interface to Q4M(Queue for MySQL).
+[http://q4m.31tools.com/]
+
+*License
+
+The MIT License
+[http://opensource.org/licenses/mit-license.html]
+
+*Usage
+
+&gt;||
+$queue = new Net_Q4M();
+$queue-&gt;connect('mysql://user:pass@localhost:3306/database');                                                  
+
+$row = $queue-&gt;dequeue('my_queue');
+//$row = $queue-&gt;dequeue('my_queue', 5);   // set timeout to 5 seconds
+//$row = $queue-&gt;dequeue('my_queue', 'my_queue2', 'my_queue3', 10);
+if (process_row($row)) {
+  $queue-&gt;end();
+} else {
+  $queue-&gt;abort();
+}
+$queue-&gt;disconnect();
+
+||&lt;</d>
+    <da>2008-12-14 12:01:55</da>
+    <n>------------------------------------------------------------------------
+r222 | castor | 2008-12-14 11:23:45 -0800 (Sun, 14 Dec 2008) | 1 line
+
+Initial commit.
+------------------------------------------------------------------------
+r221 | openpear | 2008-12-14 11:05:34 -0800 (Sun, 14 Dec 2008) | 1 line
+
+[Create Base Directory] Net_Q4M
+------------------------------------------------------------------------</n>
+    <f>5995</f>
+    <g>http://openpear.org/get/Net_Q4M-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

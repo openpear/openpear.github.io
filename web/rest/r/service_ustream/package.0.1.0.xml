@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Service_Ustream</name>
+ <channel>openpear.org</channel>
+ <summary>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once &apos;Service/Ustream.php&apos;;
+
+$cmd = &apos;stream&apos;; // user, channel, video, stream, system
+$apiKey = &apos;your_apikey_here&apos;;
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</summary>
+ <description>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once &apos;Service/Ustream.php&apos;;
+
+$cmd = &apos;stream&apos;; // user, channel, video, stream, system
+$apiKey = &apos;your_apikey_here&apos;;
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</description>
+ <lead>
+  <name>gagne</name>
+  <user>gagne</user>
+  <email>makino@gagne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-02-17</date>
+ <time>04:39:44</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r401 | gagne | 2009-02-17 04:33:39 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r399 | gagne | 2009-02-17 03:59:32 -0800 (Tue, 17 Feb 2009) | 1 line
+
+fix
+------------------------------------------------------------------------
+r398 | gagne | 2009-02-17 03:58:45 -0800 (Tue, 17 Feb 2009) | 3 lines
+
+add: _getSearchInstance()
+add: setPage()
+add: setLimit()
+------------------------------------------------------------------------
+r396 | gagne | 2009-02-17 01:47:29 -0800 (Tue, 17 Feb 2009) | 1 line
+
+typo
+------------------------------------------------------------------------
+r392 | gagne | 2009-02-16 13:19:30 -0800 (Mon, 16 Feb 2009) | 1 line
+
+add license.
+------------------------------------------------------------------------
+r391 | gagne | 2009-02-16 12:32:07 -0800 (Mon, 16 Feb 2009) | 1 line
+
+first commit.
+------------------------------------------------------------------------
+r390 | openpear | 2009-02-16 12:18:53 -0800 (Mon, 16 Feb 2009) | 1 line
+
+[Create Base Directory] Service_Ustream
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="ca7f716e521f10ed3ea5fbfd52b75cc9" name="Ustream/Abstract.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="37441d182ee5a0f9549d049bc6a4c225" name="Ustream/Channel.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="b7b3d00944d07f14181575f3fb84c13f" name="Ustream/Exception.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="739d91eef7352b76d04c7b86ccc90a6e" name="Ustream/Result.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="8b220d602c19ad11481208ce29320db1" name="Ustream/ResultException.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="c08a6dc6fde4fa906d20ede759fde652" name="Ustream/Search.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="644bf8d04e9840296e763d9eec0bfc13" name="Ustream/Stream.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="893333a4d43454f81461ac04324c915b" name="Ustream/System.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="f80014f4e82479afff0fe6a98d5703df" name="Ustream/User.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="89712877b994ef8773582d316c8b6204" name="Ustream/Video.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="aa52e3a40823c9119ad17ef4cae6039a" name="Ustream.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>XML_Serializer</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-02-17</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r401 | gagne | 2009-02-17 04:33:39 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r399 | gagne | 2009-02-17 03:59:32 -0800 (Tue, 17 Feb 2009) | 1 line
+
+fix
+------------------------------------------------------------------------
+r398 | gagne | 2009-02-17 03:58:45 -0800 (Tue, 17 Feb 2009) | 3 lines
+
+add: _getSearchInstance()
+add: setPage()
+add: setLimit()
+------------------------------------------------------------------------
+r396 | gagne | 2009-02-17 01:47:29 -0800 (Tue, 17 Feb 2009) | 1 line
+
+typo
+------------------------------------------------------------------------
+r392 | gagne | 2009-02-16 13:19:30 -0800 (Mon, 16 Feb 2009) | 1 line
+
+add license.
+------------------------------------------------------------------------
+r391 | gagne | 2009-02-16 12:32:07 -0800 (Mon, 16 Feb 2009) | 1 line
+
+first commit.
+------------------------------------------------------------------------
+r390 | openpear | 2009-02-16 12:18:53 -0800 (Mon, 16 Feb 2009) | 1 line
+
+[Create Base Directory] Service_Ustream
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

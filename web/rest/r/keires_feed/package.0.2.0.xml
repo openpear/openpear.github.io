@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Keires_Feed</name>
+ <channel>openpear.org</channel>
+ <summary>Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。</summary>
+ <description>Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。</description>
+ <lead>
+  <name>KOYAMA Tetsuji</name>
+  <user>koyhoge</user>
+  <email>koyama@hoge.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-02-23</date>
+ <time>07:36:23</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+ <notes>------------------------------------------------------------------------
+r425 | koyhoge | 2009-02-23 07:34:17 -0800 (Mon, 23 Feb 2009) | 3 lines
+
+* fix:
+  - use Openpear_Util for array_val, ExceptionWrapper
+
+------------------------------------------------------------------------
+r424 | koyhoge | 2009-02-23 07:33:05 -0800 (Mon, 23 Feb 2009) | 3 lines
+
+* remove file:
+  - ExceptionWrapper bring to Openpear_Util
+
+------------------------------------------------------------------------
+r410 | koyhoge | 2009-02-22 23:35:53 -0800 (Sun, 22 Feb 2009) | 3 lines
+
+* fix:
+  - bad email address in header
+
+------------------------------------------------------------------------
+r395 | koyhoge | 2009-02-17 01:30:41 -0800 (Tue, 17 Feb 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Keires" name="/">
+   <file baseinstalldir="/Keires" md5sum="2dc4a190d9b07aa11f7ff1a6f7726091" name="Feed.php" role="php" />
+   <file baseinstalldir="/Keires" md5sum="20d33766ce38907d551ac3fa81fbc29a" name="FeedParser.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-02-23</date>
+   <license uri="http://www.php.net/license/3_0.txt">PHP License 3.0</license>
+   <notes>------------------------------------------------------------------------
+r425 | koyhoge | 2009-02-23 07:34:17 -0800 (Mon, 23 Feb 2009) | 3 lines
+
+* fix:
+  - use Openpear_Util for array_val, ExceptionWrapper
+
+------------------------------------------------------------------------
+r424 | koyhoge | 2009-02-23 07:33:05 -0800 (Mon, 23 Feb 2009) | 3 lines
+
+* remove file:
+  - ExceptionWrapper bring to Openpear_Util
+
+------------------------------------------------------------------------
+r410 | koyhoge | 2009-02-22 23:35:53 -0800 (Sun, 22 Feb 2009) | 3 lines
+
+* fix:
+  - bad email address in header
+
+------------------------------------------------------------------------
+r395 | koyhoge | 2009-02-17 01:30:41 -0800 (Tue, 17 Feb 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

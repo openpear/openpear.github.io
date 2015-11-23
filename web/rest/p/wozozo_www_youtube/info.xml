@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Wozozo_WWW_YouTube</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>Download YouTube's video
+
+
+install:
+&gt;||
+pear channel-discover openpear.org
+sudo pear install openpear/Wozozo_WWW_YouTube
+||&lt;
+
+
+usage:
+&gt;||
+&lt;?php
+require_once 'Wozozo/WWW/YouTube.php';
+Wozozo_WWW_YouTube::download('gQf_QTsvXCU'); //YouTube's videoID
+Wozozo_WWW_YouTube::download('http://www.youtube.com/watch?v=gQf_QTsvXCU'); //
+||&lt;
+
+
+zf tool's provider 
+&gt;||
+zf enable config.provider Wozozo_WWW_YouTube_Tool_YoutubeProvider
+||&lt;</s>
+<d>Download YouTube's video
+
+
+install:
+&gt;||
+pear channel-discover openpear.org
+sudo pear install openpear/Wozozo_WWW_YouTube
+||&lt;
+
+
+usage:
+&gt;||
+&lt;?php
+require_once 'Wozozo/WWW/YouTube.php';
+Wozozo_WWW_YouTube::download('gQf_QTsvXCU'); //YouTube's videoID
+Wozozo_WWW_YouTube::download('http://www.youtube.com/watch?v=gQf_QTsvXCU'); //
+||&lt;
+
+
+zf tool's provider 
+&gt;||
+zf enable config.provider Wozozo_WWW_YouTube_Tool_YoutubeProvider
+||&lt;</d>
+<r xlink:href="/rest/r/wozozo_www_youtube" />
+</p>

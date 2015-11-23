@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_UserAgent_Mobile_Capability</name>
+ <channel>openpear.org</channel>
+ <summary>携帯機種のできること・できないことを判定します。</summary>
+ <description>携帯機種のできること・できないことを判定します。</description>
+ <lead>
+  <name>okonomi</name>
+  <user>okonomi</user>
+  <email>oknm@okonomi.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-03-21</date>
+ <time>22:27:24</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1706 | okonomi | 2010-03-16 13:13:56 +0900 (火, 16  3月 2010) | 1 line
+
+テストをまとめた
+------------------------------------------------------------------------
+r1705 | okonomi | 2010-03-16 09:49:20 +0900 (火, 16  3月 2010) | 4 lines
+
+グローバル変数のバックアップは勝手にやってくれるらしい
+
+http://www.phpunit.de/manual/3.4/ja/fixtures.html#fixtures.global-state
+
+------------------------------------------------------------------------
+r1704 | okonomi | 2010-03-16 01:15:27 +0900 (火, 16  3月 2010) | 1 line
+
+テストの事前事後処理を追加
+------------------------------------------------------------------------
+r1703 | okonomi | 2010-03-16 01:08:53 +0900 (火, 16  3月 2010) | 1 line
+
+テスト作成
+------------------------------------------------------------------------
+r1702 | okonomi | 2010-03-16 01:08:08 +0900 (火, 16  3月 2010) | 1 line
+
+コンストラクタの引数のタイプヒンティングを修正
+------------------------------------------------------------------------
+r1701 | okonomi | 2010-03-15 18:04:45 +0900 (月, 15  3月 2010) | 6 lines
+
+勢いに任せてコーディング。
+
+- tableタグ対応
+- CSS対応
+- 外部スタイルシート対応
+- Flash対応
+------------------------------------------------------------------------
+r1700 | okonomi | 2010-03-15 16:17:57 +0900 (月, 15  3月 2010) | 1 line
+
+initial import.
+------------------------------------------------------------------------
+r1699 | openpear | 2010-03-15 15:31:05 +0900 (月, 15  3月 2010) | 1 line
+
+[New Package] Net_UserAgent_Mobile_Capability
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="6a251b6b042171da377668d9b163665b" name="Net/UserAgent/Mobile/Capability.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-03-21</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1706 | okonomi | 2010-03-16 13:13:56 +0900 (火, 16  3月 2010) | 1 line
+
+テストをまとめた
+------------------------------------------------------------------------
+r1705 | okonomi | 2010-03-16 09:49:20 +0900 (火, 16  3月 2010) | 4 lines
+
+グローバル変数のバックアップは勝手にやってくれるらしい
+
+http://www.phpunit.de/manual/3.4/ja/fixtures.html#fixtures.global-state
+
+------------------------------------------------------------------------
+r1704 | okonomi | 2010-03-16 01:15:27 +0900 (火, 16  3月 2010) | 1 line
+
+テストの事前事後処理を追加
+------------------------------------------------------------------------
+r1703 | okonomi | 2010-03-16 01:08:53 +0900 (火, 16  3月 2010) | 1 line
+
+テスト作成
+------------------------------------------------------------------------
+r1702 | okonomi | 2010-03-16 01:08:08 +0900 (火, 16  3月 2010) | 1 line
+
+コンストラクタの引数のタイプヒンティングを修正
+------------------------------------------------------------------------
+r1701 | okonomi | 2010-03-15 18:04:45 +0900 (月, 15  3月 2010) | 6 lines
+
+勢いに任せてコーディング。
+
+- tableタグ対応
+- CSS対応
+- 外部スタイルシート対応
+- Flash対応
+------------------------------------------------------------------------
+r1700 | okonomi | 2010-03-15 16:17:57 +0900 (月, 15  3月 2010) | 1 line
+
+initial import.
+------------------------------------------------------------------------
+r1699 | openpear | 2010-03-15 15:31:05 +0900 (月, 15  3月 2010) | 1 line
+
+[New Package] Net_UserAgent_Mobile_Capability
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

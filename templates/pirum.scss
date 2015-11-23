@@ -1,0 +1,41 @@
+@import "bootstrap";
+
+$theme-color: #7b011d;
+
+body {
+  border-top: 20px solid #333;
+}
+
+h1 {
+  color: $theme-color;
+}
+
+dl.dependencies {
+  padding-bottom: .3rem;
+
+  dt {
+    margin-left: 1rem;
+  }
+  dd {
+    margin-left: 3rem;
+  }
+}
+
+footer.footer {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.list-packages li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+

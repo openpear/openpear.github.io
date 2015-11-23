@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_ustream">Services_Ustream</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.1.4</mp>
+    <st>alpha</st>
+    <l>New BSD Licence</l>
+    <m>gagne</m>
+    <s>Ustream API (http://developer.ustream.tv/)を利用するライブラリ。
+&gt;&gt;注：現在使える代物ではありませんm(_ _)m&lt;&lt;
+*未実装(0.2.0時点)
+&gt;||
+Services_Ustream_Channel
+::listAllChannels
+::getComments
+::getTags
+||&lt;
+
+*使い方
+
+&gt;||
+&lt;?php
+require_once 'Services/Ustream.php';
+
+// user(hoge)のビデオリストを取得
+$ust = Services_Ustream::factory('user');
+$results = $ust-&gt;listAllVideos('hoge');
+
+// yyyy-mm-ddのビデオを検索
+$ust = Services_Ustream::factory('search');
+$results = $ust-&gt;command('video')-&gt;all()
+               -&gt;where('created')-&gt;eq('yyyy-mm-dd')
+               -&gt;query();
+||&lt;
+
+*依存パッケージ
+:HTTP_Request2:http://pear.php.net/package/HTTP_Request2
+:XML_Serializer:http://pear.php.net/package/XML_Serializer</s>
+    <d>Ustream API (http://developer.ustream.tv/)を利用するライブラリ。
+&gt;&gt;注：現在使える代物ではありませんm(_ _)m&lt;&lt;
+*未実装(0.2.0時点)
+&gt;||
+Services_Ustream_Channel
+::listAllChannels
+::getComments
+::getTags
+||&lt;
+
+*使い方
+
+&gt;||
+&lt;?php
+require_once 'Services/Ustream.php';
+
+// user(hoge)のビデオリストを取得
+$ust = Services_Ustream::factory('user');
+$results = $ust-&gt;listAllVideos('hoge');
+
+// yyyy-mm-ddのビデオを検索
+$ust = Services_Ustream::factory('search');
+$results = $ust-&gt;command('video')-&gt;all()
+               -&gt;where('created')-&gt;eq('yyyy-mm-dd')
+               -&gt;query();
+||&lt;
+
+*依存パッケージ
+:HTTP_Request2:http://pear.php.net/package/HTTP_Request2
+:XML_Serializer:http://pear.php.net/package/XML_Serializer</d>
+    <da>2009-02-17 17:17:29</da>
+    <n>------------------------------------------------------------------------
+r406 | gagne | 2009-02-17 17:15:10 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r405 | gagne | 2009-02-17 17:00:08 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------</n>
+    <f>7685</f>
+    <g>http://openpear.org/get/Services_Ustream-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

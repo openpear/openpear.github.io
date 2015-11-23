@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>PHP_MakeInfo</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>PHPのphpinfo()で出力される画面を生成します。
+使い方
+
+&lt;?php
+require_once(&quot;MakeInfo.php&quot;);
+
+$contents = array(
+	'Sample1' =&gt; 'Enable1',
+	'Sample2' =&gt; 'Enable2',
+	'Sample3' =&gt; 'Enable3',
+	'Sample4' =&gt; 'Enable4',
+	'Sample5' =&gt; 'Enable5',
+);
+
+$make = new MakeInfo(&quot;Sample&quot;, &quot;Sample Enables List&quot;, $contents);
+?&gt;</s>
+<d>PHPのphpinfo()で出力される画面を生成します。
+使い方
+
+&lt;?php
+require_once(&quot;MakeInfo.php&quot;);
+
+$contents = array(
+	'Sample1' =&gt; 'Enable1',
+	'Sample2' =&gt; 'Enable2',
+	'Sample3' =&gt; 'Enable3',
+	'Sample4' =&gt; 'Enable4',
+	'Sample5' =&gt; 'Enable5',
+);
+
+$make = new MakeInfo(&quot;Sample&quot;, &quot;Sample Enables List&quot;, $contents);
+?&gt;</d>
+<r xlink:href="/rest/r/php_makeinfo" />
+</p>

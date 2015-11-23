@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/pear_packageprojector">PEAR_PackageProjector</p>
+    <c>openpear.org</c>
+    <v>1.0.2</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>sakamoto</m>
+    <s>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</s>
+    <d>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</d>
+    <da>2010-01-29 02:57:04</da>
+    <n>
+------------------------------------------------------------------------
+r1588 | sakamoto | 2010-01-29 02:53:19 +0900 (金, 29  1月 2010) | 1 line
+
+bug fix ignore role option when role target is directory. 
+------------------------------------------------------------------------
+r874 | sakamoto | 2009-05-24 18:10:25 +0900 (日, 24  5月 2009) | 2 lines
+
+- update pearproj.sh. To support old project
+
+------------------------------------------------------------------------
+r872 | sakamoto | 2009-05-24 15:21:56 +0900 (日, 24  5月 2009) | 1 line
+
+- bug fixed PEAR_PackageProjector_Document#setStylesheet
+------------------------------------------------------------------------
+r870 | sakamoto | 2009-05-24 15:12:12 +0900 (日, 24  5月 2009) | 1 line
+
+- change 1.0.0-alpha -&gt; 1.0.0-stable
+------------------------------------------------------------------------
+r869 | sakamoto | 2009-05-24 14:21:49 +0900 (日, 24  5月 2009) | 2 lines
+
+- update tutorial.txt
+
+------------------------------------------------------------------------
+r868 | sakamoto | 2009-05-24 14:05:08 +0900 (日, 24  5月 2009) | 4 lines
+
+- update pearproj command
+- update tutorial.txt
+- update document
+- update build.php
+------------------------------------------------------------------------
+r867 | sakamoto | 2009-05-24 12:57:03 +0900 (日, 24  5月 2009) | 2 lines
+
+- add document files
+
+------------------------------------------------------------------------
+r865 | sakamoto | 2009-05-23 16:48:35 +0900 (土, 23  5月 2009) | 7 lines
+
+- add Class PEAR_PackageProjector_MessageHandler_Callback
+- support array data in PEAR_PackageProjector_Project#configure
+- add method PEAR_PackageProjector_Project#serialize()
+- add method PEAR_PackageProjector_Project#unserialize()
+- remove command option &quot;--clear&quot;
+- remove command option &quot;--tmp&quot;
+
+------------------------------------------------------------------------
+r864 | sakamoto | 2009-05-23 00:28:36 +0900 (土, 23  5月 2009) | 8 lines
+
+- add method updatedoc()
+- add method pearinstall()
+- add command option --updatedoc(-doc)
+- add command option --install(-i)
+- change default of command option --project(-p) is &quot;./&quot;
+- change default of command option --config(-confg) is &quot;build.conf&quot;
+- change enter of create file is &quot;\n&quot; to PHP_EOL;
+
+------------------------------------------------------------------------
+r862 | sakamoto | 2009-05-21 07:25:14 +0900 (木, 21  5月 2009) | 1 line
+
+- fixed changelog.
+------------------------------------------------------------------------
+r860 | sakamoto | 2009-05-21 07:09:50 +0900 (木, 21  5月 2009) | 1 line
+
+add PEAR_PackageFileManager_Plugins to required packages list 
+------------------------------------------------------------------------
+r858 | sakamoto | 2009-05-20 23:15:29 +0900 (水, 20  5月 2009) | 4 lines
+
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+- update build.bat. when you build, release/PEAR_PackageProjector-x.x.x.tgz is installed.
+
+------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 19:52:22 +0900 (土, 16  5月 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r833 | mumumu | 2009-05-16 18:25:59 +0900 (土, 16  5月 2009) | 2 lines
+
+- added documentation description for new version.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 18:25:12 +0900 (土, 16  5月 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r831 | mumumu | 2009-05-16 18:24:15 +0900 (土, 16  5月 2009) | 5 lines
+
+- commented out checkcode() routine because of PEAR_PackageFileManager2#addReplacement glob routine.
+ 1.-視されます --
+
+M    build.php
+
+------------------------------------------------------------------------
+r830 | mumumu | 2009-05-16 18:22:23 +0900 (土, 16  5月 2009) | 2 lines
+
+- added new version package.
+
+------------------------------------------------------------------------
+r829 | mumumu | 2009-05-16 18:21:47 +0900 (土, 16  5月 2009) | 2 lines
+
+- changed setting for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-16 12:02:35 +0900 (土, 16  5月 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-16 11:47:03 +0900 (土, 16  5月 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 17:17:49 +0900 (土, 27 12月 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r283 | openpear | 2008-12-27 16:39:18 +0900 (土, 27 12月 2008) | 1 line
+
+[Create Base Directory] PEAR_PackageProjector
+------------------------------------------------------------------------
+ </n>
+    <f>22021</f>
+    <g>http://openpear.org/get/PEAR_PackageProjector-1.0.2</g>
+    <x xlink:href="package.1.0.2.xml"/>
+</r>

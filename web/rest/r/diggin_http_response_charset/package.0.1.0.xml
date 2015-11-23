@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin_Http_Response_Charset</name>
+ <channel>openpear.org</channel>
+ <summary>旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。
+
+LGPLです。</summary>
+ <description>旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。
+
+LGPLです。</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-06-24</date>
+ <time>00:27:12</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+------------------------------------------------------------------------
+r1924 | sasezaki | 2010-06-24 00:23:53 +0900 (木, 24  6月 2010) | 1 line
+
+add return  in addEncoder
+------------------------------------------------------------------------
+r1923 | sasezaki | 2010-06-23 22:26:13 +0900 (水, 23  6月 2010) | 1 line
+
+add LICENSE doc-comment &amp; not static
+------------------------------------------------------------------------
+r1922 | sasezaki | 2010-06-23 21:17:53 +0900 (水, 23  6月 2010) | 1 line
+
+adding. wrapping Response
+------------------------------------------------------------------------
+r1904 | sasezaki | 2010-06-12 01:01:50 +0900 (土, 12  6月 2010) | 1 line
+
+add Encoder Fixedfrom
+------------------------------------------------------------------------
+r1903 | sasezaki | 2010-06-12 01:01:09 +0900 (土, 12  6月 2010) | 1 line
+
+change - default detect list
+------------------------------------------------------------------------
+r1902 | sasezaki | 2010-06-08 23:30:19 +0900 (火, 08  6月 2010) | 1 line
+
+init commit
+------------------------------------------------------------------------
+r1901 | openpear | 2010-06-08 23:29:03 +0900 (火, 08  6月 2010) | 1 line
+
+[New Package] Diggin_Http_Response_Charset
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="5804da1ed0d618c35289c95981d92d50" name="Diggin/Http/Response/Charset/Detector/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="7019ab7bcf2b28d856225d93d44f234a" name="Diggin/Http/Response/Charset/Encoder/EncoderAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="8e39a19d32abdc99a27f209e6ea0a4d5" name="Diggin/Http/Response/Charset/Encoder/EncoderInterface.php" role="php" />
+   <file baseinstalldir="/" md5sum="6e4da7279821381f48a07ea581b966a1" name="Diggin/Http/Response/Charset/Encoder/Fixedfrom.php" role="php" />
+   <file baseinstalldir="/" md5sum="985df0fe3961ebb0d8f35d75a7b0804c" name="Diggin/Http/Response/Charset/Encoder/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="264c175ec20121b9ad4642a2d06d8bae" name="Diggin/Http/Response/Charset/Front/EncodeInterface.php" role="php" />
+   <file baseinstalldir="/" md5sum="7725c48337ad133cf9d11476a4451656" name="Diggin/Http/Response/Charset/Front/UrlRegex.php" role="php" />
+   <file baseinstalldir="/" md5sum="598d0b41922c5e6e9d29969a293b3c5c" name="Diggin/Http/Response/Charset/Wrapper/Zf.php" role="php" />
+   <file baseinstalldir="/" md5sum="03b5b710fda227f78825a2043fe5cf15" name="Diggin/Http/Response/Charset.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-06-24</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+------------------------------------------------------------------------
+r1924 | sasezaki | 2010-06-24 00:23:53 +0900 (木, 24  6月 2010) | 1 line
+
+add return  in addEncoder
+------------------------------------------------------------------------
+r1923 | sasezaki | 2010-06-23 22:26:13 +0900 (水, 23  6月 2010) | 1 line
+
+add LICENSE doc-comment &amp; not static
+------------------------------------------------------------------------
+r1922 | sasezaki | 2010-06-23 21:17:53 +0900 (水, 23  6月 2010) | 1 line
+
+adding. wrapping Response
+------------------------------------------------------------------------
+r1904 | sasezaki | 2010-06-12 01:01:50 +0900 (土, 12  6月 2010) | 1 line
+
+add Encoder Fixedfrom
+------------------------------------------------------------------------
+r1903 | sasezaki | 2010-06-12 01:01:09 +0900 (土, 12  6月 2010) | 1 line
+
+change - default detect list
+------------------------------------------------------------------------
+r1902 | sasezaki | 2010-06-08 23:30:19 +0900 (火, 08  6月 2010) | 1 line
+
+init commit
+------------------------------------------------------------------------
+r1901 | openpear | 2010-06-08 23:29:03 +0900 (火, 08  6月 2010) | 1 line
+
+[New Package] Diggin_Http_Response_Charset
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

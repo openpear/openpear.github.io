@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_Object</name>
+ <channel>openpear.org</channel>
+ <summary>PHPを純粋なオブジェクト指向プログラミング言語っぽく書けるようにする。
+
+主にメソッドチェーンするためのライブラリ。
+
+
+*サンプル
+&gt;||
+require_once &apos;PHP/Object.php&apos;;
+
+function p($data) {
+    return PHP_Object::factory($data);
+}
+
+$array = p(array(&apos;foo&apos;, &apos;bar&apos;));
+$array-&gt;push(&apos;baz&apos;); // array_pushのエイリアス
+$array-&gt;var_dump;    // 引数がない場合、括弧は省略できる
+/* 出力結果
+&amp;array(3) {
+  [0]=&gt;
+  string(3) &quot;foo&quot;
+  [1]=&gt;
+  string(3) &quot;bar&quot;
+  [2]=&gt;
+  string(3) &quot;baz&quot;
+}
+*/
+
+$string = p(&apos;Hello, World!&apos;);
+$array  = $string-&gt;replace(&apos;World&apos;, &apos;PHP&apos;) // WorldをPHPに置換
+                 -&gt;echo                    // Hello, PHP! を出力
+                 -&gt;explode(&apos;,&apos;)            // 「,」で分割しArrayオブジェクトにして返す
+                 -&gt;tap(&apos;sort&apos;);            // sortメソッドをコールし、自分自身を返す
+
+foreach ($array as $value) {
+    $value-&gt;echo(&quot;n&quot;); // PHP!、Helloの順に出力
+}
+||&lt;
+
+
+*特徴
+-全てのPHP関数をメソッドとして呼び出せる
+-引数をとらないメソッドの括弧は省略できる
+-Arrayオブジェクトは通常の配列型のようにforeachでのループや、[]を使ったアクセスができる
+-echo、printなど、PHPの言語構造をメソッドとして呼び出せる
+-メソッドの引数に、そのままPHP_Objectオブジェクトを渡すことができる
+-メソッドが返す値は全てPHP_Objectオブジェクト（配列のキーや一部メソッドを除く）
+-戻り値がない(void)関数を、メソッドとして呼び出した時は、代わりに自分自身を返す
+-Arrayオブジェクトからのメソッド呼び出し時にはメソッド名の「array_」を省略できる
+-Stringオブジェクトからのメソッド呼び出し時にはメソッド名の、「str」と「str_」を省略できる
+-valメソッドで、元の値を取得できる（Stringオブジェクトなら文字列、など）
+-tapメソッドで第一引数にコールバックメソッド名を渡すと該当メソッド呼出し後、その戻り値ではなく自分自身を返す</summary>
+ <description>PHPを純粋なオブジェクト指向プログラミング言語っぽく書けるようにする。
+
+主にメソッドチェーンするためのライブラリ。
+
+
+*サンプル
+&gt;||
+require_once &apos;PHP/Object.php&apos;;
+
+function p($data) {
+    return PHP_Object::factory($data);
+}
+
+$array = p(array(&apos;foo&apos;, &apos;bar&apos;));
+$array-&gt;push(&apos;baz&apos;); // array_pushのエイリアス
+$array-&gt;var_dump;    // 引数がない場合、括弧は省略できる
+/* 出力結果
+&amp;array(3) {
+  [0]=&gt;
+  string(3) &quot;foo&quot;
+  [1]=&gt;
+  string(3) &quot;bar&quot;
+  [2]=&gt;
+  string(3) &quot;baz&quot;
+}
+*/
+
+$string = p(&apos;Hello, World!&apos;);
+$array  = $string-&gt;replace(&apos;World&apos;, &apos;PHP&apos;) // WorldをPHPに置換
+                 -&gt;echo                    // Hello, PHP! を出力
+                 -&gt;explode(&apos;,&apos;)            // 「,」で分割しArrayオブジェクトにして返す
+                 -&gt;tap(&apos;sort&apos;);            // sortメソッドをコールし、自分自身を返す
+
+foreach ($array as $value) {
+    $value-&gt;echo(&quot;n&quot;); // PHP!、Helloの順に出力
+}
+||&lt;
+
+
+*特徴
+-全てのPHP関数をメソッドとして呼び出せる
+-引数をとらないメソッドの括弧は省略できる
+-Arrayオブジェクトは通常の配列型のようにforeachでのループや、[]を使ったアクセスができる
+-echo、printなど、PHPの言語構造をメソッドとして呼び出せる
+-メソッドの引数に、そのままPHP_Objectオブジェクトを渡すことができる
+-メソッドが返す値は全てPHP_Objectオブジェクト（配列のキーや一部メソッドを除く）
+-戻り値がない(void)関数を、メソッドとして呼び出した時は、代わりに自分自身を返す
+-Arrayオブジェクトからのメソッド呼び出し時にはメソッド名の「array_」を省略できる
+-Stringオブジェクトからのメソッド呼び出し時にはメソッド名の、「str」と「str_」を省略できる
+-valメソッドで、元の値を取得できる（Stringオブジェクトなら文字列、など）
+-tapメソッドで第一引数にコールバックメソッド名を渡すと該当メソッド呼出し後、その戻り値ではなく自分自身を返す</description>
+ <lead>
+  <name>lagos</name>
+  <user>lagos</user>
+  <email>lagos.on@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-06</date>
+ <time>05:21:31</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r185 | lagos | 2008-12-06 03:39:39 -0800 (Sat, 06 Dec 2008) | 1 line
+
+tap?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r184 | lagos | 2008-12-06 03:39:09 -0800 (Sat, 06 Dec 2008) | 1 line
+
+?\227?\130?\168?\227?\130?\164?\227?\131?\170?\227?\130?\162?\227?\130?\185?\229?\164?\137?\230?\155?\180
+------------------------------------------------------------------------
+r147 | lagos | 2008-12-01 07:25:14 -0800 (Mon, 01 Dec 2008) | 1 line
+
+else?\227?\129?\172?\227?\129?\145?\227?\129?\166?\227?\129?\159
+------------------------------------------------------------------------
+r143 | lagos | 2008-11-30 05:22:24 -0800 (Sun, 30 Nov 2008) | 1 line
+
+?\227?\129?\168?\227?\130?\138?\227?\129?\130?\227?\129?\136?\227?\129?\154?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------
+r142 | openpear | 2008-11-30 05:18:20 -0800 (Sun, 30 Nov 2008) | 1 line
+
+[Create Base Directory] PHP_Object
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/PHP" name="/">
+   <file baseinstalldir="/PHP" md5sum="7424277b1f7ce707f3584657d6f18f42" name="PHP/Object/Numeric/Integer.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="6f8bed467283afd24337a88bd4d04258" name="PHP/Object/Array.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="bf5dbc1d088eb5a9dc18d8e0ef214561" name="PHP/Object/Boolean.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="2ddc64f0ffc86c2604bf7657a1aebc06" name="PHP/Object/Null.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="23fa41259d2bf5adffb0ec298224298e" name="PHP/Object/Numeric.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="074f739222c21162919d7d62ea827b03" name="PHP/Object/Object.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="ad7ef5b2b0764b106b28c94bae03a515" name="PHP/Object/Resource.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="7f8c8bbff00d8fa3341bd48a78a08581" name="PHP/Object/String.php" role="php" />
+   <file baseinstalldir="/PHP" md5sum="31bfa2c5aed94eca0e1c9d4ec5dc7368" name="PHP/Object.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-12-06</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r185 | lagos | 2008-12-06 03:39:39 -0800 (Sat, 06 Dec 2008) | 1 line
+
+tap?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r184 | lagos | 2008-12-06 03:39:09 -0800 (Sat, 06 Dec 2008) | 1 line
+
+?\227?\130?\168?\227?\130?\164?\227?\131?\170?\227?\130?\162?\227?\130?\185?\229?\164?\137?\230?\155?\180
+------------------------------------------------------------------------
+r147 | lagos | 2008-12-01 07:25:14 -0800 (Mon, 01 Dec 2008) | 1 line
+
+else?\227?\129?\172?\227?\129?\145?\227?\129?\166?\227?\129?\159
+------------------------------------------------------------------------
+r143 | lagos | 2008-11-30 05:22:24 -0800 (Sun, 30 Nov 2008) | 1 line
+
+?\227?\129?\168?\227?\130?\138?\227?\129?\130?\227?\129?\136?\227?\129?\154?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------
+r142 | openpear | 2008-11-30 05:18:20 -0800 (Sun, 30 Nov 2008) | 1 line
+
+[Create Base Directory] PHP_Object
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

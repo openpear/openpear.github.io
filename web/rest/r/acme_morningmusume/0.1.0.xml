@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/acme_morningmusume">Acme_MorningMusume</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>beta</st>
+    <l>New BSD Licence</l>
+    <m>riaf</m>
+    <s>phpcon 2008 での takesako さんの一言から openpear への野望は始まった訳です。</s>
+    <d>phpcon 2008 での takesako さんの一言から openpear への野望は始まった訳です。</d>
+    <da>2008-10-31 02:48:42</da>
+    <n>------------------------------------------------------------------------
+r3 | riaf | 2008-10-31 02:44:06 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+first import
+
+------------------------------------------------------------------------
+r2 | openpear | 2008-10-31 02:41:18 -0700 (Fri, 31 Oct 2008) | 1 line
+
+[Create Base Directory] Acme_MorningMusume
+------------------------------------------------------------------------</n>
+    <f>5672</f>
+    <g>http://openpear.org/get/Acme_MorningMusume-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

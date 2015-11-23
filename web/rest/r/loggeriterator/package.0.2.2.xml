@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>LoggerIterator</name>
+ <channel>openpear.org</channel>
+ <summary>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+デフォルトでは、例外の内容を標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準エラー出力にログとして出力する機能もあります。
+
+
+* 何の役に立つのか？
+
+- 例外の把握
+- イテレータの挙動の把握
+- イテレータ関連のデバッグ
+- SPLの[http://www.php.net/~helly/php/ext/spl/interfaceOuterIterator.html:title=OuterIteratorインターフェース]の実装の参考
+
+
+* 利用例
+
+&gt;||
+&lt;?php
+
+require_once(&apos;LoggerIterator.php&apos;);
+
+$it = new LoggerIterator(new ArrayIterator(array(1,2)), LoggerIterator::VERBOSE);
+foreach ($it as $value) {
+  var_dump($value);
+}
+||&lt;
+
+結果は次のようになります。
+
+&gt;||
+LoggerIterator: ArrayIterator::rewind() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(1)
+int(1)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(2)
+int(2)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(false)
+||&lt;
+
+この形式のforeachだとkey()は呼び出されないことがわかります。
+
+
+* TODO
+
+様々なログの出力形式に対応する。
+
+
+* ソースコード
+
+[http://openpear.org/repository/LoggerIterator/trunk/src/LoggerIterator.php]</summary>
+ <description>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+デフォルトでは、例外の内容を標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準エラー出力にログとして出力する機能もあります。
+
+
+* 何の役に立つのか？
+
+- 例外の把握
+- イテレータの挙動の把握
+- イテレータ関連のデバッグ
+- SPLの[http://www.php.net/~helly/php/ext/spl/interfaceOuterIterator.html:title=OuterIteratorインターフェース]の実装の参考
+
+
+* 利用例
+
+&gt;||
+&lt;?php
+
+require_once(&apos;LoggerIterator.php&apos;);
+
+$it = new LoggerIterator(new ArrayIterator(array(1,2)), LoggerIterator::VERBOSE);
+foreach ($it as $value) {
+  var_dump($value);
+}
+||&lt;
+
+結果は次のようになります。
+
+&gt;||
+LoggerIterator: ArrayIterator::rewind() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(1)
+int(1)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(true)
+LoggerIterator: ArrayIterator::current() = int(2)
+int(2)
+LoggerIterator: ArrayIterator::next() = NULL
+LoggerIterator: ArrayIterator::valid() = bool(false)
+||&lt;
+
+この形式のforeachだとkey()は呼び出されないことがわかります。
+
+
+* TODO
+
+様々なログの出力形式に対応する。
+
+
+* ソースコード
+
+[http://openpear.org/repository/LoggerIterator/trunk/src/LoggerIterator.php]</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-03</date>
+ <time>09:06:36</time>
+ <version>
+  <release>0.2.2</release>
+  <api>0.2.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r913 | hnw | 2009-06-03 06:53:24 -0700 (Wed, 03 Jun 2009) | 1 line
+
+Only Traversable class can be wrapped. If not, throws exception.
+------------------------------------------------------------------------
+r903 | hnw | 2009-06-01 09:53:27 -0700 (Mon, 01 Jun 2009) | 1 line
+
+add new const value
+------------------------------------------------------------------------
+r902 | hnw | 2009-06-01 09:48:23 -0700 (Mon, 01 Jun 2009) | 1 line
+
+do refactoring
+------------------------------------------------------------------------
+r897 | hnw | 2009-05-31 18:12:32 -0700 (Sun, 31 May 2009) | 1 line
+
+?\227?\131?\173?\227?\130?\176?\227?\130?\146stdout?\227?\129?\171?\229?\135?\186?\229?\138?\155?\227?\129?\151?\227?\129?\166?\227?\129?\132?\227?\129?\159?\227?\129?\140?\227?\128?\129stderr?\227?\129?\171?\229?\135?\186?\229?\138?\155?\227?\129?\153?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\229?\164?\137?\230?\155?\180 / ?\228?\190?\139?\229?\164?\150?\227?\130?\146?\227?\131?\173?\227?\130?\174?\227?\131?\179?\227?\130?\176?\227?\129?\153?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159 / ?\233?\150?\162?\230?\149?\176?\229?\145?\188?\227?\129?\179?\229?\135?\186?\227?\129?\151?\227?\129?\174?\227?\131?\173?\227?\130?\174?\227?\131?\179?\227?\130?\176?\227?\129?\174?\230?\140?\135?\229?\174?\154?\227?\130?\146?\227?\130?\179?\227?\131?\179?\227?\130?\185?\227?\131?\136?\227?\131?\169?\227?\130?\175?\227?\130?\191?\227?\129?\167?\232?\161?\140?\227?\129?\134?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r880 | hnw | 2009-05-24 08:53:31 -0700 (Sun, 24 May 2009) | 1 line
+
+?\227?\131?\135?\227?\131?\144?\227?\131?\131?\227?\130?\176?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\129?\140?\230?\174?\139?\227?\129?\163?\227?\129?\166?\227?\129?\132?\227?\129?\159?\227?\129?\174?\227?\130?\146?\228?\191?\174?\230?\173?\163 / PHPDoc?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\227?\130?\146?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r878 | hnw | 2009-05-24 08:48:05 -0700 (Sun, 24 May 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a45cd2854fee54889c88929ba54d2f0a" name="LoggerIterator.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-06-03</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r913 | hnw | 2009-06-03 06:53:24 -0700 (Wed, 03 Jun 2009) | 1 line
+
+Only Traversable class can be wrapped. If not, throws exception.
+------------------------------------------------------------------------
+r903 | hnw | 2009-06-01 09:53:27 -0700 (Mon, 01 Jun 2009) | 1 line
+
+add new const value
+------------------------------------------------------------------------
+r902 | hnw | 2009-06-01 09:48:23 -0700 (Mon, 01 Jun 2009) | 1 line
+
+do refactoring
+------------------------------------------------------------------------
+r897 | hnw | 2009-05-31 18:12:32 -0700 (Sun, 31 May 2009) | 1 line
+
+?\227?\131?\173?\227?\130?\176?\227?\130?\146stdout?\227?\129?\171?\229?\135?\186?\229?\138?\155?\227?\129?\151?\227?\129?\166?\227?\129?\132?\227?\129?\159?\227?\129?\140?\227?\128?\129stderr?\227?\129?\171?\229?\135?\186?\229?\138?\155?\227?\129?\153?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\229?\164?\137?\230?\155?\180 / ?\228?\190?\139?\229?\164?\150?\227?\130?\146?\227?\131?\173?\227?\130?\174?\227?\131?\179?\227?\130?\176?\227?\129?\153?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159 / ?\233?\150?\162?\230?\149?\176?\229?\145?\188?\227?\129?\179?\229?\135?\186?\227?\129?\151?\227?\129?\174?\227?\131?\173?\227?\130?\174?\227?\131?\179?\227?\130?\176?\227?\129?\174?\230?\140?\135?\229?\174?\154?\227?\130?\146?\227?\130?\179?\227?\131?\179?\227?\130?\185?\227?\131?\136?\227?\131?\169?\227?\130?\175?\227?\130?\191?\227?\129?\167?\232?\161?\140?\227?\129?\134?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r880 | hnw | 2009-05-24 08:53:31 -0700 (Sun, 24 May 2009) | 1 line
+
+?\227?\131?\135?\227?\131?\144?\227?\131?\131?\227?\130?\176?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\129?\140?\230?\174?\139?\227?\129?\163?\227?\129?\166?\227?\129?\132?\227?\129?\159?\227?\129?\174?\227?\130?\146?\228?\191?\174?\230?\173?\163 / PHPDoc?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\227?\130?\146?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r878 | hnw | 2009-05-24 08:48:05 -0700 (Sun, 24 May 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Image_GifColorConverter</name>
+ <channel>openpear.org</channel>
+ <summary>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put(&apos;0.gif&apos;, &apos;0_converted.gif&apos;, array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put(&apos;1.gif&apos;, &apos;1_converted.gif&apos;, array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</summary>
+ <description>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put(&apos;0.gif&apos;, &apos;0_converted.gif&apos;, array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put(&apos;1.gif&apos;, &apos;1_converted.gif&apos;, array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-08-05</date>
+ <time>23:30:45</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://sourceforge.jp/projects/opensource/wiki/licenses/MIT_license">MIT License</license>
+ <notes>------------------------------------------------------------------------
+r1078 | anatoo | 2009-08-05 23:28:55 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\228?\190?\139?\229?\164?\150?\227?\130?\175?\227?\131?\169?\227?\130?\185?\227?\129?\171prefix?\227?\129?\164?\227?\129?\145?\229?\191?\152?\227?\130?\140?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r1074 | anatoo | 2009-08-05 22:33:42 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\227?\131?\145?\227?\131?\131?\227?\130?\177?\227?\131?\188?\227?\130?\184?\227?\129?\174prefix?\227?\129?\164?\227?\129?\145?\229?\191?\152?\227?\130?\140?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r1072 | anatoo | 2009-08-05 22:11:48 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r1071 | anatoo | 2009-08-05 21:40:50 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="7d03e93508885a6bbb1d3595d0f5192d" name="Image/GifColorConverter.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-08-05</date>
+   <license uri="http://sourceforge.jp/projects/opensource/wiki/licenses/MIT_license">MIT License</license>
+   <notes>------------------------------------------------------------------------
+r1078 | anatoo | 2009-08-05 23:28:55 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\228?\190?\139?\229?\164?\150?\227?\130?\175?\227?\131?\169?\227?\130?\185?\227?\129?\171prefix?\227?\129?\164?\227?\129?\145?\229?\191?\152?\227?\130?\140?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r1074 | anatoo | 2009-08-05 22:33:42 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\227?\131?\145?\227?\131?\131?\227?\130?\177?\227?\131?\188?\227?\130?\184?\227?\129?\174prefix?\227?\129?\164?\227?\129?\145?\229?\191?\152?\227?\130?\140?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r1072 | anatoo | 2009-08-05 22:11:48 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r1071 | anatoo | 2009-08-05 21:40:50 -0700 (Wed, 05 Aug 2009) | 1 line
+
+?\231?\167?\187?\229?\139?\149
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

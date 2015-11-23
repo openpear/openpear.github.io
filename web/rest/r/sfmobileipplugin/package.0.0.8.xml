@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfMobileIPPlugin</name>
+ <channel>openpear.org</channel>
+ <summary>IPアドレスから高速に携帯キャリアを判別するsymfonyプラグイン</summary>
+ <description>IPアドレスから高速に携帯キャリアを判別するsymfonyプラグイン</description>
+ <lead>
+  <name>bto</name>
+  <user>bto</user>
+  <email>masato@bz2.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-21</date>
+ <time>14:00:04</time>
+ <version>
+  <release>0.0.8</release>
+  <api>0.0.8</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1558 | bto | 2010-01-21 13:54:17 +0900 (木, 21  1月 2010) | 2 lines
+
+updated ip addresses
+
+------------------------------------------------------------------------
+r1349 | bto | 2009-10-19 14:17:09 +0900 (月, 19 10月 2009) | 2 lines
+
+release 0.0.7
+
+------------------------------------------------------------------------
+r1348 | bto | 2009-10-19 14:12:59 +0900 (月, 19 10月 2009) | 1 line
+
+added ip addresses
+------------------------------------------------------------------------
+r1028 | bto | 2009-07-24 14:26:35 +0900 (金, 24  7月 2009) | 2 lines
+
+updated ip addresses for softbank
+
+------------------------------------------------------------------------
+r819 | bto | 2009-05-11 18:42:14 +0900 (月, 11  5月 2009) | 2 lines
+
+added new ezweb ip addresses
+
+------------------------------------------------------------------------
+r795 | bto | 2009-05-08 16:02:30 +0900 (金, 08  5月 2009) | 2 lines
+
+0.0.4
+
+------------------------------------------------------------------------
+r793 | bto | 2009-05-08 15:58:12 +0900 (金, 08  5月 2009) | 2 lines
+
+simplefied for reading configuration files
+
+------------------------------------------------------------------------
+r760 | bto | 2009-04-27 11:59:41 +0900 (月, 27  4月 2009) | 2 lines
+
+to release 0.0.3
+
+------------------------------------------------------------------------
+r759 | bto | 2009-04-27 11:58:06 +0900 (月, 27  4月 2009) | 2 lines
+
+added new ip addresses
+
+------------------------------------------------------------------------
+r740 | bto | 2009-04-21 23:28:01 +0900 (火, 21  4月 2009) | 2 lines
+
+not to check HTTP_X_FORWARDED_FOR
+
+------------------------------------------------------------------------
+r732 | bto | 2009-04-21 17:01:30 +0900 (火, 21  4月 2009) | 2 lines
+
+added sfMobileIPPlugin
+
+------------------------------------------------------------------------
+r731 | openpear | 2009-04-21 16:53:38 +0900 (火, 21  4月 2009) | 1 line
+
+[Create Base Directory] sfMobileIPPlugin
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="b29c9427cccb2ebacad644f8e9907877" name="config/config_handlers.yml" role="data" />
+   <file baseinstalldir="/" md5sum="bda37d1eedb3f7479a2ae1c77ef06098" name="config/mobile_ips.yml" role="data" />
+   <file baseinstalldir="/" md5sum="2ed4b9b22b01a98b23d5ea8c8ee4e5c1" name="lib/sfMobileIP.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="3f9ea7819c4f7accf4126f37989fea0a" name="lib/sfMobileIPConfigHandler.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="LICENSE" role="data" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.8</release>
+    <api>0.0.8</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-01-21</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1558 | bto | 2010-01-21 13:54:17 +0900 (木, 21  1月 2010) | 2 lines
+
+updated ip addresses
+
+------------------------------------------------------------------------
+r1349 | bto | 2009-10-19 14:17:09 +0900 (月, 19 10月 2009) | 2 lines
+
+release 0.0.7
+
+------------------------------------------------------------------------
+r1348 | bto | 2009-10-19 14:12:59 +0900 (月, 19 10月 2009) | 1 line
+
+added ip addresses
+------------------------------------------------------------------------
+r1028 | bto | 2009-07-24 14:26:35 +0900 (金, 24  7月 2009) | 2 lines
+
+updated ip addresses for softbank
+
+------------------------------------------------------------------------
+r819 | bto | 2009-05-11 18:42:14 +0900 (月, 11  5月 2009) | 2 lines
+
+added new ezweb ip addresses
+
+------------------------------------------------------------------------
+r795 | bto | 2009-05-08 16:02:30 +0900 (金, 08  5月 2009) | 2 lines
+
+0.0.4
+
+------------------------------------------------------------------------
+r793 | bto | 2009-05-08 15:58:12 +0900 (金, 08  5月 2009) | 2 lines
+
+simplefied for reading configuration files
+
+------------------------------------------------------------------------
+r760 | bto | 2009-04-27 11:59:41 +0900 (月, 27  4月 2009) | 2 lines
+
+to release 0.0.3
+
+------------------------------------------------------------------------
+r759 | bto | 2009-04-27 11:58:06 +0900 (月, 27  4月 2009) | 2 lines
+
+added new ip addresses
+
+------------------------------------------------------------------------
+r740 | bto | 2009-04-21 23:28:01 +0900 (火, 21  4月 2009) | 2 lines
+
+not to check HTTP_X_FORWARDED_FOR
+
+------------------------------------------------------------------------
+r732 | bto | 2009-04-21 17:01:30 +0900 (火, 21  4月 2009) | 2 lines
+
+added sfMobileIPPlugin
+
+------------------------------------------------------------------------
+r731 | openpear | 2009-04-21 16:53:38 +0900 (火, 21  4月 2009) | 1 line
+
+[Create Base Directory] sfMobileIPPlugin
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

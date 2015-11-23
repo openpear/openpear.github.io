@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Keires_DB</name>
+ <channel>openpear.org</channel>
+ <summary>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</summary>
+ <description>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</description>
+ <lead>
+  <name>KOYAMA Tetsuji</name>
+  <user>koyhoge</user>
+  <email>koyama@hoge.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-18</date>
+ <time>03:29:02</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2273 | koyhoge | 2010-12-18 01:39:14 +0900 (土, 18 12月 2010) | 6 lines
+
+* add method:
+  - Keires_DB_Ext::_execStatement(): call PDOStatement::bindValue() by
+   type of php variables.
+* fix:
+  - Keires_DB::adjustType(): not convert to string when boolean.
+
+------------------------------------------------------------------------
+r2175 | koyhoge | 2010-10-12 20:26:26 +0900 (火, 12 10月 2010) | 3 lines
+
+* fix:
+  - use new method shortcut
+
+------------------------------------------------------------------------
+r2174 | koyhoge | 2010-10-12 20:25:32 +0900 (火, 12 10月 2010) | 3 lines
+
+* add:
+  - new method: Keires_DB_Abstract::getDB()
+
+------------------------------------------------------------------------
+r2148 | koyhoge | 2010-10-03 03:13:01 +0900 (日, 03 10月 2010) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r2147 | openpear | 2010-10-03 03:09:04 +0900 (日, 03 10月 2010) | 1 line
+
+[New Package] Keires_DB
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="09333078b2637ca6d8183bdbf2e7b8e1" name="Keires/DB.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-12-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2273 | koyhoge | 2010-12-18 01:39:14 +0900 (土, 18 12月 2010) | 6 lines
+
+* add method:
+  - Keires_DB_Ext::_execStatement(): call PDOStatement::bindValue() by
+   type of php variables.
+* fix:
+  - Keires_DB::adjustType(): not convert to string when boolean.
+
+------------------------------------------------------------------------
+r2175 | koyhoge | 2010-10-12 20:26:26 +0900 (火, 12 10月 2010) | 3 lines
+
+* fix:
+  - use new method shortcut
+
+------------------------------------------------------------------------
+r2174 | koyhoge | 2010-10-12 20:25:32 +0900 (火, 12 10月 2010) | 3 lines
+
+* add:
+  - new method: Keires_DB_Abstract::getDB()
+
+------------------------------------------------------------------------
+r2148 | koyhoge | 2010-10-03 03:13:01 +0900 (日, 03 10月 2010) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r2147 | openpear | 2010-10-03 03:09:04 +0900 (日, 03 10月 2010) | 1 line
+
+[New Package] Keires_DB
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

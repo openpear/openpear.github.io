@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Wozozo_Unko</name>
+ <channel>openpear.org</channel>
+ <summary>hogera
+
+hogefuga
+
+*hoge
+
+-fuga
+--gufuuff
+
+**hogge</summary>
+ <description>hogera
+
+hogefuga
+
+*hoge
+
+-fuga
+--gufuuff
+
+**hogge</description>
+ <lead>
+  <name>Keisuke SATO</name>
+  <user>riaf</user>
+  <email>riaf@nequal.jp</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-08-07</date>
+ <time>02:12:01</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1084 | sotarok | 2009-08-07 01:34:44 +0900 (金, 07  8月 2009) | 2 lines
+
+日本語テスト
+
+------------------------------------------------------------------------
+r839 | sotarok | 2009-05-17 01:58:14 +0900 (日, 17  5月 2009) | 1 line
+
+move
+------------------------------------------------------------------------
+r838 | sotarok | 2009-05-17 01:45:55 +0900 (日, 17  5月 2009) | 1 line
+
+update
+------------------------------------------------------------------------
+r837 | sotarok | 2009-05-17 01:42:40 +0900 (日, 17  5月 2009) | 1 line
+
+commit
+------------------------------------------------------------------------
+r836 | openpear | 2009-05-17 01:05:39 +0900 (日, 17  5月 2009) | 1 line
+
+[Create Base Directory] Wozozo_Unko
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/Wozozo" name="/">
+   <file baseinstalldir="/Wozozo" md5sum="0794a66ee8488556584c0ef290252df0" name="src/bin/wozozo" role="data" />
+   <file baseinstalldir="/Wozozo" md5sum="4556886b7500340f880acc3548deb0d3" name="src/Wozozo.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Openpear_Util</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-08-07</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1084 | sotarok | 2009-08-07 01:34:44 +0900 (金, 07  8月 2009) | 2 lines
+
+日本語テスト
+
+------------------------------------------------------------------------
+r839 | sotarok | 2009-05-17 01:58:14 +0900 (日, 17  5月 2009) | 1 line
+
+move
+------------------------------------------------------------------------
+r838 | sotarok | 2009-05-17 01:45:55 +0900 (日, 17  5月 2009) | 1 line
+
+update
+------------------------------------------------------------------------
+r837 | sotarok | 2009-05-17 01:42:40 +0900 (日, 17  5月 2009) | 1 line
+
+commit
+------------------------------------------------------------------------
+r836 | openpear | 2009-05-17 01:05:39 +0900 (日, 17  5月 2009) | 1 line
+
+[Create Base Directory] Wozozo_Unko
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

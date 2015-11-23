@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>PEAR_PackageProjector</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</s>
+<d>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</d>
+<r xlink:href="/rest/r/pear_packageprojector" />
+</p>

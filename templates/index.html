@@ -1,0 +1,158 @@
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+?>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/hybrid.min.css">
+    <link rel="stylesheet" href="pirum.css">
+    <link rel="alternate" type="application/rss+xml" href="<?php echo $this->server->url ?>/feed.xml" title="<?php echo $this->server->summary ?> Latest Releases">
+    <title>Openpear</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="pull-right" id="google_translate_element"></div>
+        <h1>Openpear</h1>
+        <p class="lead">Openpear is a PEAR Repository Channel and Subversion Hosting Service.<br>
+        <small>since November 2008</small></p>
+        <p><a href="https://gitter.im/openpear/general"><img src="//img.shields.io/badge/GITTER-JOIN_CHAT_%E2%86%92-1dce73.svg"></a></p>
+      </header>
+
+      <div class="alert alert-info">
+        <h3>以前からお使いですか？</h3>
+        <p>以前の Openpear をお使いだった方は、以下のコマンドを実行する必要があります</p>
+        <pre><code>pear channel-update openpear.org</code></pre>
+      </div>
+
+      <div class="howto panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">使い方</h3>
+        </div>
+        <div class="panel-body">
+          <h4>チャンネルを登録する</h4>
+          <pre><code>pear channel-discover <?php echo $this->server->name ?></code></pre>
+          <h4>利用可能なパッケージをリストする</h4>
+          <pre><code>pear remote-list -c <?php echo $this->server->alias ?></code></pre>
+          <h4>パッケージをインストールする</h4>
+          <pre><code>pear install <?php echo $this->server->alias ?>/package_name</code></pre>
+          <h4>バージョンや安定性を指定してパッケージをインストールする</h4>
+          <pre><code>pear install <?php echo $this->server->alias ?>/package_name-1.0.0
+pear install <?php echo $this->server->alias ?>/package_name-beta</code></pre>
+        </div>
+      </div>
+
+      <h2>パッケージリスト</h2>
+
+      <div class="row">
+        <div class="col-md-2 col-md-push-10" role="navigation">
+          <ul class="list-unstyled list-packages">
+          <?php foreach ($this->packages as $package): ?>
+            <li><a href="#<?php echo strtolower($package['name']) ?>"><?php echo $package['name'] ?></a></li>
+          <?php endforeach ?>
+          </ul>
+        </div>
+
+        <div class="col-md-10 col-md-pull-2" role="main">
+          <?php foreach ($this->packages as $package): ?>
+          <?php
+            $deps = array();
+
+            if (isset($package['deps']['required']['package'])) {
+                if (isset($package['deps']['required']['package']['name'])) {
+                    $package['deps']['required']['package'] = array($package['deps']['required']['package']);
+                }
+                foreach ($package['deps']['required']['package'] as $p) {
+                    if (isset($p['conflicts'])) {
+                        continue;
+                    }
+                    if (!isset($deps[$p['channel']])) {
+                        $deps[$p['channel']] = array();
+                    }
+                    $deps[$p['channel']][] = $p;
+                }
+            }
+
+          ?>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="<?php echo strtolower($package['name']) ?>"><a href="https://github.com/openpear/<?php echo $package['name'] ?>"><?php echo $package['name'] ?></a>
+                <small><?php echo (empty($package['licenseuri']) ? $package['license'] : '<a href="' . $package['licenseuri'] . '">' . $package['license'] . '</a>') ?></small></h3>
+            </div>
+            <div class="panel-body">
+              <p><?php echo HatenaSyntax::render(html_entity_decode($package['description']), [
+                  'headerlevel' => 4,
+              ]) ?></p>
+
+              <p><strong>インストール</strong></p>
+              <pre><code><?php echo $package['extension'] != null ? 'pecl' : 'pear' ?> install <?php echo $this->server->alias ?>/<?php echo $package['name'] ?></code></pre>
+
+              <?php if ($deps): ?>
+              <p><strong>依存</strong></p>
+              <dl class="dependencies">
+              <?php foreach ($deps as $ch => $ch_deps): ?>
+                <dt><?php echo $ch ?></dt>
+                <dd>
+                  <?php for ($i = 0, $count = count($ch_deps); $i < $count; $i++): ?>
+                    <?php echo $ch_deps[$i]['name'].($i < $count - 1 ? ', ' : '') ?>
+                  <?php endfor ?>
+                <dd>
+              <?php endforeach ?>
+              </dl>
+              <?php endif ?>
+
+              <p><strong>メンテナー</strong></p>
+              <?php
+              $maintainers = array();
+              foreach ($package['current_maintainers'] as $maintainer) {
+                  $maintainers[] = $maintainer['name'].' <small>(as '.$maintainer['role'].')</small>';
+              }
+              $maintainers = implode(', ', $maintainers);
+              ?>
+              <p><?php echo $maintainers ?></p>
+
+              <p><strong>リリース</strong></p>
+              <?php
+              $releases = array();
+              foreach ($package['releases'] as $release) {
+                  $releases[] = "<a href=\"{$this->server->url}/get/{$package['name']}-{$release['version']}.tgz\">{$release['version']}</a> <small>({$release['stability']})</small>";
+              }
+              $releases = implode(', ', $releases);
+              ?>
+              <p><?php echo $releases ?></p>
+            </div>
+          </div>
+          <?php endforeach ?>
+        </div>
+      </div>
+
+      <p><a class="back-to-top btn btn-default" href="#">Back to top</a></p>
+
+      <footer class="footer">
+        <p class="powered">by <a href="http://nequal.jp">nequal</a>.</p>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>
+      $(function() {
+        $('pre.superpre').each(function(i, el) {
+          hljs.highlightBlock(el);
+        });
+        $(document).on('click', '.back-to-top', function(e) {
+          e.preventDefault();
+          $('html,body').animate({scrollTop: 0});
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-288900-19'}, 'google_translate_element');
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

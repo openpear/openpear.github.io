@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Db_Fixture</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</s>
+<d>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</d>
+<r xlink:href="/rest/r/db_fixture" />
+</p>

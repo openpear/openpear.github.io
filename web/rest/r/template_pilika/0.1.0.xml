@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/template_pilika">Template_Pilika</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>New BSD Licence</l>
+    <m>IZUMIYA</m>
+    <s>http://www.deathmarch.jp/pilika/
+をPHPで作ってみる</s>
+    <d>http://www.deathmarch.jp/pilika/
+をPHPで作ってみる</d>
+    <da>2009-04-17 22:04:28</da>
+    <n>------------------------------------------------------------------------
+r687 | IZUMIYA | 2009-04-17 21:59:51 -0700 (Fri, 17 Apr 2009) | 1 line
+
+?\227?\129?\175?\227?\129?\152?\227?\130?\129?\227?\129?\166?\227?\129?\174?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------
+r678 | openpear | 2009-04-17 21:35:56 -0700 (Fri, 17 Apr 2009) | 1 line
+
+[Create Base Directory] Template_Pilika
+------------------------------------------------------------------------</n>
+    <f>1004</f>
+    <g>http://openpear.org/get/Template_Pilika-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

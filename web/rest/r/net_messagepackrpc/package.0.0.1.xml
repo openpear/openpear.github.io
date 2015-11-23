@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_MessagePackRPC</name>
+ <channel>openpear.org</channel>
+ <summary>MessagePack-RPC PHP impl.</summary>
+ <description>MessagePack-RPC PHP impl.</description>
+ <lead>
+  <name>h0x10</name>
+  <user>h0x10</user>
+  <email>hakaselab@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-27</date>
+ <time>15:12:11</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+MessagePack-RPC PHP impl.
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="69772a93617e3228db71a65f38a838fe" name="Net/MessagePackRPC/Back.php" role="php" />
+   <file baseinstalldir="." md5sum="268f56991792c2749135acb4ae1ed783" name="Net/MessagePackRPC/Client.php" role="php" />
+   <file baseinstalldir="." md5sum="c72e9171a30ec4f6c0db8b04f9c042d3" name="Net/MessagePackRPC/Future.php" role="php" />
+   <file baseinstalldir="." md5sum="f16473e1d4d0e99652ea797a87fdb6da" name="Net/MessagePackRPC/Server.php" role="php" />
+   <file baseinstalldir="." md5sum="2903dc0c8718732e749aef270e1ebf89" name="Net/MessagePackRPC.php" role="php" />
+   <file baseinstalldir="." md5sum="a853dd191f927ad59b0a8468938af348" name="sample/client.php" role="php" />
+   <file baseinstalldir="." md5sum="87c470c533fec90a64bd45562952784d" name="sample/server.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-12-27</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+MessagePack-RPC PHP impl.
+   </notes>
+  </release>
+ </changelog>
+</package>

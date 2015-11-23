@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Keires_Feed</name>
+ <channel>openpear.org</channel>
+ <summary>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</summary>
+ <description>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</description>
+ <lead>
+  <name>KOYAMA Tetsuji</name>
+  <user>koyhoge</user>
+  <email>koyama@hoge.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </developer>
+ <date>2009-08-18</date>
+ <time>13:26:04</time>
+ <version>
+  <release>0.2.1</release>
+  <api>0.2.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r425 | koyhoge | 2009-02-24 00:34:17 +0900 (火, 24  2月 2009) | 3 lines
+
+* fix:
+  - use Openpear_Util for array_val, ExceptionWrapper
+
+------------------------------------------------------------------------
+r424 | koyhoge | 2009-02-24 00:33:05 +0900 (火, 24  2月 2009) | 3 lines
+
+* remove file:
+  - ExceptionWrapper bring to Openpear_Util
+
+------------------------------------------------------------------------
+r410 | koyhoge | 2009-02-23 16:35:53 +0900 (月, 23  2月 2009) | 3 lines
+
+* fix:
+  - bad email address in header
+
+------------------------------------------------------------------------
+r395 | koyhoge | 2009-02-17 18:30:41 +0900 (火, 17  2月 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r394 | openpear | 2009-02-17 17:35:27 +0900 (火, 17  2月 2009) | 1 line
+
+[Create Base Directory] Keires_Feed
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/Keires" name="/">
+   <file baseinstalldir="/Keires" md5sum="2dc4a190d9b07aa11f7ff1a6f7726091" name="Feed.php" role="php" />
+   <file baseinstalldir="/Keires" md5sum="20d33766ce38907d551ac3fa81fbc29a" name="FeedParser.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Openpear_Util</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.2.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-08-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r425 | koyhoge | 2009-02-24 00:34:17 +0900 (火, 24  2月 2009) | 3 lines
+
+* fix:
+  - use Openpear_Util for array_val, ExceptionWrapper
+
+------------------------------------------------------------------------
+r424 | koyhoge | 2009-02-24 00:33:05 +0900 (火, 24  2月 2009) | 3 lines
+
+* remove file:
+  - ExceptionWrapper bring to Openpear_Util
+
+------------------------------------------------------------------------
+r410 | koyhoge | 2009-02-23 16:35:53 +0900 (月, 23  2月 2009) | 3 lines
+
+* fix:
+  - bad email address in header
+
+------------------------------------------------------------------------
+r395 | koyhoge | 2009-02-17 18:30:41 +0900 (火, 17  2月 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r394 | openpear | 2009-02-17 17:35:27 +0900 (火, 17  2月 2009) | 1 line
+
+[Create Base Directory] Keires_Feed
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

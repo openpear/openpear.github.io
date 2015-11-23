@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_HandlerSocket</name>
+ <channel>openpear.org</channel>
+ <summary>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket(&apos;somehost&apos;, &apos;9998&apos;);
+  $hs-&gt;openIndex(1, &apos;somedb&apos;, &apos;table1&apos;, &apos;PRIMARY&apos;, array(&apos;id&apos;, &apos;enable&apos;, &apos;body&apos;));
+  $r = $hs-&gt;executeSingle(1, &apos;=&apos;, array(1));</summary>
+ <description>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket(&apos;somehost&apos;, &apos;9998&apos;);
+  $hs-&gt;openIndex(1, &apos;somedb&apos;, &apos;table1&apos;, &apos;PRIMARY&apos;, array(&apos;id&apos;, &apos;enable&apos;, &apos;body&apos;));
+  $r = $hs-&gt;executeSingle(1, &apos;=&apos;, array(1));</description>
+ <lead>
+  <name>takada-at</name>
+  <user>takada-at</user>
+  <email>takada-at@klab.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-05</date>
+ <time>11:58:03</time>
+ <version>
+  <release>0.0.2</release>
+  <api>0.0.2</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2212 | takada-at | 2010-10-29 19:20:09 +0900 (金, 29 10月 2010) | 1 line
+
+change stream_get_line to fgets
+------------------------------------------------------------------------
+r2211 | takada-at | 2010-10-29 15:55:03 +0900 (金, 29 10月 2010) | 1 line
+
+revise multiexec
+------------------------------------------------------------------------
+r2210 | takada-at | 2010-10-29 01:15:07 +0900 (金, 29 10月 2010) | 1 line
+
+remove somefile
+------------------------------------------------------------------------
+r2208 | takada-at | 2010-10-29 01:01:42 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2207 | takada-at | 2010-10-29 00:56:58 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2206 | takada-at | 2010-10-29 00:35:36 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2205 | takada-at | 2010-10-29 00:34:17 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2197 | takada-at | 2010-10-28 07:29:16 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2196 | takada-at | 2010-10-28 07:11:15 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2195 | takada-at | 2010-10-28 06:48:30 +0900 (木, 28 10月 2010) | 1 line
+
+fix bug: update&amp;delete
+------------------------------------------------------------------------
+r2194 | takada-at | 2010-10-28 00:09:55 +0900 (木, 28 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2193 | takada-at | 2010-10-27 23:22:58 +0900 (水, 27 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2192 | takada-at | 2010-10-27 22:54:59 +0900 (水, 27 10月 2010) | 1 line
+
+create&amp;add
+------------------------------------------------------------------------
+r2191 | openpear | 2010-10-27 22:32:11 +0900 (水, 27 10月 2010) | 1 line
+
+[New Package] Net_HandlerSocket
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4a9a38f34ed2ae1a4c86e0f908271381" name="Net/HandlerSocket.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-11-05</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2212 | takada-at | 2010-10-29 19:20:09 +0900 (金, 29 10月 2010) | 1 line
+
+change stream_get_line to fgets
+------------------------------------------------------------------------
+r2211 | takada-at | 2010-10-29 15:55:03 +0900 (金, 29 10月 2010) | 1 line
+
+revise multiexec
+------------------------------------------------------------------------
+r2210 | takada-at | 2010-10-29 01:15:07 +0900 (金, 29 10月 2010) | 1 line
+
+remove somefile
+------------------------------------------------------------------------
+r2208 | takada-at | 2010-10-29 01:01:42 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2207 | takada-at | 2010-10-29 00:56:58 +0900 (金, 29 10月 2010) | 1 line
+
+add comment and error handling
+------------------------------------------------------------------------
+r2206 | takada-at | 2010-10-29 00:35:36 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2205 | takada-at | 2010-10-29 00:34:17 +0900 (金, 29 10月 2010) | 1 line
+
+add test/update executeMulti
+------------------------------------------------------------------------
+r2197 | takada-at | 2010-10-28 07:29:16 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2196 | takada-at | 2010-10-28 07:11:15 +0900 (木, 28 10月 2010) | 1 line
+
+fixbug
+------------------------------------------------------------------------
+r2195 | takada-at | 2010-10-28 06:48:30 +0900 (木, 28 10月 2010) | 1 line
+
+fix bug: update&amp;delete
+------------------------------------------------------------------------
+r2194 | takada-at | 2010-10-28 00:09:55 +0900 (木, 28 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2193 | takada-at | 2010-10-27 23:22:58 +0900 (水, 27 10月 2010) | 1 line
+
+escape
+------------------------------------------------------------------------
+r2192 | takada-at | 2010-10-27 22:54:59 +0900 (水, 27 10月 2010) | 1 line
+
+create&amp;add
+------------------------------------------------------------------------
+r2191 | openpear | 2010-10-27 22:32:11 +0900 (水, 27 10月 2010) | 1 line
+
+[New Package] Net_HandlerSocket
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

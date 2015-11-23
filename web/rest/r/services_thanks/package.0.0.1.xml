@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Thanks</name>
+ <channel>openpear.org</channel>
+ <summary>THANKSのAPIを叩く
+
+alphaとしてリリース
+
+[http://thanks.kayac.com]</summary>
+ <description>THANKSのAPIを叩く
+
+alphaとしてリリース
+
+[http://thanks.kayac.com]</description>
+ <lead>
+  <name>tknzk</name>
+  <user>tknzk</user>
+  <email>info@tknzk.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-08</date>
+ <time>22:24:05</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r2000 | tknzk | 2010-08-08 22:20:17 +0900 (日, 08  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r1999 | tknzk | 2010-08-08 22:16:12 +0900 (日, 08  8月 2010) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r1963 | openpear | 2010-07-13 16:45:04 +0900 (火, 13  7月 2010) | 1 line
+
+[New Package] Services_Thanks
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9d481750e45172f5e40119014ba5411f" name="Services/Thanks.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-08</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r2000 | tknzk | 2010-08-08 22:20:17 +0900 (日, 08  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r1999 | tknzk | 2010-08-08 22:16:12 +0900 (日, 08  8月 2010) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r1963 | openpear | 2010-07-13 16:45:04 +0900 (火, 13  7月 2010) | 1 line
+
+[New Package] Services_Thanks
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

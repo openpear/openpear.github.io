@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/lazyfileiterator">LazyFileIterator</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <a>0.1.1</a>
+    <mp>5.1.0</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>hnw</m>
+    <s>LazyFileIteratorは、ファイルの内容を1行づつ取得するようなイテレータです。
+
+LazyFileIteratorはSplFileObjectと異なり、必要になってからファイルをオープンし、不要になるとファイルをクローズします。
+
+SplFileObjectはオブジェクト生成のタイミングでファイルをオープンし、オブジェクトが存在する間はファイルもクローズしないため、大量のファイルに対して同数のイテレータを生成してしまうと、同数のファイルオープン数を消費してしまいます。LazyFileIteratorを利用すれば、この問題を回避することができます。
+
+LazyFileIteratorは内部的にSplFileObjectを生成して利用しています。
+
+
+* 機能
+
+- 初めてのメソッド呼びだしのタイミングでSplFileObjectを生成し、ファイルをオープンします。
+- ファイル終端まで読み込むと、SplFileObjectを解放し、ファイルをクローズします。
+- 一旦ファイルがクローズされた後でrewind()するとSplFileObjectを再度生成し、ファイルを再度オープンします。
+- 実ファイルが存在しないファイル（URLや標準入力など）をオープンする場合にはNoRewindIteratorを利用しますので、イテレータとして特に苦労せずに使えます。
+
+
+* 動作例
+
+catのように、引数のファイルを全て連結して表示するようなプログラムを示します。
+
+AppendIteratorに、複数のLazyFileIteratorを与えています。SplFileObjectで同じことをすると、ファイルオープン数をファイル数と同数消費してしまいます。
+
+&gt;||
+&lt;?php
+require_once('LazyFileIterator.php');
+
+$inputs = new AppendIterator();
+
+$files = $_SERVER['argv'];
+array_shift($files); // remove filename of myself
+
+if ($files === array()) {
+  $files[] = 'php://stdin';
+}
+foreach($files as $filename) {
+  $inputs-&gt;append(new LazyFileIterator($filename, 'r'));
+}
+
+foreach($inputs as $line) {
+  print $line;
+}
+||&lt;</s>
+    <d>LazyFileIteratorは、ファイルの内容を1行づつ取得するようなイテレータです。
+
+LazyFileIteratorはSplFileObjectと異なり、必要になってからファイルをオープンし、不要になるとファイルをクローズします。
+
+SplFileObjectはオブジェクト生成のタイミングでファイルをオープンし、オブジェクトが存在する間はファイルもクローズしないため、大量のファイルに対して同数のイテレータを生成してしまうと、同数のファイルオープン数を消費してしまいます。LazyFileIteratorを利用すれば、この問題を回避することができます。
+
+LazyFileIteratorは内部的にSplFileObjectを生成して利用しています。
+
+
+* 機能
+
+- 初めてのメソッド呼びだしのタイミングでSplFileObjectを生成し、ファイルをオープンします。
+- ファイル終端まで読み込むと、SplFileObjectを解放し、ファイルをクローズします。
+- 一旦ファイルがクローズされた後でrewind()するとSplFileObjectを再度生成し、ファイルを再度オープンします。
+- 実ファイルが存在しないファイル（URLや標準入力など）をオープンする場合にはNoRewindIteratorを利用しますので、イテレータとして特に苦労せずに使えます。
+
+
+* 動作例
+
+catのように、引数のファイルを全て連結して表示するようなプログラムを示します。
+
+AppendIteratorに、複数のLazyFileIteratorを与えています。SplFileObjectで同じことをすると、ファイルオープン数をファイル数と同数消費してしまいます。
+
+&gt;||
+&lt;?php
+require_once('LazyFileIterator.php');
+
+$inputs = new AppendIterator();
+
+$files = $_SERVER['argv'];
+array_shift($files); // remove filename of myself
+
+if ($files === array()) {
+  $files[] = 'php://stdin';
+}
+foreach($files as $filename) {
+  $inputs-&gt;append(new LazyFileIterator($filename, 'r'));
+}
+
+foreach($inputs as $line) {
+  print $line;
+}
+||&lt;</d>
+    <da>2009-06-01 10:02:49</da>
+    <n>------------------------------------------------------------------------
+r900 | hnw | 2009-06-01 09:45:51 -0700 (Mon, 01 Jun 2009) | 1 line
+
+do refactoring
+------------------------------------------------------------------------
+r887 | hnw | 2009-05-31 00:10:04 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</n>
+    <f>2496</f>
+    <g>http://openpear.org/get/LazyFileIterator-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

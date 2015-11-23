@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_www_youtube">Wozozo_WWW_YouTube</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.4</mp>
+    <st>stable</st>
+    <l>New BSD License</l>
+    <m>sasezaki</m>
+    <s>Download YouTube's video
+
+
+install:
+&gt;||
+pear channel-discover openpear.org
+sudo pear install openpear/Wozozo_WWW_YouTube
+||&lt;
+
+
+usage:
+&gt;||
+&lt;?php
+require_once 'Wozozo/WWW/YouTube.php';
+Wozozo_WWW_YouTube::download('gQf_QTsvXCU'); //YouTube's videoID
+Wozozo_WWW_YouTube::download('http://www.youtube.com/watch?v=gQf_QTsvXCU'); //
+||&lt;
+
+
+zf tool's provider 
+&gt;||
+zf enable config.provider Wozozo_WWW_YouTube_Tool_YoutubeProvider
+||&lt;</s>
+    <d>Download YouTube's video
+
+
+install:
+&gt;||
+pear channel-discover openpear.org
+sudo pear install openpear/Wozozo_WWW_YouTube
+||&lt;
+
+
+usage:
+&gt;||
+&lt;?php
+require_once 'Wozozo/WWW/YouTube.php';
+Wozozo_WWW_YouTube::download('gQf_QTsvXCU'); //YouTube's videoID
+Wozozo_WWW_YouTube::download('http://www.youtube.com/watch?v=gQf_QTsvXCU'); //
+||&lt;
+
+
+zf tool's provider 
+&gt;||
+zf enable config.provider Wozozo_WWW_YouTube_Tool_YoutubeProvider
+||&lt;</d>
+    <da>2010-04-16 00:33:02</da>
+    <n>
+------------------------------------------------------------------------
+r1795 | sasezaki | 2010-04-16 00:18:25 +0900 (金, 16  4月 2010) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r1794 | openpear | 2010-04-15 23:31:03 +0900 (木, 15  4月 2010) | 1 line
+
+[New Package] Wozozo_WWW_YouTube
+------------------------------------------------------------------------
+ </n>
+    <f>5374</f>
+    <g>http://openpear.org/get/Wozozo_WWW_YouTube-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

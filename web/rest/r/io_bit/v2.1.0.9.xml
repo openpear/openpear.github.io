@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/io_bit">IO_Bit</p>
+    <c>openpear.org</c>
+    <v>1.0.9</v>
+    <a>1.0.9</a>
+    <mp>4.0.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>yoya</m>
+    <s>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</s>
+    <d>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</d>
+    <da>2011-01-28 10:09:02</da>
+    <n>
+ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)
+ </n>
+    <f>2041</f>
+    <g>http://openpear.org/get/IO_Bit-1.0.9</g>
+    <x xlink:href="package.1.0.9.xml"/>
+</r>

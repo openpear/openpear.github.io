@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/string_formatter">String_Formatter</p>
+    <c>openpear.org</c>
+    <v>0.1.2</v>
+    <a>0.1.2</a>
+    <mp>5.1</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>shuheitanuma</m>
+    <s>比較的管理しやすい文字列のフォーマットを行います。
+PDOのプリペアドステートメントに近い何か。</s>
+    <d>比較的管理しやすい文字列のフォーマットを行います。
+PDOのプリペアドステートメントに近い何か。</d>
+    <da>2008-11-07 12:39:40</da>
+    <n>------------------------------------------------------------------------
+r79 | shuheitanuma | 2008-11-07 12:39:27 -0800 (Fri, 07 Nov 2008) | 1 line
+
+change class name
+------------------------------------------------------------------------
+r77 | shuheitanuma | 2008-11-07 12:38:24 -0800 (Fri, 07 Nov 2008) | 1 line
+
+change class name
+------------------------------------------------------------------------
+r74 | shuheitanuma | 2008-11-07 12:29:54 -0800 (Fri, 07 Nov 2008) | 1 line
+
+commit test
+------------------------------------------------------------------------
+r73 | shuheitanuma | 2008-11-07 12:29:22 -0800 (Fri, 07 Nov 2008) | 1 line
+
+can't commit
+------------------------------------------------------------------------
+r68 | shuheitanuma | 2008-11-07 11:56:56 -0800 (Fri, 07 Nov 2008) | 1 line
+
+initial commit.
+------------------------------------------------------------------------
+r67 | openpear | 2008-11-07 11:51:22 -0800 (Fri, 07 Nov 2008) | 1 line
+
+[Create Base Directory] String_Formatter
+------------------------------------------------------------------------</n>
+    <f>3294</f>
+    <g>http://openpear.org/get/String_Formatter-0.1.2</g>
+    <x xlink:href="package.0.1.2.xml"/>
+</r>

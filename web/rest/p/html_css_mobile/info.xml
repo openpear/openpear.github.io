@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>HTML_CSS_Mobile</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT License</l>
+<s>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+諸事情からものすごくバージョンが上がってstableになりました。
+これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</s>
+<d>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+諸事情からものすごくバージョンが上がってstableになりました。
+これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</d>
+<r xlink:href="/rest/r/html_css_mobile" />
+</p>

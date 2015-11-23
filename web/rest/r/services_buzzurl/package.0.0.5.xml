@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Buzzurl</name>
+ <channel>openpear.org</channel>
+ <summary>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</summary>
+ <description>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</description>
+ <lead>
+  <name>tell-k</name>
+  <user>tell-k</user>
+  <email>ffk2005@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-17</date>
+ <time>14:06:01</time>
+ <version>
+  <release>0.0.5</release>
+  <api>0.0.5</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1851 | tell-k | 2010-05-17 13:57:54 +0900 (月, 17  5月 2010) | 5 lines
+
+
+ * getRecentArticlesを実装するの忘れてた。
+ * テストコードも追加
+
+
+------------------------------------------------------------------------
+r1850 | tell-k | 2010-05-17 12:02:45 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * テストに例外テストを追加
+
+
+------------------------------------------------------------------------
+r1849 | tell-k | 2010-05-17 10:42:15 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commit
+
+
+------------------------------------------------------------------------
+r1848 | tell-k | 2010-05-17 10:27:07 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * test_all.phpの移動
+
+
+------------------------------------------------------------------------
+r1847 | tell-k | 2010-05-17 10:16:03 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * svn:keywordsを設定した
+
+
+------------------------------------------------------------------------
+r1845 | tell-k | 2010-05-17 09:03:08 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * ファイル構成を変更
+
+
+------------------------------------------------------------------------
+r1844 | tell-k | 2010-05-17 09:00:56 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * dircrotry構成を変更
+
+
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="8823d9aa3e94a608e07dd8642fcab0ac" name="Services/Buzzurl.php" role="php" />
+   <file baseinstalldir="/" md5sum="71a696ed02f63bc7a60f3ec737a8a192" name="test/Services_Buzzurl/lib/lime/lime.php" role="php" />
+   <file baseinstalldir="/" md5sum="1040c6c186284cc988de6b5cdd2fd618" name="test/Services_Buzzurl/lib/t.php" role="php" />
+   <file baseinstalldir="/" md5sum="9042581b098a9825a43968eff3eb0f90" name="test/Services_Buzzurl/t/Services_BuzzurlTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="d62485cd63bd2f56693c0b1ca9012f92" name="test/Services_Buzzurl/Makefile" role="data" />
+   <file baseinstalldir="/" md5sum="5d10cc1658f265b82583da68f3f2cf55" name="test/Services_Buzzurl/test_all.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.5</release>
+    <api>0.0.5</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-17</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1851 | tell-k | 2010-05-17 13:57:54 +0900 (月, 17  5月 2010) | 5 lines
+
+
+ * getRecentArticlesを実装するの忘れてた。
+ * テストコードも追加
+
+
+------------------------------------------------------------------------
+r1850 | tell-k | 2010-05-17 12:02:45 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * テストに例外テストを追加
+
+
+------------------------------------------------------------------------
+r1849 | tell-k | 2010-05-17 10:42:15 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commit
+
+
+------------------------------------------------------------------------
+r1848 | tell-k | 2010-05-17 10:27:07 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * test_all.phpの移動
+
+
+------------------------------------------------------------------------
+r1847 | tell-k | 2010-05-17 10:16:03 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * svn:keywordsを設定した
+
+
+------------------------------------------------------------------------
+r1845 | tell-k | 2010-05-17 09:03:08 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * ファイル構成を変更
+
+
+------------------------------------------------------------------------
+r1844 | tell-k | 2010-05-17 09:00:56 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * dircrotry構成を変更
+
+
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

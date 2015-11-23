@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/io_bit">IO_Bit</p>
+    <c>openpear.org</c>
+    <v>1.0.7</v>
+    <a>1.0.7</a>
+    <mp>4.4.9</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>yoya</m>
+    <s>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</s>
+    <d>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</d>
+    <da>2010-09-13 13:30:05</da>
+    <n>
+PHP unpack で unsigned 指定しても 2^31以上だと負の値が戻るバグへの対処。
+PHP で 2^31以上を integer として扱えない仕様に対する妥協と思われるが、例え bit operation 出来ない float に型変換してでも意味的に正しい値を返すべきだと判断して、IO_Bit ではそう処理する事にした。
+ </n>
+    <f>2225</f>
+    <g>http://openpear.org/get/IO_Bit-1.0.7</g>
+    <x xlink:href="package.1.0.7.xml"/>
+</r>

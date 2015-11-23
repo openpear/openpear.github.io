@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_SBM_Info</name>
+ <channel>openpear.org</channel>
+ <summary>SBM(ソーシャルブックマーク)の情報を取得するライブラリです。
+
+
+* SBMの情報:
+
+ - ブックマーク数
+ - ブックマーク数の単位 (user|users) (tweet|tweets)
+ - ブックマーク数のランク (色の変わるブックマーク数に応じたランク)
+ - ブックマークコメント
+ - エントリーページのURL
+ - 追加ページのURL
+
+
+* 対応しているSBMサービス:
+
+ - はてなブックマーク (Hatena)
+ - Delicious (Delicious)
+ - livedoorクリップ (Livedoor)
+ - Buzzurl (Buzzurl)
+ - Twitter (Twitter)</summary>
+ <description>SBM(ソーシャルブックマーク)の情報を取得するライブラリです。
+
+
+* SBMの情報:
+
+ - ブックマーク数
+ - ブックマーク数の単位 (user|users) (tweet|tweets)
+ - ブックマーク数のランク (色の変わるブックマーク数に応じたランク)
+ - ブックマークコメント
+ - エントリーページのURL
+ - 追加ページのURL
+
+
+* 対応しているSBMサービス:
+
+ - はてなブックマーク (Hatena)
+ - Delicious (Delicious)
+ - livedoorクリップ (Livedoor)
+ - Buzzurl (Buzzurl)
+ - Twitter (Twitter)</description>
+ <lead>
+  <name>Rewish</name>
+  <user>rewish</user>
+  <email>rewish.org@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-01</date>
+ <time>01:08:06</time>
+ <version>
+  <release>0.3.0</release>
+  <api>0.3.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r2216 | rewish | 2010-11-01 01:04:06 +0900 (月, 01 11月 2010) | 2 lines
+
+エラーログに改行を追加。
+
+------------------------------------------------------------------------
+r2215 | rewish | 2010-11-01 00:52:09 +0900 (月, 01 11月 2010) | 5 lines
+
+デフォルトのAPI取得関数内でHTTP_Request2を使用(依存)
+API取得周りの例外を投げるようにした
+Services_SBM_Info-&gt;getFailedServices()を追加
+
+
+------------------------------------------------------------------------
+r2214 | rewish | 2010-10-31 18:27:45 +0900 (日, 31 10月 2010) | 1 line
+
+Deprecated警告を解消
+------------------------------------------------------------------------
+r2119 | rewish | 2010-09-10 09:27:02 +0900 (金, 10  9月 2010) | 1 line
+
+returnし忘れ。
+------------------------------------------------------------------------
+r2118 | rewish | 2010-09-10 08:57:43 +0900 (金, 10  9月 2010) | 1 line
+
+getAllの時にURL、Titleをセットするようにした。
+------------------------------------------------------------------------
+r2117 | rewish | 2010-09-10 06:39:15 +0900 (金, 10  9月 2010) | 2 lines
+
+Deliciousのカウント取得方法を変更。
+Proxyを設定できる機能を追加。
+------------------------------------------------------------------------
+r2115 | rewish | 2010-09-08 20:25:58 +0900 (水, 08  9月 2010) | 1 line
+
+Version and since.
+------------------------------------------------------------------------
+r2114 | rewish | 2010-09-08 20:16:50 +0900 (水, 08  9月 2010) | 1 line
+
+サービスにTwitterを追加。SBMじゃないけど。
+------------------------------------------------------------------------
+r2112 | rewish | 2010-09-08 04:28:06 +0900 (水, 08  9月 2010) | 1 line
+
+APIデータ取得とAPIデータオブジェクト化にユーザー関数を指定出来るようにした。
+------------------------------------------------------------------------
+r2110 | rewish | 2010-09-07 19:14:40 +0900 (火, 07  9月 2010) | 2 lines
+
+getter(__call)に引数を渡さなかった場合有効サービスの情報を全て取得。
+toArray, toJsonを削除。全情報取得はgetAllにした。
+------------------------------------------------------------------------
+r2109 | rewish | 2010-09-06 20:38:40 +0900 (月, 06  9月 2010) | 2 lines
+
+camerizeの第二引数を指定できるようにした。
+合わせてtoArrayの実装も変更。
+------------------------------------------------------------------------
+r2107 | rewish | 2010-09-06 19:54:26 +0900 (月, 06  9月 2010) | 2 lines
+
+PHP5.3以上でないと動かない書き方だった部分を修正。
+テスト用のinclude_path修正。
+------------------------------------------------------------------------
+r2106 | rewish | 2010-09-06 02:12:37 +0900 (月, 06  9月 2010) | 1 line
+
+テスト用のinclude_pathを修正。
+------------------------------------------------------------------------
+r2104 | rewish | 2010-09-06 01:47:37 +0900 (月, 06  9月 2010) | 1 line
+
+Initial import
+------------------------------------------------------------------------
+r2103 | openpear | 2010-09-04 06:20:04 +0900 (土, 04  9月 2010) | 1 line
+
+[New Package] Services_SBM_Info
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="33aade912c91db40bc052fd4d6110a6d" name="Services/SBM/Info/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="1ea7ae1aa1e21629489c4295a8d9b4ca" name="Services/SBM/Info/Buzzurl.php" role="php" />
+   <file baseinstalldir="/" md5sum="3364668e5385a3e558736884d938b26e" name="Services/SBM/Info/Delicious.php" role="php" />
+   <file baseinstalldir="/" md5sum="11a5ace9a80896fb27c5fa848b838159" name="Services/SBM/Info/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="7b7abb77448964dadbddd208a952fa58" name="Services/SBM/Info/Hatena.php" role="php" />
+   <file baseinstalldir="/" md5sum="bed483aded6effb0d7692eb7ddaac485" name="Services/SBM/Info/Livedoor.php" role="php" />
+   <file baseinstalldir="/" md5sum="01caa9fa2f1974abcd4dacd28b6c81fb" name="Services/SBM/Info/Twitter.php" role="php" />
+   <file baseinstalldir="/" md5sum="b33e0127aef15811b7ac0db9c2e8f3d3" name="Services/SBM/Info.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.3.0</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-11-01</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r2216 | rewish | 2010-11-01 01:04:06 +0900 (月, 01 11月 2010) | 2 lines
+
+エラーログに改行を追加。
+
+------------------------------------------------------------------------
+r2215 | rewish | 2010-11-01 00:52:09 +0900 (月, 01 11月 2010) | 5 lines
+
+デフォルトのAPI取得関数内でHTTP_Request2を使用(依存)
+API取得周りの例外を投げるようにした
+Services_SBM_Info-&gt;getFailedServices()を追加
+
+
+------------------------------------------------------------------------
+r2214 | rewish | 2010-10-31 18:27:45 +0900 (日, 31 10月 2010) | 1 line
+
+Deprecated警告を解消
+------------------------------------------------------------------------
+r2119 | rewish | 2010-09-10 09:27:02 +0900 (金, 10  9月 2010) | 1 line
+
+returnし忘れ。
+------------------------------------------------------------------------
+r2118 | rewish | 2010-09-10 08:57:43 +0900 (金, 10  9月 2010) | 1 line
+
+getAllの時にURL、Titleをセットするようにした。
+------------------------------------------------------------------------
+r2117 | rewish | 2010-09-10 06:39:15 +0900 (金, 10  9月 2010) | 2 lines
+
+Deliciousのカウント取得方法を変更。
+Proxyを設定できる機能を追加。
+------------------------------------------------------------------------
+r2115 | rewish | 2010-09-08 20:25:58 +0900 (水, 08  9月 2010) | 1 line
+
+Version and since.
+------------------------------------------------------------------------
+r2114 | rewish | 2010-09-08 20:16:50 +0900 (水, 08  9月 2010) | 1 line
+
+サービスにTwitterを追加。SBMじゃないけど。
+------------------------------------------------------------------------
+r2112 | rewish | 2010-09-08 04:28:06 +0900 (水, 08  9月 2010) | 1 line
+
+APIデータ取得とAPIデータオブジェクト化にユーザー関数を指定出来るようにした。
+------------------------------------------------------------------------
+r2110 | rewish | 2010-09-07 19:14:40 +0900 (火, 07  9月 2010) | 2 lines
+
+getter(__call)に引数を渡さなかった場合有効サービスの情報を全て取得。
+toArray, toJsonを削除。全情報取得はgetAllにした。
+------------------------------------------------------------------------
+r2109 | rewish | 2010-09-06 20:38:40 +0900 (月, 06  9月 2010) | 2 lines
+
+camerizeの第二引数を指定できるようにした。
+合わせてtoArrayの実装も変更。
+------------------------------------------------------------------------
+r2107 | rewish | 2010-09-06 19:54:26 +0900 (月, 06  9月 2010) | 2 lines
+
+PHP5.3以上でないと動かない書き方だった部分を修正。
+テスト用のinclude_path修正。
+------------------------------------------------------------------------
+r2106 | rewish | 2010-09-06 02:12:37 +0900 (月, 06  9月 2010) | 1 line
+
+テスト用のinclude_pathを修正。
+------------------------------------------------------------------------
+r2104 | rewish | 2010-09-06 01:47:37 +0900 (月, 06  9月 2010) | 1 line
+
+Initial import
+------------------------------------------------------------------------
+r2103 | openpear | 2010-09-04 06:20:04 +0900 (土, 04  9月 2010) | 1 line
+
+[New Package] Services_SBM_Info
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

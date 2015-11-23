@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_ATND</name>
+ <channel>openpear.org</channel>
+ <summary>ATND API (http://api.atnd.org/)を操作するパッケージです。</summary>
+ <description>ATND API (http://api.atnd.org/)を操作するパッケージです。</description>
+ <lead>
+  <name>localdisk</name>
+  <user>localdisk</user>
+  <email>smoochynet@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-07-31</date>
+ <time>08:58:12</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r1042 | localdisk | 2009-07-31 08:53:41 -0700 (Fri, 31 Jul 2009) | 1 line
+
+?\230?\150?\176?\232?\166?\143?\228?\189?\156?\230?\136?\144
+------------------------------------------------------------------------
+r1041 | openpear | 2009-07-31 08:50:54 -0700 (Fri, 31 Jul 2009) | 1 line
+
+[Create Base Directory] Services_ATND
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="a9d2410d5b7c388b8ca8abab459e69cc" name="Services/ATND/Exception.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="3092110637a5060cf4b2c3fff01125b4" name="Services/ATND.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-07-31</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r1042 | localdisk | 2009-07-31 08:53:41 -0700 (Fri, 31 Jul 2009) | 1 line
+
+?\230?\150?\176?\232?\166?\143?\228?\189?\156?\230?\136?\144
+------------------------------------------------------------------------
+r1041 | openpear | 2009-07-31 08:50:54 -0700 (Fri, 31 Jul 2009) | 1 line
+
+[Create Base Directory] Services_ATND
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

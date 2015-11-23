@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_yahoo_jp_text">Services_Yahoo_JP_Text</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>4.3.3</mp>
+    <st>alpha</st>
+    <l>BSD</l>
+    <m>shimooka</m>
+    <s>[http://developer.yahoo.co.jp/webapi/jlp/:title=この辺]のAPIを叩くパッケージを作ってみようかと。
+
+*リリース0.0.1
+-first release
+-[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析]を実装</s>
+    <d>[http://developer.yahoo.co.jp/webapi/jlp/:title=この辺]のAPIを叩くパッケージを作ってみようかと。
+
+*リリース0.0.1
+-first release
+-[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析]を実装</d>
+    <da>2009-03-18 10:10:45</da>
+    <n>------------------------------------------------------------------------
+r593 | shimooka | 2009-03-18 10:05:16 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- tagged RELEASE_0_0_1
+------------------------------------------------------------------------
+r592 | shimooka | 2009-03-18 10:04:42 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</n>
+    <f>4252</f>
+    <g>http://openpear.org/get/Services_Yahoo_JP_Text-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

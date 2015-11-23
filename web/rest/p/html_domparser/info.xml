@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>HTML_DomParser</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT Licence</l>
+<s>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</s>
+<d>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</d>
+<r xlink:href="/rest/r/html_domparser" />
+</p>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/bitio">BitIO</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>yoya</m>
+    <s>ビット処理のユーティリティです。
+いちいち、pack v したり、incremental にデータを生成するのに offset を処理するのが面倒だという人向けです。</s>
+    <d>ビット処理のユーティリティです。
+いちいち、pack v したり、incremental にデータを生成するのに offset を処理するのが面倒だという人向けです。</d>
+    <da>2010-08-12 13:33:02</da>
+    <n>
+SWF 編集するのに必要そうなメソッドだけ実装しました。
+今後必要に応じてメソッドを追加していきます。
+ </n>
+    <f>1823</f>
+    <g>http://openpear.org/get/BitIO-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

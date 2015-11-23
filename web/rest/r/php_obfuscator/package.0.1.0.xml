@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_Obfuscator</name>
+ <channel>openpear.org</channel>
+ <summary>Obfuscate php script.</summary>
+ <description>Obfuscate php script.</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-07-02</date>
+ <time>20:51:02</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+2010/07/02, PHP_Obfuscator 0.1.0
+-initial release
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="0af2d878012d729ba02d544fee8227f7" name="doc/RELEASE.txt" role="data" />
+   <file baseinstalldir="/" md5sum="bc729c7a4bfa6cadf3d0a02ee73748d8" name="PHP/Obfuscator/Encoder/AbstractEncoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a27b678c33ffddeb9559079f093adf4" name="PHP/Obfuscator/Encoder/Base64Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e3a5d8a287dea4be6692fa5f44838f2" name="PHP/Obfuscator/Encoder/Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="9153a9be39da399d558fd2e05209f18d" name="PHP/Obfuscator/Encoder/EncoderChain.php" role="php" />
+   <file baseinstalldir="/" md5sum="254c782c956e49dd636a932851d58c7d" name="PHP/Obfuscator/Encoder/GzipEncoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="3bb6bc0982f0c72b2e0c7226e103f4f3" name="PHP/Obfuscator/Encoder/NullEncoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="461e76be7011f703ee60a0063bed50ec" name="PHP/Obfuscator/Encoder/Rot13Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="318c5ba4ad11911749ee318b1242037f" name="PHP/Obfuscator/Encoder/StrtrEncoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="2376bf8c73c44473ccbc8ed99dcf651b" name="PHP/Obfuscator/Filter/ExecutionFilter.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e1bf645cb956119a6659e35d9bc22c7" name="PHP/Obfuscator/Filter/ExpireRestrictionFilter.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf7cf9739c1d53bb9982ca9be691d1bc" name="PHP/Obfuscator/Filter/Filter.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b3b77f6d6c17186d6f1550bce405f75" name="PHP/Obfuscator/Filter/FilterChain.php" role="php" />
+   <file baseinstalldir="/" md5sum="31ebb838f23624ce801106b350431cd4" name="PHP/Obfuscator/Filter/FilterException.php" role="php" />
+   <file baseinstalldir="/" md5sum="e7541f294a1b35b2aab23a8be14dbc0c" name="PHP/Obfuscator/Command.php" role="php" />
+   <file baseinstalldir="/" md5sum="85f349ec23d74e85f02081cd5e32b86d" name="PHP/Obfuscator/CommandLineOptions.php" role="php" />
+   <file baseinstalldir="/" md5sum="7248d1648441d2ff5af7971cad372369" name="PHP/Obfuscator.php" role="php" />
+   <file baseinstalldir="/" md5sum="62c44fb63b638629725d327376746824" name="scripts/php-obfuscator.sh" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="3e7f6b925c503bb12ef02a8fa3c35008" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_Base64EncoderTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="da3add79b36d768f2e6b96b96fe1014e" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_EncoderChainTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="7ac4fd871fe6fd58f8d0488186b95e10" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_GzipEncoderTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="747d4d475f2c35bedcad8f39e8a8387c" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_NullEncoderTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="2b331d37792315d73ed51bd8609a052f" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_Rot13EncoderTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="e74fa3fe14279bb7d333dac2c37e1990" name="test/PHP_Obfuscator/PHP_Obfuscator_Encoder_StrtrEncoderTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="195e59ae8361d5de705b54c7a5ebf2bd" name="build.conf" role="data" />
+   <file baseinstalldir="/" md5sum="51813182d971b4fcf0bb9fa7c72dcd22" name="desc.txt" role="data" />
+   <file baseinstalldir="/" md5sum="ba468a174e049e8a58eaf0f0d6b510c8" name="notes.txt" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Console_CommandLine</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="php-obfuscator" name="scripts/php-obfuscator.sh" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-07-02</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+2010/07/02, PHP_Obfuscator 0.1.0
+-initial release
+   </notes>
+  </release>
+ </changelog>
+</package>

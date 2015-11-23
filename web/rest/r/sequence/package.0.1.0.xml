@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Sequence</name>
+ <channel>openpear.org</channel>
+ <summary>汎用的なリストライブラリ。
+このライブラリは、オブジェクト指向であること、扱いやすい事、パワフルであることを目指す。
+
+
+*サンプル
+&gt;||
+&lt;?php
+include_once dirname(__FILE__) . &apos;/../src/seq.php&apos;;
+
+list($a, $b) = seq(1, 2, 3, 4)-&gt;map(&apos;min&apos;, 2)-&gt;pick(0, 3);
+// $a =&gt; 2
+// $b =&gt; 4
+
+// これは上の例とおなじ
+seq(1, 2, 3, 4)-&gt;map(&apos;min&apos;, 2)-&gt;pick(0, -1)-&gt;tovar($a, $b);
+
+// メソッドによる要素へのアクセス
+seq(4, 5, 6)-&gt;nth(0); // =&gt; 4
+seq(4, 5, 6)-&gt;nth(-2); // =&gt; 5
+
+// 添え字による要素へのアクセス
+$seq = seq(7, 8, 9);
+$seq[1]; // =&gt; 8
+
+// 要素の追加
+$seq[] = 10;
+$seq-&gt;push(11);
+
+// 当然foreach文にも使える
+foreach ($seq as $elt) echo $elt . PHP_EOL;
+
+// 配列に変換
+seq(1, 2, 3)-&gt;toArray();
+
+// 配列をSequenceに変換
+toseq(array(1, 2, 3));
+
+// リストの大きさを得る
+count($seq);
+$seq-&gt;count();
+$seq-&gt;length;
+
+// 大きさを切り詰める
+$seq-&gt;length = 3;
+$seq-&gt;lengthen(3);
+
+// ある要素を持っているかどうか
+seq(1, 2, 3, 4)-&gt;has(4); // =&gt; true
+
+// リストを最初の要素と残りのリストとに分割する
+list($first, $rest) = seq(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)-&gt;unclip();
+// $first =&gt; &quot;a&quot;
+// $rest =&gt; seq(&quot;b&quot;, &quot;c&quot;)
+
+// コールバックを受け取るメソッド群
+seq(&quot;hoge&quot;, &quot;&quot;, &quot;fuga&quot;)-&gt;filter(&apos;strlen&apos;); // =&gt; seq(&quot;hoge&quot;, &quot;fuga&quot;)
+seq(1, 2, 3)-&gt;reduce(create_function(&apos;$a, $b&apos;, &apos;return $a + $b;&apos;)); // =&gt; 6
+seq(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)-&gt;all(&apos;is_string&apos;); // =&gt; true
+seq(&quot;a&quot;, 1, &quot;b&quot;, &quot;c&quot;)-&gt;any(&apos;is_int&apos;); // =&gt; true
+seq(1, 2, 3)-&gt;each(&apos;var_dump&apos;); 
+||&lt;</summary>
+ <description>汎用的なリストライブラリ。
+このライブラリは、オブジェクト指向であること、扱いやすい事、パワフルであることを目指す。
+
+
+*サンプル
+&gt;||
+&lt;?php
+include_once dirname(__FILE__) . &apos;/../src/seq.php&apos;;
+
+list($a, $b) = seq(1, 2, 3, 4)-&gt;map(&apos;min&apos;, 2)-&gt;pick(0, 3);
+// $a =&gt; 2
+// $b =&gt; 4
+
+// これは上の例とおなじ
+seq(1, 2, 3, 4)-&gt;map(&apos;min&apos;, 2)-&gt;pick(0, -1)-&gt;tovar($a, $b);
+
+// メソッドによる要素へのアクセス
+seq(4, 5, 6)-&gt;nth(0); // =&gt; 4
+seq(4, 5, 6)-&gt;nth(-2); // =&gt; 5
+
+// 添え字による要素へのアクセス
+$seq = seq(7, 8, 9);
+$seq[1]; // =&gt; 8
+
+// 要素の追加
+$seq[] = 10;
+$seq-&gt;push(11);
+
+// 当然foreach文にも使える
+foreach ($seq as $elt) echo $elt . PHP_EOL;
+
+// 配列に変換
+seq(1, 2, 3)-&gt;toArray();
+
+// 配列をSequenceに変換
+toseq(array(1, 2, 3));
+
+// リストの大きさを得る
+count($seq);
+$seq-&gt;count();
+$seq-&gt;length;
+
+// 大きさを切り詰める
+$seq-&gt;length = 3;
+$seq-&gt;lengthen(3);
+
+// ある要素を持っているかどうか
+seq(1, 2, 3, 4)-&gt;has(4); // =&gt; true
+
+// リストを最初の要素と残りのリストとに分割する
+list($first, $rest) = seq(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)-&gt;unclip();
+// $first =&gt; &quot;a&quot;
+// $rest =&gt; seq(&quot;b&quot;, &quot;c&quot;)
+
+// コールバックを受け取るメソッド群
+seq(&quot;hoge&quot;, &quot;&quot;, &quot;fuga&quot;)-&gt;filter(&apos;strlen&apos;); // =&gt; seq(&quot;hoge&quot;, &quot;fuga&quot;)
+seq(1, 2, 3)-&gt;reduce(create_function(&apos;$a, $b&apos;, &apos;return $a + $b;&apos;)); // =&gt; 6
+seq(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)-&gt;all(&apos;is_string&apos;); // =&gt; true
+seq(&quot;a&quot;, 1, &quot;b&quot;, &quot;c&quot;)-&gt;any(&apos;is_int&apos;); // =&gt; true
+seq(1, 2, 3)-&gt;each(&apos;var_dump&apos;); 
+||&lt;</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-13</date>
+ <time>11:30:33</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r210 | anatoo | 2008-12-13 09:48:29 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163?\227?\129?\168group?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r209 | anatoo | 2008-12-13 08:47:47 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r208 | anatoo | 2008-12-13 08:10:46 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r207 | anatoo | 2008-12-13 08:09:19 -0800 (Sat, 13 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="686844fa21aca9a14e6ea4f6ee08e28a" name="seq.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-12-13</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r210 | anatoo | 2008-12-13 09:48:29 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163?\227?\129?\168group?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r209 | anatoo | 2008-12-13 08:47:47 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r208 | anatoo | 2008-12-13 08:10:46 -0800 (Sat, 13 Dec 2008) | 1 line
+
+?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r207 | anatoo | 2008-12-13 08:09:19 -0800 (Sat, 13 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

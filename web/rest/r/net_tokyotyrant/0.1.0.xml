@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/net_tokyotyrant">Net_TokyoTyrant</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>beta</st>
+    <l>MIT</l>
+    <m>cocoiti</m>
+    <s>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</s>
+    <d>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</d>
+    <da>2008-11-02 06:32:31</da>
+    <n>------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 06:29:28 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------</n>
+    <f>2421</f>
+    <g>http://openpear.org/get/Net_TokyoTyrant-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

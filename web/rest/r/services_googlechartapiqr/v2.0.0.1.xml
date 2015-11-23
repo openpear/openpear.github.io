@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_googlechartapiqr">Services_GoogleChartApiQR</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>BSD License</l>
+    <m>tknzk</m>
+    <s>GoogleChartAPI QR CodesのAPIを叩くライブラリです
+
+[http://code.google.com/intl/ja/apis/chart/docs/gallery/qr_codes.html]</s>
+    <d>GoogleChartAPI QR CodesのAPIを叩くライブラリです
+
+[http://code.google.com/intl/ja/apis/chart/docs/gallery/qr_codes.html]</d>
+    <da>2010-02-28 15:28:21</da>
+    <n>
+------------------------------------------------------------------------
+r1683 | tknzk | 2010-02-28 15:13:25 +0900 (日, 28  2月 2010) | 1 line
+
+initial
+------------------------------------------------------------------------
+r1682 | openpear | 2010-02-28 14:21:03 +0900 (日, 28  2月 2010) | 1 line
+
+[New Package] Services_GoogleChartApiQR
+------------------------------------------------------------------------
+ </n>
+    <f>2526</f>
+    <g>http://openpear.org/get/Services_GoogleChartApiQR-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

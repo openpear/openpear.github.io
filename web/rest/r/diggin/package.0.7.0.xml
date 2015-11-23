@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin</name>
+ <channel>openpear.org</channel>
+ <summary>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</summary>
+ <description>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-24</date>
+ <time>21:43:10</time>
+ <version>
+  <release>0.7.0</release>
+  <api>0.7.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://diggin.musicrider.com/LICENSE">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r827 | sasezaki | 2009-05-16 15:33:14 +0900 (土, 16  5月 2009) | 1 line
+
+メインリポ(googlecode側)でのディレクトリ構成変更に伴い
+------------------------------------------------------------------------
+r816 | sasezaki | 2009-05-10 23:50:06 +0900 (日, 10  5月 2009) | 1 line
+
+けし忘
+------------------------------------------------------------------------
+r813 | sasezaki | 2009-05-10 10:30:00 +0900 (日, 10  5月 2009) | 1 line
+
+拡張子無いとopenpearから見えないっぽいので変更
+------------------------------------------------------------------------
+r496 | sasezaki | 2009-03-04 23:14:05 +0900 (水, 04  3月 2009) | 1 line
+
+追加してなかった。。。
+------------------------------------------------------------------------
+r494 | sasezaki | 2009-03-04 23:03:21 +0900 (水, 04  3月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 22:55:29 +0900 (水, 04  3月 2009) | 1 line
+
+心は３０になってもオリーブ少女だからいいか
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 22:38:25 +0900 (水, 04  3月 2009) | 1 line
+
+本番で動作確認する男の人って
+------------------------------------------------------------------------
+r490 | sasezaki | 2009-03-04 22:02:00 +0900 (水, 04  3月 2009) | 1 line
+
+svn:externalsつかうほうがいいのかな
+------------------------------------------------------------------------
+r421 | sasezaki | 2009-02-23 23:00:11 +0900 (月, 23  2月 2009) | 1 line
+
+add CHANGELOG (0.5系から0.6でのScraperの変更点)
+------------------------------------------------------------------------
+r420 | sasezaki | 2009-02-23 22:21:19 +0900 (月, 23  2月 2009) | 1 line
+
+依存モジュール指定ができる日がいつかきっと必ずくる！と念じながらコミット
+------------------------------------------------------------------------
+r418 | openpear | 2009-02-23 22:04:27 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Diggin
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="ac765da3ccdf4daeec718ec42dfae6ed" name="Diggin/CDDB/Application/CDex.php" role="php" />
+   <file baseinstalldir="/" md5sum="4aaf2fc094e65c755fd155b19d5f36d9" name="Diggin/CDDB/Application/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="2d2a295235e184467b7041a28c9e5884" name="Diggin/CDDB/Disc/Decoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="27824e27ce014a98b23e83358cd4c29a" name="Diggin/CDDB/Disc/Encoder.php" role="php" />
+   <file baseinstalldir="/" md5sum="60d53a56f267f618677fb55aeef81022" name="Diggin/CDDB/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="0146262def0bde58c9a079ec645c97e9" name="Diggin/Console/Wizard.php" role="php" />
+   <file baseinstalldir="/" md5sum="99610e03f023989bdfa5e65708266efd" name="Diggin/Felica/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="abbb2f5b052539251187ddb2545cd35c" name="Diggin/Felica/Adapter/Sfcpeep.php" role="php" />
+   <file baseinstalldir="/" md5sum="0cf68e7ac554d7bd74f780323592fe4d" name="Diggin/Felica/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="ae379b30632980f9e580d207b53ecc28" name="Diggin/Http/Client/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="fbe00cd398cb20cf4f35d6b9619d9eff" name="Diggin/Http/Client/Adapter/SocketProgressBar.php" role="php" />
+   <file baseinstalldir="/" md5sum="afa129454f947c920631731aa6d29082" name="Diggin/Http/Client/Adapter/TestPlus.php" role="php" />
+   <file baseinstalldir="/" md5sum="0c9f8a4e1230a3b283f293151b4c4c35" name="Diggin/Http/Client/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="664322763a34178313220c905f8a8613" name="Diggin/Http/CookieJar/Loader/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="d40010b9b506ac6a48cf0f36815b6d6b" name="Diggin/Http/CookieJar/Loader/Firefox3.php" role="php" />
+   <file baseinstalldir="/" md5sum="a793262fbd5cc11d37e49a020c8c18de" name="Diggin/Http/CookieJar/Loader/Interface.php" role="php" />
+   <file baseinstalldir="/" md5sum="53aec36f0e2f0ff01c2ab9641587dd87" name="Diggin/Http/CookieJar/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="033437252e2da6297718b8c9c65d6bc6" name="Diggin/Http/Response/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="3ea8969a2bffeeb3e41d0d0da15f29b4" name="Diggin/Http/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="a30c9dd2b37b1a8dcfe68c090013f42e" name="Diggin/Json/Expr/Webscraperjs.php" role="php" />
+   <file baseinstalldir="/" md5sum="d83523d8d4f6dccaf028a2cc16ef9acb" name="Diggin/Scraper/Adapter/Wrapper/SimpleXMLElement.php" role="php" />
+   <file baseinstalldir="/" md5sum="10b618eeaf692a05b471b1fde6c41ac9" name="Diggin/Scraper/Adapter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="0fd3a1e0abaa4e03bac94d1db8ef3762" name="Diggin/Scraper/Adapter/Interface.php" role="php" />
+   <file baseinstalldir="/" md5sum="7edb15c0e74ff2c4509be37e5234f67e" name="Diggin/Scraper/Adapter/Loadhtml.php" role="php" />
+   <file baseinstalldir="/" md5sum="2f3901b0c020e1065ec80d0cec03e49a" name="Diggin/Scraper/Adapter/Normal.php" role="php" />
+   <file baseinstalldir="/" md5sum="c72dc83eb8655c210b2e9097fe01ee86" name="Diggin/Scraper/Adapter/SimplexmlAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="8f41e0a645ed329aa61ec9270445d390" name="Diggin/Scraper/Adapter/StringAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="1d18a2c616dbfc472dc4d1bcd79cf86d" name="Diggin/Scraper/Evaluator/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="caac523f1da93175356e46d9e0072a9f" name="Diggin/Scraper/Evaluator/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="2aa2d088a07249e692a01b0988b65076" name="Diggin/Scraper/Evaluator/Simplexml.php" role="php" />
+   <file baseinstalldir="/" md5sum="0151ce5764abd8916a4474d6f6e7d2e4" name="Diggin/Scraper/Evaluator/String.php" role="php" />
+   <file baseinstalldir="/" md5sum="f368f290b287a38189b82a9f601f4418" name="Diggin/Scraper/Filter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="4ad2daea814e35c73f298f23fb213fe4" name="Diggin/Scraper/Filter/Iterator.php" role="php" />
+   <file baseinstalldir="/" md5sum="c9c9c068d46076989123785bf5b158fd" name="Diggin/Scraper/Helper/Simplexml/Autodiscovery.php" role="php" />
+   <file baseinstalldir="/" md5sum="17ed3257065a92187002347aed0754c4" name="Diggin/Scraper/Helper/Simplexml/HeadBaseHref.php" role="php" />
+   <file baseinstalldir="/" md5sum="3dc6506a1eb2b664bdb6bc57f7fbab38" name="Diggin/Scraper/Helper/Simplexml/Pagerize.php" role="php" />
+   <file baseinstalldir="/" md5sum="3f647eec4fd69850fe5bb9ba01708f33" name="Diggin/Scraper/Helper/Simplexml/SimplexmlAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="cb74b19a12fbb6090408b84a5dbbbcd6" name="Diggin/Scraper/Helper/Simplexml/Title.php" role="php" />
+   <file baseinstalldir="/" md5sum="b65ac02d008277960610313f1c1bb291" name="Diggin/Scraper/Helper/HelperAbstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="7390a55ab3c35d40150385169673dff7" name="Diggin/Scraper/Process/Aggregate.php" role="php" />
+   <file baseinstalldir="/" md5sum="3db7e94763106bd406a2fdce702e9fb2" name="Diggin/Scraper/Process/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="167c6004ed0858b25bd2092d75284c03" name="Diggin/Scraper/Strategy/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="038c60356c3cba2572abe47d939e9fe7" name="Diggin/Scraper/Strategy/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="ddfdad51e99498a7ee0ecf25fce84ce4" name="Diggin/Scraper/Strategy/Flexible.php" role="php" />
+   <file baseinstalldir="/" md5sum="515d42354632b5476339dee99324dc77" name="Diggin/Scraper/Strategy/Preg.php" role="php" />
+   <file baseinstalldir="/" md5sum="4da838e49b2dd51edf73dc2060e8e9a1" name="Diggin/Scraper/Context.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e86562e3a7a00d1c6e2b9a0a8c21348" name="Diggin/Scraper/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="27d2f60dd1aa44fb3a97f3306f2a3278" name="Diggin/Scraper/Filter.php" role="php" />
+   <file baseinstalldir="/" md5sum="45e0857b6a53a1d2aa8fbb002f6367e3" name="Diggin/Scraper/Process.php" role="php" />
+   <file baseinstalldir="/" md5sum="33b295e97b0f747e32696629b1519f5c" name="Diggin/Service/Tumblr/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="0d095235659f29b3caaf07122944f8d7" name="Diggin/Service/Tumblr/Read.php" role="php" />
+   <file baseinstalldir="/" md5sum="67855a2eab2ef685bc8bb6b0937f1ae1" name="Diggin/Service/Tumblr/Write.php" role="php" />
+   <file baseinstalldir="/" md5sum="e4716c494e8bd1ed2ac6daec6a9f6759" name="Diggin/Service/Eventcast.php" role="php" />
+   <file baseinstalldir="/" md5sum="30604fafe1c6627481373a14e9d54b18" name="Diggin/Service/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="cf18c0e3f98eb603647546c8a76c70db" name="Diggin/Service/Wedata.php" role="php" />
+   <file baseinstalldir="/" md5sum="9cacb569c20d7da06779994f40571395" name="Diggin/Siteinfo/Iterator.php" role="php" />
+   <file baseinstalldir="/" md5sum="a0328373e253c08a21ca625d52bab10a" name="Diggin/Tool/Framework/Client/Console/ArgumentParser.php" role="php" />
+   <file baseinstalldir="/" md5sum="b84296c3d171e80944ea9b56984785c0" name="Diggin/Tool/Framework/Client/Console/HelpSystem.php" role="php" />
+   <file baseinstalldir="/" md5sum="aa1e93e0637431d643bccbc0b061dfad" name="Diggin/Tool/Framework/Client/Console.php" role="php" />
+   <file baseinstalldir="/" md5sum="621790e8801bb48bb16905e5cf25776b" name="Diggin/Uri/Http.php" role="php" />
+   <file baseinstalldir="/" md5sum="d1ac9ee13affc23fe28d631b79dac368" name="Diggin/Debug.php" role="php" />
+   <file baseinstalldir="/" md5sum="e24be02c3329eba9ea80224dc77fbac2" name="Diggin/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="62af1983a10a29b7c85f41f63d3d2225" name="Diggin/Scraper.php" role="php" />
+   <file baseinstalldir="/" md5sum="a7088a9b7147109ac4a104ebcd41f974" name="Diggin/Version.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Diggin_Scraper_Adapter_Htmlscraping</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.7.0</release>
+    <api>0.7.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-11-24</date>
+   <license uri="http://diggin.musicrider.com/LICENSE">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r827 | sasezaki | 2009-05-16 15:33:14 +0900 (土, 16  5月 2009) | 1 line
+
+メインリポ(googlecode側)でのディレクトリ構成変更に伴い
+------------------------------------------------------------------------
+r816 | sasezaki | 2009-05-10 23:50:06 +0900 (日, 10  5月 2009) | 1 line
+
+けし忘
+------------------------------------------------------------------------
+r813 | sasezaki | 2009-05-10 10:30:00 +0900 (日, 10  5月 2009) | 1 line
+
+拡張子無いとopenpearから見えないっぽいので変更
+------------------------------------------------------------------------
+r496 | sasezaki | 2009-03-04 23:14:05 +0900 (水, 04  3月 2009) | 1 line
+
+追加してなかった。。。
+------------------------------------------------------------------------
+r494 | sasezaki | 2009-03-04 23:03:21 +0900 (水, 04  3月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 22:55:29 +0900 (水, 04  3月 2009) | 1 line
+
+心は３０になってもオリーブ少女だからいいか
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 22:38:25 +0900 (水, 04  3月 2009) | 1 line
+
+本番で動作確認する男の人って
+------------------------------------------------------------------------
+r490 | sasezaki | 2009-03-04 22:02:00 +0900 (水, 04  3月 2009) | 1 line
+
+svn:externalsつかうほうがいいのかな
+------------------------------------------------------------------------
+r421 | sasezaki | 2009-02-23 23:00:11 +0900 (月, 23  2月 2009) | 1 line
+
+add CHANGELOG (0.5系から0.6でのScraperの変更点)
+------------------------------------------------------------------------
+r420 | sasezaki | 2009-02-23 22:21:19 +0900 (月, 23  2月 2009) | 1 line
+
+依存モジュール指定ができる日がいつかきっと必ずくる！と念じながらコミット
+------------------------------------------------------------------------
+r418 | openpear | 2009-02-23 22:04:27 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Diggin
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

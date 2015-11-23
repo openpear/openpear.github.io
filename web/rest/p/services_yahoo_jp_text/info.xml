@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Yahoo_JP_Text</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>BSD</l>
+<s>[http://developer.yahoo.co.jp/webapi/jlp/:title=この辺]のAPIを叩くパッケージを作ってみようかと。
+
+*リリース0.0.1
+-first release
+-[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析]を実装</s>
+<d>[http://developer.yahoo.co.jp/webapi/jlp/:title=この辺]のAPIを叩くパッケージを作ってみようかと。
+
+*リリース0.0.1
+-first release
+-[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析]を実装</d>
+<r xlink:href="/rest/r/services_yahoo_jp_text" />
+</p>

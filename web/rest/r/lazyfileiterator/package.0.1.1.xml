@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>LazyFileIterator</name>
+ <channel>openpear.org</channel>
+ <summary>LazyFileIteratorは、ファイルの内容を1行づつ取得するようなイテレータです。
+
+LazyFileIteratorはSplFileObjectと異なり、必要になってからファイルをオープンし、不要になるとファイルをクローズします。
+
+SplFileObjectはオブジェクト生成のタイミングでファイルをオープンし、オブジェクトが存在する間はファイルもクローズしないため、大量のファイルに対して同数のイテレータを生成してしまうと、同数のファイルオープン数を消費してしまいます。LazyFileIteratorを利用すれば、この問題を回避することができます。
+
+LazyFileIteratorは内部的にSplFileObjectを生成して利用しています。
+
+
+* 機能
+
+- 初めてのメソッド呼びだしのタイミングでSplFileObjectを生成し、ファイルをオープンします。
+- ファイル終端まで読み込むと、SplFileObjectを解放し、ファイルをクローズします。
+- 一旦ファイルがクローズされた後でrewind()するとSplFileObjectを再度生成し、ファイルを再度オープンします。
+- 実ファイルが存在しないファイル（URLや標準入力など）をオープンする場合にはNoRewindIteratorを利用しますので、イテレータとして特に苦労せずに使えます。
+
+
+* 動作例
+
+catのように、引数のファイルを全て連結して表示するようなプログラムを示します。
+
+AppendIteratorに、複数のLazyFileIteratorを与えています。SplFileObjectで同じことをすると、ファイルオープン数をファイル数と同数消費してしまいます。
+
+&gt;||
+&lt;?php
+require_once(&apos;LazyFileIterator.php&apos;);
+
+$inputs = new AppendIterator();
+
+$files = $_SERVER[&apos;argv&apos;];
+array_shift($files); // remove filename of myself
+
+if ($files === array()) {
+  $files[] = &apos;php://stdin&apos;;
+}
+foreach($files as $filename) {
+  $inputs-&gt;append(new LazyFileIterator($filename, &apos;r&apos;));
+}
+
+foreach($inputs as $line) {
+  print $line;
+}
+||&lt;</summary>
+ <description>LazyFileIteratorは、ファイルの内容を1行づつ取得するようなイテレータです。
+
+LazyFileIteratorはSplFileObjectと異なり、必要になってからファイルをオープンし、不要になるとファイルをクローズします。
+
+SplFileObjectはオブジェクト生成のタイミングでファイルをオープンし、オブジェクトが存在する間はファイルもクローズしないため、大量のファイルに対して同数のイテレータを生成してしまうと、同数のファイルオープン数を消費してしまいます。LazyFileIteratorを利用すれば、この問題を回避することができます。
+
+LazyFileIteratorは内部的にSplFileObjectを生成して利用しています。
+
+
+* 機能
+
+- 初めてのメソッド呼びだしのタイミングでSplFileObjectを生成し、ファイルをオープンします。
+- ファイル終端まで読み込むと、SplFileObjectを解放し、ファイルをクローズします。
+- 一旦ファイルがクローズされた後でrewind()するとSplFileObjectを再度生成し、ファイルを再度オープンします。
+- 実ファイルが存在しないファイル（URLや標準入力など）をオープンする場合にはNoRewindIteratorを利用しますので、イテレータとして特に苦労せずに使えます。
+
+
+* 動作例
+
+catのように、引数のファイルを全て連結して表示するようなプログラムを示します。
+
+AppendIteratorに、複数のLazyFileIteratorを与えています。SplFileObjectで同じことをすると、ファイルオープン数をファイル数と同数消費してしまいます。
+
+&gt;||
+&lt;?php
+require_once(&apos;LazyFileIterator.php&apos;);
+
+$inputs = new AppendIterator();
+
+$files = $_SERVER[&apos;argv&apos;];
+array_shift($files); // remove filename of myself
+
+if ($files === array()) {
+  $files[] = &apos;php://stdin&apos;;
+}
+foreach($files as $filename) {
+  $inputs-&gt;append(new LazyFileIterator($filename, &apos;r&apos;));
+}
+
+foreach($inputs as $line) {
+  print $line;
+}
+||&lt;</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-01</date>
+ <time>10:02:49</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r900 | hnw | 2009-06-01 09:45:51 -0700 (Mon, 01 Jun 2009) | 1 line
+
+do refactoring
+------------------------------------------------------------------------
+r887 | hnw | 2009-05-31 00:10:04 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="fdd7868856fc59d47e06366c4e44f626" name="LazyFileIterator.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-06-01</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r900 | hnw | 2009-06-01 09:45:51 -0700 (Mon, 01 Jun 2009) | 1 line
+
+do refactoring
+------------------------------------------------------------------------
+r887 | hnw | 2009-05-31 00:10:04 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

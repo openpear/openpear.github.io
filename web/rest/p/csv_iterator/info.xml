@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>CSV_Iterator</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP Licence</l>
+<s>CSVファイル(ref:[http://www.ietf.org/rfc/rfc4180.txt:title=RFC4180])をイテレートするためのクラスです。
+外国産の同様のクラスでは、fgetcsvを利用しているため文字エンコード周りで不具合があるのでその点を考慮したものを目指しています。</s>
+<d>CSVファイル(ref:[http://www.ietf.org/rfc/rfc4180.txt:title=RFC4180])をイテレートするためのクラスです。
+外国産の同様のクラスでは、fgetcsvを利用しているため文字エンコード周りで不具合があるのでその点を考慮したものを目指しています。</d>
+<r xlink:href="/rest/r/csv_iterator" />
+</p>

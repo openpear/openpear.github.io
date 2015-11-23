@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTML_DomParser</name>
+ <channel>openpear.org</channel>
+ <summary>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</summary>
+ <description>simple_html_domの改編です。
+
+
+OriginalName: simple_html_dom
+Website: http://sourceforge.net/projects/simplehtmldom/
+Author: S.C. Chen &lt;me578022@gmail.com&gt;
+Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
+Contributions by:
+    Yousuke Kumakura (Attribute filters)
+    Vadim Voituk (Negative indexes supports of &quot;find&quot; method)
+    Antcs (Constructor with automatically load contents either text or file/url)
+Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</description>
+ <lead>
+  <name>ちょびえ</name>
+  <user>shuheitanuma</user>
+  <email>shuhei.tanuma@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-14</date>
+ <time>10:24:46</time>
+ <version>
+  <release>1.10.1</release>
+  <api>1.10.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r96 | shuheitanuma | 2008-11-14 10:23:56 -0800 (Fri, 14 Nov 2008) | 1 line
+
+fix typo
+------------------------------------------------------------------------
+r94 | shuheitanuma | 2008-11-14 09:25:59 -0800 (Fri, 14 Nov 2008) | 1 line
+
+move directory
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/HTML" name="/">
+   <file baseinstalldir="/HTML" md5sum="70707fe53f136688caa9929940e0a1eb" name="DomParser/Const.php" role="php" />
+   <file baseinstalldir="/HTML" md5sum="d2d052fd3f900fa80a72c96435405fc8" name="DomParser/Node.php" role="php" />
+   <file baseinstalldir="/HTML" md5sum="a9fce65594a7cdc1498f2e86da726b4e" name="DomParser.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.10.1</release>
+    <api>1.10.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-11-14</date>
+   <license>MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r96 | shuheitanuma | 2008-11-14 10:23:56 -0800 (Fri, 14 Nov 2008) | 1 line
+
+fix typo
+------------------------------------------------------------------------
+r94 | shuheitanuma | 2008-11-14 09:25:59 -0800 (Fri, 14 Nov 2008) | 1 line
+
+move directory
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

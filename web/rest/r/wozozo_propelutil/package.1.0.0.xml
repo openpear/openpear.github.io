@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Wozozo_PropelUtil</name>
+ <channel>openpear.org</channel>
+ <summary>wozozoがんばってね</summary>
+ <description>wozozoがんばってね</description>
+ <lead>
+  <name>fivestar</name>
+  <user>fivestar</user>
+  <email>ko.fivestar@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-19</date>
+ <time>14:09:05</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1875 | fivestar | 2010-05-19 14:05:23 +0900 (水, 19  5月 2010) | 2 lines
+
+propel sucks.
+
+------------------------------------------------------------------------
+r1874 | fivestar | 2010-05-19 11:05:19 +0900 (水, 19  5月 2010) | 2 lines
+
+Added class file.
+
+------------------------------------------------------------------------
+r1873 | openpear | 2010-05-19 11:04:03 +0900 (水, 19  5月 2010) | 1 line
+
+[New Package] Wozozo_PropelUtil
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="e81b0248828acc37feabdf70a18108b5" name="Wozozo/PropelUtil.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-05-19</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1875 | fivestar | 2010-05-19 14:05:23 +0900 (水, 19  5月 2010) | 2 lines
+
+propel sucks.
+
+------------------------------------------------------------------------
+r1874 | fivestar | 2010-05-19 11:05:19 +0900 (水, 19  5月 2010) | 2 lines
+
+Added class file.
+
+------------------------------------------------------------------------
+r1873 | openpear | 2010-05-19 11:04:03 +0900 (水, 19  5月 2010) | 1 line
+
+[New Package] Wozozo_PropelUtil
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

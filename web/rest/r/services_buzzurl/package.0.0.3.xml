@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Buzzurl</name>
+ <channel>openpear.org</channel>
+ <summary>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</summary>
+ <description>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</description>
+ <lead>
+  <name>tell-k</name>
+  <user>tell-k</user>
+  <email>ffk2005@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-17</date>
+ <time>08:43:02</time>
+ <version>
+  <release>0.0.3</release>
+  <api>0.0.3</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="fa643437b5cf00b493bffe7494b22fb9" name="Buzzurl.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.3</release>
+    <api>0.0.3</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-17</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

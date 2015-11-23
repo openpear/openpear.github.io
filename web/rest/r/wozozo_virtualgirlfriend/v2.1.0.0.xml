@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_virtualgirlfriend">Wozozo_VirtualGirlFriend</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>halt</m>
+    <s>id:wozozoの脳内彼女の画像を出力する。</s>
+    <d>id:wozozoの脳内彼女の画像を出力する。</d>
+    <da>2009-10-10 01:07:04</da>
+    <n>
+------------------------------------------------------------------------
+r1307 | halt | 2009-10-10 01:05:08 +0900 (土, 10 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1306 | openpear | 2009-10-10 01:04:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] Wozozo_VirtualGirlFriend
+------------------------------------------------------------------------
+ </n>
+    <f>1277</f>
+    <g>http://openpear.org/get/Wozozo_VirtualGirlFriend-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

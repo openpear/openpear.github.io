@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/php_perlish">PHP_Perlish</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.1.6</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>okonomi</m>
+    <s>Perlにある関数や便利機能のPHP移植です。</s>
+    <d>Perlにある関数や便利機能のPHP移植です。</d>
+    <da>2011-01-17 18:54:11</da>
+    <n>
+Perlにある関数や便利機能のPHP移植です。
+ </n>
+    <f>1408</f>
+    <g>http://openpear.org/get/PHP_Perlish-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

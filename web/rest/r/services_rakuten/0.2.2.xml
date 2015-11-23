@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_rakuten">Services_Rakuten</p>
+    <c>openpear.org</c>
+    <v>0.2.2</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>shin1x1</m>
+    <s>楽天ウェブサービスのAPIをPHPから利用するライブラリです。</s>
+    <d>楽天ウェブサービスのAPIをPHPから利用するライブラリです。</d>
+    <da>2009-12-30 21:37:03</da>
+    <n>
+------------------------------------------------------------------------
+r1480 | shin1x1 | 2009-12-30 21:33:03 +0900 (水, 30 12月 2009) | 2 lines
+
+moved src/ Services/
+
+------------------------------------------------------------------------
+r1478 | shin1x1 | 2009-12-30 21:11:46 +0900 (水, 30 12月 2009) | 2 lines
+
+initial import 0.2.2
+
+------------------------------------------------------------------------
+r1477 | openpear | 2009-12-30 20:56:02 +0900 (水, 30 12月 2009) | 1 line
+
+[New Package] Services_Rakuten
+------------------------------------------------------------------------
+ </n>
+    <f>7121</f>
+    <g>http://openpear.org/get/Services_Rakuten-0.2.2</g>
+    <x xlink:href="package.0.2.2.xml"/>
+</r>

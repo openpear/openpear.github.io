@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HatenaSyntax</name>
+ <channel>openpear.org</channel>
+ <summary>はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax</summary>
+ <description>はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-01-05</date>
+ <time>02:57:01</time>
+ <version>
+  <release>1.0.7</release>
+  <api>1.0.7</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="4d0886b0acd616cf02cd72dfa9e71fe6" name="HatenaSyntax/Tree/INode.php" role="php" />
+   <file baseinstalldir="." md5sum="ebfa4321c82e3c9a5bac2d50fc934554" name="HatenaSyntax/Tree/Leaf.php" role="php" />
+   <file baseinstalldir="." md5sum="32e415c44f2585412029f18fb5ebdb3b" name="HatenaSyntax/Tree/Node.php" role="php" />
+   <file baseinstalldir="." md5sum="eb345fd4aae335d2c3fe2128bdcb3791" name="HatenaSyntax/Tree/Root.php" role="php" />
+   <file baseinstalldir="." md5sum="008dec120a6b5a3040413feac0327635" name="HatenaSyntax/Block.php" role="php" />
+   <file baseinstalldir="." md5sum="5ce2c22156cb385a3a3eb98cbad03d17" name="HatenaSyntax/CommentRemover.php" role="php" />
+   <file baseinstalldir="." md5sum="106ddc4f39ade151b95cb17f1acc3f66" name="HatenaSyntax/DefinitionList.php" role="php" />
+   <file baseinstalldir="." md5sum="6a79ec3e498ccf7c04296412ea007aad" name="HatenaSyntax/Header.php" role="php" />
+   <file baseinstalldir="." md5sum="7b97539d47d2ff9a7488486da91107fe" name="HatenaSyntax/InlineTag.php" role="php" />
+   <file baseinstalldir="." md5sum="b454683f50e4bfa4d568a3fe8e81f720" name="HatenaSyntax/LineElement.php" role="php" />
+   <file baseinstalldir="." md5sum="390c3214b41d574c60fbc9545a47fa76" name="HatenaSyntax/List.php" role="php" />
+   <file baseinstalldir="." md5sum="8050bcd2bb6fa1683003f5ea8f562b3d" name="HatenaSyntax/Locator.php" role="php" />
+   <file baseinstalldir="." md5sum="adb2fc82069ed95679590fe914c1f4a3" name="HatenaSyntax/Node.php" role="php" />
+   <file baseinstalldir="." md5sum="f3fa6aa9e6555befa46bf6148136ec9f" name="HatenaSyntax/NodeCreater.php" role="php" />
+   <file baseinstalldir="." md5sum="31acf94f1062e33148ae4f1b6c14b3a9" name="HatenaSyntax/NoParagraph.php" role="php" />
+   <file baseinstalldir="." md5sum="550cf333e2a31883e2353f40751b0f11" name="HatenaSyntax/Paragraph.php" role="php" />
+   <file baseinstalldir="." md5sum="7abe6863bf4105891a01757d712ce655" name="HatenaSyntax/Pre.php" role="php" />
+   <file baseinstalldir="." md5sum="b575784db0e42e9f74b46475c8a94eaa" name="HatenaSyntax/Quote.php" role="php" />
+   <file baseinstalldir="." md5sum="ea50302af01545b6c3d670ada80a41d9" name="HatenaSyntax/Regex.php" role="php" />
+   <file baseinstalldir="." md5sum="d1c1266a94b57ba0673a1db08da51910" name="HatenaSyntax/Renderer.php" role="php" />
+   <file baseinstalldir="." md5sum="27125737af08b73b1fce75f0a2097086" name="HatenaSyntax/SuperPre.php" role="php" />
+   <file baseinstalldir="." md5sum="a9cd2be94a26575b300f26a6dc21ac7c" name="HatenaSyntax/Table.php" role="php" />
+   <file baseinstalldir="." md5sum="b7374afe03110c09889ae84e9fec0bf4" name="HatenaSyntax/TOCRenderer.php" role="php" />
+   <file baseinstalldir="." md5sum="ed89edda33f835ec463588828cc4358c" name="HatenaSyntax/Tree.php" role="php" />
+   <file baseinstalldir="." md5sum="ef948323d6479f3b57bc93072b285ff3" name="HatenaSyntax/TreeRenderer.php" role="php" />
+   <file baseinstalldir="." md5sum="544148634afaffd60c8d1ebdfe8f2197" name="HatenaSyntax/Util.php" role="php" />
+   <file baseinstalldir="." md5sum="9046b4943cba966444d703da29ea844f" name="HatenaSyntax.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+  <optional>
+   <package>
+    <name>PEG</name>
+    <channel>openpear.org</channel>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.7</release>
+    <api>1.0.7</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-01-05</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax
+   </notes>
+  </release>
+ </changelog>
+</package>

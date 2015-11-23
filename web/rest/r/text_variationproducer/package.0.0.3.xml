@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Text_VariationProducer</name>
+ <channel>openpear.org</channel>
+ <summary>Text_VariationProducerは、指定した全組み合わせの文字列を作り出すようなイテレータです。
+
+任意の文字列の組み合わせを比較的簡潔に記述できます。また、Text_VariationProducerはSPLのイテレータを実装しているため、foreach文で簡潔にループを記述できます。
+
+他の特徴としては、必要になってから文字列を生成し、生成した文字列を即座に破棄する点が挙げられます。全ての組み合わせを一度に生成するよりもメモリ消費が抑えられ、組み合わせ数が多い場合でも現実的に動作します。
+
+
+*動作例
+
+次のような使い方ができます。
+
+&gt;||
+&lt;?php
+require_once &apos;Text/VariationProducer.php&apos;;
+
+$strings = new Text_VariationProducer(&apos;abc{01,23[xyz]}&apos;);
+foreach ($strings as $string) {
+  echo &quot;$string¥n&quot;;
+}
+/*
+Results:
+abc01
+abc23x
+abc23y
+abc23z
+*/
+||&lt;
+
+
+* コンストラクタ引数について
+
+コンストラクタ引数で、どのような文字列を作るか指定できます。
+
+
+:&apos;通常の文字列&apos;:そのまま記述します。例：&apos;abc&apos;→文字列&quot;abc&quot;1種類
+:&apos;¥…&apos;:バックスラッシュでPHPのダブルクォート内と同様のエスケープ文字が記述できます。例：&apos;¥x20¥0¥n&apos;→空白文字、ヌル文字、改行文字の3文字からなる文字列1種類
+:&apos;{…}&apos;:シェル風に文字列を列挙できます。例：&apos;{01,23,45}&apos;→&quot;01&quot; &quot;23&quot; &quot;45&quot;の3種類
+:&apos;[…]&apos;:正規表現風に1バイトを記述できます。例：&apos;[135]&apos;→&quot;1&quot; &quot;3&quot; &quot;5&quot;の3種類／&apos;[a-z]&apos;→&quot;a&quot; &quot;b&quot; … &quot;z&quot;の26種類
+:&apos;[^…]&apos;:正規表現風な否定形式で1バイトを記述できます。例：&apos;[^¥x01-¥xfe]&apos;→&quot;¥0&quot; &quot;¥xff&quot;の2種類
+:組み合わせ:上記の記法を自由に組み合わせることができます。例：&apos;{ab,cd[3-4]}[PQ].dat&apos;→&quot;abP.dat&quot; &quot;abQ.dat&quot; &quot;cd3P.dat&quot; &quot;cd3Q.dat&quot; &quot;cd4P.dat&quot; &quot;cd4Q.dat&quot;の6種類
+
+現時点では{…}のネストはできません。{…}の内側に[…]を書くことは可能です。
+
+Text_VariationProducerでバックスラッシュを含む文字列を作りたい場合、「¥¥」という文字列をコンストラクタに渡す必要があるため、PHPの表現としては&apos;¥¥¥¥&apos;と書く必要があります。これは非常に読みにくいので、代わりに&apos;¥x5c&apos;と記述することもできます。どちらがマシかは微妙だと思いますけど。
+
+
+* 用途
+
+- デバッグ：検査用文字列を簡単に大量に作れて便利です。
+- テスト：大量の文字列に対するテストを簡潔に記述できます。</summary>
+ <description>Text_VariationProducerは、指定した全組み合わせの文字列を作り出すようなイテレータです。
+
+任意の文字列の組み合わせを比較的簡潔に記述できます。また、Text_VariationProducerはSPLのイテレータを実装しているため、foreach文で簡潔にループを記述できます。
+
+他の特徴としては、必要になってから文字列を生成し、生成した文字列を即座に破棄する点が挙げられます。全ての組み合わせを一度に生成するよりもメモリ消費が抑えられ、組み合わせ数が多い場合でも現実的に動作します。
+
+
+*動作例
+
+次のような使い方ができます。
+
+&gt;||
+&lt;?php
+require_once &apos;Text/VariationProducer.php&apos;;
+
+$strings = new Text_VariationProducer(&apos;abc{01,23[xyz]}&apos;);
+foreach ($strings as $string) {
+  echo &quot;$string¥n&quot;;
+}
+/*
+Results:
+abc01
+abc23x
+abc23y
+abc23z
+*/
+||&lt;
+
+
+* コンストラクタ引数について
+
+コンストラクタ引数で、どのような文字列を作るか指定できます。
+
+
+:&apos;通常の文字列&apos;:そのまま記述します。例：&apos;abc&apos;→文字列&quot;abc&quot;1種類
+:&apos;¥…&apos;:バックスラッシュでPHPのダブルクォート内と同様のエスケープ文字が記述できます。例：&apos;¥x20¥0¥n&apos;→空白文字、ヌル文字、改行文字の3文字からなる文字列1種類
+:&apos;{…}&apos;:シェル風に文字列を列挙できます。例：&apos;{01,23,45}&apos;→&quot;01&quot; &quot;23&quot; &quot;45&quot;の3種類
+:&apos;[…]&apos;:正規表現風に1バイトを記述できます。例：&apos;[135]&apos;→&quot;1&quot; &quot;3&quot; &quot;5&quot;の3種類／&apos;[a-z]&apos;→&quot;a&quot; &quot;b&quot; … &quot;z&quot;の26種類
+:&apos;[^…]&apos;:正規表現風な否定形式で1バイトを記述できます。例：&apos;[^¥x01-¥xfe]&apos;→&quot;¥0&quot; &quot;¥xff&quot;の2種類
+:組み合わせ:上記の記法を自由に組み合わせることができます。例：&apos;{ab,cd[3-4]}[PQ].dat&apos;→&quot;abP.dat&quot; &quot;abQ.dat&quot; &quot;cd3P.dat&quot; &quot;cd3Q.dat&quot; &quot;cd4P.dat&quot; &quot;cd4Q.dat&quot;の6種類
+
+現時点では{…}のネストはできません。{…}の内側に[…]を書くことは可能です。
+
+Text_VariationProducerでバックスラッシュを含む文字列を作りたい場合、「¥¥」という文字列をコンストラクタに渡す必要があるため、PHPの表現としては&apos;¥¥¥¥&apos;と書く必要があります。これは非常に読みにくいので、代わりに&apos;¥x5c&apos;と記述することもできます。どちらがマシかは微妙だと思いますけど。
+
+
+* 用途
+
+- デバッグ：検査用文字列を簡単に大量に作れて便利です。
+- テスト：大量の文字列に対するテストを簡潔に記述できます。</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-27</date>
+ <time>11:34:11</time>
+ <version>
+  <release>0.0.3</release>
+  <api>0.0.3</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r768 | hnw | 2009-04-27 11:30:50 -0700 (Mon, 27 Apr 2009) | 1 line
+
+PHP?\227?\129?\174?\230?\150?\135?\229?\173?\151?\229?\136?\151?\227?\129?\168?\227?\129?\175?\227?\131?\144?\227?\131?\131?\227?\130?\175?\227?\130?\185?\227?\131?\169?\227?\131?\131?\227?\130?\183?\227?\131?\165?\227?\129?\174?\232?\167?\163?\233?\135?\136?\227?\130?\146?\229?\164?\137?\227?\129?\136?\227?\128?\129?\230?\172?\161?\227?\129?\1741?\230?\150?\135?\229?\173?\151?\227?\129?\174?\230?\132?\143?\229?\145?\179?\227?\129?\168?\227?\129?\151?\227?\129?\159 / ?\229?\144?\166?\229?\174?\154?\230?\150?\135?\229?\173?\151?\227?\130?\175?\227?\131?\169?\227?\130?\185?\227?\129?\163?\227?\129?\189?\227?\129?\132?\227?\130?\130?\227?\129?\174?\227?\130?\146?\229?\174?\159?\232?\163?\133 / ?\227?\129?\157?\227?\129?\174?\228?\187?\150?\232?\135?\180?\229?\145?\189?\231?\154?\132?\227?\131?\144?\227?\130?\176?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r756 | hnw | 2009-04-26 18:58:09 -0700 (Sun, 26 Apr 2009) | 1 line
+
+fixed typo: old class name
+------------------------------------------------------------------------
+r755 | hnw | 2009-04-26 18:40:05 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first version
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Text" name="/">
+   <file baseinstalldir="/Text" md5sum="7c9ebce73f3ddb33d0ac9bcebb3fb418" name="VariationProducer.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.3</release>
+    <api>0.0.3</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-04-27</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r768 | hnw | 2009-04-27 11:30:50 -0700 (Mon, 27 Apr 2009) | 1 line
+
+PHP?\227?\129?\174?\230?\150?\135?\229?\173?\151?\229?\136?\151?\227?\129?\168?\227?\129?\175?\227?\131?\144?\227?\131?\131?\227?\130?\175?\227?\130?\185?\227?\131?\169?\227?\131?\131?\227?\130?\183?\227?\131?\165?\227?\129?\174?\232?\167?\163?\233?\135?\136?\227?\130?\146?\229?\164?\137?\227?\129?\136?\227?\128?\129?\230?\172?\161?\227?\129?\1741?\230?\150?\135?\229?\173?\151?\227?\129?\174?\230?\132?\143?\229?\145?\179?\227?\129?\168?\227?\129?\151?\227?\129?\159 / ?\229?\144?\166?\229?\174?\154?\230?\150?\135?\229?\173?\151?\227?\130?\175?\227?\131?\169?\227?\130?\185?\227?\129?\163?\227?\129?\189?\227?\129?\132?\227?\130?\130?\227?\129?\174?\227?\130?\146?\229?\174?\159?\232?\163?\133 / ?\227?\129?\157?\227?\129?\174?\228?\187?\150?\232?\135?\180?\229?\145?\189?\231?\154?\132?\227?\131?\144?\227?\130?\176?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------
+r756 | hnw | 2009-04-26 18:58:09 -0700 (Sun, 26 Apr 2009) | 1 line
+
+fixed typo: old class name
+------------------------------------------------------------------------
+r755 | hnw | 2009-04-26 18:40:05 -0700 (Sun, 26 Apr 2009) | 1 line
+
+first version
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

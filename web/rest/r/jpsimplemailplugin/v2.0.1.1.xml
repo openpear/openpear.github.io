@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/jpsimplemailplugin">jpSimpleMailPlugin</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <a>0.1.1</a>
+    <mp>5.1.0</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>brtriver</m>
+    <s>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</s>
+    <d>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</d>
+    <da>2008-11-29 10:08:41</da>
+    <n>------------------------------------------------------------------------
+r133 | brtriver | 2008-11-29 09:46:42 -0800 (Sat, 29 Nov 2008) | 1 line
+
+add LICENCE file for symfony
+------------------------------------------------------------------------
+r132 | brtriver | 2008-11-29 09:45:59 -0800 (Sat, 29 Nov 2008) | 1 line
+
+fix typo jpSimpleMail.class.php
+------------------------------------------------------------------------
+r130 | brtriver | 2008-11-29 09:10:22 -0800 (Sat, 29 Nov 2008) | 1 line
+
+rename files (desc.txt and notes.txt)
+------------------------------------------------------------------------
+r129 | brtriver | 2008-11-29 09:03:40 -0800 (Sat, 29 Nov 2008) | 1 line
+
+commit /lib for release 0.1.0
+------------------------------------------------------------------------
+r128 | brtriver | 2008-11-29 09:02:45 -0800 (Sat, 29 Nov 2008) | 1 line
+
+first commit for release 0.1.0
+------------------------------------------------------------------------
+r127 | openpear | 2008-11-29 02:54:26 -0800 (Sat, 29 Nov 2008) | 1 line
+
+[Create Base Directory] jpSimpleMailPlugin
+------------------------------------------------------------------------</n>
+    <f>9093</f>
+    <g>http://openpear.org/get/jpSimpleMailPlugin-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

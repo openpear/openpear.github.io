@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/file_hyperestraier">File_HyperEstraier</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>PHP Licence</l>
+    <m>kawai</m>
+    <s>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</s>
+    <d>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</d>
+    <da>2008-12-03 23:33:49</da>
+    <n>------------------------------------------------------------------------
+r178 | kawai | 2008-12-03 23:26:07 -0800 (Wed, 03 Dec 2008) | 1 line
+
+?\229?\136?\157?\230?\156?\159?\230?\138?\149?\229?\133?\165
+------------------------------------------------------------------------
+r177 | openpear | 2008-12-03 23:12:06 -0800 (Wed, 03 Dec 2008) | 1 line
+
+[Create Base Directory] File_HyperEstraier
+------------------------------------------------------------------------</n>
+    <f>2924</f>
+    <g>http://openpear.org/get/File_HyperEstraier-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

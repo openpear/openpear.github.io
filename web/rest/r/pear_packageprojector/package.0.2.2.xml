@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PEAR_PackageProjector</name>
+ <channel>openpear.org</channel>
+ <summary>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、
+http://servlet.sakura.ne.jp/wiki/index.php?PEAR_PackageProjector
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</summary>
+ <description>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、
+http://servlet.sakura.ne.jp/wiki/index.php?PEAR_PackageProjector
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</description>
+ <lead>
+  <name>坂本弘一</name>
+  <user>sakamoto</user>
+  <email>sakamoto@servlet.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-20</date>
+ <time>15:26:05</time>
+ <version>
+  <release>0.2.2</release>
+  <api>0.2.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>------------------------------------------------------------------------
+r862 | sakamoto | 2009-05-20 15:25:14 -0700 (Wed, 20 May 2009) | 1 line
+
+- fixed changelog.
+------------------------------------------------------------------------
+r860 | sakamoto | 2009-05-20 15:09:50 -0700 (Wed, 20 May 2009) | 1 line
+
+add PEAR_PackageFileManager_Plugins to required packages list 
+------------------------------------------------------------------------
+r858 | sakamoto | 2009-05-20 07:15:29 -0700 (Wed, 20 May 2009) | 4 lines
+
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+- update build.bat. when you build, release/PEAR_PackageProjector-x.x.x.tgz is installed.
+
+------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 03:52:22 -0700 (Sat, 16 May 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 02:25:12 -0700 (Sat, 16 May 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-15 20:02:35 -0700 (Fri, 15 May 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-15 19:47:03 -0700 (Fri, 15 May 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 00:17:49 -0800 (Sat, 27 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="0f0db433ced4048d8c9fc81d085566e3" name="PEAR/PackageProjector/Configure/Dependency.php" role="php" />
+   <file baseinstalldir="/" md5sum="d12ca383e4d8d59916f2c65209aceec6" name="PEAR/PackageProjector/Configure/File.php" role="php" />
+   <file baseinstalldir="/" md5sum="1e7afb8e526240f6a9b212800cd52400" name="PEAR/PackageProjector/Configure/Installer.php" role="php" />
+   <file baseinstalldir="/" md5sum="a579ce45943f647c967b1e9e53a4ca70" name="PEAR/PackageProjector/Configure/License.php" role="php" />
+   <file baseinstalldir="/" md5sum="238aebd9e0e7d5bc729e9b8377d5780e" name="PEAR/PackageProjector/Configure/Maintainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="e76c49b8d473faa9216e6c89f8d5a347" name="PEAR/PackageProjector/Configure/Package.php" role="php" />
+   <file baseinstalldir="/" md5sum="ca88cdd5c81625773070a3a8709aa23a" name="PEAR/PackageProjector/Configure/Project.php" role="php" />
+   <file baseinstalldir="/" md5sum="c20c2dd57811c4775a5d3ce4f6bb3c86" name="PEAR/PackageProjector/Configure/Role.php" role="php" />
+   <file baseinstalldir="/" md5sum="f1ebe4de48c20266fa156b9bc411bfaf" name="PEAR/PackageProjector/Configure/Version.php" role="php" />
+   <file baseinstalldir="/" md5sum="edbe75510b7c40f42b11ba53a4e0e705" name="PEAR/PackageProjector/DirectoryEntry/Directory.php" role="php" />
+   <file baseinstalldir="/" md5sum="95be33a4a1c6f044fc5b7706a3061429" name="PEAR/PackageProjector/DirectoryEntry/File.php" role="php" />
+   <file baseinstalldir="/" md5sum="67d112b5ccb295a7cf6089ea23dfbd17" name="PEAR/PackageProjector/DirectoryEntry/Root.php" role="php" />
+   <file baseinstalldir="/" md5sum="57b46becd37156ad3eedbf471841a723" name="PEAR/PackageProjector/MessageHandler/Echo.php" role="php" />
+   <file baseinstalldir="/" md5sum="cb88486510b03a560d35648a57acd419" name="PEAR/PackageProjector/ProjectInfo/APIVersion.php" role="php" />
+   <file baseinstalldir="/" md5sum="baf98c34d137ced847e558d2ee5baaee" name="PEAR/PackageProjector/ProjectInfo/Attribute.php" role="php" />
+   <file baseinstalldir="/" md5sum="dfed2a95eb5421320bc84687c8a60096" name="PEAR/PackageProjector/ProjectInfo/AttributeManager.php" role="php" />
+   <file baseinstalldir="/" md5sum="1b9f67498003e21cd2b44e628b0e8088" name="PEAR/PackageProjector/ProjectInfo/BaseInstallDir.php" role="php" />
+   <file baseinstalldir="/" md5sum="683e68b49f9b09b5a62414fd5718894e" name="PEAR/PackageProjector/ProjectInfo/Channel.php" role="php" />
+   <file baseinstalldir="/" md5sum="b9af70ee6571425edccfee9074e455e7" name="PEAR/PackageProjector/ProjectInfo/Dependencies.php" role="php" />
+   <file baseinstalldir="/" md5sum="91fe31caa54070f393cd84be8b266b18" name="PEAR/PackageProjector/ProjectInfo/Dependency.php" role="php" />
+   <file baseinstalldir="/" md5sum="e302507aaa2cf6abb27ee2ba26661781" name="PEAR/PackageProjector/ProjectInfo/Description.php" role="php" />
+   <file baseinstalldir="/" md5sum="dff1f02c41abe104b8be8bc367d1904c" name="PEAR/PackageProjector/ProjectInfo/InstallGroup.php" role="php" />
+   <file baseinstalldir="/" md5sum="fce52c90bef377619ac0b6b2d0bd414c" name="PEAR/PackageProjector/ProjectInfo/InstallGroups.php" role="php" />
+   <file baseinstalldir="/" md5sum="182c36805f0bfbba9e7adfb115c72207" name="PEAR/PackageProjector/ProjectInfo/InstallParam.php" role="php" />
+   <file baseinstalldir="/" md5sum="49a291801ccd2e93763661cc98731e39" name="PEAR/PackageProjector/ProjectInfo/License.php" role="php" />
+   <file baseinstalldir="/" md5sum="fd58e6d7e4f60a2f3e22bdb11de0456c" name="PEAR/PackageProjector/ProjectInfo/Maintainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="193bc8dfe3a39e7d3369f3e954bf6d70" name="PEAR/PackageProjector/ProjectInfo/Maintainers.php" role="php" />
+   <file baseinstalldir="/" md5sum="b5affe20d33a9c19f89c6af7b468cb1f" name="PEAR/PackageProjector/ProjectInfo/Notes.php" role="php" />
+   <file baseinstalldir="/" md5sum="acb5b9532827d8d0a258859f08418a06" name="PEAR/PackageProjector/ProjectInfo/PackageName.php" role="php" />
+   <file baseinstalldir="/" md5sum="21b73d9f15baac97c8e491f8911fcf62" name="PEAR/PackageProjector/ProjectInfo/PackageType.php" role="php" />
+   <file baseinstalldir="/" md5sum="d9acb7fe67ff014b5f05fc7654d893c8" name="PEAR/PackageProjector/ProjectInfo/PearinstallerDep.php" role="php" />
+   <file baseinstalldir="/" md5sum="b20253373d9482196b2634bdb08df883" name="PEAR/PackageProjector/ProjectInfo/PhpDep.php" role="php" />
+   <file baseinstalldir="/" md5sum="514c6a3db7ad6d25bc5b2077b636c2fd" name="PEAR/PackageProjector/ProjectInfo/ReleaseVersion.php" role="php" />
+   <file baseinstalldir="/" md5sum="d8d8f770346fc3c17ae8a81f766c7684" name="PEAR/PackageProjector/ProjectInfo/Role.php" role="php" />
+   <file baseinstalldir="/" md5sum="d08b9ad7487a839e42a191e61b02bee2" name="PEAR/PackageProjector/ProjectInfo/Roles.php" role="php" />
+   <file baseinstalldir="/" md5sum="ca3ebcc1a99041d38bae856b20131022" name="PEAR/PackageProjector/ProjectInfo/Summary.php" role="php" />
+   <file baseinstalldir="/" md5sum="a3452e532c323a0b655dad973e6b59a4" name="PEAR/PackageProjector/Configure.php" role="php" />
+   <file baseinstalldir="/" md5sum="f1a625189d67d13c05aa14358703068c" name="PEAR/PackageProjector/ConfigureManeger.php" role="php" />
+   <file baseinstalldir="/" md5sum="a556160a1ccdb6c4effebcfaa97bcc66" name="PEAR/PackageProjector/Derictory.php" role="php" />
+   <file baseinstalldir="/" md5sum="3e3542219555608e624178144854d892" name="PEAR/PackageProjector/DirectoryEntry.php" role="php" />
+   <file baseinstalldir="/" md5sum="4a586285e86673ae673e84db03f52781" name="PEAR/PackageProjector/MessageHandler.php" role="php" />
+   <file baseinstalldir="/" md5sum="85a4c98b4e434e612d4d975ff506cba1" name="PEAR/PackageProjector/Package.php" role="php" />
+   <file baseinstalldir="/" md5sum="11a38249b4eb7bc34be1efade564b00c" name="PEAR/PackageProjector/Packager.php" role="php" />
+   <file baseinstalldir="/" md5sum="06741a3b8ff3ca3bba5f508b687c099e" name="PEAR/PackageProjector/Project.php" role="php" />
+   <file baseinstalldir="/" md5sum="f1c63c42026215d8933aaa287a770709" name="PEAR/PackageProjector/ProjectInfo.php" role="php" />
+   <file baseinstalldir="/" md5sum="c50103a94868264236358df24096b672" name="PEAR/PackageProjector/Visitor.php" role="php" />
+   <file baseinstalldir="/" md5sum="5be9702e2b680f6542369a46025b0c21" name="PEAR/PackageProjector.php" role="php" />
+   <file baseinstalldir="/" md5sum="134f6dc391e3e3495b10d51c9953fdff" name="scripts/pearproj.bat" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="ec9500a0a069e5b8240c16b8892bf6c8" name="scripts/pearproj.sh" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.2</min>
+   </pearinstaller>
+   <package>
+    <name>PHP_CodeSniffer</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>Console_Getargs</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>PEAR_PackageFileManager2</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>PEAR_PackageFileManager_Plugins</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="pearproj" name="scripts/pearproj.sh" />
+   <install as="pearproj.bat" name="scripts/pearproj.bat" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-20</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>------------------------------------------------------------------------
+r862 | sakamoto | 2009-05-20 15:25:14 -0700 (Wed, 20 May 2009) | 1 line
+
+- fixed changelog.
+------------------------------------------------------------------------
+r860 | sakamoto | 2009-05-20 15:09:50 -0700 (Wed, 20 May 2009) | 1 line
+
+add PEAR_PackageFileManager_Plugins to required packages list 
+------------------------------------------------------------------------
+r858 | sakamoto | 2009-05-20 07:15:29 -0700 (Wed, 20 May 2009) | 4 lines
+
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+- update build.bat. when you build, release/PEAR_PackageProjector-x.x.x.tgz is installed.
+
+------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 03:52:22 -0700 (Sat, 16 May 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 02:25:12 -0700 (Sat, 16 May 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-15 20:02:35 -0700 (Fri, 15 May 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-15 19:47:03 -0700 (Fri, 15 May 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 00:17:49 -0800 (Sat, 27 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

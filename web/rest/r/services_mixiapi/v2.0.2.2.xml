@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_mixiapi">Services_MixiAPI</p>
+    <c>openpear.org</c>
+    <v>0.2.2</v>
+    <a>0.2.0</a>
+    <mp>5.1.0</mp>
+    <st>alpha</st>
+    <l>The PHP License, version 3.01</l>
+    <m>shimooka</m>
+    <s>*概要
+mixiステーションが利用するAPIを叩くServicesパッケージです。[http://ido.nu/kuma/2007/06/29/mixi%E3%81%AE%E3%81%82%E3%81%97%E3%81%82%E3%81%A8api%E7%99%BA%E6%8E%98/:title=mixiのあしあとAPI発掘]を参考にしています。
+
+*関連URL
+-[http://d.hatena.ne.jp/shimooka/20080804/1217780008]
+-[http://d.hatena.ne.jp/shimooka/20080801/1217525203]
+-[http://d.hatena.ne.jp/shimooka/20080318/1205813764]
+-[http://d.hatena.ne.jp/shimooka/20080129/1201536348]
+-[http://d.hatena.ne.jp/shimooka/20070917/1189959168]</s>
+    <d>*概要
+mixiステーションが利用するAPIを叩くServicesパッケージです。[http://ido.nu/kuma/2007/06/29/mixi%E3%81%AE%E3%81%82%E3%81%97%E3%81%82%E3%81%A8api%E7%99%BA%E6%8E%98/:title=mixiのあしあとAPI発掘]を参考にしています。
+
+*関連URL
+-[http://d.hatena.ne.jp/shimooka/20080804/1217780008]
+-[http://d.hatena.ne.jp/shimooka/20080801/1217525203]
+-[http://d.hatena.ne.jp/shimooka/20080318/1205813764]
+-[http://d.hatena.ne.jp/shimooka/20080129/1201536348]
+-[http://d.hatena.ne.jp/shimooka/20070917/1189959168]</d>
+    <da>2009-03-18 08:06:50</da>
+    <n>------------------------------------------------------------------------
+r590 | shimooka | 2009-03-18 08:00:58 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- tagged RELEASE_0_2_2
+------------------------------------------------------------------------
+r589 | shimooka | 2009-03-18 07:58:03 -0700 (Wed, 18 Mar 2009) | 1 line
+
+- initial import from coderepos
+------------------------------------------------------------------------</n>
+    <f>5462</f>
+    <g>http://openpear.org/get/Services_MixiAPI-0.2.2</g>
+    <x xlink:href="package.0.2.2.xml"/>
+</r>

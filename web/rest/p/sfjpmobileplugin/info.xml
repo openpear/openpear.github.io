@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>sfJpMobilePlugin</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT License</l>
+<s>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</s>
+<d>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</d>
+<r xlink:href="/rest/r/sfjpmobileplugin" />
+</p>

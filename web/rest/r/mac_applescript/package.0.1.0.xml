@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Mac_AppleScript</name>
+ <channel>openpear.org</channel>
+ <summary>流れるようなインターフェイスでAppleScriptコマンドの生成・実行をする。</summary>
+ <description>流れるようなインターフェイスでAppleScriptコマンドの生成・実行をする。</description>
+ <lead>
+  <name>Ryusuke SEKIYAMA</name>
+  <user>rsk</user>
+  <email>rsky0711@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-01</date>
+ <time>18:29:11</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1231 | rsk | 2009-10-01 18:16:59 +0900 (木, 01 10月 2009) | 1 line
+
+- initail commit.
+------------------------------------------------------------------------
+r1230 | openpear | 2009-10-01 18:12:01 +0900 (木, 01 10月 2009) | 1 line
+
+[New Package] Mac_AppleScript
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="8fb2886b30976d03323413d571bf6576" name="examples/sample1.php" role="doc" />
+   <file baseinstalldir="/" md5sum="b717ea2a748f1244235bc5a4f6e0d76e" name="Mac/AppleScript.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-10-01</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1231 | rsk | 2009-10-01 18:16:59 +0900 (木, 01 10月 2009) | 1 line
+
+- initail commit.
+------------------------------------------------------------------------
+r1230 | openpear | 2009-10-01 18:12:01 +0900 (木, 01 10月 2009) | 1 line
+
+[New Package] Mac_AppleScript
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

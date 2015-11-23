@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_YourFileHost</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>[http://yourfilehost.com/:title=YourFileHost]の動画情報を取得するパッケージです。
+夜のお供に役立てて下さい。
+
+&gt;||
+&lt;?php
+require_once 'Services/YourFileHost.php';
+$y = new Services_YourFileHost('http://www.yourfilehost.com/media.php?cat=video&amp;file=pig_implodes_in_pressure_suit.flv');
+var_dump($y-&gt;video_id); // flvのURL
+var_dump($y-&gt;photo);    // サムネイルのURL
+||&lt;</s>
+<d>[http://yourfilehost.com/:title=YourFileHost]の動画情報を取得するパッケージです。
+夜のお供に役立てて下さい。
+
+&gt;||
+&lt;?php
+require_once 'Services/YourFileHost.php';
+$y = new Services_YourFileHost('http://www.yourfilehost.com/media.php?cat=video&amp;file=pig_implodes_in_pressure_suit.flv');
+var_dump($y-&gt;video_id); // flvのURL
+var_dump($y-&gt;photo);    // サムネイルのURL
+||&lt;</d>
+<r xlink:href="/rest/r/services_yourfilehost" />
+</p>
