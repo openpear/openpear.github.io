@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTML_CSS_Mobile</name>
+ <channel>openpear.org</channel>
+ <summary>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</summary>
+ <description>このライブラリは、
+- &lt;link&gt;タグからの外部CSS
+- &lt;script&gt;&lt;/script&gt;タグ内記述CSS
+- スクリプト上からの外部ファイル
+とかとかCSSファイル/記述を展開し、inlineのstyle要素に埋め込んでくれます。
+
+まだベータな感じ。これからどんどんupして行って、ケータイのHTML/CSSのバッドノウハウを吸収できる緩衝材になればいいなと思って作ってます。</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>yudoufu (Daichi Kamemoto)</name>
+  <user>yudoufu</user>
+  <email>daikame@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-05</date>
+ <time>17:44:02</time>
+ <version>
+  <release>1.7.0</release>
+  <api>1.7.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license>MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1821 | yudoufu | 2010-05-05 01:39:23 +0900 (水, 05  5月 2010) | 1 line
+
+fix &lt;br /&gt;tag bug
+------------------------------------------------------------------------
+r1820 | yudoufu | 2010-05-05 00:18:13 +0900 (水, 05  5月 2010) | 1 line
+
+patches cdata bug and without css bug thanks for MugeSo
+------------------------------------------------------------------------
+r1362 | gusagi | 2009-11-01 21:23:57 +0900 (日, 01 11月 2009) | 1 line
+
+~CSSの内容gが文字列以外だった場合の処理を追加
+------------------------------------------------------------------------
+r808 | yudoufu | 2009-05-10 05:44:20 +0900 (日, 10  5月 2009) | 1 line
+
+サンプルも丸ごと移動
+------------------------------------------------------------------------
+r807 | yudoufu | 2009-05-10 05:43:13 +0900 (日, 10  5月 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r806 | yudoufu | 2009-05-10 05:40:15 +0900 (日, 10  5月 2009) | 1 line
+
+HTML_CSS_Mobileをリポジトリまるごと移動
+------------------------------------------------------------------------
+r805 | yudoufu | 2009-05-10 05:36:01 +0900 (日, 10  5月 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r377 | sotarok | 2009-01-30 02:53:30 +0900 (金, 30  1月 2009) | 2 lines
+
+ * ディレクトリの整理など
+
+------------------------------------------------------------------------
+r371 | sotarok | 2009-01-29 23:36:25 +0900 (木, 29  1月 2009) | 1 line
+
+ * add prop
+------------------------------------------------------------------------
+r370 | openpear | 2009-01-29 23:32:22 +0900 (木, 29  1月 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Mobile
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="6ce68d0961cc6e135f51202c253151e3" name="HTML/CSS/Mobile.php" role="php" />
+   <file baseinstalldir="/" md5sum="2a44347c4180a80e7d4b6b64c19cb2c6" name="sample/nocss.html" role="doc" />
+   <file baseinstalldir="/" md5sum="e9136e89b7d99f11a11ddac83d617e5d" name="sample/sample.css" role="data" />
+   <file baseinstalldir="/" md5sum="f25e04a2e8012f56350699323cfd2661" name="sample/sample.html" role="doc" />
+   <file baseinstalldir="/" md5sum="0020815aa275eacc21dcf2a20769c03d" name="sample/sample.php" role="php" />
+   <file baseinstalldir="/" md5sum="8161922331f3740e9ae32d68a7edd339" name="sample/sample2.css" role="data" />
+   <file baseinstalldir="/" md5sum="4afc4787c7fde1406530149edd1f111e" name="sample/sample3.css" role="data" />
+   <file baseinstalldir="/" md5sum="d7699184368f5af45ceb17712b592ec7" name="sample/sample4.css" role="data" />
+   <file baseinstalldir="/" md5sum="16247c8424c577112ba7ba9e206073e6" name="sample/sample5.css" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTML_CSS</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>HTML_CSS_Selector2XPath</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.7.0</release>
+    <api>1.7.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-05-05</date>
+   <license>MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1821 | yudoufu | 2010-05-05 01:39:23 +0900 (水, 05  5月 2010) | 1 line
+
+fix &lt;br /&gt;tag bug
+------------------------------------------------------------------------
+r1820 | yudoufu | 2010-05-05 00:18:13 +0900 (水, 05  5月 2010) | 1 line
+
+patches cdata bug and without css bug thanks for MugeSo
+------------------------------------------------------------------------
+r1362 | gusagi | 2009-11-01 21:23:57 +0900 (日, 01 11月 2009) | 1 line
+
+~CSSの内容gが文字列以外だった場合の処理を追加
+------------------------------------------------------------------------
+r808 | yudoufu | 2009-05-10 05:44:20 +0900 (日, 10  5月 2009) | 1 line
+
+サンプルも丸ごと移動
+------------------------------------------------------------------------
+r807 | yudoufu | 2009-05-10 05:43:13 +0900 (日, 10  5月 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r806 | yudoufu | 2009-05-10 05:40:15 +0900 (日, 10  5月 2009) | 1 line
+
+HTML_CSS_Mobileをリポジトリまるごと移動
+------------------------------------------------------------------------
+r805 | yudoufu | 2009-05-10 05:36:01 +0900 (日, 10  5月 2009) | 1 line
+
+unset externals
+------------------------------------------------------------------------
+r377 | sotarok | 2009-01-30 02:53:30 +0900 (金, 30  1月 2009) | 2 lines
+
+ * ディレクトリの整理など
+
+------------------------------------------------------------------------
+r371 | sotarok | 2009-01-29 23:36:25 +0900 (木, 29  1月 2009) | 1 line
+
+ * add prop
+------------------------------------------------------------------------
+r370 | openpear | 2009-01-29 23:32:22 +0900 (木, 29  1月 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Mobile
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

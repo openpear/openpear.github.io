@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PEG</name>
+ <channel>openpear.org</channel>
+ <summary>正規表現などでは不可能な複雑なパーサを作るためのPEGパーサライブラリ。
+PEGってなんじゃいという人は↓
+[http://ja.wikipedia.org/wiki/解析表現文法]
+現在alpha版。今のところコードかなり短め。
+[http://openpear.org/package/HatenaSyntax:title=HatenaSyntaxパッケージ]はこれを用いて構築されている。
+
+
+* パーサの作り方
+すでに用意されているパーサ同士を組み合わせていく。
+もしくは自分で[http://svn.openpear.org/PEG/trunk/code/PEG/IParser.php:title=PEG_IParser]インターフェイスを実装して他のパーサと組み合わせていく。
+
+
+* すでに用意されているパーサ一覧
+
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Action.php:title=PEG_Action] - パーサを引数にとってセマンティックアクションを付加するために使う。継承して使う。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Anything.php:title=PEG_Anything] - どのような文字にでもヒットする。正規表現でいう&quot;.&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/CallbackAction.php:title=PEG_CallbackAction] - パーサとコールバックを引数にとる以外はPEG_ACtionと同じ。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Choice.php:title=PEG_Choice] - 選択。正規表現でいう&quot;|&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/EOS.php:title=PEG_EOS] - 終端にヒットする。正規表現でいう&quot;$&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Lookahead.php:title=PEG_Lookahead] - パーサを引数にとり、かつ文字列を消費しないパーサ。いわゆる先読み。正規表現でいう&quot;?:&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/LookaheadNot.php:title=PEG_LookaheadNot] - いわゆる否定先読み。正規表現でいう&quot;?!&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Many.php:title=PEG_Many] - 正規表現でいう&quot;*&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Many1.php:title=PEG_Many1] - 正規表現でいう&quot;+&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Not.php:title=PEG_Not] - 否定。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Optional.php:title=PEG_Optional] - 正規表現でいう&quot;?&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Sequence.php:title=PEG_Sequence] - パーサを順々につなげるパーサ。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Token.php:title=PEG_Token] - 単純な文字列にヒットするパーサ。
+これらはすべて[http://svn.openpear.org/PEG/trunk/code/PEG/IParser.php:title=PEG_IParser]インターフェイスを実装している。
+各パーサの具体的な使い方は該当クラスのコード、もしくは[http://svn.openpear.org/PEG/trunk/test/:title=テスト]を参照。
+
+
+* おおまかなパーサの使い方
+コンテキスト(PEG_IContext)を生成し、パーサ(PEG_IParser)に渡す。
+パーサはコンテキストから文字列を読み込み、消費していく。
+** 例
+&gt;||
+&lt;?php
+include_once &apos;PEG.php&apos;;
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;openpear&apos;)-&gt;parse($context); // &apos;openpear&apos;を返す。
+
+$context = new PEG_Context(&apos;openpear&apos;);
+$parser = new PEG_Sequence(array(PEG_Token::get(&apos;open&apos;), PEG_Token::get(&apos;pear&apos;)));
+$parser-&gt;parse($context);  // array(&apos;open&apos;, &apos;pear&apos;)を返す
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;open&apos;)-&gt;parse($context); // &apos;open&apos;を返す
+PEG_Token::get(&apos;pear&apos;)-&gt;parse($context); // &apos;pear&apos;を返す
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;openpne&apos;)-&gt;parse($context); // PEG_Failure例外が投げられる
+||&lt;
+非常に冗長であるので、正規表現を使えるときは使いましょう。
+
+
+* サンプルコード
+- [http://openpear.org/repository/PEG/trunk/sample/sample01.php:title=sample01.php]
+
+
+* TODO
+- ソースコードに適切なコメントを付ける
+- ドキュメント、サンプルコードを充実させる
+- 使い勝手を良くする</summary>
+ <description>正規表現などでは不可能な複雑なパーサを作るためのPEGパーサライブラリ。
+PEGってなんじゃいという人は↓
+[http://ja.wikipedia.org/wiki/解析表現文法]
+現在alpha版。今のところコードかなり短め。
+[http://openpear.org/package/HatenaSyntax:title=HatenaSyntaxパッケージ]はこれを用いて構築されている。
+
+
+* パーサの作り方
+すでに用意されているパーサ同士を組み合わせていく。
+もしくは自分で[http://svn.openpear.org/PEG/trunk/code/PEG/IParser.php:title=PEG_IParser]インターフェイスを実装して他のパーサと組み合わせていく。
+
+
+* すでに用意されているパーサ一覧
+
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Action.php:title=PEG_Action] - パーサを引数にとってセマンティックアクションを付加するために使う。継承して使う。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Anything.php:title=PEG_Anything] - どのような文字にでもヒットする。正規表現でいう&quot;.&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/CallbackAction.php:title=PEG_CallbackAction] - パーサとコールバックを引数にとる以外はPEG_ACtionと同じ。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Choice.php:title=PEG_Choice] - 選択。正規表現でいう&quot;|&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/EOS.php:title=PEG_EOS] - 終端にヒットする。正規表現でいう&quot;$&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Lookahead.php:title=PEG_Lookahead] - パーサを引数にとり、かつ文字列を消費しないパーサ。いわゆる先読み。正規表現でいう&quot;?:&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/LookaheadNot.php:title=PEG_LookaheadNot] - いわゆる否定先読み。正規表現でいう&quot;?!&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Many.php:title=PEG_Many] - 正規表現でいう&quot;*&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Many1.php:title=PEG_Many1] - 正規表現でいう&quot;+&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Not.php:title=PEG_Not] - 否定。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Optional.php:title=PEG_Optional] - 正規表現でいう&quot;?&quot;。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Sequence.php:title=PEG_Sequence] - パーサを順々につなげるパーサ。
+-[http://svn.openpear.org/PEG/trunk/code/PEG/Token.php:title=PEG_Token] - 単純な文字列にヒットするパーサ。
+これらはすべて[http://svn.openpear.org/PEG/trunk/code/PEG/IParser.php:title=PEG_IParser]インターフェイスを実装している。
+各パーサの具体的な使い方は該当クラスのコード、もしくは[http://svn.openpear.org/PEG/trunk/test/:title=テスト]を参照。
+
+
+* おおまかなパーサの使い方
+コンテキスト(PEG_IContext)を生成し、パーサ(PEG_IParser)に渡す。
+パーサはコンテキストから文字列を読み込み、消費していく。
+** 例
+&gt;||
+&lt;?php
+include_once &apos;PEG.php&apos;;
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;openpear&apos;)-&gt;parse($context); // &apos;openpear&apos;を返す。
+
+$context = new PEG_Context(&apos;openpear&apos;);
+$parser = new PEG_Sequence(array(PEG_Token::get(&apos;open&apos;), PEG_Token::get(&apos;pear&apos;)));
+$parser-&gt;parse($context);  // array(&apos;open&apos;, &apos;pear&apos;)を返す
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;open&apos;)-&gt;parse($context); // &apos;open&apos;を返す
+PEG_Token::get(&apos;pear&apos;)-&gt;parse($context); // &apos;pear&apos;を返す
+
+$context = new PEG_Context(&apos;openpear&apos;);
+PEG_Token::get(&apos;openpne&apos;)-&gt;parse($context); // PEG_Failure例外が投げられる
+||&lt;
+非常に冗長であるので、正規表現を使えるときは使いましょう。
+
+
+* サンプルコード
+- [http://openpear.org/repository/PEG/trunk/sample/sample01.php:title=sample01.php]
+
+
+* TODO
+- ソースコードに適切なコメントを付ける
+- ドキュメント、サンプルコードを充実させる
+- 使い勝手を良くする</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-30</date>
+ <time>03:48:47</time>
+ <version>
+  <release>0.1.2</release>
+  <api>0.1.2</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r139 | anatoo | 2008-11-30 03:35:43 -0800 (Sun, 30 Nov 2008) | 2 lines
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\227?\130?\179?\227?\131?\188?\227?\131?\137?\232?\191?\189?\229?\138?\160?\227?\128?\130
+PEG?\227?\130?\175?\227?\131?\169?\227?\130?\185?\232?\191?\189?\229?\138?\160?\227?\128?\130
+------------------------------------------------------------------------
+r137 | anatoo | 2008-11-30 00:40:52 -0800 (Sun, 30 Nov 2008) | 2 lines
+
+- PEG_IContext?\227?\129?\174read,lookahed?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\227?\129?\174?\227?\131?\135?\227?\131?\149?\227?\130?\169?\227?\131?\171?\227?\131?\136?\229?\188?\149?\230?\149?\176?\227?\130?\146?\230?\182?\136?\227?\129?\151?\227?\129?\159
+- PEG_IParser?\227?\129?\174?\230?\150?\135?\229?\173?\151?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\130?\146utf8?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r124 | anatoo | 2008-11-28 08:41:08 -0800 (Fri, 28 Nov 2008) | 1 line
+
+?\227?\131?\144?\227?\130?\176?\227?\131?\149?\227?\130?\163?\227?\131?\131?\227?\130?\175?\227?\130?\185
+------------------------------------------------------------------------
+r122 | anatoo | 2008-11-28 08:25:25 -0800 (Fri, 28 Nov 2008) | 2 lines
+
+?\228?\187?\150?\228?\186?\186?\227?\129?\174?\231?\146?\176?\229?\162?\131?\227?\129?\167?\227?\129?\175?\229?\139?\149?\227?\129?\139?\227?\129?\170?\227?\129?\132?\227?\129?\168?\227?\129?\132?\227?\129?\134?\227?\129?\178?\227?\129?\169?\227?\129?\132?\227?\131?\144?\227?\130?\176?\228?\191?\174?\230?\173?\163?\227?\128?\130
+?\227?\129?\157?\227?\130?\140?\227?\129?\168PEG_Context?\229?\134?\133?\227?\129?\167?\227?\130?\130PEG_Failure?\230?\138?\149?\227?\129?\146?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r20 | anatoo | 2008-10-31 22:32:29 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+?\228?\187?\138?\227?\129?\190?\227?\129?\167__autoload?\227?\129?\171?\233?\160?\188?\227?\129?\163?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\229?\164?\137?\230?\155?\180?\227?\128?\130
+PEG.php?\227?\130?\146include?\227?\129?\153?\227?\130?\139?\227?\129?\168?\229?\133?\168?\233?\131?\168?\228?\189?\191?\227?\129?\136?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r7 | anatoo | 2008-10-31 08:13:48 -0700 (Fri, 31 Oct 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d1f8fd51e9734d509bef579c0738d86e" name="PEG/Action.php" role="php" />
+   <file baseinstalldir="/" md5sum="f364e8d621cd11c48d2cbc9c8942f0b1" name="PEG/Anything.php" role="php" />
+   <file baseinstalldir="/" md5sum="1455196c3e4a22d416f694c3a37e85f2" name="PEG/CallbackAction.php" role="php" />
+   <file baseinstalldir="/" md5sum="9b7ec246f24dff5c3dcd5a7b773f377b" name="PEG/Choice.php" role="php" />
+   <file baseinstalldir="/" md5sum="7aa0c55d857966bbac0cda30a9cc19dd" name="PEG/Context.php" role="php" />
+   <file baseinstalldir="/" md5sum="f20190b384abb5b0ef86e59fdf6f0954" name="PEG/EOS.php" role="php" />
+   <file baseinstalldir="/" md5sum="b43bc64c1645a06451cc777e23f8c1ca" name="PEG/Failure.php" role="php" />
+   <file baseinstalldir="/" md5sum="c6df6742a49e3c7bb1b4f0f63f4ec985" name="PEG/IContext.php" role="php" />
+   <file baseinstalldir="/" md5sum="2403462e86df8317eec049a7b751d682" name="PEG/IParser.php" role="php" />
+   <file baseinstalldir="/" md5sum="27417656e1a7925c2da249c5f211bbbc" name="PEG/Lookahead.php" role="php" />
+   <file baseinstalldir="/" md5sum="39290a29b561685b49dce5f7f1ebbcb9" name="PEG/LookaheadNot.php" role="php" />
+   <file baseinstalldir="/" md5sum="47ca5ab2cf8ae4f5aefad690a962322d" name="PEG/Many.php" role="php" />
+   <file baseinstalldir="/" md5sum="cfed91c90c1935efbb2149886c7dd6ab" name="PEG/Many1.php" role="php" />
+   <file baseinstalldir="/" md5sum="b61cd02958f7c1c3985dd4e8f36977c0" name="PEG/Not.php" role="php" />
+   <file baseinstalldir="/" md5sum="fadbb05fb092935729494abc0cdc5f28" name="PEG/Optional.php" role="php" />
+   <file baseinstalldir="/" md5sum="7fe70b8f6293ccba505e8eb0258fd588" name="PEG/Sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="dac596889b097eaf92693b295787816a" name="PEG/Token.php" role="php" />
+   <file baseinstalldir="/" md5sum="4bded726c9b2feb837f4349d49889faa" name="PEG.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-11-30</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r139 | anatoo | 2008-11-30 03:35:43 -0800 (Sun, 30 Nov 2008) | 2 lines
+
+?\227?\130?\181?\227?\131?\179?\227?\131?\151?\227?\131?\171?\227?\130?\179?\227?\131?\188?\227?\131?\137?\232?\191?\189?\229?\138?\160?\227?\128?\130
+PEG?\227?\130?\175?\227?\131?\169?\227?\130?\185?\232?\191?\189?\229?\138?\160?\227?\128?\130
+------------------------------------------------------------------------
+r137 | anatoo | 2008-11-30 00:40:52 -0800 (Sun, 30 Nov 2008) | 2 lines
+
+- PEG_IContext?\227?\129?\174read,lookahed?\227?\131?\161?\227?\130?\189?\227?\131?\131?\227?\131?\137?\227?\129?\174?\227?\131?\135?\227?\131?\149?\227?\130?\169?\227?\131?\171?\227?\131?\136?\229?\188?\149?\230?\149?\176?\227?\130?\146?\230?\182?\136?\227?\129?\151?\227?\129?\159
+- PEG_IParser?\227?\129?\174?\230?\150?\135?\229?\173?\151?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\130?\146utf8?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r124 | anatoo | 2008-11-28 08:41:08 -0800 (Fri, 28 Nov 2008) | 1 line
+
+?\227?\131?\144?\227?\130?\176?\227?\131?\149?\227?\130?\163?\227?\131?\131?\227?\130?\175?\227?\130?\185
+------------------------------------------------------------------------
+r122 | anatoo | 2008-11-28 08:25:25 -0800 (Fri, 28 Nov 2008) | 2 lines
+
+?\228?\187?\150?\228?\186?\186?\227?\129?\174?\231?\146?\176?\229?\162?\131?\227?\129?\167?\227?\129?\175?\229?\139?\149?\227?\129?\139?\227?\129?\170?\227?\129?\132?\227?\129?\168?\227?\129?\132?\227?\129?\134?\227?\129?\178?\227?\129?\169?\227?\129?\132?\227?\131?\144?\227?\130?\176?\228?\191?\174?\230?\173?\163?\227?\128?\130
+?\227?\129?\157?\227?\130?\140?\227?\129?\168PEG_Context?\229?\134?\133?\227?\129?\167?\227?\130?\130PEG_Failure?\230?\138?\149?\227?\129?\146?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r20 | anatoo | 2008-10-31 22:32:29 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+?\228?\187?\138?\227?\129?\190?\227?\129?\167__autoload?\227?\129?\171?\233?\160?\188?\227?\129?\163?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\229?\164?\137?\230?\155?\180?\227?\128?\130
+PEG.php?\227?\130?\146include?\227?\129?\153?\227?\130?\139?\227?\129?\168?\229?\133?\168?\233?\131?\168?\228?\189?\191?\227?\129?\136?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r7 | anatoo | 2008-10-31 08:13:48 -0700 (Fri, 31 Oct 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

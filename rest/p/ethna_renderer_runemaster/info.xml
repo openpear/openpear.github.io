@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Ethna_Renderer_RuneMaster</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>Ethnaで[http://hatotech.org/runemaster/:title=RuneMaster]テンプレートエンジンを使用するためのプラグインです。
+RuneMaster自体は同梱されていないので上記サイトからダウンロードしてください。
+
+*インストール方法
+-RuneMaster本体をEthnaプロジェクトのlib以下に入れます。（lib/Rune/Master.phpという感じ）
+-[プロジェクト名]_Controller.phpのrequire_onceが沢山あるところに以下を追加してください
+&gt;||
+require_once 'Rune/Master.php';
+require_once ETHNA_BASE.'/class/Renderer/Ethna_Renderer_RuneMaster.php';
+||&lt;
+-テンプレートをRuneMasterのフォーマットで書いてください。</s>
+<d>Ethnaで[http://hatotech.org/runemaster/:title=RuneMaster]テンプレートエンジンを使用するためのプラグインです。
+RuneMaster自体は同梱されていないので上記サイトからダウンロードしてください。
+
+*インストール方法
+-RuneMaster本体をEthnaプロジェクトのlib以下に入れます。（lib/Rune/Master.phpという感じ）
+-[プロジェクト名]_Controller.phpのrequire_onceが沢山あるところに以下を追加してください
+&gt;||
+require_once 'Rune/Master.php';
+require_once ETHNA_BASE.'/class/Renderer/Ethna_Renderer_RuneMaster.php';
+||&lt;
+-テンプレートをRuneMasterのフォーマットで書いてください。</d>
+<r xlink:href="/rest/r/ethna_renderer_runemaster" />
+</p>

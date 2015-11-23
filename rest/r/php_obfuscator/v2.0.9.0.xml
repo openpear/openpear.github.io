@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/php_obfuscator">PHP_Obfuscator</p>
+    <c>openpear.org</c>
+    <v>0.9.0</v>
+    <a>0.9.0</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>shimooka</m>
+    <s>PHPスクリプトを難読化するためのPEARパッケージです。詳細は以下を参照。
+-http://d.hatena.ne.jp/shimooka/20100625/1277433024
+-http://d.hatena.ne.jp/shimooka/20100702/1278071792</s>
+    <d>PHPスクリプトを難読化するためのPEARパッケージです。詳細は以下を参照。
+-http://d.hatena.ne.jp/shimooka/20100625/1277433024
+-http://d.hatena.ne.jp/shimooka/20100702/1278071792</d>
+    <da>2010-10-04 18:02:02</da>
+    <n>
+2010/07/02, PHP_Obfuscator 0.9.0
+-support STDIN
+-support filter arguments
+
+2010/07/02, PHP_Obfuscator 0.1.0
+-initial release
+ </n>
+    <f>7745</f>
+    <g>http://openpear.org/get/PHP_Obfuscator-0.9.0</g>
+    <x xlink:href="package.0.9.0.xml"/>
+</r>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Keires_DB</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</s>
+<d>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</d>
+<r xlink:href="/rest/r/keires_db" />
+</p>

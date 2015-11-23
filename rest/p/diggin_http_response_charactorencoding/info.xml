@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Diggin_Http_Response_CharactorEncoding</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>LGPL</l>
+<s>HttpレスポンスからUTF-8へ自動変換を行うのを目的としたものです。
+
+
+エンコードの取得はHttpレスポンスヘッダ、metaタグ、(mbstringが利用可能な場合)レスポンスボディの順に行います。
+
+各レスポンスインスタンスから、getBodyされたときにUTF-8に自動変換するためのラッパーを用意しています。(現在はZend_Http_Responseのみ)
+
+＊HTMLScraping Classをベースにしております。
+
+
+参考コード：
+&gt;||
+$client = new Zend_Http_Client($url);
+$response = $client-&gt;request();
+ 
+$wrapper = Diggin_Http_Response_CharactorEncoding::createWrapper($response);
+var_dump($wrapper instanceof Zend_Http_Response); //true
+var_dump($wrapper-&gt;getBody()); //UTF-8
+||&lt;</s>
+<d>HttpレスポンスからUTF-8へ自動変換を行うのを目的としたものです。
+
+
+エンコードの取得はHttpレスポンスヘッダ、metaタグ、(mbstringが利用可能な場合)レスポンスボディの順に行います。
+
+各レスポンスインスタンスから、getBodyされたときにUTF-8に自動変換するためのラッパーを用意しています。(現在はZend_Http_Responseのみ)
+
+＊HTMLScraping Classをベースにしております。
+
+
+参考コード：
+&gt;||
+$client = new Zend_Http_Client($url);
+$response = $client-&gt;request();
+ 
+$wrapper = Diggin_Http_Response_CharactorEncoding::createWrapper($response);
+var_dump($wrapper instanceof Zend_Http_Response); //true
+var_dump($wrapper-&gt;getBody()); //UTF-8
+||&lt;</d>
+<r xlink:href="/rest/r/diggin_http_response_charactorencoding" />
+</p>

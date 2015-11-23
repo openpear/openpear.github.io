@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_MobileCIDR</name>
+ <channel>openpear.org</channel>
+ <summary>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DoCoMo);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DoCoMo,SoftBank,EZweb,Willcom,Emobile</summary>
+ <description>携帯キャリアのページからCIDRらしいものをとってきます。
+regexpは拾いものだったり自分で書いたり
+
+
+使い方：
+$cidr = Net_MobileCIDR::Factory(Net_MobileCIDR::DoCoMo);
+$cidr-&gt;getIPAddresses()
+//array(5) {
+//  [0]=&gt;
+//  string(15) &quot;210.153.84.0/24&quot;
+//  [1]=&gt;
+//  string(16) &quot;210.136.161.0/24&quot;
+//  [2]=&gt;
+//  string(15) &quot;210.153.86.0/24&quot;
+//  [3]=&gt;
+//  string(16) &quot;124.146.174.0/24&quot;
+//  [4]=&gt;
+//  string(16) &quot;124.146.175.0/24&quot;
+//}
+
+
+対応キャリア：
+DoCoMo,SoftBank,EZweb,Willcom,Emobile</description>
+ <lead>
+  <name>ちょびえ</name>
+  <user>shuheitanuma</user>
+  <email>shuhei.tanuma@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-18</date>
+ <time>07:15:58</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>MIT</license>
+ <notes>------------------------------------------------------------------------
+r233 | shuheitanuma | 2008-12-18 07:13:49 -0800 (Thu, 18 Dec 2008) | 1 line
+
+inital commit
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Net" name="/">
+   <file baseinstalldir="/Net" md5sum="753cd10509b8befa743451ec1c3126c5" name="MobileCIDR/Carrier.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="fc239850d41d9ff8b372c9855acde069" name="MobileCIDR/DoCoMo.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="cd596e9e572879acc4812a18a1396b69" name="MobileCIDR/Emobile.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="c9f818ef85a090e47a2e498a7dc31e49" name="MobileCIDR/EZweb.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="e56dd130e4bf52a5119122281ee66d4c" name="MobileCIDR/Interface.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="a2b9fcf1f9ab1413e72fa6e4181bf57e" name="MobileCIDR/SoftBank.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="903e866e4c629f5a02292a070667d04e" name="MobileCIDR/Willcom.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="237110fd93eccd08c5200cf9913b056c" name="MobileCIDR.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2008-12-18</date>
+   <license>MIT</license>
+   <notes>------------------------------------------------------------------------
+r233 | shuheitanuma | 2008-12-18 07:13:49 -0800 (Thu, 18 Dec 2008) | 1 line
+
+inital commit
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

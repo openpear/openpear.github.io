@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>IO_SWF</name>
+ <channel>openpear.org</channel>
+ <summary>SWF バイナリを解釈/編集する為のライブラリです。
+IO_Bit が必要です (deps設定の仕方は後で調べる)</summary>
+ <description>SWF バイナリを解釈/編集する為のライブラリです。
+IO_Bit が必要です (deps設定の仕方は後で調べる)</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-16</date>
+ <time>16:56:02</time>
+ <version>
+  <release>1.0.2</release>
+  <api>1.0.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+- ヘッダ FrameSize の RECT twips を signed で処理するよう修正
+- SOI/EOI をつけるだけではJPEG画像を携帯で表示できなかったので、(処理をコメントアウトはしてあったが)コード自体を削除
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d0e42a11bc1260b18e1cb11bd95d5c65" name="IO/SWF/Dumper.php" role="php" />
+   <file baseinstalldir="/" md5sum="445c1fcc96843e0b9b081f9be640f55b" name="IO/SWF/Editor.php" role="php" />
+   <file baseinstalldir="/" md5sum="90879ac3164c7ef8c2eac5ab1c5c2147" name="IO/SWF/Former.php" role="php" />
+   <file baseinstalldir="/" md5sum="34764a5619d9a98a299b4d40a10ee06c" name="IO/SWF.php" role="php" />
+   <file baseinstalldir="/" md5sum="b7abce5187e1a336c11f4eefad278d00" name="sample/swfcopy.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf173d55674ed650a31b114bba223fc0" name="sample/swfdump.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d8411182056307b7f2af430957fa28b" name="sample/swfreplacejpeg.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d65b9414c74aac3c930fd6225603694" name="sample/swfsetbgcolor.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.9</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.9</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-08-16</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+- ヘッダ FrameSize の RECT twips を signed で処理するよう修正
+- SOI/EOI をつけるだけではJPEG画像を携帯で表示できなかったので、(処理をコメントアウトはしてあったが)コード自体を削除
+   </notes>
+  </release>
+ </changelog>
+</package>

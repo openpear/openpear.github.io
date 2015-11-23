@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/stream_filter_mbstring">Stream_Filter_Mbstring</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <st>stable</st>
+    <l>The PHP License, version 3.01</l>
+    <m>hnw</m>
+    <s>Stream_Filter_Mbstringは、PHPストリームに対するカスタムフィルタです。あらゆるストリームに対し、文字エンコーディングの変換および英数字/記号/カタカナの正規化を提供します。
+
+*メリット
+
+-巨大なファイルに対しても、メモリを無駄に消費せず文字エンコーディングを変換できます
+-標準入力や標準出力に対しても適用可能です
+-利用が容易です
+-文字エンコーディング関連の攻撃に対する防御に利用できます
+-不正な文字を含んでいる場合でも可能な限り情報を残します
+-他のストリームフィルタを作成する際に、実装の参考にできます
+
+
+*ストリームについて
+
+PHPのストリームはPHP5.0.0で導入された、比較的古くからある機構です。ファイルのみならず、シーケンシャルに読み書き可能なリソース（URL、標準入出力、ソケットなど）を統一的に扱うための概念です。
+
+
+さらに、ストリームに関連してフィルタという概念があり、ストリーム上に流れる文字列を加工することができます。フィルタは同時に複数利用できますので、フィルタを組み合わせて複雑な加工をすることも可能です。
+
+
+*Stream_Filter_Mbstringが提供するストリームフィルタ
+
+-convert.mbstring.encode.[FROM_ENCODING]:[TO_ENCODING]
+--ストリームにmb_convert_encoding()を適用します
+-convert.mbstring.kana.[OPTION]:[ENCODING]
+--ストリームにmb_convert_kana()を適用します</s>
+    <d>Stream_Filter_Mbstringは、PHPストリームに対するカスタムフィルタです。あらゆるストリームに対し、文字エンコーディングの変換および英数字/記号/カタカナの正規化を提供します。
+
+*メリット
+
+-巨大なファイルに対しても、メモリを無駄に消費せず文字エンコーディングを変換できます
+-標準入力や標準出力に対しても適用可能です
+-利用が容易です
+-文字エンコーディング関連の攻撃に対する防御に利用できます
+-不正な文字を含んでいる場合でも可能な限り情報を残します
+-他のストリームフィルタを作成する際に、実装の参考にできます
+
+
+*ストリームについて
+
+PHPのストリームはPHP5.0.0で導入された、比較的古くからある機構です。ファイルのみならず、シーケンシャルに読み書き可能なリソース（URL、標準入出力、ソケットなど）を統一的に扱うための概念です。
+
+
+さらに、ストリームに関連してフィルタという概念があり、ストリーム上に流れる文字列を加工することができます。フィルタは同時に複数利用できますので、フィルタを組み合わせて複雑な加工をすることも可能です。
+
+
+*Stream_Filter_Mbstringが提供するストリームフィルタ
+
+-convert.mbstring.encode.[FROM_ENCODING]:[TO_ENCODING]
+--ストリームにmb_convert_encoding()を適用します
+-convert.mbstring.kana.[OPTION]:[ENCODING]
+--ストリームにmb_convert_kana()を適用します</d>
+    <da>2009-03-06 05:56:46</da>
+    <n>------------------------------------------------------------------------
+r513 | hnw | 2009-03-06 05:56:16 -0800 (Fri, 06 Mar 2009) | 1 line
+
+fixed DocComment
+------------------------------------------------------------------------
+r511 | hnw | 2009-03-06 05:35:42 -0800 (Fri, 06 Mar 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------</n>
+    <f>2984</f>
+    <g>http://openpear.org/get/Stream_Filter_Mbstring-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

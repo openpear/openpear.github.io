@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>GD_Tab_Guitar</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>ギターのタブ譜を画像で出力するライブラリです。
+画像生成にはGDライブラリを利用しています。</s>
+<d>ギターのタブ譜を画像で出力するライブラリです。
+画像生成にはGDライブラリを利用しています。</d>
+<r xlink:href="/rest/r/gd_tab_guitar" />
+</p>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_hanako">Services_Hanako</p>
+    <c>openpear.org</c>
+    <v>0.2.0</v>
+    <a>0.2.0</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>New BSD Licence</l>
+    <m>shimooka</m>
+    <s>環境省が運用する花粉観測システム「はなこさん」([http://kafun.taiki.go.jp/])用のデータを引っこ抜くパッケージで、[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]のportです。
+
+HTTP_Request2に依存していますので、インストールする際に-aオプションを付けてください。
+
+&gt;||
+$ sudo pear install -a openpear/Services_Hanako-alpha
+||&lt;
+
+使い方は、以下の通り。[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]も参照してください。
+
+&gt;||
+&lt;?php
+require_once &quot;Services/Hanako.php&quot;;
+
+$hanako = new Services_Hanako(new HTTP_Request2(), '03', '50810100');
+var_dump($hanako-&gt;now());
+||&lt;
+
+なお、★★★「はなこさん」のデータは転用・営利目的とした利用を禁止しています★★★。あくまで個人利用に限定するようにしてください。</s>
+    <d>環境省が運用する花粉観測システム「はなこさん」([http://kafun.taiki.go.jp/])用のデータを引っこ抜くパッケージで、[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]のportです。
+
+HTTP_Request2に依存していますので、インストールする際に-aオプションを付けてください。
+
+&gt;||
+$ sudo pear install -a openpear/Services_Hanako-alpha
+||&lt;
+
+使い方は、以下の通り。[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]も参照してください。
+
+&gt;||
+&lt;?php
+require_once &quot;Services/Hanako.php&quot;;
+
+$hanako = new Services_Hanako(new HTTP_Request2(), '03', '50810100');
+var_dump($hanako-&gt;now());
+||&lt;
+
+なお、★★★「はなこさん」のデータは転用・営利目的とした利用を禁止しています★★★。あくまで個人利用に限定するようにしてください。</d>
+    <da>2009-05-26 08:49:50</da>
+    <n>------------------------------------------------------------------------
+r882 | shimooka | 2009-05-26 08:40:48 -0700 (Tue, 26 May 2009) | 2 lines
+
+- changed args of constructor
+- added test
+------------------------------------------------------------------------
+r575 | shimooka | 2009-03-17 00:49:15 -0700 (Tue, 17 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</n>
+    <f>3327</f>
+    <g>http://openpear.org/get/Services_Hanako-0.2.0</g>
+    <x xlink:href="package.0.2.0.xml"/>
+</r>

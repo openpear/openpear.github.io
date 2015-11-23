@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PEG</name>
+ <channel>openpear.org</channel>
+ <summary>正規表現などでは不可能な複雑なパーサを作るためのPEGパーサライブラリです。
+PEGってなんじゃいという人は↓
+[http://ja.wikipedia.org/wiki/解析表現文法]</summary>
+ <description>正規表現などでは不可能な複雑なパーサを作るためのPEGパーサライブラリです。
+PEGってなんじゃいという人は↓
+[http://ja.wikipedia.org/wiki/解析表現文法]</description>
+ <lead>
+  <name>anatoo</name>
+  <user>anatoo</user>
+  <email>study.anatoo@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-10-31</date>
+ <time>22:49:38</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r20 | anatoo | 2008-10-31 22:32:29 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+?\228?\187?\138?\227?\129?\190?\227?\129?\167__autoload?\227?\129?\171?\233?\160?\188?\227?\129?\163?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\229?\164?\137?\230?\155?\180?\227?\128?\130
+PEG.php?\227?\130?\146include?\227?\129?\153?\227?\130?\139?\227?\129?\168?\229?\133?\168?\233?\131?\168?\228?\189?\191?\227?\129?\136?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r7 | anatoo | 2008-10-31 08:13:48 -0700 (Fri, 31 Oct 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d1f8fd51e9734d509bef579c0738d86e" name="PEG/Action.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf6fcdfe4b70a67d7fc1081353052588" name="PEG/Anything.php" role="php" />
+   <file baseinstalldir="/" md5sum="1455196c3e4a22d416f694c3a37e85f2" name="PEG/CallbackAction.php" role="php" />
+   <file baseinstalldir="/" md5sum="15a5e658fbaadeabf4e26057d6c68c47" name="PEG/Choice.php" role="php" />
+   <file baseinstalldir="/" md5sum="f4b1f12428458719ef27c02d83182389" name="PEG/Context.php" role="php" />
+   <file baseinstalldir="/" md5sum="4adfc5f56ed2a6f2c3b63d035586da5d" name="PEG/EOS.php" role="php" />
+   <file baseinstalldir="/" md5sum="b43bc64c1645a06451cc777e23f8c1ca" name="PEG/Failure.php" role="php" />
+   <file baseinstalldir="/" md5sum="a2382cfe88c7778892a152ec27cb0f0b" name="PEG/IContext.php" role="php" />
+   <file baseinstalldir="/" md5sum="2673c5202e761e54da661e05865a20bd" name="PEG/IParser.php" role="php" />
+   <file baseinstalldir="/" md5sum="27417656e1a7925c2da249c5f211bbbc" name="PEG/Lookahead.php" role="php" />
+   <file baseinstalldir="/" md5sum="39290a29b561685b49dce5f7f1ebbcb9" name="PEG/LookaheadNot.php" role="php" />
+   <file baseinstalldir="/" md5sum="47ca5ab2cf8ae4f5aefad690a962322d" name="PEG/Many.php" role="php" />
+   <file baseinstalldir="/" md5sum="cfed91c90c1935efbb2149886c7dd6ab" name="PEG/Many1.php" role="php" />
+   <file baseinstalldir="/" md5sum="b61cd02958f7c1c3985dd4e8f36977c0" name="PEG/Not.php" role="php" />
+   <file baseinstalldir="/" md5sum="fadbb05fb092935729494abc0cdc5f28" name="PEG/Optional.php" role="php" />
+   <file baseinstalldir="/" md5sum="7fe70b8f6293ccba505e8eb0258fd588" name="PEG/Sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="dac596889b097eaf92693b295787816a" name="PEG/Token.php" role="php" />
+   <file baseinstalldir="/" md5sum="3cc32e00a29c4fec1024b30ec1da2cdb" name="PEG.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.5</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-10-31</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r20 | anatoo | 2008-10-31 22:32:29 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+?\228?\187?\138?\227?\129?\190?\227?\129?\167__autoload?\227?\129?\171?\233?\160?\188?\227?\129?\163?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\130?\146?\229?\164?\137?\230?\155?\180?\227?\128?\130
+PEG.php?\227?\130?\146include?\227?\129?\153?\227?\130?\139?\227?\129?\168?\229?\133?\168?\233?\131?\168?\228?\189?\191?\227?\129?\136?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r7 | anatoo | 2008-10-31 08:13:48 -0700 (Fri, 31 Oct 2008) | 1 line
+
+first import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

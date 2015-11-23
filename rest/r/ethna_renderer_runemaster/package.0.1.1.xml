@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Ethna_Renderer_RuneMaster</name>
+ <channel>openpear.org</channel>
+ <summary>Ethnaで[http://hatotech.org/runemaster/:title=RuneMaster]テンプレートエンジンを使用するためのプラグインです。
+RuneMaster自体は同梱されていないので上記サイトからダウンロードしてください。
+
+*インストール方法
+-RuneMaster本体をEthnaプロジェクトのlib以下に入れます。（lib/Rune/Master.phpという感じ）
+-[プロジェクト名]_Controller.phpのrequire_onceが沢山あるところに以下を追加してください
+&gt;||
+require_once &apos;Rune/Master.php&apos;;
+require_once ETHNA_BASE.&apos;/class/Renderer/Ethna_Renderer_RuneMaster.php&apos;;
+||&lt;
+-テンプレートをRuneMasterのフォーマットで書いてください。</summary>
+ <description>Ethnaで[http://hatotech.org/runemaster/:title=RuneMaster]テンプレートエンジンを使用するためのプラグインです。
+RuneMaster自体は同梱されていないので上記サイトからダウンロードしてください。
+
+*インストール方法
+-RuneMaster本体をEthnaプロジェクトのlib以下に入れます。（lib/Rune/Master.phpという感じ）
+-[プロジェクト名]_Controller.phpのrequire_onceが沢山あるところに以下を追加してください
+&gt;||
+require_once &apos;Rune/Master.php&apos;;
+require_once ETHNA_BASE.&apos;/class/Renderer/Ethna_Renderer_RuneMaster.php&apos;;
+||&lt;
+-テンプレートをRuneMasterのフォーマットで書いてください。</description>
+ <lead>
+  <name>nazo</name>
+  <user>nazo</user>
+  <email>takuya0219@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-13</date>
+ <time>02:46:57</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r556 | nazo | 2009-03-13 02:35:41 -0700 (Fri, 13 Mar 2009) | 1 line
+
+add Ethna_Renderer_RuneMaster.php
+------------------------------------------------------------------------
+r555 | openpear | 2009-03-13 02:22:44 -0700 (Fri, 13 Mar 2009) | 1 line
+
+[Create Base Directory] Ethna_Renderer_RuneMaster
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="204c1ac14185c5e30ee9650a71d0e5d3" name="Ethna/class/Renderer/Ethna_Renderer_RuneMaster.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-03-13</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r556 | nazo | 2009-03-13 02:35:41 -0700 (Fri, 13 Mar 2009) | 1 line
+
+add Ethna_Renderer_RuneMaster.php
+------------------------------------------------------------------------
+r555 | openpear | 2009-03-13 02:22:44 -0700 (Fri, 13 Mar 2009) | 1 line
+
+[Create Base Directory] Ethna_Renderer_RuneMaster
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

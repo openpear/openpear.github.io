@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_Q4M</name>
+ <channel>openpear.org</channel>
+ <summary>*Summary
+
+Provides interface to Q4M(Queue for MySQL).
+[http://q4m.31tools.com/]
+
+*License
+
+The MIT License
+[http://opensource.org/licenses/mit-license.html]
+
+*Usage
+
+&gt;||
+$queue = new Net_Q4M();
+$queue-&gt;connect(&apos;mysql://user:pass@localhost:3306/database&apos;);                                                  
+
+$row = $queue-&gt;dequeue(&apos;my_queue&apos;);
+//$row = $queue-&gt;dequeue(&apos;my_queue&apos;, 5);   // set timeout to 5 seconds
+//$row = $queue-&gt;dequeue(&apos;my_queue&apos;, &apos;my_queue2&apos;, &apos;my_queue3&apos;, 10);
+if (process_row($row)) {
+  $queue-&gt;end();
+} else {
+  $queue-&gt;abort();
+}
+$queue-&gt;disconnect();
+
+||&lt;</summary>
+ <description>*Summary
+
+Provides interface to Q4M(Queue for MySQL).
+[http://q4m.31tools.com/]
+
+*License
+
+The MIT License
+[http://opensource.org/licenses/mit-license.html]
+
+*Usage
+
+&gt;||
+$queue = new Net_Q4M();
+$queue-&gt;connect(&apos;mysql://user:pass@localhost:3306/database&apos;);                                                  
+
+$row = $queue-&gt;dequeue(&apos;my_queue&apos;);
+//$row = $queue-&gt;dequeue(&apos;my_queue&apos;, 5);   // set timeout to 5 seconds
+//$row = $queue-&gt;dequeue(&apos;my_queue&apos;, &apos;my_queue2&apos;, &apos;my_queue3&apos;, 10);
+if (process_row($row)) {
+  $queue-&gt;end();
+} else {
+  $queue-&gt;abort();
+}
+$queue-&gt;disconnect();
+
+||&lt;</description>
+ <lead>
+  <name>castor</name>
+  <user>castor</user>
+  <email>castor.4bit@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-14</date>
+ <time>12:01:55</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://opensource.org/licenses/mit-license.html">The MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r222 | castor | 2008-12-14 11:23:45 -0800 (Sun, 14 Dec 2008) | 1 line
+
+Initial commit.
+------------------------------------------------------------------------
+r221 | openpear | 2008-12-14 11:05:34 -0800 (Sun, 14 Dec 2008) | 1 line
+
+[Create Base Directory] Net_Q4M
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="5d77584043e9e4696f91763066f8f6a2" name="Net/Q4M/Connection/MySQL.php" role="php" />
+   <file baseinstalldir="/" md5sum="b36fb8d52d0332e4a0d2a2a82223bd2b" name="Net/Q4M/Connection/MySQLi.php" role="php" />
+   <file baseinstalldir="/" md5sum="5127d517e0fb0d54ba9fc1beb53a12a6" name="Net/Q4M/Connection/PdoMySQL.php" role="php" />
+   <file baseinstalldir="/" md5sum="89fd99ef76074fafec222431257414c0" name="Net/Q4M/Connection/ResultSet.php" role="php" />
+   <file baseinstalldir="/" md5sum="914f0d0278bd52cb4b5acc2137195665" name="Net/Q4M/Connection.php" role="php" />
+   <file baseinstalldir="/" md5sum="2678d381a277e6af10cb5f9147c7cb5b" name="Net/Q4M/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="aeff52e3ef8e2d3278219d6bdd83dbad" name="Net/Q4M.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-12-14</date>
+   <license uri="http://opensource.org/licenses/mit-license.html">The MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r222 | castor | 2008-12-14 11:23:45 -0800 (Sun, 14 Dec 2008) | 1 line
+
+Initial commit.
+------------------------------------------------------------------------
+r221 | openpear | 2008-12-14 11:05:34 -0800 (Sun, 14 Dec 2008) | 1 line
+
+[Create Base Directory] Net_Q4M
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

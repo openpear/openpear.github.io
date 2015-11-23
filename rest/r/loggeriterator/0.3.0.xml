@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/loggeriterator">LoggerIterator</p>
+    <c>openpear.org</c>
+    <v>0.3.0</v>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>hnw</m>
+    <s>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+例外の内容を標準出力または標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準出力または標準エラー出力にログとして出力する機能もあります。
+
+see http://openpear.org/package/LoggerIterator for details.</s>
+    <d>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+例外の内容を標準出力または標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準出力または標準エラー出力にログとして出力する機能もあります。
+
+see http://openpear.org/package/LoggerIterator for details.</d>
+    <da>2009-10-17 09:52:03</da>
+    <n>
+* テスト追加
+ * ログの出力先を標準エラー出力と標準出力と選択可能に
+ * 値の出力をprint_rからvar_exportに変更
+ </n>
+    <f>1902</f>
+    <g>http://openpear.org/get/LoggerIterator-0.3.0</g>
+    <x xlink:href="package.0.3.0.xml"/>
+</r>

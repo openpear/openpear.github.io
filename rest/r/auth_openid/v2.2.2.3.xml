@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/auth_openid">Auth_OpenID</p>
+    <c>openpear.org</c>
+    <v>2.2.3</v>
+    <a>2.2.3</a>
+    <mp>5.1.6</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>sotarok</m>
+    <s>hooo</s>
+    <d>hooo</d>
+    <da>2010-12-26 00:21:30</da>
+    <n>
+hooo
+ </n>
+    <f>110787</f>
+    <g>http://openpear.org/get/Auth_OpenID-2.2.3</g>
+    <x xlink:href="package.2.2.3.xml"/>
+</r>

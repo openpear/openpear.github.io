@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>IO_SWF</name>
+ <channel>openpear.org</channel>
+ <summary>SWF バイナリを解釈/編集する為のライブラリです。</summary>
+ <description>SWF バイナリを解釈/編集する為のライブラリです。</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-13</date>
+ <time>02:48:02</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+- tag の get/replace 機能を追加
+- サンプルコードを追加
+- 全体的に整理
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d0e42a11bc1260b18e1cb11bd95d5c65" name="IO/SWF/Dumper.php" role="php" />
+   <file baseinstalldir="/" md5sum="445c1fcc96843e0b9b081f9be640f55b" name="IO/SWF/Editor.php" role="php" />
+   <file baseinstalldir="/" md5sum="c38ed6a7f5af49bd1a6e6b419b26684a" name="IO/SWF.php" role="php" />
+   <file baseinstalldir="/" md5sum="b7abce5187e1a336c11f4eefad278d00" name="sample/swfcopy.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf173d55674ed650a31b114bba223fc0" name="sample/swfdump.php" role="php" />
+   <file baseinstalldir="/" md5sum="c90c355770177b70661eb2e8b4ce18b1" name="sample/swfreplacejpeg.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d65b9414c74aac3c930fd6225603694" name="sample/swfsetbgcolor.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.9</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.9</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-08-13</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+- tag の get/replace 機能を追加
+- サンプルコードを追加
+- 全体的に整理
+   </notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Photozou</name>
+ <channel>openpear.org</channel>
+ <summary>フォト蔵APIをPHPから割と簡単に操作するライブラリ．まだすべてのAPIを完全にサポートしているわけではありません．
+
+* 依存パッケージ
+[http://pear.php.net/package/HTTP_Request:title=HTTP_Request]が必要です。
+
+* trunk
+
+** 主な変更点
+-photo_infoでview_numがとれてなかった問題を修正
+-photo_infoでvideo_urlがなくなっていたので削除
+-photo_infoでdescriptionがとれてなかった問題を修正
+-テスト追加(photo_info)
+-エラーメッセージが複数行の場合に対応
+-エラーメッセージの変更に追従
+
+* version 1.3.0 ( 2009-08-20 )
+
+** 主な変更点
+-user_infoメソッド実装
+-テストの追加
+-メソッドの定義順序をAPIドキュメントに準拠させた
+
+* version 1.2.0 ( 2008-02-27 )
+
+** 主な変更点
+-アップロード枚数が限界に到達した時のエラーコードを追加
+-PEAR::Errorのエラーメッセージにエラーコードを追加
+-CDATAのstrip
+
+* リポジトリについて
+リポジトリ自体はcodereposを利用しています。
+リンクの方法は、 ( [http://d.hatena.ne.jp/sotarok/20090129] ) を参考にしました。</summary>
+ <description>フォト蔵APIをPHPから割と簡単に操作するライブラリ．まだすべてのAPIを完全にサポートしているわけではありません．
+
+* 依存パッケージ
+[http://pear.php.net/package/HTTP_Request:title=HTTP_Request]が必要です。
+
+* trunk
+
+** 主な変更点
+-photo_infoでview_numがとれてなかった問題を修正
+-photo_infoでvideo_urlがなくなっていたので削除
+-photo_infoでdescriptionがとれてなかった問題を修正
+-テスト追加(photo_info)
+-エラーメッセージが複数行の場合に対応
+-エラーメッセージの変更に追従
+
+* version 1.3.0 ( 2009-08-20 )
+
+** 主な変更点
+-user_infoメソッド実装
+-テストの追加
+-メソッドの定義順序をAPIドキュメントに準拠させた
+
+* version 1.2.0 ( 2008-02-27 )
+
+** 主な変更点
+-アップロード枚数が限界に到達した時のエラーコードを追加
+-PEAR::Errorのエラーメッセージにエラーコードを追加
+-CDATAのstrip
+
+* リポジトリについて
+リポジトリ自体はcodereposを利用しています。
+リンクの方法は、 ( [http://d.hatena.ne.jp/sotarok/20090129] ) を参考にしました。</description>
+ <lead>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-09-30</date>
+ <time>00:57:02</time>
+ <version>
+  <release>1.4.0</release>
+  <api>1.4.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1130 | openpear | 2009-08-20 14:32:02 +0900 (木, 20  8月 2009) | 1 line
+
+[New Package] Services_Photozou
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="fb93fcb4582cc689897f26d97ce94c6b" name="Services/Photozou.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.6.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.4.0</release>
+    <api>1.4.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-09-30</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1130 | openpear | 2009-08-20 14:32:02 +0900 (木, 20  8月 2009) | 1 line
+
+[New Package] Services_Photozou
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

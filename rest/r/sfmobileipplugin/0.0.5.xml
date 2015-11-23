@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/sfmobileipplugin">sfMobileIPPlugin</p>
+    <c>openpear.org</c>
+    <v>0.0.5</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>bto</m>
+    <s>IPアドレスから高速に携帯キャリアを判別するsymfonyプラグイン</s>
+    <d>IPアドレスから高速に携帯キャリアを判別するsymfonyプラグイン</d>
+    <da>2009-05-11 02:43:23</da>
+    <n>------------------------------------------------------------------------
+r819 | bto | 2009-05-11 02:42:14 -0700 (Mon, 11 May 2009) | 2 lines
+
+added new ezweb ip addresses
+
+------------------------------------------------------------------------
+r795 | bto | 2009-05-08 00:02:30 -0700 (Fri, 08 May 2009) | 2 lines
+
+0.0.4
+
+------------------------------------------------------------------------
+r793 | bto | 2009-05-07 23:58:12 -0700 (Thu, 07 May 2009) | 2 lines
+
+simplefied for reading configuration files
+
+------------------------------------------------------------------------
+r760 | bto | 2009-04-26 19:59:41 -0700 (Sun, 26 Apr 2009) | 2 lines
+
+to release 0.0.3
+
+------------------------------------------------------------------------
+r759 | bto | 2009-04-26 19:58:06 -0700 (Sun, 26 Apr 2009) | 2 lines
+
+added new ip addresses
+
+------------------------------------------------------------------------
+r740 | bto | 2009-04-21 07:28:01 -0700 (Tue, 21 Apr 2009) | 2 lines
+
+not to check HTTP_X_FORWARDED_FOR
+
+------------------------------------------------------------------------
+r732 | bto | 2009-04-21 01:01:30 -0700 (Tue, 21 Apr 2009) | 2 lines
+
+added sfMobileIPPlugin
+
+------------------------------------------------------------------------
+r731 | openpear | 2009-04-21 00:53:38 -0700 (Tue, 21 Apr 2009) | 1 line
+
+[Create Base Directory] sfMobileIPPlugin
+------------------------------------------------------------------------</n>
+    <f>3222</f>
+    <g>http://openpear.org/get/sfMobileIPPlugin-0.0.5</g>
+    <x xlink:href="package.0.0.5.xml"/>
+</r>

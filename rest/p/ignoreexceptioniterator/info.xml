@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>IgnoreExceptionIterator</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>IgnoreExceptionIteratorは、SPLのイテレータで例外が発生しても無視するようなイテレータです。
+
+引数のイテレータ内の例外をcatchし、何もせずに破棄します。
+
+致命的な例外が発生しないとわかっている場合に、例外の破棄を簡潔に記述できます。
+
+とはいえ例外が発生したことに気づけなくなるのは危険なので、[http://openpear.org/package/LoggerIterator:title=LoggerIterator]などと組み合わせて使うのが良いと思います。
+
+一度例外を発生させたイテレータはエラー状態にあるとみなし、その後のメソッド呼び出しについては、本来のイテレータのメソッド呼び出しをしません。単に、valid()はfalseを、他のメソッドはnullを返します。
+
+
+* 動作例
+
+&gt;||
+&lt;?php
+require_once('IgnoreExceptionIterator.php');
+
+$it = new IgnoreExceptionIterator(new EmptyIterator());
+$it-&gt;current(); // returns null
+
+$it = new EmptyIterator();
+$it-&gt;current(); // throws exception
+||&lt;
+
+
+* ソースコード
+
+[http://openpear.org/repository/IgnoreExceptionIterator/trunk/src/IgnoreExceptionIterator.php]</s>
+<d>IgnoreExceptionIteratorは、SPLのイテレータで例外が発生しても無視するようなイテレータです。
+
+引数のイテレータ内の例外をcatchし、何もせずに破棄します。
+
+致命的な例外が発生しないとわかっている場合に、例外の破棄を簡潔に記述できます。
+
+とはいえ例外が発生したことに気づけなくなるのは危険なので、[http://openpear.org/package/LoggerIterator:title=LoggerIterator]などと組み合わせて使うのが良いと思います。
+
+一度例外を発生させたイテレータはエラー状態にあるとみなし、その後のメソッド呼び出しについては、本来のイテレータのメソッド呼び出しをしません。単に、valid()はfalseを、他のメソッドはnullを返します。
+
+
+* 動作例
+
+&gt;||
+&lt;?php
+require_once('IgnoreExceptionIterator.php');
+
+$it = new IgnoreExceptionIterator(new EmptyIterator());
+$it-&gt;current(); // returns null
+
+$it = new EmptyIterator();
+$it-&gt;current(); // throws exception
+||&lt;
+
+
+* ソースコード
+
+[http://openpear.org/repository/IgnoreExceptionIterator/trunk/src/IgnoreExceptionIterator.php]</d>
+<r xlink:href="/rest/r/ignoreexceptioniterator" />
+</p>

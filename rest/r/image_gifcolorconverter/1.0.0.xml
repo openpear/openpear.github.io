@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/image_gifcolorconverter">Image_GifColorConverter</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <st>stable</st>
+    <l>MIT License</l>
+    <m>anatoo</m>
+    <s>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+gifのカラーテーブルを書き換えるだけなので軽い(はず)。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put('0.gif', '0_converted.gif', array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put('1.gif', '1_converted.gif', array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</s>
+    <d>* 概要
+gif画像から色違いのgif画像を生成する。
+ピュアPHPで書かれており、拡張ライブラリに依存していない。
+gifのカラーテーブルを書き換えるだけなので軽い(はず)。
+
+* サンプル
+[http://openpear.org/repository/Image_GifColorConverter/trunk/sample/sample.php:title=sample.php]
+&gt;||
+&lt;?php
+$converter = new Image_GifColorConverter;
+$converter-&gt;put('0.gif', '0_converted.gif', array(0x000000 =&gt; 0xff0000, 0xffffff =&gt; 0xcccccc)); 
+$converter-&gt;put('1.gif', '1_converted.gif', array(0x000000 =&gt; 0x0099ff));
+||&lt;
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0.gif:title=0.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/0_converted.gif:title=0_converted.gif]
+[http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1.gif:title=1.gif] -&gt; [http://svn.openpear.org/Image_GifColorConverter/trunk/sample/1_converted.gif:title=1_converted.gif]</d>
+    <da>2009-08-08 07:33:04</da>
+    <n>
+------------------------------------------------------------------------
+r1087 | anatoo | 2009-08-07 12:02:24 +0900 (金, 07  8月 2009) | 1 line
+
+例外吐いたときストリームを閉じるようにした
+------------------------------------------------------------------------
+r1078 | anatoo | 2009-08-06 15:28:55 +0900 (木, 06  8月 2009) | 1 line
+
+例外クラスにprefixつけ忘れてたのを修正
+------------------------------------------------------------------------
+r1075 | anatoo | 2009-08-06 14:41:51 +0900 (木, 06  8月 2009) | 1 line
+
+サンプルで生成した画像も追加
+------------------------------------------------------------------------
+r1074 | anatoo | 2009-08-06 14:33:42 +0900 (木, 06  8月 2009) | 1 line
+
+パッケージのprefixつけ忘れ修正
+------------------------------------------------------------------------
+r1073 | anatoo | 2009-08-06 14:30:49 +0900 (木, 06  8月 2009) | 1 line
+
+コメント追加
+------------------------------------------------------------------------
+r1072 | anatoo | 2009-08-06 14:11:48 +0900 (木, 06  8月 2009) | 1 line
+
+サンプル追加
+------------------------------------------------------------------------
+r1071 | anatoo | 2009-08-06 13:40:50 +0900 (木, 06  8月 2009) | 1 line
+
+移動
+------------------------------------------------------------------------
+r1070 | anatoo | 2009-08-06 13:37:46 +0900 (木, 06  8月 2009) | 1 line
+
+変なバイナリが入ってたので修正
+------------------------------------------------------------------------
+r1069 | anatoo | 2009-08-06 13:36:05 +0900 (木, 06  8月 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r1068 | openpear | 2009-08-06 13:32:09 +0900 (木, 06  8月 2009) | 1 line
+
+[Create Base Directory] Image_GifColorConverter
+------------------------------------------------------------------------
+ </n>
+    <f>3148</f>
+    <g>http://openpear.org/get/Image_GifColorConverter-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

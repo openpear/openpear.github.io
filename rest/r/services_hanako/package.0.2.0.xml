@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Hanako</name>
+ <channel>openpear.org</channel>
+ <summary>環境省が運用する花粉観測システム「はなこさん」([http://kafun.taiki.go.jp/])用のデータを引っこ抜くパッケージで、[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]のportです。
+
+HTTP_Request2に依存していますので、インストールする際に-aオプションを付けてください。
+
+&gt;||
+$ sudo pear install -a openpear/Services_Hanako-alpha
+||&lt;
+
+使い方は、以下の通り。[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]も参照してください。
+
+&gt;||
+&lt;?php
+require_once &quot;Services/Hanako.php&quot;;
+
+$hanako = new Services_Hanako(new HTTP_Request2(), &apos;03&apos;, &apos;50810100&apos;);
+var_dump($hanako-&gt;now());
+||&lt;
+
+なお、★★★「はなこさん」のデータは転用・営利目的とした利用を禁止しています★★★。あくまで個人利用に限定するようにしてください。</summary>
+ <description>環境省が運用する花粉観測システム「はなこさん」([http://kafun.taiki.go.jp/])用のデータを引っこ抜くパッケージで、[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]のportです。
+
+HTTP_Request2に依存していますので、インストールする際に-aオプションを付けてください。
+
+&gt;||
+$ sudo pear install -a openpear/Services_Hanako-alpha
+||&lt;
+
+使い方は、以下の通り。[http://dsas.blog.klab.org/archives/51386297.html:title=DSAS開発者の部屋:花粉の飛散量を取得する Perlモジュール]も参照してください。
+
+&gt;||
+&lt;?php
+require_once &quot;Services/Hanako.php&quot;;
+
+$hanako = new Services_Hanako(new HTTP_Request2(), &apos;03&apos;, &apos;50810100&apos;);
+var_dump($hanako-&gt;now());
+||&lt;
+
+なお、★★★「はなこさん」のデータは転用・営利目的とした利用を禁止しています★★★。あくまで個人利用に限定するようにしてください。</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-26</date>
+ <time>08:49:50</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r882 | shimooka | 2009-05-26 08:40:48 -0700 (Tue, 26 May 2009) | 2 lines
+
+- changed args of constructor
+- added test
+------------------------------------------------------------------------
+r575 | shimooka | 2009-03-17 00:49:15 -0700 (Tue, 17 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="c4727c09e055ee930a690ec001f5be9b" name="Hanako.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-05-26</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r882 | shimooka | 2009-05-26 08:40:48 -0700 (Tue, 26 May 2009) | 2 lines
+
+- changed args of constructor
+- added test
+------------------------------------------------------------------------
+r575 | shimooka | 2009-03-17 00:49:15 -0700 (Tue, 17 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

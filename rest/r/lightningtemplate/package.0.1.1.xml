@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>LightningTemplate</name>
+ <channel>openpear.org</channel>
+ <summary>Simple PHP Template (twig like syntax)</summary>
+ <description>Simple PHP Template (twig like syntax)</description>
+ <lead>
+  <name>Keisuke SATO</name>
+  <user>riaf</user>
+  <email>riaf@nequal.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-26</date>
+ <time>20:44:06</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+Simple PHP Template (twig like syntax)
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="781acedd13f04ed65889c3ddc1a23e02" name="LightningTemplate.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-12-26</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+Simple PHP Template (twig like syntax)
+   </notes>
+  </release>
+ </changelog>
+</package>

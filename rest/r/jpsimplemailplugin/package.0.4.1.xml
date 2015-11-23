@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>jpSimpleMailPlugin</name>
+ <channel>openpear.org</channel>
+ <summary>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン  インストール方法    * svnでチェックアウト  $ svn checkout http://svn.openpear.org/jpSimpleMailPlugin/tags/0.3.0-beta ./plug..</summary>
+ <description>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン  インストール方法    * svnでチェックアウト  $ svn checkout http://svn.openpear.org/jpSimpleMailPlugin/tags/0.3.0-beta ./plug..</description>
+ <lead>
+  <name>brtRiver</name>
+  <user>brtriver</user>
+  <email>brt.river@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>ganchiku</name>
+  <user>ganchiku</user>
+  <email>ohnoshin@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-01-08</date>
+ <time>18:46:02</time>
+ <version>
+  <release>0.4.1</release>
+  <api>0.4.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン  インストール方法    * svnでチェックアウト  $ svn checkout http://svn.openpear.org/jpSimpleMailPlugin/tags/0.3.0-beta ./plug..
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="03d9b676bed32d541b976af5a3cc8b18" name="config/app.yml" role="data" />
+   <file baseinstalldir="." md5sum="9033cb80155e9f8ab94015ce4a057857" name="config/jpSimpleMailPluginConfiguration.class.php" role="php" />
+   <file baseinstalldir="." md5sum="dbb1f1309a92782a68a6c59c2665126b" name="lib/exception/jpSendMailException.class.php" role="php" />
+   <file baseinstalldir="." md5sum="5de679bbb68d1f7c6e0a637c2186d499" name="lib/mailer/jpMailer.class.php" role="php" />
+   <file baseinstalldir="." md5sum="948793f4984793af9578c5bf224bb79e" name="lib/mailer/jpPHPMailer.class.php" role="php" />
+   <file baseinstalldir="." md5sum="5e73008ab7590c80d9ac878865acc4c6" name="lib/mailer/jpQdmail.class.php" role="php" />
+   <file baseinstalldir="." md5sum="4ea3aa5d9559671b88dc4e54b920f536" name="lib/mailer/jpSwiftMailer.class.php" role="php" />
+   <file baseinstalldir="." md5sum="965442332e639fca0d0bb5015deae6b8" name="lib/mailer/jpSwiftMailer4.class.php" role="php" />
+   <file baseinstalldir="." md5sum="8e28d110355c3ced3f873fa146c38103" name="lib/jpSimpleMail.class.php" role="php" />
+   <file baseinstalldir="." md5sum="f5a7ca76107ae487912afab0574900b0" name="test/bin/prove.php" role="php" />
+   <file baseinstalldir="." md5sum="d957c39b462e2644d5416212e774f30a" name="test/bootstrap/functional.php" role="php" />
+   <file baseinstalldir="." md5sum="5a662b7b3f575aed70e3c1bc07e6edd5" name="test/bootstrap/unit.php" role="php" />
+   <file baseinstalldir="." md5sum="672a26dfc6ec111502986826b74d85e3" name="test/functional/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="." md5sum="44b96929e355f06e2ffcfacfdbcaaa95" name="test/functional/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="." md5sum="ce1961ae0513f6a6537b271c29087aeb" name="test/functional/jpSwiftMailer4Test.php" role="php" />
+   <file baseinstalldir="." md5sum="d38cbc43dca13b0f9283c2d9527f73d6" name="test/functional/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="." md5sum="bc13ceed5168040cb16546cf081b49f6" name="test/unit/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="." md5sum="ff0872fe9d4a8ab7031a992c92d0d71e" name="test/unit/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="." md5sum="cb46736eb471e5b3fd66a726471e179a" name="test/unit/jpSwiftMailer4Test.php" role="php" />
+   <file baseinstalldir="." md5sum="1cab5da1901213997f3cfd2c0217fd0d" name="test/unit/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="." md5sum="d0a983ec9ddc9868a00e467486aad87e" name="desc.txt" role="data" />
+   <file baseinstalldir="." md5sum="d41d8cd98f00b204e9800998ecf8427e" name="LICENCE" role="data" />
+   <file baseinstalldir="." md5sum="aad458a691e9cbcecd26b5e2acee95b9" name="notes.txt" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.4.1</release>
+    <api>0.4.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-01-08</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン  インストール方法    * svnでチェックアウト  $ svn checkout http://svn.openpear.org/jpSimpleMailPlugin/tags/0.3.0-beta ./plug..
+   </notes>
+  </release>
+ </changelog>
+</package>

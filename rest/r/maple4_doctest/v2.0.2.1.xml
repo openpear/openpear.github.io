@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/maple4_doctest">Maple4_DocTest</p>
+    <c>openpear.org</c>
+    <v>0.2.1</v>
+    <a>0.2.1</a>
+    <mp>5.1.0</mp>
+    <st>alpha</st>
+    <l>BSD Licence</l>
+    <m>bobchin</m>
+    <s>*DocTest
+
+クラスやメソッドの Doc コメントにテストを記述することで自動的に UnitTest を作成し実行することができるようになります。
+
+
+**ポインタ
+-TOM先生のテスト講座
+--http://www.phppro.jp/school/test/
+-PHPUnitポケットガイド
+--http://www.phpunit.de/pocket_guide/3.2/ja/index.html
+-kunitさんの日記
+--http://d.hatena.ne.jp/kunit/20080205#1202142580
+
+
+**Docコメント
+クラス定義の上、またはメソッド定義の上にあり、「/**」で始まり「*/」で終わる形式のコメント
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return 'sample';
+    }
+}
+?&gt;
+||&lt;
+
+
+**テストの記述
+- Docコメントに&lt;code&gt;~&lt;/code&gt;で囲まれた内容がテストクラスに出力されます。
+- &lt;code&gt;の直前に「#test &lt;テストメソッド名&gt;」を記述することでテストメソッド名を指定できます。省略した場合は、コメントの対象となるメソッド名が使用されます。
+- &lt;code&gt;ブロックは複数の場所に記述可能です。
+- # を使用した省略形があります（詳細は以下参照）
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * #test
+     * &lt;code&gt;
+     * #eq('sample', #f('arg'));
+     * &lt;/code&gt;
+     *
+     * #test method_has_name
+     * &lt;code&gt;
+     * #ne('sample', #f('arg'));
+     * &lt;/code&gt;
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return 'sample';
+    }
+}
+?&gt;
+||&lt;
+&gt;||
+&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    private $obj;
+
+    public function setUp()
+    {
+        $this-&gt;obj = new Sample;
+    }
+
+    public function tearDown()
+    {
+        $this-&gt;obj = null;
+    }
+
+    public function testMethod()
+    {
+        $this-&gt;assertEquals('sample', $this-&gt;obj-&gt;method('arg'));
+    }
+
+    public function testMethod_has_name()
+    {
+        $this-&gt;assertNotEquals('sample', $this-&gt;obj-&gt;method('arg'));
+    }
+}
+?&gt;
+||&lt;
+
+
+**省略形一覧
+- #eq(); =&gt; $this-&gt;assertEquals();
+- #ne(); =&gt; $this-&gt;assertNotEquals();
+- #true(); =&gt; $this-&gt;assertTrue();
+- #false(); =&gt; $this-&gt;assertFalse();
+- #null(); =&gt; $this-&gt;assertNull();
+- #notnull(); =&gt; $this-&gt;assertNotNull();
+- #class =&gt; クラス名
+- #f =&gt; $this-&gt;obj-&gt;&lt;メソッド名&gt;();</s>
+    <d>*DocTest
+
+クラスやメソッドの Doc コメントにテストを記述することで自動的に UnitTest を作成し実行することができるようになります。
+
+
+**ポインタ
+-TOM先生のテスト講座
+--http://www.phppro.jp/school/test/
+-PHPUnitポケットガイド
+--http://www.phpunit.de/pocket_guide/3.2/ja/index.html
+-kunitさんの日記
+--http://d.hatena.ne.jp/kunit/20080205#1202142580
+
+
+**Docコメント
+クラス定義の上、またはメソッド定義の上にあり、「/**」で始まり「*/」で終わる形式のコメント
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return 'sample';
+    }
+}
+?&gt;
+||&lt;
+
+
+**テストの記述
+- Docコメントに&lt;code&gt;~&lt;/code&gt;で囲まれた内容がテストクラスに出力されます。
+- &lt;code&gt;の直前に「#test &lt;テストメソッド名&gt;」を記述することでテストメソッド名を指定できます。省略した場合は、コメントの対象となるメソッド名が使用されます。
+- &lt;code&gt;ブロックは複数の場所に記述可能です。
+- # を使用した省略形があります（詳細は以下参照）
+&gt;||
+&lt;?php
+/**
+ * サンプルクラス
+ */
+class Sample
+{
+    /**
+     * メソッドサンプル
+     *
+     * #test
+     * &lt;code&gt;
+     * #eq('sample', #f('arg'));
+     * &lt;/code&gt;
+     *
+     * #test method_has_name
+     * &lt;code&gt;
+     * #ne('sample', #f('arg'));
+     * &lt;/code&gt;
+     *
+     * @param string $arg
+     * @return string
+     */
+    public function method($arg)
+    {
+        return 'sample';
+    }
+}
+?&gt;
+||&lt;
+&gt;||
+&lt;?php
+class SampleTest extends PHPUnit_Framework_TestCase
+{
+    private $obj;
+
+    public function setUp()
+    {
+        $this-&gt;obj = new Sample;
+    }
+
+    public function tearDown()
+    {
+        $this-&gt;obj = null;
+    }
+
+    public function testMethod()
+    {
+        $this-&gt;assertEquals('sample', $this-&gt;obj-&gt;method('arg'));
+    }
+
+    public function testMethod_has_name()
+    {
+        $this-&gt;assertNotEquals('sample', $this-&gt;obj-&gt;method('arg'));
+    }
+}
+?&gt;
+||&lt;
+
+
+**省略形一覧
+- #eq(); =&gt; $this-&gt;assertEquals();
+- #ne(); =&gt; $this-&gt;assertNotEquals();
+- #true(); =&gt; $this-&gt;assertTrue();
+- #false(); =&gt; $this-&gt;assertFalse();
+- #null(); =&gt; $this-&gt;assertNull();
+- #notnull(); =&gt; $this-&gt;assertNotNull();
+- #class =&gt; クラス名
+- #f =&gt; $this-&gt;obj-&gt;&lt;メソッド名&gt;();</d>
+    <da>2008-12-10 04:37:06</da>
+    <n>------------------------------------------------------------------------
+r190 | bobchin | 2008-12-08 15:48:23 -0800 (Mon, 08 Dec 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------</n>
+    <f>14988</f>
+    <g>http://openpear.org/get/Maple4_DocTest-0.2.1</g>
+    <x xlink:href="package.0.2.1.xml"/>
+</r>

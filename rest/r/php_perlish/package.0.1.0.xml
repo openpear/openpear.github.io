@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_Perlish</name>
+ <channel>openpear.org</channel>
+ <summary>Perlにある関数や便利機能のPHP移植です。</summary>
+ <description>Perlにある関数や便利機能のPHP移植です。</description>
+ <lead>
+  <name>okonomi</name>
+  <user>okonomi</user>
+  <email>oknm@okonomi.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-01-17</date>
+ <time>18:54:11</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+Perlにある関数や便利機能のPHP移植です。
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="01956270965f09245699f2e354522c09" name="PHP/Perlish/Function/is_hash.php" role="php" />
+   <file baseinstalldir="." md5sum="0ee6347a087b3a941485420a24a97040" name="PHP/Perlish/Function/qw.php" role="php" />
+   <file baseinstalldir="." md5sum="a54c35790b18334474ae927e94335c5b" name="PHP/Perlish.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-01-17</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+Perlにある関数や便利機能のPHP移植です。
+   </notes>
+  </release>
+ </changelog>
+</package>

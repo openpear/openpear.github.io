@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_buzzurl">Services_Buzzurl</p>
+    <c>openpear.org</c>
+    <v>0.0.7</v>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>tell-k</m>
+    <s>* description
+
+Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+
+** Buzzurl API
+ http://labs.ecnavi.jp/developer/buzzurl/api/
+
+
+* version 
+
+&gt;||
+0.0.7-alpha
+||&lt;
+
+
+* dependencies
+
+** cURL
+  http://php.net/manual/ja/book.curl.php
+
+
+* example
+
+&gt;||
+&lt;?php
+
+$id = 'tell-k' //&lt;= your buzzurl id
+
+$api = Services_Buzzurl::getInstance();
+$result = $api-&gt;getReaders($id);
+
+foreach($result as $user)  {
+      print $user . &quot;&lt;br /&gt;\n&quot;;
+}
+
+$api-&gt;setFormat('json');
+$result = $api-&gt;getReaders($id);
+
+print $result . &quot; &lt;br /&gt;\n&quot;; //print json data
+
+//add bookmark
+$api = Services_Buzzurl::getInstance();
+$email  = ''; //&lt;= your buzzurl login id(email)  
+$passwd = ''; //&lt;= your buzzurl password
+$args   = array('url' =&gt; 'http://buzzurl.jp');
+$result = $api-&gt;add($email, $passwd, $args);
+ 
+if ($result) {
+    print 'add bookmark success' . &quot;&lt;br /&gt;\n&quot;;
+} else {
+    print 'add bookmark failed' . &quot;&lt;br /&gt;\n&quot; ;
+}
+
+
+
+||&lt;
+
+
+* test
+
+pearのtestディレクトリに移動して、テストコードが実行できます。
+
+limeを利用しています。
+
+
+&gt;||
+cd /usr/share/pear/test/Services_Buzzurl/
+php test_all.php 
+||&lt;
+
+
+* todo 
+
+(2010/06/15 完了) 投稿APIが未対応 http://labs.ecnavi.jp/developer/2007/03/api_2.html</s>
+    <d>* description
+
+Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+
+** Buzzurl API
+ http://labs.ecnavi.jp/developer/buzzurl/api/
+
+
+* version 
+
+&gt;||
+0.0.7-alpha
+||&lt;
+
+
+* dependencies
+
+** cURL
+  http://php.net/manual/ja/book.curl.php
+
+
+* example
+
+&gt;||
+&lt;?php
+
+$id = 'tell-k' //&lt;= your buzzurl id
+
+$api = Services_Buzzurl::getInstance();
+$result = $api-&gt;getReaders($id);
+
+foreach($result as $user)  {
+      print $user . &quot;&lt;br /&gt;\n&quot;;
+}
+
+$api-&gt;setFormat('json');
+$result = $api-&gt;getReaders($id);
+
+print $result . &quot; &lt;br /&gt;\n&quot;; //print json data
+
+//add bookmark
+$api = Services_Buzzurl::getInstance();
+$email  = ''; //&lt;= your buzzurl login id(email)  
+$passwd = ''; //&lt;= your buzzurl password
+$args   = array('url' =&gt; 'http://buzzurl.jp');
+$result = $api-&gt;add($email, $passwd, $args);
+ 
+if ($result) {
+    print 'add bookmark success' . &quot;&lt;br /&gt;\n&quot;;
+} else {
+    print 'add bookmark failed' . &quot;&lt;br /&gt;\n&quot; ;
+}
+
+
+
+||&lt;
+
+
+* test
+
+pearのtestディレクトリに移動して、テストコードが実行できます。
+
+limeを利用しています。
+
+
+&gt;||
+cd /usr/share/pear/test/Services_Buzzurl/
+php test_all.php 
+||&lt;
+
+
+* todo 
+
+(2010/06/15 完了) 投稿APIが未対応 http://labs.ecnavi.jp/developer/2007/03/api_2.html</d>
+    <da>2010-06-15 03:52:05</da>
+    <n>
+------------------------------------------------------------------------
+r1910 | tell-k | 2010-06-15 03:39:37 +0900 (火, 15  6月 2010) | 5 lines
+
+
+ * 投稿APIに対応
+ * テストコード拡充
+
+
+------------------------------------------------------------------------
+r1898 | tell-k | 2010-06-05 16:11:54 +0900 (土, 05  6月 2010) | 4 lines
+
+
+ * getReadersの修正、仕様勘違いした
+
+
+------------------------------------------------------------------------
+r1892 | tell-k | 2010-05-30 20:19:45 +0900 (日, 30  5月 2010) | 4 lines
+
+
+ test commit
+
+
+------------------------------------------------------------------------
+r1891 | tell-k | 2010-05-30 19:19:34 +0900 (日, 30  5月 2010) | 4 lines
+
+
+ * commit
+
+
+------------------------------------------------------------------------
+r1890 | tell-k | 2010-05-30 18:56:54 +0900 (日, 30  5月 2010) | 5 lines
+
+
+ * ServicesBuzzurl Commit
+
+
+
+------------------------------------------------------------------------
+r1872 | tell-k | 2010-05-17 22:57:19 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * doPost はとりあえずコメントアウトしておいた
+
+
+------------------------------------------------------------------------
+r1871 | tell-k | 2010-05-17 22:41:25 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ delete README
+
+
+------------------------------------------------------------------------
+r1870 | tell-k | 2010-05-17 22:39:31 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ change README
+
+
+------------------------------------------------------------------------
+r1869 | tell-k | 2010-05-17 22:34:50 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commit README
+
+
+------------------------------------------------------------------------
+r1868 | tell-k | 2010-05-17 22:11:09 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * READMETEST2 READMETEST 削除
+
+
+------------------------------------------------------------------------
+r1867 | tell-k | 2010-05-17 22:07:54 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * READMETEST2
+
+
+------------------------------------------------------------------------
+r1866 | tell-k | 2010-05-17 22:05:15 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commit READMETEST
+
+
+------------------------------------------------------------------------
+r1865 | tell-k | 2010-05-17 21:58:20 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * delte
+
+
+------------------------------------------------------------------------
+r1864 | tell-k | 2010-05-17 21:49:11 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * 消したんですけど
+
+
+------------------------------------------------------------------------
+r1863 | tell-k | 2010-05-17 21:48:31 +0900 (月, 17  5月 2010) | 2 lines
+
+README.md commit
+
+------------------------------------------------------------------------
+r1862 | tell-k | 2010-05-17 21:44:31 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ README.mdを削除
+
+
+------------------------------------------------------------------------
+r1861 | tell-k | 2010-05-17 21:33:53 +0900 (月, 17  5月 2010) | 2 lines
+
+hoge[C
+
+------------------------------------------------------------------------
+r1860 | tell-k | 2010-05-17 21:26:44 +0900 (月, 17  5月 2010) | 2 lines
+
+ hogehoge
+
+------------------------------------------------------------------------
+r1859 | tell-k | 2010-05-17 21:18:09 +0900 (月, 17  5月 2010) | 4 lines
+
+
+hogei!
+
+
+------------------------------------------------------------------------
+r1858 | tell-k | 2010-05-17 21:09:22 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ hogehoge
+
+
+------------------------------------------------------------------------
+r1857 | tell-k | 2010-05-17 21:06:47 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * READMEの内容を改変
+
+
+------------------------------------------------------------------------
+r1856 | tell-k | 2010-05-17 20:54:49 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * hoge
+
+
+------------------------------------------------------------------------
+r1855 | tell-k | 2010-05-17 20:53:12 +0900 (月, 17  5月 2010) | 2 lines
+
+commit README
+
+------------------------------------------------------------------------
+r1854 | tell-k | 2010-05-17 20:46:26 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commmit
+
+
+------------------------------------------------------------------------
+r1851 | tell-k | 2010-05-17 13:57:54 +0900 (月, 17  5月 2010) | 5 lines
+
+
+ * getRecentArticlesを実装するの忘れてた。
+ * テストコードも追加
+
+
+------------------------------------------------------------------------
+r1850 | tell-k | 2010-05-17 12:02:45 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * テストに例外テストを追加
+
+
+------------------------------------------------------------------------
+r1849 | tell-k | 2010-05-17 10:42:15 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * commit
+
+
+------------------------------------------------------------------------
+r1848 | tell-k | 2010-05-17 10:27:07 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * test_all.phpの移動
+
+
+------------------------------------------------------------------------
+r1847 | tell-k | 2010-05-17 10:16:03 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * svn:keywordsを設定した
+
+
+------------------------------------------------------------------------
+r1845 | tell-k | 2010-05-17 09:03:08 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * ファイル構成を変更
+
+
+------------------------------------------------------------------------
+r1844 | tell-k | 2010-05-17 09:00:56 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * dircrotry構成を変更
+
+
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+ </n>
+    <f>16385</f>
+    <g>http://openpear.org/get/Services_Buzzurl-0.0.7</g>
+    <x xlink:href="package.0.0.7.xml"/>
+</r>

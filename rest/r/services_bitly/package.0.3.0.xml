@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Bitly</name>
+ <channel>openpear.org</channel>
+ <summary>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once &apos;Services/Bitly.php&apos;;
+
+$login = &apos;Bitlyのアカウント&apos;;
+$apikey = &apos;BitlyのAPI Key&apos;;
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain(&apos;j.mp&apos;);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain(&apos;j.mp&apos;);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</summary>
+ <description>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once &apos;Services/Bitly.php&apos;;
+
+$login = &apos;Bitlyのアカウント&apos;;
+$apikey = &apos;BitlyのAPI Key&apos;;
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain(&apos;j.mp&apos;);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain(&apos;j.mp&apos;);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</description>
+ <lead>
+  <name>tknzk</name>
+  <user>tknzk</user>
+  <email>info@tknzk.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-04-17</date>
+ <time>19:04:05</time>
+ <version>
+  <release>0.3.0</release>
+  <api>0.3.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r1806 | tknzk | 2010-04-17 18:50:08 +0900 (土, 17  4月 2010) | 1 line
+
+for bit.ly API ver3
+------------------------------------------------------------------------
+r1643 | tknzk | 2010-02-14 15:33:19 +0900 (日, 14  2月 2010) | 1 line
+
+version 0.2.0
+------------------------------------------------------------------------
+r1210 | tknzk | 2009-09-26 23:24:42 +0900 (土, 26  9月 2009) | 1 line
+
+example
+------------------------------------------------------------------------
+r1208 | tknzk | 2009-09-26 23:03:46 +0900 (土, 26  9月 2009) | 1 line
+
+Exception
+------------------------------------------------------------------------
+r1207 | tknzk | 2009-09-26 23:02:25 +0900 (土, 26  9月 2009) | 4 lines
+
+for beta release.
+
+add Exception
+change simplexml_load_string 2 XML/Unserializer.php
+------------------------------------------------------------------------
+r1198 | tknzk | 2009-09-22 22:48:47 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1197 | tknzk | 2009-09-22 22:48:32 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1196 | tknzk | 2009-09-22 22:47:50 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1195 | openpear | 2009-09-22 22:28:02 +0900 (火, 22  9月 2009) | 1 line
+
+[New Package] Services_Bitly
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9b895bbfae31ccd7d46b644a06643565" name="Services/Bitly/example.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b7f9f6c4ddb922b41195d87d4b57b20" name="Services/Bitly/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="f4b47d8601f9f2d77e9c18042d1ee2be" name="Services/Bitly.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.3.0</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-04-17</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r1806 | tknzk | 2010-04-17 18:50:08 +0900 (土, 17  4月 2010) | 1 line
+
+for bit.ly API ver3
+------------------------------------------------------------------------
+r1643 | tknzk | 2010-02-14 15:33:19 +0900 (日, 14  2月 2010) | 1 line
+
+version 0.2.0
+------------------------------------------------------------------------
+r1210 | tknzk | 2009-09-26 23:24:42 +0900 (土, 26  9月 2009) | 1 line
+
+example
+------------------------------------------------------------------------
+r1208 | tknzk | 2009-09-26 23:03:46 +0900 (土, 26  9月 2009) | 1 line
+
+Exception
+------------------------------------------------------------------------
+r1207 | tknzk | 2009-09-26 23:02:25 +0900 (土, 26  9月 2009) | 4 lines
+
+for beta release.
+
+add Exception
+change simplexml_load_string 2 XML/Unserializer.php
+------------------------------------------------------------------------
+r1198 | tknzk | 2009-09-22 22:48:47 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1197 | tknzk | 2009-09-22 22:48:32 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1196 | tknzk | 2009-09-22 22:47:50 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1195 | openpear | 2009-09-22 22:28:02 +0900 (火, 22  9月 2009) | 1 line
+
+[New Package] Services_Bitly
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

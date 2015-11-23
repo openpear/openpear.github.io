@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_tokyotyrant">Net_TokyoTyrant</p>
+    <c>openpear.org</c>
+    <v>0.2.0</v>
+    <a>0.2.0</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>MIT</l>
+    <m>cocoiti</m>
+    <s>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</s>
+    <d>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</d>
+    <da>2009-09-05 18:11:03</da>
+    <n>
+------------------------------------------------------------------------
+r1121 | cocoiti | 2009-08-18 02:15:31 +0900 (火, 18  8月 2009) | 1 line
+
+add pecl benchmark
+------------------------------------------------------------------------
+r1097 | cocoiti | 2009-08-09 02:55:58 +0900 (日, 09  8月 2009) | 3 lines
+
+to unsignd char (thx Ulrich Mierendorff)
+2 and ixed typo .....
+
+------------------------------------------------------------------------
+r1026 | cocoiti | 2009-07-21 02:18:42 +0900 (火, 21  7月 2009) | 3 lines
+
+RDB機能をサポートを追加(リファクタするかもしれません)
+コメントを少しつけた
+
+------------------------------------------------------------------------
+r1023 | cocoiti | 2009-07-19 16:23:33 +0900 (日, 19  7月 2009) | 2 lines
+
+fixes bigsize packet(thx http://petewarden.typepad.com/searchbrowser/2009/06/how-to-get-tokyo-tyrant-working-in-php.html)
+
+------------------------------------------------------------------------
+r744 | cocoiti | 2009-04-25 23:22:21 +0900 (土, 25  4月 2009) | 1 line
+
+new protcol TokyoTyrant
+------------------------------------------------------------------------
+r659 | cocoiti | 2009-04-13 02:02:48 +0900 (月, 13  4月 2009) | 3 lines
+
+add test code.(data size)
+fixed bug timeout.
+
+------------------------------------------------------------------------
+r58 | cocoiti | 2008-11-03 15:25:10 +0900 (月, 03 11月 2008) | 2 lines
+
+型情報を付与
+
+------------------------------------------------------------------------
+r57 | cocoiti | 2008-11-03 02:31:35 +0900 (月, 03 11月 2008) | 2 lines
+
+ごみを消した
+
+------------------------------------------------------------------------
+r56 | cocoiti | 2008-11-03 01:50:48 +0900 (月, 03 11月 2008) | 2 lines
+
+ベンチマークを追加
+
+------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 23:29:28 +0900 (日, 02 11月 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------
+r19 | openpear | 2008-11-01 13:04:08 +0900 (土, 01 11月 2008) | 1 line
+
+[Create Base Directory] Net_TokyoTyrant
+------------------------------------------------------------------------
+ </n>
+    <f>5235</f>
+    <g>http://openpear.org/get/Net_TokyoTyrant-0.2.0</g>
+    <x xlink:href="package.0.2.0.xml"/>
+</r>

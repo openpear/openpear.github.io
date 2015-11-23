@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/stream_macro">Stream_Macro</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>sakamoto</m>
+    <s>PHPにマクロ機能を付加します。
+*マクロ未使用時
+include &quot;hoge.php&quot;
+*マクロ使用時
+$opts = array();
+$opts['debug'] = true;
+Stream_Macro::registByArray('macro', $opts);
+include &quot;macro://hoge.php&quot;
+
+*サポートする構文
+**インクルード
+ #include [ファイル名]
+**定義
+ #define 変数名　値
+ #define マクロ関数　式
+**条件
+ #ifdef  変数名
+ #if 条件式
+ #else
+ #endif
+**ループ
+ #for 式
+ #endfor
+ #foreach 式
+ #endforeach
+ #while 式
+ #endwhile</s>
+    <d>PHPにマクロ機能を付加します。
+*マクロ未使用時
+include &quot;hoge.php&quot;
+*マクロ使用時
+$opts = array();
+$opts['debug'] = true;
+Stream_Macro::registByArray('macro', $opts);
+include &quot;macro://hoge.php&quot;
+
+*サポートする構文
+**インクルード
+ #include [ファイル名]
+**定義
+ #define 変数名　値
+ #define マクロ関数　式
+**条件
+ #ifdef  変数名
+ #if 条件式
+ #else
+ #endif
+**ループ
+ #for 式
+ #endfor
+ #foreach 式
+ #endforeach
+ #while 式
+ #endwhile</d>
+    <da>2009-08-31 14:23:37</da>
+    <n>
+------------------------------------------------------------------------
+r1152 | sakamoto | 2009-08-30 23:37:44 +0900 (日, 30  8月 2009) | 1 line
+
+Stream_Macro First commit
+------------------------------------------------------------------------
+r1151 | openpear | 2009-08-30 23:32:02 +0900 (日, 30  8月 2009) | 1 line
+
+[New Package] Stream_Macro
+------------------------------------------------------------------------
+ </n>
+    <f>4583</f>
+    <g>http://openpear.org/get/Stream_Macro-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTTP_OAuthConsumer</name>
+ <channel>openpear.org</channel>
+ <summary>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。</summary>
+ <description>OAuthリクエストを行うライブラリ。
+HTTP_Request2を継承して拡張してるので、使い方はHTTP_Request2と大体同じ。
+RSA-SHA1のシグネチャ生成にも対応。</description>
+ <lead>
+  <name>eth0jp</name>
+  <user>eth0jp</user>
+  <email>tetu@eth0.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-04</date>
+ <time>05:48:02</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1975 | eth0jp | 2010-08-04 05:34:07 +0900 (水, 04  8月 2010) | 1 line
+
+mv dir
+------------------------------------------------------------------------
+r1973 | eth0jp | 2010-08-04 05:29:40 +0900 (水, 04  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1972 | openpear | 2010-08-04 05:24:01 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthConsumer
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="542f6cb71bfd1c70d73c279d5715172e" name="HTTP/OAuthConsumer/HMAC_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="49f28f2d8b6880a14be3033829809ecb" name="HTTP/OAuthConsumer/RSA_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="ebfcffeb6d0f8f6fbb31e8ea166892f0" name="HTTP/OAuthConsumer.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-08-04</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1975 | eth0jp | 2010-08-04 05:34:07 +0900 (水, 04  8月 2010) | 1 line
+
+mv dir
+------------------------------------------------------------------------
+r1973 | eth0jp | 2010-08-04 05:29:40 +0900 (水, 04  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1972 | openpear | 2010-08-04 05:24:01 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthConsumer
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

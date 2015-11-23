@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_vily">Services_Vily</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>BSD License</l>
+    <m>tknzk</m>
+    <s>vi.lyのAPIを叩くライブラリです
+[http://vi.ly]</s>
+    <d>vi.lyのAPIを叩くライブラリです
+[http://vi.ly]</d>
+    <da>2009-11-08 23:57:03</da>
+    <n>
+------------------------------------------------------------------------
+r1378 | tknzk | 2009-11-08 23:46:06 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1376 | tknzk | 2009-11-08 23:34:18 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1375 | tknzk | 2009-11-08 23:24:39 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1374 | tknzk | 2009-11-08 23:23:43 +0900 (日, 08 11月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1373 | openpear | 2009-11-08 23:00:02 +0900 (日, 08 11月 2009) | 1 line
+
+[New Package] Services_Vily
+------------------------------------------------------------------------
+ </n>
+    <f>1596</f>
+    <g>http://openpear.org/get/Services_Vily-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

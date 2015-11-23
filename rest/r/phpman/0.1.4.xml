@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/phpman">phpman</p>
+    <c>openpear.org</c>
+    <v>0.1.4</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>sotarok</m>
+    <s>Command line interface to look up the PHP manual.</s>
+    <d>Command line interface to look up the PHP manual.</d>
+    <da>2010-12-21 10:23:02</da>
+    <n>
+------------------------------------------------------------------------
+r1967 | rsk | 2010-07-27 07:15:20 +0900 (火, 27  7月 2010) | 1 line
+
+PHPマニュアルのディレクトリ名をhtmlからphp-chunked-xhtmlに修正。
+ </n>
+    <f>10795</f>
+    <g>http://openpear.org/get/phpman-0.1.4</g>
+    <x xlink:href="package.0.1.4.xml"/>
+</r>

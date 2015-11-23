@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/service_ustream">Service_Ustream</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>New BSD Licence</l>
+    <m>gagne</m>
+    <s>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once 'Service/Ustream.php';
+
+$cmd = 'stream'; // user, channel, video, stream, system
+$apiKey = 'your_apikey_here';
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</s>
+    <d>Ustream API(http://developer.ustream.tv/)を利用する為のライブラリ。
+
+需要があるかどうかは…知りません:)
+
+*使い方
+
+&gt;||
+require_once 'Service/Ustream.php';
+
+$cmd = 'stream'; // user, channel, video, stream, system
+$apiKey = 'your_apikey_here';
+
+$ust = Service_Ustream::factory($cmd, $apiKey);
+$result = $ust-&gt;getRecent();
+
+||&lt;
+
+@see http://developer.ustream.tv/docs</d>
+    <da>2009-02-17 04:39:44</da>
+    <n>------------------------------------------------------------------------
+r401 | gagne | 2009-02-17 04:33:39 -0800 (Tue, 17 Feb 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r399 | gagne | 2009-02-17 03:59:32 -0800 (Tue, 17 Feb 2009) | 1 line
+
+fix
+------------------------------------------------------------------------
+r398 | gagne | 2009-02-17 03:58:45 -0800 (Tue, 17 Feb 2009) | 3 lines
+
+add: _getSearchInstance()
+add: setPage()
+add: setLimit()
+------------------------------------------------------------------------
+r396 | gagne | 2009-02-17 01:47:29 -0800 (Tue, 17 Feb 2009) | 1 line
+
+typo
+------------------------------------------------------------------------
+r392 | gagne | 2009-02-16 13:19:30 -0800 (Mon, 16 Feb 2009) | 1 line
+
+add license.
+------------------------------------------------------------------------
+r391 | gagne | 2009-02-16 12:32:07 -0800 (Mon, 16 Feb 2009) | 1 line
+
+first commit.
+------------------------------------------------------------------------
+r390 | openpear | 2009-02-16 12:18:53 -0800 (Mon, 16 Feb 2009) | 1 line
+
+[Create Base Directory] Service_Ustream
+------------------------------------------------------------------------</n>
+    <f>6210</f>
+    <g>http://openpear.org/get/Service_Ustream-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

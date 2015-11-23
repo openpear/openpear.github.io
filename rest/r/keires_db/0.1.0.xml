@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/keires_db">Keires_DB</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</s>
+    <d>O/R Mapperではない、DBアクセス用のユーティリティクラスです。
+
+特徴としては以下となっています。
+
+- クラスメソッドとしてアクセス
+- DBアクセスとしてPDOを使用
+- 複合カラムPRIMARY KEYやPRIMARY KEYなしのテーブルに対応
+- 複数DBコネクションの切り替えに対応
+- 特定カラム値の自動生成
+
+まだPostgreSQLに依存した部分があります。</d>
+    <da>2010-10-03 09:04:02</da>
+    <n>
+------------------------------------------------------------------------
+r2148 | koyhoge | 2010-10-03 03:13:01 +0900 (日, 03 10月 2010) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r2147 | openpear | 2010-10-03 03:09:04 +0900 (日, 03 10月 2010) | 1 line
+
+[New Package] Keires_DB
+------------------------------------------------------------------------
+ </n>
+    <f>5443</f>
+    <g>http://openpear.org/get/Keires_DB-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

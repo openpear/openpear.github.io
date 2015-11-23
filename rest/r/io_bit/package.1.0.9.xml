@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>IO_Bit</name>
+ <channel>openpear.org</channel>
+ <summary>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</summary>
+ <description>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-01-28</date>
+ <time>10:09:02</time>
+ <version>
+  <release>1.0.9</release>
+  <api>1.0.9</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="1ca6383b17ecd75551ce979dc325d975" name="IO/Bit.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.9</release>
+    <api>1.0.9</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-01-28</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)
+   </notes>
+  </release>
+ </changelog>
+</package>

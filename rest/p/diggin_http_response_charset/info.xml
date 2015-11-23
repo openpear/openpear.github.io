@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Diggin_Http_Response_Charset</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>LGPL</l>
+<s>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</s>
+<d>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</d>
+<r xlink:href="/rest/r/diggin_http_response_charset" />
+</p>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/text_ketainize">Text_Ketainize</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.1.6</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>okonomi</m>
+    <s>文字列をケータイサイト風に整形します。</s>
+    <d>文字列をケータイサイト風に整形します。</d>
+    <da>2010-12-27 08:53:11</da>
+    <n>
+文字列をケータイサイト風に整形します。
+ </n>
+    <f>1037</f>
+    <g>http://openpear.org/get/Text_Ketainize-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

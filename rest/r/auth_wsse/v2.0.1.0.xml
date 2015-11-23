@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/auth_wsse">Auth_WSSE</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.1.4</mp>
+    <st>beta</st>
+    <l>PHP3.01</l>
+    <m>shimooka</m>
+    <s>WSSE認証のパッケージです。</s>
+    <d>WSSE認証のパッケージです。</d>
+    <da>2009-06-29 09:10:16</da>
+    <n>------------------------------------------------------------------------
+r986 | shimooka | 2009-06-29 09:09:49 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r985 | shimooka | 2009-06-29 09:06:58 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r984 | shimooka | 2009-06-29 09:03:37 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- moved test file
+------------------------------------------------------------------------
+r983 | shimooka | 2009-06-29 09:02:41 -0700 (Mon, 29 Jun 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r982 | shimooka | 2009-06-29 08:28:13 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- renamed for packaging
+------------------------------------------------------------------------
+r978 | shimooka | 2009-06-29 08:16:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added comments
+------------------------------------------------------------------------
+r977 | shimooka | 2009-06-29 08:15:02 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added an example
+------------------------------------------------------------------------
+r976 | shimooka | 2009-06-29 07:01:11 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- fixed comments
+------------------------------------------------------------------------
+r975 | shimooka | 2009-06-29 06:59:43 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r974 | openpear | 2009-06-29 06:15:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+[Create Base Directory] Auth_WSSE
+------------------------------------------------------------------------</n>
+    <f>3973</f>
+    <g>http://openpear.org/get/Auth_WSSE-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

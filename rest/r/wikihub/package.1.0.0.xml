@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>WikiHub</name>
+ <channel>openpear.org</channel>
+ <summary>WikiHub preview command.
+
+-WikiHub - [http://wikihub.org]</summary>
+ <description>WikiHub preview command.
+
+-WikiHub - [http://wikihub.org]</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-20</date>
+ <time>01:34:03</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1353 | sotarok | 2009-10-20 01:31:29 +0900 (火, 20 10月 2009) | 1 line
+
+add source
+------------------------------------------------------------------------
+r1352 | openpear | 2009-10-20 01:09:02 +0900 (火, 20 10月 2009) | 1 line
+
+[New Package] WikiHub
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="1dac7ca3e006e90b2cd9887ffcbfdb8c" name="bin/whprev" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="7081d56160a66797af5d8c357b182f87" name="WikiHub/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="864032fa02f8d1a0b4eba16a38e292b5" name="WikiHub.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>HatenaSyntax</name>
+    <channel>openpear.org</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="whprev" name="bin/whprev" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-10-20</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1353 | sotarok | 2009-10-20 01:31:29 +0900 (火, 20 10月 2009) | 1 line
+
+add source
+------------------------------------------------------------------------
+r1352 | openpear | 2009-10-20 01:09:02 +0900 (火, 20 10月 2009) | 1 line
+
+[New Package] WikiHub
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

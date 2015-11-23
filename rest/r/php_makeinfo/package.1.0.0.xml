@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_MakeInfo</name>
+ <channel>openpear.org</channel>
+ <summary>PHPのphpinfo()で出力される画面を生成します。
+使い方
+
+&lt;?php
+require_once(&quot;MakeInfo.php&quot;);
+
+$contents = array(
+	&apos;Sample1&apos; =&gt; &apos;Enable1&apos;,
+	&apos;Sample2&apos; =&gt; &apos;Enable2&apos;,
+	&apos;Sample3&apos; =&gt; &apos;Enable3&apos;,
+	&apos;Sample4&apos; =&gt; &apos;Enable4&apos;,
+	&apos;Sample5&apos; =&gt; &apos;Enable5&apos;,
+);
+
+$make = new MakeInfo(&quot;Sample&quot;, &quot;Sample Enables List&quot;, $contents);
+?&gt;</summary>
+ <description>PHPのphpinfo()で出力される画面を生成します。
+使い方
+
+&lt;?php
+require_once(&quot;MakeInfo.php&quot;);
+
+$contents = array(
+	&apos;Sample1&apos; =&gt; &apos;Enable1&apos;,
+	&apos;Sample2&apos; =&gt; &apos;Enable2&apos;,
+	&apos;Sample3&apos; =&gt; &apos;Enable3&apos;,
+	&apos;Sample4&apos; =&gt; &apos;Enable4&apos;,
+	&apos;Sample5&apos; =&gt; &apos;Enable5&apos;,
+);
+
+$make = new MakeInfo(&quot;Sample&quot;, &quot;Sample Enables List&quot;, $contents);
+?&gt;</description>
+ <lead>
+  <name>FreeBSE</name>
+  <user>FreeBSE</user>
+  <email>freebse@panasocli.cc</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-20</date>
+ <time>17:27:02</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2279 | FreeBSE | 2010-12-18 20:29:28 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2278 | FreeBSE | 2010-12-18 20:29:00 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2277 | FreeBSE | 2010-12-18 20:28:38 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2272 | openpear | 2010-12-18 00:33:02 +0900 (土, 18 12月 2010) | 1 line
+
+[New Package] PHP_MakeInfo
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a9efff9413aff74f5bebf69641356de3" name="MakeInfo.php" role="php" />
+   <file baseinstalldir="/" md5sum="378555a35ac2ee91e5cb9f8377ebc166" name="sample.php" role="php" />
+   <file baseinstalldir="/" md5sum="088f42548bbd45caeb08172d6a7d69fe" name="template.tpl" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-12-20</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2279 | FreeBSE | 2010-12-18 20:29:28 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2278 | FreeBSE | 2010-12-18 20:29:00 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2277 | FreeBSE | 2010-12-18 20:28:38 +0900 (土, 18 12月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2272 | openpear | 2010-12-18 00:33:02 +0900 (土, 18 12月 2010) | 1 line
+
+[New Package] PHP_MakeInfo
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

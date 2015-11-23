@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>PictgramConverter</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>携帯絵文字変換ライブラリ
+
+
+想定するユースケース
+-サイトのエンコーディングがShiftJIS(cp932)
+-DBに格納する文字列はutf-8エンコーディング
+
+
+サポートする機能
+-絵文字sjisバイナリをutf-8バイナリに変換
+-キャリア間の絵文字変換</s>
+<d>携帯絵文字変換ライブラリ
+
+
+想定するユースケース
+-サイトのエンコーディングがShiftJIS(cp932)
+-DBに格納する文字列はutf-8エンコーディング
+
+
+サポートする機能
+-絵文字sjisバイナリをutf-8バイナリに変換
+-キャリア間の絵文字変換</d>
+<r xlink:href="/rest/r/pictgramconverter" />
+</p>

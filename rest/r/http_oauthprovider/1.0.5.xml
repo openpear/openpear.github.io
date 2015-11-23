@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/http_oauthprovider">HTTP_OAuthProvider</p>
+    <c>openpear.org</c>
+    <v>1.0.5</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>eth0jp</m>
+    <s>OAuthリクエストの認証を行うサービスプロバイダ側のライブラリ。
+2Legged OAuthと3Legged OAuthの両方に対応。
+対応しているシグネチャ方式は、HMAC-SHA1とRSA-SHA1。
+トークンの保持に、Cache_Lite/Memcached/Memcacheのいずれかを使用。
+Social Game Publisher用のSignature検証も可能。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthProvider/trunk/example</s>
+    <d>OAuthリクエストの認証を行うサービスプロバイダ側のライブラリ。
+2Legged OAuthと3Legged OAuthの両方に対応。
+対応しているシグネチャ方式は、HMAC-SHA1とRSA-SHA1。
+トークンの保持に、Cache_Lite/Memcached/Memcacheのいずれかを使用。
+Social Game Publisher用のSignature検証も可能。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthProvider/trunk/example</d>
+    <da>2010-08-16 09:59:03</da>
+    <n>
+------------------------------------------------------------------------
+r2055 | eth0jp | 2010-08-16 09:57:51 +0900 (月, 16  8月 2010) | 1 line
+
+mod version
+------------------------------------------------------------------------
+r2054 | eth0jp | 2010-08-16 09:54:16 +0900 (月, 16  8月 2010) | 1 line
+
+mod comment
+------------------------------------------------------------------------
+r2026 | eth0jp | 2010-08-12 02:53:49 +0900 (木, 12  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r2023 | eth0jp | 2010-08-11 05:14:01 +0900 (水, 11  8月 2010) | 1 line
+
+mod store, mod example
+------------------------------------------------------------------------
+r2022 | eth0jp | 2010-08-11 05:03:19 +0900 (水, 11  8月 2010) | 1 line
+
+add StoreException, add StoreMemcache, add StoreMemcached
+------------------------------------------------------------------------
+r2020 | eth0jp | 2010-08-10 19:59:34 +0900 (火, 10  8月 2010) | 1 line
+
+mod method name findConsumer=&gt;fetchConsumer
+------------------------------------------------------------------------
+r2015 | eth0jp | 2010-08-10 04:13:47 +0900 (火, 10  8月 2010) | 1 line
+
+add example 3leeged HTTP_OAuthConsumer
+------------------------------------------------------------------------
+r2013 | eth0jp | 2010-08-09 21:23:33 +0900 (月, 09  8月 2010) | 1 line
+
+mod example 3legged authorize
+------------------------------------------------------------------------
+r2012 | eth0jp | 2010-08-09 21:18:36 +0900 (月, 09  8月 2010) | 1 line
+
+mod 3legged consumer check
+------------------------------------------------------------------------
+r2010 | eth0jp | 2010-08-09 20:30:09 +0900 (月, 09  8月 2010) | 1 line
+
+mod handler, mod example
+------------------------------------------------------------------------
+r2009 | eth0jp | 2010-08-09 17:06:50 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2008 | eth0jp | 2010-08-09 15:20:04 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2007 | eth0jp | 2010-08-09 14:50:43 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2006 | eth0jp | 2010-08-09 04:54:51 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2004 | eth0jp | 2010-08-09 04:40:47 +0900 (月, 09  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1979 | openpear | 2010-08-04 05:55:03 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthProvider
+------------------------------------------------------------------------
+ </n>
+    <f>8852</f>
+    <g>http://openpear.org/get/HTTP_OAuthProvider-1.0.5</g>
+    <x xlink:href="package.1.0.5.xml"/>
+</r>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Google_Calendar</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>Google Calendar Data APIをラップしたクラスです。
+終日イベントの追加・削除・編集が可能です。
+PHP4・PHP5のいずれでも利用可能です。
+
+
+*依存パッケージ
+-HTTP_Client
+-XML_Serializer
+
+
+*使い方
+1) イベント情報を取得する
+&gt;||
+require_once 'Services/Google/Calendar.php';
+
+// initialize
+$gc = new Services_Google_Calendar();
+
+// get events data
+$public_data = $gc-&gt;getEvents($gmail_id);
+
+// get events data (private mode)
+$private_data = $gc-&gt;getEvents($gmail_id, $hash);
+||&lt;
+
+
+2) イベントを追加する
+&gt;||
+require_once 'Services/Google/Calendar.php';
+
+// initialize
+$gc = new Services_Google_Calendar($gmail_id, $passwd);
+
+// set event data
+$entry['title']        = 'Event title';
+$entry['content']      = 'Event description';
+$entry['where']        = 'Where the event helds';
+$entry['when'][0]      = '2006-10-20';
+$entry['when'][1]      = '2006-10-24';
+$entry['transparency'] = 'transparent';
+$entry['visibility']   = 'private';
+
+// add an event
+$result = $gc-&gt;addEvent($entry);
+||&lt;
+
+
+*今後の機能追加（予定）
+-時間指定のイベントへの対応
+-タイムゾーンの考慮
+-[http://framework.zend.com/download/gdata:title=Zend GData Library]をベースにした設計変更？</s>
+<d>Google Calendar Data APIをラップしたクラスです。
+終日イベントの追加・削除・編集が可能です。
+PHP4・PHP5のいずれでも利用可能です。
+
+
+*依存パッケージ
+-HTTP_Client
+-XML_Serializer
+
+
+*使い方
+1) イベント情報を取得する
+&gt;||
+require_once 'Services/Google/Calendar.php';
+
+// initialize
+$gc = new Services_Google_Calendar();
+
+// get events data
+$public_data = $gc-&gt;getEvents($gmail_id);
+
+// get events data (private mode)
+$private_data = $gc-&gt;getEvents($gmail_id, $hash);
+||&lt;
+
+
+2) イベントを追加する
+&gt;||
+require_once 'Services/Google/Calendar.php';
+
+// initialize
+$gc = new Services_Google_Calendar($gmail_id, $passwd);
+
+// set event data
+$entry['title']        = 'Event title';
+$entry['content']      = 'Event description';
+$entry['where']        = 'Where the event helds';
+$entry['when'][0]      = '2006-10-20';
+$entry['when'][1]      = '2006-10-24';
+$entry['transparency'] = 'transparent';
+$entry['visibility']   = 'private';
+
+// add an event
+$result = $gc-&gt;addEvent($entry);
+||&lt;
+
+
+*今後の機能追加（予定）
+-時間指定のイベントへの対応
+-タイムゾーンの考慮
+-[http://framework.zend.com/download/gdata:title=Zend GData Library]をベースにした設計変更？</d>
+<r xlink:href="/rest/r/services_google_calendar" />
+</p>

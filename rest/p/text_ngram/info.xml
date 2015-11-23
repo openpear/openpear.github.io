@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Text_Ngram</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>*Text_Ngram
+
+文字列を N-gram 形式に分割するためのライブラリです。
+
+N-gram オブジェクトを生成し、配列のように扱うことができます。
+
+*Requirements
+
+PHP5 (&gt;= PHP 5.3)
+
+*N-gram?
+
+例えば全文検索システムを構築する場合、前処理としてインデックスの作成が必要となります。
+しかし、欧米の言語と違って、日本語はスペース等の一定のデリミタで区切ることはできません。
+そこで、文章的な意味に関わらず、 n 文字ごとの分割した形式を使い、これを N-gram といいます。
+
+分かち書きの方法としては、形態素解析も挙げられますが、 N-gram では辞書のメンテナンスが不要、という利点があります。
+また、 n 文字ごとに分割する、という単純なルールなため、言語にかかわらず適用することができます。
+
+*Usage
+
+**Create N-gram object
+
+&gt;||
+require_once '/path/to/Text/Ngram.php';
+use Text\Ngram;
+$ngram = new Ngram('こんにちは世界！', 2, 'UTF-8');
+||&lt;
+
+**Convert to array
+
+&gt;||
+$ngramArray = $ngram-&gt;toArray();
+||&lt;
+
+**Treat N-gram object as array
+
+&gt;||
+echo $ngram[0];     // =&gt; こん
+echo $ngram[1];     // =&gt; んに
+echo count($ngram); // =&gt; 7
+||&lt;
+
+**Iteration
+
+&gt;||
+foreach ($ngram as $key =&gt; $value) {
+    echo &quot;{$key} : {$value}&quot; . PHP_EOL;
+}
+||&lt;
+
+*Author
+
+Yuya Takeyama &lt;sign.of.the.wolf.pentagram at gmail.com&gt;
+
+*See also
+
+php5-Text_Ngram on Github
+http://github.com/yuya-takeyama/php5-Text_Ngram/</s>
+<d>*Text_Ngram
+
+文字列を N-gram 形式に分割するためのライブラリです。
+
+N-gram オブジェクトを生成し、配列のように扱うことができます。
+
+*Requirements
+
+PHP5 (&gt;= PHP 5.3)
+
+*N-gram?
+
+例えば全文検索システムを構築する場合、前処理としてインデックスの作成が必要となります。
+しかし、欧米の言語と違って、日本語はスペース等の一定のデリミタで区切ることはできません。
+そこで、文章的な意味に関わらず、 n 文字ごとの分割した形式を使い、これを N-gram といいます。
+
+分かち書きの方法としては、形態素解析も挙げられますが、 N-gram では辞書のメンテナンスが不要、という利点があります。
+また、 n 文字ごとに分割する、という単純なルールなため、言語にかかわらず適用することができます。
+
+*Usage
+
+**Create N-gram object
+
+&gt;||
+require_once '/path/to/Text/Ngram.php';
+use Text\Ngram;
+$ngram = new Ngram('こんにちは世界！', 2, 'UTF-8');
+||&lt;
+
+**Convert to array
+
+&gt;||
+$ngramArray = $ngram-&gt;toArray();
+||&lt;
+
+**Treat N-gram object as array
+
+&gt;||
+echo $ngram[0];     // =&gt; こん
+echo $ngram[1];     // =&gt; んに
+echo count($ngram); // =&gt; 7
+||&lt;
+
+**Iteration
+
+&gt;||
+foreach ($ngram as $key =&gt; $value) {
+    echo &quot;{$key} : {$value}&quot; . PHP_EOL;
+}
+||&lt;
+
+*Author
+
+Yuya Takeyama &lt;sign.of.the.wolf.pentagram at gmail.com&gt;
+
+*See also
+
+php5-Text_Ngram on Github
+http://github.com/yuya-takeyama/php5-Text_Ngram/</d>
+<r xlink:href="/rest/r/text_ngram" />
+</p>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Image_Combination</name>
+ <channel>openpear.org</channel>
+ <summary>ImageMagickライブラリの車輪の再発明(ヒマつぶしで作った。)</summary>
+ <description>ImageMagickライブラリの車輪の再発明(ヒマつぶしで作った。)</description>
+ <lead>
+  <name>camelmasa</name>
+  <user>camelmasa</user>
+  <email>camelmasa@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-15</date>
+ <time>16:32:04</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2052 | camelmasa | 2010-08-15 16:29:16 +0900 (日, 15  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2051 | openpear | 2010-08-15 15:48:02 +0900 (日, 15  8月 2010) | 1 line
+
+[New Package] Image_Combination
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="59f68b0a0d68139554b7a5985e142b5c" name="Image/Combination.php" role="php" />
+   <file baseinstalldir="/" md5sum="be4223a28155ac24889ea1c5590ff278" name="sample/body.gif" role="data" />
+   <file baseinstalldir="/" md5sum="0e1738ef663d45969db52110efa66395" name="sample/image_output.php" role="php" />
+   <file baseinstalldir="/" md5sum="d99c0db8d1895654e64179d84f713e23" name="sample/image_save.php" role="php" />
+   <file baseinstalldir="/" md5sum="d4c1c36d8a7aa03f93d50647b36c34cf" name="sample/shield.gif" role="data" />
+   <file baseinstalldir="/" md5sum="d96b116d754cf6abc3000a306c1612ec" name="sample/weapon.gif" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-15</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2052 | camelmasa | 2010-08-15 16:29:16 +0900 (日, 15  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2051 | openpear | 2010-08-15 15:48:02 +0900 (日, 15  8月 2010) | 1 line
+
+[New Package] Image_Combination
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

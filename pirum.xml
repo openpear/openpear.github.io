@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+  <name>openpear.org</name>
+  <summary>Openpear PEAR channel</summary>
+  <alias>openpear</alias>
+  <url>http://openpear.org/</url>
+</server>

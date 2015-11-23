@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Keires_Feed</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</s>
+<d>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</d>
+<r xlink:href="/rest/r/keires_feed" />
+</p>

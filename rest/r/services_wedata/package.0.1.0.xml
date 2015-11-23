@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Wedata</name>
+ <channel>openpear.org</channel>
+ <summary>AutoPagerizeのバックエンドに用いられることで知られる
+wedata.netのAPIを利用するためのライブラリです。
+
+自作のDiggin_Service_Wedataの移植です。
+http://diggin.googlecode.com/svn/trunk/library/Diggin/Service/</summary>
+ <description>AutoPagerizeのバックエンドに用いられることで知られる
+wedata.netのAPIを利用するためのライブラリです。
+
+自作のDiggin_Service_Wedataの移植です。
+http://diggin.googlecode.com/svn/trunk/library/Diggin/Service/</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-02</date>
+ <time>05:58:53</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r41 | sasezaki | 2008-11-02 05:56:22 -0800 (Sun, 02 Nov 2008) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r39 | openpear | 2008-11-02 05:50:56 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Services_Wedata
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="381cfaae0e33f15f74a07d9abce1d237" name="Wedata/Exception.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="20ce81471affb39662f29022cbf75768" name="Wedata.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Http_Request</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-11-02</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r41 | sasezaki | 2008-11-02 05:56:22 -0800 (Sun, 02 Nov 2008) | 1 line
+
+initial commit
+------------------------------------------------------------------------
+r39 | openpear | 2008-11-02 05:50:56 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Services_Wedata
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

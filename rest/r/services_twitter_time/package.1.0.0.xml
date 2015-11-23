@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Twitter_Time</name>
+ <channel>openpear.org</channel>
+ <summary>Twitterの&quot;2 minutes ago&quot;とか&quot;10 days ago&quot;とかを簡単にしてしまおうというライブラリです。
+全然デバッグしていないので、報告お待ちしております。</summary>
+ <description>Twitterの&quot;2 minutes ago&quot;とか&quot;10 days ago&quot;とかを簡単にしてしまおうというライブラリです。
+全然デバッグしていないので、報告お待ちしております。</description>
+ <lead>
+  <name>camelmasa</name>
+  <user>camelmasa</user>
+  <email>camelmasa@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-25</date>
+ <time>03:18:02</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2082 | camelmasa | 2010-08-25 03:12:03 +0900 (水, 25  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2081 | openpear | 2010-08-25 02:52:02 +0900 (水, 25  8月 2010) | 1 line
+
+[New Package] Services_Twitter_Time
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a1e98b3e545c6b2b720a8f0cb7b02ab8" name="sample/services_twitter_time.php" role="php" />
+   <file baseinstalldir="/" md5sum="13533b93c819a6c834b5592f40224c07" name="Services/Twitter/Time.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-25</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2082 | camelmasa | 2010-08-25 03:12:03 +0900 (水, 25  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2081 | openpear | 2010-08-25 02:52:02 +0900 (水, 25  8月 2010) | 1 line
+
+[New Package] Services_Twitter_Time
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

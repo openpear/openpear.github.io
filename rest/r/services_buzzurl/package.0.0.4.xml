@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Buzzurl</name>
+ <channel>openpear.org</channel>
+ <summary>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</summary>
+ <description>Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+BuzzurlAPI
+http://labs.ecnavi.jp/developer/buzzurl/api/</description>
+ <lead>
+  <name>tell-k</name>
+  <user>tell-k</user>
+  <email>ffk2005@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-17</date>
+ <time>09:05:03</time>
+ <version>
+  <release>0.0.4</release>
+  <api>0.0.4</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1845 | tell-k | 2010-05-17 09:03:08 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * ファイル構成を変更
+
+
+------------------------------------------------------------------------
+r1844 | tell-k | 2010-05-17 09:00:56 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * dircrotry構成を変更
+
+
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="fa643437b5cf00b493bffe7494b22fb9" name="Services/Buzzurl.php" role="php" />
+   <file baseinstalldir="/" md5sum="71a696ed02f63bc7a60f3ec737a8a192" name="test/Services_Buzzurl/lib/lime/lime.php" role="php" />
+   <file baseinstalldir="/" md5sum="1040c6c186284cc988de6b5cdd2fd618" name="test/Services_Buzzurl/lib/t.php" role="php" />
+   <file baseinstalldir="/" md5sum="a4335d777bf2d2e498216aa6f0a22049" name="test/Services_Buzzurl/lib/test_all.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e9a98c122c3a87920a5bcb87b1d699d" name="test/Services_Buzzurl/t/Services_BuzzurlTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="d3c7b3dcd28d8ca1ff540221f6b52c50" name="test/Services_Buzzurl/Makefile" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.4</release>
+    <api>0.0.4</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-17</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1845 | tell-k | 2010-05-17 09:03:08 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * ファイル構成を変更
+
+
+------------------------------------------------------------------------
+r1844 | tell-k | 2010-05-17 09:00:56 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * dircrotry構成を変更
+
+
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

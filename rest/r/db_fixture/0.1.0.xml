@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/db_fixture">Db_Fixture</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>beta</st>
+    <l>New BSD License</l>
+    <m>heavenshell</m>
+    <s>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</s>
+    <d>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</d>
+    <da>2009-03-21 05:41:47</da>
+    <n>------------------------------------------------------------------------
+r608 | heavenshell | 2009-03-20 22:39:15 -0700 (Fri, 20 Mar 2009) | 1 line
+
+Add version number
+------------------------------------------------------------------------
+r607 | heavenshell | 2009-03-20 20:32:54 -0700 (Fri, 20 Mar 2009) | 1 line
+
+first import
+------------------------------------------------------------------------</n>
+    <f>4974</f>
+    <g>http://openpear.org/get/Db_Fixture-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

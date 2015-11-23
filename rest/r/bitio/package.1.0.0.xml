@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>BitIO</name>
+ <channel>openpear.org</channel>
+ <summary>ビット処理のユーティリティです。
+いちいち、pack v したり、incremental にデータを生成するのに offset を処理するのが面倒だという人向けです。</summary>
+ <description>ビット処理のユーティリティです。
+いちいち、pack v したり、incremental にデータを生成するのに offset を処理するのが面倒だという人向けです。</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-12</date>
+ <time>13:33:02</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+SWF 編集するのに必要そうなメソッドだけ実装しました。
+今後必要に応じてメソッドを追加していきます。
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="475a649d4cdc71ff7dadd19acbe3f26e" name="BitIO.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-08-12</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+SWF 編集するのに必要そうなメソッドだけ実装しました。
+今後必要に応じてメソッドを追加していきます。
+   </notes>
+  </release>
+ </changelog>
+</package>

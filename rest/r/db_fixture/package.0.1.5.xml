@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Db_Fixture</name>
+ <channel>openpear.org</channel>
+ <summary>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</summary>
+ <description>Db_Fixture はデータベース絡みのテストを行う際に設定したファイルからテストデータを読み込み、データベースに投入します。
+
+
+必要な環境
+-データベースへの接続には PDO を使用します。
+-Fixture を記述するファイルには json 形式をサポートしています。
+-PHP 組み込みの json を使用します。
+
+
+テストコードを実行するにあたって
+-テストコードは lime にて記述しているので、 lime が必要です。
+-データベースに、 test ユーザ(パスワードは testtest) を作成し、Create, Drop, Select, Insert Delete 権限を付与して下さい。
+-データベースに test という データベースを作成して下さい。
+-テストコードを実行すると、自動的に test1, test2 というテーブルを作成します。
+-テストが完了すると、自動的に test1, test2 というテーブルは削除されます。
+
+
+更新履歴
+-2009/11/16 setPdo() を実装。Pdo オブジェクトを外部から注入可能にしました。</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-16</date>
+ <time>00:18:03</time>
+ <version>
+  <release>0.1.5</release>
+  <api>0.1.5</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://openpear.org/repository/Db_Fixture/trunk/license.txt">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r1404 | heavenshell | 2009-11-16 00:05:10 +0900 (月, 16 11月 2009) | 1 line
+
+Oops VERSION ++
+------------------------------------------------------------------------
+r1403 | heavenshell | 2009-11-16 00:03:49 +0900 (月, 16 11月 2009) | 1 line
+
+Change load(), 1st arg should be a string...
+------------------------------------------------------------------------
+r1402 | heavenshell | 2009-11-15 23:41:59 +0900 (日, 15 11月 2009) | 1 line
+
+VERSION ++
+------------------------------------------------------------------------
+r1401 | heavenshell | 2009-11-15 23:40:09 +0900 (日, 15 11月 2009) | 1 line
+
+Allow to inject pdo instance.
+------------------------------------------------------------------------
+r1111 | heavenshell | 2009-08-16 01:02:46 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r646 | heavenshell | 2009-04-01 21:08:58 +0900 (水, 01  4月 2009) | 1 line
+
+Modify execute method
+------------------------------------------------------------------------
+r644 | heavenshell | 2009-04-01 00:33:34 +0900 (水, 01  4月 2009) | 1 line
+
+Increment version
+------------------------------------------------------------------------
+r643 | heavenshell | 2009-04-01 00:30:35 +0900 (水, 01  4月 2009) | 1 line
+
+Add execute method
+------------------------------------------------------------------------
+r611 | heavenshell | 2009-03-21 22:09:29 +0900 (土, 21  3月 2009) | 1 line
+
+Increment version number
+------------------------------------------------------------------------
+r610 | heavenshell | 2009-03-21 22:05:10 +0900 (土, 21  3月 2009) | 1 line
+
+Change fixture() to fixtures()
+------------------------------------------------------------------------
+r608 | heavenshell | 2009-03-21 14:39:15 +0900 (土, 21  3月 2009) | 1 line
+
+Add version number
+------------------------------------------------------------------------
+r607 | heavenshell | 2009-03-21 12:32:54 +0900 (土, 21  3月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r606 | openpear | 2009-03-21 12:25:31 +0900 (土, 21  3月 2009) | 1 line
+
+[Create Base Directory] Db_Fixture
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/Db" name="/">
+   <file baseinstalldir="/Db" md5sum="2e6a7a330d8a5373ae46bffc0624c46a" name="Fixture/Parser/Interface.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="fbbe9ed93c441f36cf9546ccbc6b1c46" name="Fixture/Parser/Json.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="ba324d9c7389c888332295faf12a649b" name="Fixture/Exception.php" role="php" />
+   <file baseinstalldir="/Db" md5sum="2a5e9b378acb5e7a3d41ed50a4ec8330" name="Fixture.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.5</release>
+    <api>0.1.5</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-11-16</date>
+   <license uri="http://openpear.org/repository/Db_Fixture/trunk/license.txt">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r1404 | heavenshell | 2009-11-16 00:05:10 +0900 (月, 16 11月 2009) | 1 line
+
+Oops VERSION ++
+------------------------------------------------------------------------
+r1403 | heavenshell | 2009-11-16 00:03:49 +0900 (月, 16 11月 2009) | 1 line
+
+Change load(), 1st arg should be a string...
+------------------------------------------------------------------------
+r1402 | heavenshell | 2009-11-15 23:41:59 +0900 (日, 15 11月 2009) | 1 line
+
+VERSION ++
+------------------------------------------------------------------------
+r1401 | heavenshell | 2009-11-15 23:40:09 +0900 (日, 15 11月 2009) | 1 line
+
+Allow to inject pdo instance.
+------------------------------------------------------------------------
+r1111 | heavenshell | 2009-08-16 01:02:46 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r646 | heavenshell | 2009-04-01 21:08:58 +0900 (水, 01  4月 2009) | 1 line
+
+Modify execute method
+------------------------------------------------------------------------
+r644 | heavenshell | 2009-04-01 00:33:34 +0900 (水, 01  4月 2009) | 1 line
+
+Increment version
+------------------------------------------------------------------------
+r643 | heavenshell | 2009-04-01 00:30:35 +0900 (水, 01  4月 2009) | 1 line
+
+Add execute method
+------------------------------------------------------------------------
+r611 | heavenshell | 2009-03-21 22:09:29 +0900 (土, 21  3月 2009) | 1 line
+
+Increment version number
+------------------------------------------------------------------------
+r610 | heavenshell | 2009-03-21 22:05:10 +0900 (土, 21  3月 2009) | 1 line
+
+Change fixture() to fixtures()
+------------------------------------------------------------------------
+r608 | heavenshell | 2009-03-21 14:39:15 +0900 (土, 21  3月 2009) | 1 line
+
+Add version number
+------------------------------------------------------------------------
+r607 | heavenshell | 2009-03-21 12:32:54 +0900 (土, 21  3月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r606 | openpear | 2009-03-21 12:25:31 +0900 (土, 21  3月 2009) | 1 line
+
+[Create Base Directory] Db_Fixture
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

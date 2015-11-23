@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_Cicindela</name>
+ <channel>openpear.org</channel>
+ <summary>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</summary>
+ <description>ライブドア謹製レコメンドエンジン[http://code.google.com/p/cicindela2/:title=Cicindela]のWebAPIラッパ
+
+レコメンドエンジン自作する人はこれと同じWebAPIで作ればみんな幸せになるんじゃないかな。</description>
+ <lead>
+  <name>MugeSo</name>
+  <user>MugeSo</user>
+  <email>mugeso@mugeso.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-11</date>
+ <time>01:17:35</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP Licence</license>
+ <notes>------------------------------------------------------------------------
+r949 | MugeSo | 2009-06-11 01:07:46 -0700 (Thu, 11 Jun 2009) | 1 line
+
+Net_Cicindela?\229?\136?\157?\230?\156?\159?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="da3309c885eead72085b3ac9c2c93f2a" name="Net/Cicindela/Dataset.php" role="php" />
+   <file baseinstalldir="/" md5sum="d6dc5bb78e3d18dca301b9615c004f06" name="Net/Cicindela.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Net_URL2</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-06-11</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP Licence</license>
+   <notes>------------------------------------------------------------------------
+r949 | MugeSo | 2009-06-11 01:07:46 -0700 (Thu, 11 Jun 2009) | 1 line
+
+Net_Cicindela?\229?\136?\157?\230?\156?\159?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

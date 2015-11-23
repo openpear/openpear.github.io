@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Text_Ketainize</name>
+ <channel>openpear.org</channel>
+ <summary>文字列をケータイサイト風に整形します。</summary>
+ <description>文字列をケータイサイト風に整形します。</description>
+ <lead>
+  <name>okonomi</name>
+  <user>okonomi</user>
+  <email>oknm@okonomi.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-27</date>
+ <time>08:53:11</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+文字列をケータイサイト風に整形します。
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="85d7a0c6d5a9317bc8b9fdd24e9ff553" name="Text/Ketainize.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-12-27</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+文字列をケータイサイト風に整形します。
+   </notes>
+  </release>
+ </changelog>
+</package>

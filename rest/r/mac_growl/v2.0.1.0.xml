@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/mac_growl">Mac_Growl</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>MIT License</l>
+    <m>rsk</m>
+    <s>AppleScript経由で[http://growl.info/:title=Growl]通知する。
+ネットワーク越しの通知をしたい場合や[http://www.growlforwindows.com/gfw/:title=Growl for Windows]に通知したい場合は[http://pear.php.net/package/Net_Growl/:title= Net_Growl]で。
+
+[http://openpear.org/package/Mac_AppleScript:title= Mac_AppleScript]に依存します。</s>
+    <d>AppleScript経由で[http://growl.info/:title=Growl]通知する。
+ネットワーク越しの通知をしたい場合や[http://www.growlforwindows.com/gfw/:title=Growl for Windows]に通知したい場合は[http://pear.php.net/package/Net_Growl/:title= Net_Growl]で。
+
+[http://openpear.org/package/Mac_AppleScript:title= Mac_AppleScript]に依存します。</d>
+    <da>2009-10-01 18:38:02</da>
+    <n>
+------------------------------------------------------------------------
+r1235 | rsk | 2009-10-01 18:35:30 +0900 (木, 01 10月 2009) | 1 line
+
+- initial commit.
+------------------------------------------------------------------------
+r1234 | openpear | 2009-10-01 18:34:02 +0900 (木, 01 10月 2009) | 1 line
+
+[New Package] Mac_Growl
+------------------------------------------------------------------------
+ </n>
+    <f>5663</f>
+    <g>http://openpear.org/get/Mac_Growl-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

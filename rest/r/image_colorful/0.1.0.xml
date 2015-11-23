@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/image_colorful">Image_Colorful</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>camelmasa</m>
+    <s>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+-履歴
+-3/10 0.1.3-stableリリース
+--Colorfulという親クラスを作成
+--Image_Colorful_Wordという子クラスを作成
+-3/8 0.1.2-stableリリース
+--addTextsメソッドの修正
+-3/7 0.1.1-stableリリース
+--setColorsメソッドの追加
+--setRedメソッドの追加
+--setGreenメソッドの追加
+--setBlueメソッドの追加
+--addColorsメソッドの追加
+-3/6 0.1.0-stableリリース
+
+TODO
+-ストライプ機能
+-揺らぎ機能</s>
+    <d>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+-履歴
+-3/10 0.1.3-stableリリース
+--Colorfulという親クラスを作成
+--Image_Colorful_Wordという子クラスを作成
+-3/8 0.1.2-stableリリース
+--addTextsメソッドの修正
+-3/7 0.1.1-stableリリース
+--setColorsメソッドの追加
+--setRedメソッドの追加
+--setGreenメソッドの追加
+--setBlueメソッドの追加
+--addColorsメソッドの追加
+-3/6 0.1.0-stableリリース
+
+TODO
+-ストライプ機能
+-揺らぎ機能</d>
+    <da>2009-03-06 05:40:48</da>
+    <n>------------------------------------------------------------------------
+r512 | camelmasa | 2009-03-06 05:38:50 -0800 (Fri, 06 Mar 2009) | 1 line
+
+stable?\227?\129?\174?\232?\161?\168?\232?\168?\152?\229?\164?\137?\230?\155?\180
+------------------------------------------------------------------------
+r506 | openpear | 2009-03-06 04:01:30 -0800 (Fri, 06 Mar 2009) | 1 line
+
+[Add Tag:Release] Image_Colorful
+------------------------------------------------------------------------
+r505 | camelmasa | 2009-03-06 04:01:04 -0800 (Fri, 06 Mar 2009) | 1 line
+
+stable?\227?\129?\174?\227?\131?\170?\227?\131?\170?\227?\131?\188?\227?\130?\185
+------------------------------------------------------------------------</n>
+    <f>2791</f>
+    <g>http://openpear.org/get/Image_Colorful-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

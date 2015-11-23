@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Recruit</name>
+ <channel>openpear.org</channel>
+ <summary>とりあえずこの辺のものをコピーしておく
+
+- [http://blog.poyo.jp/archives/id-1201153716]
+- [http://blog.poyo.jp/archives/id-1202983271]</summary>
+ <description>とりあえずこの辺のものをコピーしておく
+
+- [http://blog.poyo.jp/archives/id-1201153716]
+- [http://blog.poyo.jp/archives/id-1202983271]</description>
+ <lead>
+  <name>Tadashi *ELF* Jokagi</name>
+  <user>elf</user>
+  <email>elf@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-12-04</date>
+ <time>20:50:03</time>
+ <version>
+  <release>0.2.1</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+[0.2.1]
+- version 0.2.1.
+- based 0.2.0.
+
+[0.1.1]
+- Release again.
+- on openpear.org.
+
+[0.1.0]
+- Initial release
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="0778c1af82f2c3039eab4035a874c952" name="doc/example-hotpepper-01.php" role="php" />
+   <file baseinstalldir="/" md5sum="ebdaaa227241c70c18cef6158f8a10df" name="src/Services/Recruit/common.php" role="php" />
+   <file baseinstalldir="/" md5sum="a61ce2b1e706f86fb24767e076528858" name="src/Services/Recruit/Hotpepper.php" role="php" />
+   <file baseinstalldir="/" md5sum="d68abc699bf26e94bc4b43153a1930d0" name="src/Services/Recruit.php" role="php" />
+   <file baseinstalldir="/" md5sum="921fc93fed0911aa93577fa018b9491e" name="build" role="data" />
+   <file baseinstalldir="/" md5sum="4530c6e37ecaaea554df1918965b75b5" name="build.bat" role="data" />
+   <file baseinstalldir="/" md5sum="6ce50688383ab7c5ed5dc672b0b66c57" name="build.conf" role="data" />
+   <file baseinstalldir="/" md5sum="5aa463d5150ad1516b5890275c9d57df" name="desc.txt" role="data" />
+   <file baseinstalldir="/" md5sum="10fd00574c9274206165f192ff06f1ca" name="notes.txt" role="data" />
+   <file baseinstalldir="/" md5sum="69f9fa46909e2aa7fd5634f33b290d92" name="tutorial.txt" role="data" />
+   <file baseinstalldir="/" md5sum="f2970a5fab13257e3ad8a25e6e4af5c6" name="updatedoc" role="data" />
+   <file baseinstalldir="/" md5sum="27f728eba3685b8f844407c25b208a22" name="updatedoc.bat" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.11</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+   </package>
+   <package>
+    <name>XML_Serializer</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-12-04</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.2.1]
+- version 0.2.1.
+- based 0.2.0.
+
+[0.1.1]
+- Release again.
+- on openpear.org.
+
+[0.1.0]
+- Initial release
+   </notes>
+  </release>
+ </changelog>
+</package>

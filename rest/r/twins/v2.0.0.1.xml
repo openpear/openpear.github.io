@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/twins">Twins</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>kenjiro</m>
+    <s>Smartyライクの軽量なテンプレートエンジンを作ってみます
+
+Smartyとの違いは、テンプレート側もphpファイルになっている点。
+
+実装とデザインを分離しつつ、軽量/高速で動かしてみたかった。</s>
+    <d>Smartyライクの軽量なテンプレートエンジンを作ってみます
+
+Smartyとの違いは、テンプレート側もphpファイルになっている点。
+
+実装とデザインを分離しつつ、軽量/高速で動かしてみたかった。</d>
+    <da>2010-05-30 00:20:15</da>
+    <n>
+------------------------------------------------------------------------
+r1886 | kenjiro | 2010-05-30 00:07:16 +0900 (日, 30  5月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r1884 | kenjiro | 2010-05-29 23:51:57 +0900 (土, 29  5月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r1883 | openpear | 2010-05-29 23:49:10 +0900 (土, 29  5月 2010) | 1 line
+
+[New Package] Twins
+------------------------------------------------------------------------
+ </n>
+    <f>1376</f>
+    <g>http://openpear.org/get/Twins-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Japanese_Mobile_Emoji</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>日本の絵文字をUserAgentに合わせて変換してくれるライブラリ
+
+*概要
+文字列中の絵文字用変換タグを絵文字コードもしくはimgタグに変換します。
+
+例） [emosji:1]
+
+-docomoでアクセスした場合 &gt; &amp;#xE63E;
+-auでアクセスした場合 &gt; &amp;#xE488;
+-softbankでアクセスした場合 &gt; &amp;#xE04A;
+-上記３キャリア以外、PC等 &gt; &lt;img src=&quot;/openper_JapaneseMobileEmoji/img/emoji/sun.gif&quot; class=&quot;emoji emoji_1&quot; /&gt;
+
+
+*使い方</s>
+<d>日本の絵文字をUserAgentに合わせて変換してくれるライブラリ
+
+*概要
+文字列中の絵文字用変換タグを絵文字コードもしくはimgタグに変換します。
+
+例） [emosji:1]
+
+-docomoでアクセスした場合 &gt; &amp;#xE63E;
+-auでアクセスした場合 &gt; &amp;#xE488;
+-softbankでアクセスした場合 &gt; &amp;#xE04A;
+-上記３キャリア以外、PC等 &gt; &lt;img src=&quot;/openper_JapaneseMobileEmoji/img/emoji/sun.gif&quot; class=&quot;emoji emoji_1&quot; /&gt;
+
+
+*使い方</d>
+<r xlink:href="/rest/r/japanese_mobile_emoji" />
+</p>

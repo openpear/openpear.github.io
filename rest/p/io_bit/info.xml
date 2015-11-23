@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>IO_Bit</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</s>
+<d>ビット処理のユーティリティです。  いちいち、pack v したり、incremental に offset を処理するのが面倒だという人向けです。  (BitIO はそのうち削除されます)</d>
+<r xlink:href="/rest/r/io_bit" />
+</p>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>jpSimpleMailPlugin</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</s>
+<d>簡単に日本語(iso-2022-jp)メールを送信するためのsymfony1.4プラグイン</d>
+<r xlink:href="/rest/r/jpsimplemailplugin" />
+</p>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Wedata</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>AutoPagerizeのバックエンドに用いられることで知られる、WedataのAPIを利用するためのライブラリです。
+自作のZFベースのものを、PEARのHttp_Request使用に移植したパッケージです。
+かつては、アイドル情報を参照するにはAcme_○○というコンポーネントを用意する必要がありました。
+今は、idoldbを参照すればいいのです。
+
+
+使い方
+&gt;||
+&lt;?php
+require_once 'Services/Wedata.php';
+var_dump(Services_Wedata::getDatabase('AutoPagerize'));
+?&gt;
+||&lt;</s>
+<d>AutoPagerizeのバックエンドに用いられることで知られる、WedataのAPIを利用するためのライブラリです。
+自作のZFベースのものを、PEARのHttp_Request使用に移植したパッケージです。
+かつては、アイドル情報を参照するにはAcme_○○というコンポーネントを用意する必要がありました。
+今は、idoldbを参照すればいいのです。
+
+
+使い方
+&gt;||
+&lt;?php
+require_once 'Services/Wedata.php';
+var_dump(Services_Wedata::getDatabase('AutoPagerize'));
+?&gt;
+||&lt;</d>
+<r xlink:href="/rest/r/services_wedata" />
+</p>

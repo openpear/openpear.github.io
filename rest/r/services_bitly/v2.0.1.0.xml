@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/services_bitly">Services_Bitly</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>BSD License</l>
+    <m>tknzk</m>
+    <s>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once 'Services/Bitly.php';
+
+$login = 'Bitlyのアカウント';
+$apikey = 'BitlyのAPI Key';
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</s>
+    <d>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once 'Services/Bitly.php';
+
+$login = 'Bitlyのアカウント';
+$apikey = 'BitlyのAPI Key';
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</d>
+    <da>2009-09-26 23:14:04</da>
+    <n>
+------------------------------------------------------------------------
+r1208 | tknzk | 2009-09-26 23:03:46 +0900 (土, 26  9月 2009) | 1 line
+
+Exception
+------------------------------------------------------------------------
+r1207 | tknzk | 2009-09-26 23:02:25 +0900 (土, 26  9月 2009) | 4 lines
+
+for beta release.
+
+add Exception
+change simplexml_load_string 2 XML/Unserializer.php
+------------------------------------------------------------------------
+r1198 | tknzk | 2009-09-22 22:48:47 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1197 | tknzk | 2009-09-22 22:48:32 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1196 | tknzk | 2009-09-22 22:47:50 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1195 | openpear | 2009-09-22 22:28:02 +0900 (火, 22  9月 2009) | 1 line
+
+[New Package] Services_Bitly
+------------------------------------------------------------------------
+ </n>
+    <f>2951</f>
+    <g>http://openpear.org/get/Services_Bitly-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

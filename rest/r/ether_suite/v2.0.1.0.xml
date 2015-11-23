@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/ether_suite">Ether_Suite</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>4.3.3</mp>
+    <st>alpha</st>
+    <l>BSD Licence</l>
+    <m>sotarok</m>
+    <s>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</s>
+    <d>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</d>
+    <da>2008-12-03 00:50:52</da>
+    <n>------------------------------------------------------------------------
+r167 | sotarok | 2008-12-03 00:46:17 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * mv data files
+
+------------------------------------------------------------------------
+r166 | sotarok | 2008-12-03 00:10:41 -0800 (Wed, 03 Dec 2008) | 2 lines
+
+ * add files
+
+------------------------------------------------------------------------
+r165 | openpear | 2008-12-02 23:53:01 -0800 (Tue, 02 Dec 2008) | 1 line
+
+[Create Base Directory] Ether_Suite
+------------------------------------------------------------------------</n>
+    <f>2941</f>
+    <g>http://openpear.org/get/Ether_Suite-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

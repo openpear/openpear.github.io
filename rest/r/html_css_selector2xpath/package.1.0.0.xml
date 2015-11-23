@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTML_CSS_Selector2XPath</name>
+ <channel>openpear.org</channel>
+ <summary>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</summary>
+ <description>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</description>
+ <lead>
+  <name>MugeSo</name>
+  <user>MugeSo</user>
+  <email>mugeso@mugeso.com</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>yudoufu (Daichi Kamemoto)</name>
+  <user>yudoufu</user>
+  <email>daikame@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-04-21</date>
+ <time>17:18:05</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1811 | MugeSo | 2010-04-21 17:11:38 +0900 (水, 21  4月 2010) | 1 line
+
+カンマで生成されるXPathが間違っていた問題を修正
+------------------------------------------------------------------------
+r668 | MugeSo | 2009-04-14 18:41:21 +0900 (火, 14  4月 2009) | 1 line
+
+テストの一か所だけ要素がDIVになってて気持ち悪いので周りに合わせた
+------------------------------------------------------------------------
+r662 | MugeSo | 2009-04-14 17:17:07 +0900 (火, 14  4月 2009) | 2 lines
+
+HTML_CSS_Mobileから独立しました。
+独立に伴ってクラス/ファイル名を変更しました。
+------------------------------------------------------------------------
+r661 | openpear | 2009-04-14 16:49:32 +0900 (火, 14  4月 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Selector2XPath
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4786c76f88c4447a40e5ca01d150e309" name="HTML/CSS/Selector2XPath.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-04-21</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1811 | MugeSo | 2010-04-21 17:11:38 +0900 (水, 21  4月 2010) | 1 line
+
+カンマで生成されるXPathが間違っていた問題を修正
+------------------------------------------------------------------------
+r668 | MugeSo | 2009-04-14 18:41:21 +0900 (火, 14  4月 2009) | 1 line
+
+テストの一か所だけ要素がDIVになってて気持ち悪いので周りに合わせた
+------------------------------------------------------------------------
+r662 | MugeSo | 2009-04-14 17:17:07 +0900 (火, 14  4月 2009) | 2 lines
+
+HTML_CSS_Mobileから独立しました。
+独立に伴ってクラス/ファイル名を変更しました。
+------------------------------------------------------------------------
+r661 | openpear | 2009-04-14 16:49:32 +0900 (火, 14  4月 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Selector2XPath
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

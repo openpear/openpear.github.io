@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_URL_Dispatcher</name>
+ <channel>openpear.org</channel>
+ <summary>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</summary>
+ <description>PATH_INFO から取得した値をパースしてディスパッチするライブラリです。
+
+コントローラクラスもしくはアクションクラスいずれかを使用できます。
+Net_URL_Mapper に依存しています。</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-08</date>
+ <time>00:25:04</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r1997 | heavenshell | 2010-08-08 00:12:14 +0900 (日, 08  8月 2010) | 1 line
+
+Delete PHPSpec files
+------------------------------------------------------------------------
+r1996 | heavenshell | 2010-08-08 00:11:54 +0900 (日, 08  8月 2010) | 1 line
+
+Add PHPUnit files
+------------------------------------------------------------------------
+r1995 | heavenshell | 2010-08-08 00:10:07 +0900 (日, 08  8月 2010) | 1 line
+
+Add enable to change controller/action directory name
+------------------------------------------------------------------------
+r1994 | heavenshell | 2010-08-08 00:09:44 +0900 (日, 08  8月 2010) | 1 line
+
+Add enable to change controller/action directory name
+------------------------------------------------------------------------
+r1990 | heavenshell | 2010-08-06 00:43:48 +0900 (金, 06  8月 2010) | 1 line
+
+Change PHPSpec to PHPUnit
+------------------------------------------------------------------------
+r1485 | heavenshell | 2010-01-01 15:06:18 +0900 (金, 01  1月 2010) | 1 line
+
+Upgrade copyright 2009 to 2009-2010
+------------------------------------------------------------------------
+r1483 | heavenshell | 2010-01-01 14:25:12 +0900 (金, 01  1月 2010) | 1 line
+
+Update copyright
+------------------------------------------------------------------------
+r1110 | heavenshell | 2009-08-16 00:49:42 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r334 | heavenshell | 2009-01-10 22:52:44 +0900 (土, 10  1月 2009) | 1 line
+
+Modify header comment
+------------------------------------------------------------------------
+r323 | heavenshell | 2009-01-07 22:32:43 +0900 (水, 07  1月 2009) | 1 line
+
+Add ChangeLog
+------------------------------------------------------------------------
+r322 | heavenshell | 2009-01-07 22:31:48 +0900 (水, 07  1月 2009) | 1 line
+
+add __call
+------------------------------------------------------------------------
+r306 | heavenshell | 2009-01-03 17:31:49 +0900 (土, 03  1月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r305 | openpear | 2009-01-03 16:47:01 +0900 (土, 03  1月 2009) | 1 line
+
+[Create Base Directory] Net_URL_Dispatcher
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="e36965d7b7180b05167f93ab9cd4c727" name="Net/URL/Dispatcher/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="c01bece6d31eb7476ca5f0083c181d6a" name="Net/URL/Dispatcher/Action.php" role="php" />
+   <file baseinstalldir="/" md5sum="3b383207976c27fec01c9c23c4b942c0" name="Net/URL/Dispatcher/Controller.php" role="php" />
+   <file baseinstalldir="/" md5sum="762205270e8d53d14badabe83f0d716f" name="Net/URL/Dispatcher/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="a590eda4be95ccce217341f91131b958" name="Net/URL/Dispatcher.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-08-08</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r1997 | heavenshell | 2010-08-08 00:12:14 +0900 (日, 08  8月 2010) | 1 line
+
+Delete PHPSpec files
+------------------------------------------------------------------------
+r1996 | heavenshell | 2010-08-08 00:11:54 +0900 (日, 08  8月 2010) | 1 line
+
+Add PHPUnit files
+------------------------------------------------------------------------
+r1995 | heavenshell | 2010-08-08 00:10:07 +0900 (日, 08  8月 2010) | 1 line
+
+Add enable to change controller/action directory name
+------------------------------------------------------------------------
+r1994 | heavenshell | 2010-08-08 00:09:44 +0900 (日, 08  8月 2010) | 1 line
+
+Add enable to change controller/action directory name
+------------------------------------------------------------------------
+r1990 | heavenshell | 2010-08-06 00:43:48 +0900 (金, 06  8月 2010) | 1 line
+
+Change PHPSpec to PHPUnit
+------------------------------------------------------------------------
+r1485 | heavenshell | 2010-01-01 15:06:18 +0900 (金, 01  1月 2010) | 1 line
+
+Upgrade copyright 2009 to 2009-2010
+------------------------------------------------------------------------
+r1483 | heavenshell | 2010-01-01 14:25:12 +0900 (金, 01  1月 2010) | 1 line
+
+Update copyright
+------------------------------------------------------------------------
+r1110 | heavenshell | 2009-08-16 00:49:42 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r334 | heavenshell | 2009-01-10 22:52:44 +0900 (土, 10  1月 2009) | 1 line
+
+Modify header comment
+------------------------------------------------------------------------
+r323 | heavenshell | 2009-01-07 22:32:43 +0900 (水, 07  1月 2009) | 1 line
+
+Add ChangeLog
+------------------------------------------------------------------------
+r322 | heavenshell | 2009-01-07 22:31:48 +0900 (水, 07  1月 2009) | 1 line
+
+add __call
+------------------------------------------------------------------------
+r306 | heavenshell | 2009-01-03 17:31:49 +0900 (土, 03  1月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r305 | openpear | 2009-01-03 16:47:01 +0900 (土, 03  1月 2009) | 1 line
+
+[Create Base Directory] Net_URL_Dispatcher
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

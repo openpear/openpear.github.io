@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>NorfDocTest</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>MIT Licence</l>
+<s>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</s>
+<d>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</d>
+<r xlink:href="/rest/r/norfdoctest" />
+</p>

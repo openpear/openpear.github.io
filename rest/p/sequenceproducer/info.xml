@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>SequenceProducer</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>連続した整数を順に返すイテレータ。コンストラクタ第二引数を省略すると無限に動作します。</s>
+<d>連続した整数を順に返すイテレータ。コンストラクタ第二引数を省略すると無限に動作します。</d>
+<r xlink:href="/rest/r/sequenceproducer" />
+</p>

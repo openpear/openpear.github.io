@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Wozozo_Saigoppe</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>最後っ屁をかまします。
+
+Usage:
+
+new Wozozo_Saigoppe(); //デフォルトの最後っ屁を登録
+new Wozozo_Saigoppe('ブリブリ'); // 擬音を指定して登録
+new Wozozo_Saigoppe('poot!', false); // 顔文字を無効に</s>
+<d>最後っ屁をかまします。
+
+Usage:
+
+new Wozozo_Saigoppe(); //デフォルトの最後っ屁を登録
+new Wozozo_Saigoppe('ブリブリ'); // 擬音を指定して登録
+new Wozozo_Saigoppe('poot!', false); // 顔文字を無効に</d>
+<r xlink:href="/rest/r/wozozo_saigoppe" />
+</p>

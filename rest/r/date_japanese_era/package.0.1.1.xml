@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Date_Japanese_Era</name>
+ <channel>openpear.org</channel>
+ <summary>和暦変換をするライブラリです。
+Peal の Date::Japanese::Era をポーティングしたもの。
+
+&gt;||
+&lt;?php
+$era = new Date_Japanese_Era(array(2009, 7, 11));
+echo $era-&gt;name; // 平成
+echo $era-&gt;gengou; // name のエイリアス
+echo $era-&gt;year;   // 21
+echo $era-&gt;nameAscii; // heisei
+
+$era = new Date_Japanese_Era(array(&apos;平成&apos;, 21));
+echo $era-&gt;gregorianYear; // 2009
+||&lt;</summary>
+ <description>和暦変換をするライブラリです。
+Peal の Date::Japanese::Era をポーティングしたもの。
+
+&gt;||
+&lt;?php
+$era = new Date_Japanese_Era(array(2009, 7, 11));
+echo $era-&gt;name; // 平成
+echo $era-&gt;gengou; // name のエイリアス
+echo $era-&gt;year;   // 21
+echo $era-&gt;nameAscii; // heisei
+
+$era = new Date_Japanese_Era(array(&apos;平成&apos;, 21));
+echo $era-&gt;gregorianYear; // 2009
+||&lt;</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-21</date>
+ <time>17:00:03</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r2071 | heavenshell | 2010-08-21 16:46:46 +0900 (土, 21  8月 2010) | 1 line
+
+Fix Undefined index notice.
+------------------------------------------------------------------------
+r1482 | heavenshell | 2010-01-01 13:18:15 +0900 (金, 01  1月 2010) | 1 line
+
+Change copyright
+------------------------------------------------------------------------
+r1109 | heavenshell | 2009-08-16 00:25:28 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r1022 | heavenshell | 2009-07-19 11:30:39 +0900 (日, 19  7月 2009) | 1 line
+
+Delete debug print...
+------------------------------------------------------------------------
+r1018 | heavenshell | 2009-07-18 22:55:25 +0900 (土, 18  7月 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r1017 | openpear | 2009-07-18 22:45:24 +0900 (土, 18  7月 2009) | 1 line
+
+[Create Base Directory] Date_Japanese_Era
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="21352eace79a120ae56cf3231e51935e" name="Date/Japanese/Era/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="1576136e78392da8b55cef4981c763fd" name="Date/Japanese/Era/Table.php" role="php" />
+   <file baseinstalldir="/" md5sum="a83a688bc4f1db61c1d0bfc4c0eb5f74" name="Date/Japanese/Era.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-08-21</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r2071 | heavenshell | 2010-08-21 16:46:46 +0900 (土, 21  8月 2010) | 1 line
+
+Fix Undefined index notice.
+------------------------------------------------------------------------
+r1482 | heavenshell | 2010-01-01 13:18:15 +0900 (金, 01  1月 2010) | 1 line
+
+Change copyright
+------------------------------------------------------------------------
+r1109 | heavenshell | 2009-08-16 00:25:28 +0900 (日, 16  8月 2009) | 1 line
+
+Edit header comment
+------------------------------------------------------------------------
+r1022 | heavenshell | 2009-07-19 11:30:39 +0900 (日, 19  7月 2009) | 1 line
+
+Delete debug print...
+------------------------------------------------------------------------
+r1018 | heavenshell | 2009-07-18 22:55:25 +0900 (土, 18  7月 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r1017 | openpear | 2009-07-18 22:45:24 +0900 (土, 18  7月 2009) | 1 line
+
+[Create Base Directory] Date_Japanese_Era
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

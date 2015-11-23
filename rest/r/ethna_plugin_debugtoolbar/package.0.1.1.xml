@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Ethna_Plugin_Debugtoolbar</name>
+ <channel>openpear.org</channel>
+ <summary>Ethna Debugtoolbar Plugin</summary>
+ <description>Ethna Debugtoolbar Plugin</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-07-03</date>
+ <time>11:27:50</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r996 | sotarok | 2009-07-03 11:26:41 -0700 (Fri, 03 Jul 2009) | 1 line
+
+ delete directory
+------------------------------------------------------------------------
+r995 | sotarok | 2009-07-03 11:26:07 -0700 (Fri, 03 Jul 2009) | 1 line
+
+ move directory
+------------------------------------------------------------------------
+r993 | sotarok | 2009-07-03 10:47:38 -0700 (Fri, 03 Jul 2009) | 1 line
+
+import Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------
+r992 | openpear | 2009-07-03 10:45:05 -0700 (Fri, 03 Jul 2009) | 1 line
+
+[Create Base Directory] Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Ethna/extlib" name="/">
+   <file baseinstalldir="/Ethna/extlib" md5sum="921725cd48eff72778fbd0fb00c38c3e" name="data/www/css/ether.css" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="64bfcded907c16614dbf9f320e25bbc2" name="data/www/images/ethna-debug-switch-Config.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="31883e80b7f0b3249071342c9712f164" name="data/www/images/ethna-debug-switch-Ethna.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="757aa607cbcd1616ced5a336e56b0e6c" name="data/www/images/ethna-debug-switch-EthnaClose.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="16396934e61d9a0ca091bbf8effe73dd" name="data/www/images/ethna-debug-switch-Info.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="e8a3e8bd06a7203b5e688222ea530165" name="data/www/images/ethna-debug-switch-Log.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="cee9b9f6395715bb4df6962c3dcc486e" name="data/www/images/ethna-debug-switch-Smarty.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="b139ed675fdbdca56f0d73121f36f836" name="data/www/images/ethna-debug-switch-Timer.png" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="35845bb28b78c5ede96a8aed3abf2d0a" name="data/www/js/ether.js" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="384772142d1907d7d3aea3ac11fad9d0" name="data/www/js/jquery.cookie.js" role="data" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="a9f088818cd221c28fb75613c344fe8c" name="Plugin/Filter/Debugtoolbar.php" role="php" />
+   <file baseinstalldir="/Ethna/extlib" md5sum="50a3ec29b3c1894bff91f808c2261735" name="Plugin/Logwriter/Debugtoolbar.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>ethna</name>
+    <channel>pear.ethna.jp</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-07-03</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r996 | sotarok | 2009-07-03 11:26:41 -0700 (Fri, 03 Jul 2009) | 1 line
+
+ delete directory
+------------------------------------------------------------------------
+r995 | sotarok | 2009-07-03 11:26:07 -0700 (Fri, 03 Jul 2009) | 1 line
+
+ move directory
+------------------------------------------------------------------------
+r993 | sotarok | 2009-07-03 10:47:38 -0700 (Fri, 03 Jul 2009) | 1 line
+
+import Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------
+r992 | openpear | 2009-07-03 10:45:05 -0700 (Fri, 03 Jul 2009) | 1 line
+
+[Create Base Directory] Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

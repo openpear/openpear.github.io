@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wikihub">WikiHub</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>The MIT License</l>
+    <m>sotarok</m>
+    <s>WikiHub preview command.
+
+-WikiHub - [http://wikihub.org]</s>
+    <d>WikiHub preview command.
+
+-WikiHub - [http://wikihub.org]</d>
+    <da>2009-10-20 01:34:03</da>
+    <n>
+------------------------------------------------------------------------
+r1353 | sotarok | 2009-10-20 01:31:29 +0900 (火, 20 10月 2009) | 1 line
+
+add source
+------------------------------------------------------------------------
+r1352 | openpear | 2009-10-20 01:09:02 +0900 (火, 20 10月 2009) | 1 line
+
+[New Package] WikiHub
+------------------------------------------------------------------------
+ </n>
+    <f>2357</f>
+    <g>http://openpear.org/get/WikiHub-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

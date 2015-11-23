@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Auth_Kitten</name>
+ <channel>openpear.org</channel>
+ <summary>こねこでコメントスパムを防ぐライブラリ</summary>
+ <description>こねこでコメントスパムを防ぐライブラリ</description>
+ <lead>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-10</date>
+ <time>02:18:04</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1319 | halt | 2009-10-10 02:17:14 +0900 (土, 10 10月 2009) | 1 line
+
+@authorとかダサスwww
+------------------------------------------------------------------------
+r1318 | halt | 2009-10-10 02:16:32 +0900 (土, 10 10月 2009) | 1 line
+
+@authorとかダサスwww
+------------------------------------------------------------------------
+r1317 | halt | 2009-10-10 02:15:38 +0900 (土, 10 10月 2009) | 1 line
+
+added example
+------------------------------------------------------------------------
+r1315 | halt | 2009-10-10 02:11:23 +0900 (土, 10 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1314 | halt | 2009-10-10 02:10:43 +0900 (土, 10 10月 2009) | 1 line
+
+added test dir
+------------------------------------------------------------------------
+r1313 | openpear | 2009-10-10 02:08:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] Auth_Kitten
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="eaa00c667eed1abda74618189b0e592f" name="Auth/Kitten/images/kitten/simeji1.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="9c2705e041367a82cd9002920da58519" name="Auth/Kitten/images/kitten/simeji2.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="08946ece84179a75356bae4cea3ed523" name="Auth/Kitten/images/kitten/simeji3.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="112097e6575575d7ea8ee663eb65995a" name="Auth/Kitten/images/kitten/simeji4.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="799f1d79c062a9f7151620a2597c555a" name="Auth/Kitten/images/kitten/simeji5.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="3d535013e94c7c347ffbcd996ceeecae" name="Auth/Kitten/images/kitten/simeji6.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="506b12079035e0aecf13599d1e547c7d" name="Auth/Kitten/images/kitten/simeji7.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="c578b59f48b9a84b2e68f41f99bc1203" name="Auth/Kitten/images/kitten/simeji8.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="efd9cbae931c6727dd8cde59553e64b7" name="Auth/Kitten/images/kitten/simeji9.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="afa196318dafe1a0c2d5886d366e6df2" name="Auth/Kitten/images/other/114635144_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="c495ee7186216832d6ae320786836410" name="Auth/Kitten/images/other/143444434_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="cf0082c6892a46b5292e53c91e6d1eef" name="Auth/Kitten/images/other/164512122_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="6698fd63f727de6ac74c7eab95a2b95c" name="Auth/Kitten/images/other/236333123_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="9491e72d170548b953aaefe80f9d7565" name="Auth/Kitten/images/other/244522314_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="e1bb5616b63299a3867fcab0a0b70162" name="Auth/Kitten/images/other/251442615_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="5cf3069e1c4bd7ea53cbbde8286d59fb" name="Auth/Kitten/images/other/253555163_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="e07b4c41948a044fe378bc3c449bcfd1" name="Auth/Kitten/images/other/325222132_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="20a23bfca443bd51061481efb4f4ae20" name="Auth/Kitten/images/other/436524441_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="36d87ca4c969f4edecff72e7b5e70acf" name="Auth/Kitten/images/other/552233652_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="fda143461d59d7ac417796c6b3f115a3" name="Auth/Kitten/images/other/651621263_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="045b317a868193b4b21d571aa1621a00" name="Auth/Kitten/images/other/653143644_tb.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="e784eb2f0c98bfbea02c036a84099347" name="Auth/Kitten/images/error.jpg" role="data" />
+   <file baseinstalldir="/" md5sum="d2fea27ab6af031f39867356886fa0f6" name="Auth/Kitten.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.11</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-10-10</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1319 | halt | 2009-10-10 02:17:14 +0900 (土, 10 10月 2009) | 1 line
+
+@authorとかダサスwww
+------------------------------------------------------------------------
+r1318 | halt | 2009-10-10 02:16:32 +0900 (土, 10 10月 2009) | 1 line
+
+@authorとかダサスwww
+------------------------------------------------------------------------
+r1317 | halt | 2009-10-10 02:15:38 +0900 (土, 10 10月 2009) | 1 line
+
+added example
+------------------------------------------------------------------------
+r1315 | halt | 2009-10-10 02:11:23 +0900 (土, 10 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1314 | halt | 2009-10-10 02:10:43 +0900 (土, 10 10月 2009) | 1 line
+
+added test dir
+------------------------------------------------------------------------
+r1313 | openpear | 2009-10-10 02:08:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] Auth_Kitten
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

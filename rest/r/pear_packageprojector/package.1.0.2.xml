@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PEAR_PackageProjector</name>
+ <channel>openpear.org</channel>
+ <summary>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</summary>
+ <description>PEARパッケージを簡単に作成するためのスクリプトです。
+使い方は、新ドキュメント
+http://servlet.sakura.ne.jp/PEAR_PackageProjector/doc/
+を参照してくださいな。
+
+openpearからインストールできるようになりました。
+以降、管理はopenpear移ろうかと思います。</description>
+ <lead>
+  <name>坂本弘一</name>
+  <user>sakamoto</user>
+  <email>sakamoto@servlet.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-29</date>
+ <time>02:57:04</time>
+ <version>
+  <release>1.0.2</release>
+  <api>1.0.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1588 | sakamoto | 2010-01-29 02:53:19 +0900 (金, 29  1月 2010) | 1 line
+
+bug fix ignore role option when role target is directory. 
+------------------------------------------------------------------------
+r874 | sakamoto | 2009-05-24 18:10:25 +0900 (日, 24  5月 2009) | 2 lines
+
+- update pearproj.sh. To support old project
+
+------------------------------------------------------------------------
+r872 | sakamoto | 2009-05-24 15:21:56 +0900 (日, 24  5月 2009) | 1 line
+
+- bug fixed PEAR_PackageProjector_Document#setStylesheet
+------------------------------------------------------------------------
+r870 | sakamoto | 2009-05-24 15:12:12 +0900 (日, 24  5月 2009) | 1 line
+
+- change 1.0.0-alpha -&gt; 1.0.0-stable
+------------------------------------------------------------------------
+r869 | sakamoto | 2009-05-24 14:21:49 +0900 (日, 24  5月 2009) | 2 lines
+
+- update tutorial.txt
+
+------------------------------------------------------------------------
+r868 | sakamoto | 2009-05-24 14:05:08 +0900 (日, 24  5月 2009) | 4 lines
+
+- update pearproj command
+- update tutorial.txt
+- update document
+- update build.php
+------------------------------------------------------------------------
+r867 | sakamoto | 2009-05-24 12:57:03 +0900 (日, 24  5月 2009) | 2 lines
+
+- add document files
+
+------------------------------------------------------------------------
+r865 | sakamoto | 2009-05-23 16:48:35 +0900 (土, 23  5月 2009) | 7 lines
+
+- add Class PEAR_PackageProjector_MessageHandler_Callback
+- support array data in PEAR_PackageProjector_Project#configure
+- add method PEAR_PackageProjector_Project#serialize()
+- add method PEAR_PackageProjector_Project#unserialize()
+- remove command option &quot;--clear&quot;
+- remove command option &quot;--tmp&quot;
+
+------------------------------------------------------------------------
+r864 | sakamoto | 2009-05-23 00:28:36 +0900 (土, 23  5月 2009) | 8 lines
+
+- add method updatedoc()
+- add method pearinstall()
+- add command option --updatedoc(-doc)
+- add command option --install(-i)
+- change default of command option --project(-p) is &quot;./&quot;
+- change default of command option --config(-confg) is &quot;build.conf&quot;
+- change enter of create file is &quot;\n&quot; to PHP_EOL;
+
+------------------------------------------------------------------------
+r862 | sakamoto | 2009-05-21 07:25:14 +0900 (木, 21  5月 2009) | 1 line
+
+- fixed changelog.
+------------------------------------------------------------------------
+r860 | sakamoto | 2009-05-21 07:09:50 +0900 (木, 21  5月 2009) | 1 line
+
+add PEAR_PackageFileManager_Plugins to required packages list 
+------------------------------------------------------------------------
+r858 | sakamoto | 2009-05-20 23:15:29 +0900 (水, 20  5月 2009) | 4 lines
+
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+- update build.bat. when you build, release/PEAR_PackageProjector-x.x.x.tgz is installed.
+
+------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 19:52:22 +0900 (土, 16  5月 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r833 | mumumu | 2009-05-16 18:25:59 +0900 (土, 16  5月 2009) | 2 lines
+
+- added documentation description for new version.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 18:25:12 +0900 (土, 16  5月 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r831 | mumumu | 2009-05-16 18:24:15 +0900 (土, 16  5月 2009) | 5 lines
+
+- commented out checkcode() routine because of PEAR_PackageFileManager2#addReplacement glob routine.
+ 1.-視されます --
+
+M    build.php
+
+------------------------------------------------------------------------
+r830 | mumumu | 2009-05-16 18:22:23 +0900 (土, 16  5月 2009) | 2 lines
+
+- added new version package.
+
+------------------------------------------------------------------------
+r829 | mumumu | 2009-05-16 18:21:47 +0900 (土, 16  5月 2009) | 2 lines
+
+- changed setting for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-16 12:02:35 +0900 (土, 16  5月 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-16 11:47:03 +0900 (土, 16  5月 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 17:17:49 +0900 (土, 27 12月 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r283 | openpear | 2008-12-27 16:39:18 +0900 (土, 27 12月 2008) | 1 line
+
+[Create Base Directory] PEAR_PackageProjector
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="5c901547a575de104d4c34ff787b54ea" name="PEAR/PackageProjector/Configure/Dependency.php" role="php" />
+   <file baseinstalldir="/" md5sum="35af82256811934e49ee02cd7dd1651c" name="PEAR/PackageProjector/Configure/Document.php" role="php" />
+   <file baseinstalldir="/" md5sum="ddfacefcdac60b1a180bbefa2f3aa25b" name="PEAR/PackageProjector/Configure/File.php" role="php" />
+   <file baseinstalldir="/" md5sum="86f8043af84618a0f2887488b2994840" name="PEAR/PackageProjector/Configure/Installer.php" role="php" />
+   <file baseinstalldir="/" md5sum="6032e594d25023421f2148492d7e1077" name="PEAR/PackageProjector/Configure/License.php" role="php" />
+   <file baseinstalldir="/" md5sum="6dc006088a73c9a2c137ff57f593ce0a" name="PEAR/PackageProjector/Configure/Maintainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="19300647cd8dcff1dfbf709a96538216" name="PEAR/PackageProjector/Configure/Package.php" role="php" />
+   <file baseinstalldir="/" md5sum="da38d70578ceef210d2ebd3588bfcede" name="PEAR/PackageProjector/Configure/Project.php" role="php" />
+   <file baseinstalldir="/" md5sum="40fb8a31b1da343eb303ffe1a9025f78" name="PEAR/PackageProjector/Configure/Role.php" role="php" />
+   <file baseinstalldir="/" md5sum="1f11e84594c6fc00be04708212980156" name="PEAR/PackageProjector/Configure/Version.php" role="php" />
+   <file baseinstalldir="/" md5sum="edbe75510b7c40f42b11ba53a4e0e705" name="PEAR/PackageProjector/DirectoryEntry/Directory.php" role="php" />
+   <file baseinstalldir="/" md5sum="95be33a4a1c6f044fc5b7706a3061429" name="PEAR/PackageProjector/DirectoryEntry/File.php" role="php" />
+   <file baseinstalldir="/" md5sum="680371659d70fc203e474d351e677081" name="PEAR/PackageProjector/DirectoryEntry/Root.php" role="php" />
+   <file baseinstalldir="/" md5sum="e699ce8bed9c55e7663c8ce8acde9ffc" name="PEAR/PackageProjector/MessageHandler/Callback.php" role="php" />
+   <file baseinstalldir="/" md5sum="57b46becd37156ad3eedbf471841a723" name="PEAR/PackageProjector/MessageHandler/Echo.php" role="php" />
+   <file baseinstalldir="/" md5sum="0f870c3aed2aa01514f0c2505360f3d2" name="PEAR/PackageProjector/ProjectInfo/APIVersion.php" role="php" />
+   <file baseinstalldir="/" md5sum="0ac1d4214fcba5880deac906af354767" name="PEAR/PackageProjector/ProjectInfo/Attribute.php" role="php" />
+   <file baseinstalldir="/" md5sum="4da45fd1c28bc4092447fc75749d6d41" name="PEAR/PackageProjector/ProjectInfo/AttributeManager.php" role="php" />
+   <file baseinstalldir="/" md5sum="4a8fd9f7c59756606de2c578dd13d481" name="PEAR/PackageProjector/ProjectInfo/BaseInstallDir.php" role="php" />
+   <file baseinstalldir="/" md5sum="ca9fe071a2f244af6f4f5dfdb17496e6" name="PEAR/PackageProjector/ProjectInfo/Channel.php" role="php" />
+   <file baseinstalldir="/" md5sum="db66c0dcf08b6ef419d7c7032b02f3c3" name="PEAR/PackageProjector/ProjectInfo/Dependencies.php" role="php" />
+   <file baseinstalldir="/" md5sum="dda11d1b580e21357d7824214a20be69" name="PEAR/PackageProjector/ProjectInfo/Dependency.php" role="php" />
+   <file baseinstalldir="/" md5sum="e8a7800295e397ee2bca7b3ade26f9b1" name="PEAR/PackageProjector/ProjectInfo/Description.php" role="php" />
+   <file baseinstalldir="/" md5sum="aef75c26d8dc70d05f87c9c6f2d70c8f" name="PEAR/PackageProjector/ProjectInfo/InstallGroup.php" role="php" />
+   <file baseinstalldir="/" md5sum="8453c6e1ef2a96a82b59d3cec61ec0e9" name="PEAR/PackageProjector/ProjectInfo/InstallGroups.php" role="php" />
+   <file baseinstalldir="/" md5sum="f845a48038a2e334ea6f6a5f8b539d32" name="PEAR/PackageProjector/ProjectInfo/InstallParam.php" role="php" />
+   <file baseinstalldir="/" md5sum="0adc6dd34420e3f23e71acece9b300a3" name="PEAR/PackageProjector/ProjectInfo/License.php" role="php" />
+   <file baseinstalldir="/" md5sum="616a47162019a2e9b9a3564148d11a5e" name="PEAR/PackageProjector/ProjectInfo/Maintainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="99f503067a98c34e9f9bd8a631b7729c" name="PEAR/PackageProjector/ProjectInfo/Maintainers.php" role="php" />
+   <file baseinstalldir="/" md5sum="48b863e670f682ca32a850881dc8c5ab" name="PEAR/PackageProjector/ProjectInfo/Notes.php" role="php" />
+   <file baseinstalldir="/" md5sum="96ca6c7d0d4f5a7cbd21d91390fc8bef" name="PEAR/PackageProjector/ProjectInfo/PackageName.php" role="php" />
+   <file baseinstalldir="/" md5sum="bef9df9bca7c29bb7594fec63480562e" name="PEAR/PackageProjector/ProjectInfo/PackageType.php" role="php" />
+   <file baseinstalldir="/" md5sum="39dad6bb5de7686f8371b06decb841d1" name="PEAR/PackageProjector/ProjectInfo/PearinstallerDep.php" role="php" />
+   <file baseinstalldir="/" md5sum="020dce2b61bfcd303022eee23d0437f3" name="PEAR/PackageProjector/ProjectInfo/PhpDep.php" role="php" />
+   <file baseinstalldir="/" md5sum="7ce9b8ca7acf6d7e5925c2dc1a050263" name="PEAR/PackageProjector/ProjectInfo/ReleaseVersion.php" role="php" />
+   <file baseinstalldir="/" md5sum="d4cc80209f2712934c298a0238b0e386" name="PEAR/PackageProjector/ProjectInfo/Role.php" role="php" />
+   <file baseinstalldir="/" md5sum="350e7e08fddc83057e4b1257a37a26ea" name="PEAR/PackageProjector/ProjectInfo/Roles.php" role="php" />
+   <file baseinstalldir="/" md5sum="0b19d5a6b4fcd85fbe53cd5d1ce08d3b" name="PEAR/PackageProjector/ProjectInfo/Summary.php" role="php" />
+   <file baseinstalldir="/" md5sum="08839edd1551d6db0bac044ef81726b8" name="PEAR/PackageProjector/Configure.php" role="php" />
+   <file baseinstalldir="/" md5sum="e2240eaa5d034edd23c293f53433f19e" name="PEAR/PackageProjector/ConfigureManeger.php" role="php" />
+   <file baseinstalldir="/" md5sum="e8c8b20fc74dc00f6bfb028fe0c32969" name="PEAR/PackageProjector/Derictory.php" role="php" />
+   <file baseinstalldir="/" md5sum="3e3542219555608e624178144854d892" name="PEAR/PackageProjector/DirectoryEntry.php" role="php" />
+   <file baseinstalldir="/" md5sum="929cc5cb0e3a35768025591ae66f780e" name="PEAR/PackageProjector/Document.php" role="php" />
+   <file baseinstalldir="/" md5sum="4a586285e86673ae673e84db03f52781" name="PEAR/PackageProjector/MessageHandler.php" role="php" />
+   <file baseinstalldir="/" md5sum="00b281bbd682d977181e267fb79ce63e" name="PEAR/PackageProjector/Package.php" role="php" />
+   <file baseinstalldir="/" md5sum="11a38249b4eb7bc34be1efade564b00c" name="PEAR/PackageProjector/Packager.php" role="php" />
+   <file baseinstalldir="/" md5sum="ba08746a98b6969ea37190ee4c710b6d" name="PEAR/PackageProjector/Project.php" role="php" />
+   <file baseinstalldir="/" md5sum="8581c9990af7ff39dc6d4aa1a2cf1b7c" name="PEAR/PackageProjector/ProjectInfo.php" role="php" />
+   <file baseinstalldir="/" md5sum="523c816bd3b8f1d11a57b8f14d50c069" name="PEAR/PackageProjector/Visitor.php" role="php" />
+   <file baseinstalldir="/" md5sum="9601bc58e2a75a69485d923f0250aa1e" name="PEAR/PackageProjector.php" role="php" />
+   <file baseinstalldir="/" md5sum="134f6dc391e3e3495b10d51c9953fdff" name="scripts/pearproj.bat" role="data" />
+   <file baseinstalldir="/" md5sum="3fa673df03d9cb8920e0fce36d946977" name="scripts/pearproj.sh" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.3</release>
+    <api>0.1.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-01-18</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-05-20</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>0.2.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-21</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.2.2]
+- add PEAR_PackageFileManager_Plugins to required packages list 
+
+[0.2.1]
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>0.2.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-21</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.2.2]
+- add PEAR_PackageFileManager_Plugins to required packages list 
+
+[0.2.1]
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3.0</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-22</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[0.2.2]
+- add PEAR_PackageFileManager_Plugins to required packages list 
+
+[0.2.1]
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-24</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[1.0.0]
+- add method PEAR_PackageProjector_Project#updatedoc()
+- add method PEAR_PackageProjector_Project#pearinstall()
+- add command option --updatedoc(-doc)
+- add command option --install(-i)
+- change default of command option --project(-p) is &quot;./&quot;
+- change default of command option --config(-confg) is &quot;build.conf&quot;
+- change enter of create file is &quot;\n&quot; to PHP_EOL;
+- add Class PEAR_PackageProjector_MessageHandler_Callback
+- support array data in PEAR_PackageProjector_Project#configure
+- add method PEAR_PackageProjector_Project#serialize()
+- add method PEAR_PackageProjector_Project#unserialize()
+- remove command option &quot;--clear&quot;
+- remove command option &quot;--tmp&quot;
+- add document files
+
+[0.2.2]
+- add PEAR_PackageFileManager_Plugins to required packages list 
+
+[0.2.1]
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-24</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+[1.0.1]
+- update pearproj.sh. To support old project
+
+[1.0.0]
+- add method PEAR_PackageProjector_Project#updatedoc()
+- add method PEAR_PackageProjector_Project#pearinstall()
+- add command option --updatedoc(-doc)
+- add command option --install(-i)
+- change default of command option --project(-p) is &quot;./&quot;
+- change default of command option --config(-confg) is &quot;build.conf&quot;
+- change enter of create file is &quot;\n&quot; to PHP_EOL;
+- add Class PEAR_PackageProjector_MessageHandler_Callback
+- support array data in PEAR_PackageProjector_Project#configure
+- add method PEAR_PackageProjector_Project#serialize()
+- add method PEAR_PackageProjector_Project#unserialize()
+- remove command option &quot;--clear&quot;
+- remove command option &quot;--tmp&quot;
+- add document files
+
+[0.2.2]
+- add PEAR_PackageFileManager_Plugins to required packages list 
+
+[0.2.1]
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+
+[0.2.0]
+- fixed bug getcwd() routine could not get current directory.
+- followed PEAR 1.8.0 API changes. 
+-- PEAR_PackageFileManager2::exportCompatiblePackageFile1 was deleted.
+- replaced Dependency PEAR_PackageFileManager with PEAR_PackageFileManager2.
+
+[0.1.3]
+- Add command option &quot;--tmp&quot; that use temporary directory for .pearproject file.
+- Change _createProject() because it doesn&apos;t make README.TXT. And Base class is made automatically. 
+- When create project directory.  Sample script was generated on the project directory. 
+- Fixed bug in INI value A is disregarded.
+
+[0.1.2]
+- Support unix
+- Support absolute path on ini file.
+- The installer can be made.
+- The project source directory can be changed. 
+- The project Release directory can be changed. 
+- When create project directory.  Build script was generated on the project directory. 
+- When configure project. .pearproject is cleared.
+- The project directory name is set to package_name on build.conf. And the directory matched to the project directory name is made right under the source directory. 
+
+[0.1.1]
+- Add required dependency package &quot;pear.php.net/Console_Getargs&quot;
+- Add required dependency package &quot;pear.php.net/PEAR_PackageFileManager&quot;
+- Add message to create package2.xml
+- The error that occurs when package2.xml is created is displayed.
+- The description format of Maintener is changed to [maintainer://&lt;handlename&gt;] format.
+- The base directory of summary_file, description_file, and notes_file became a directory with config file.
+[0.1.0]
+- First release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-01-29</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1588 | sakamoto | 2010-01-29 02:53:19 +0900 (金, 29  1月 2010) | 1 line
+
+bug fix ignore role option when role target is directory. 
+------------------------------------------------------------------------
+r874 | sakamoto | 2009-05-24 18:10:25 +0900 (日, 24  5月 2009) | 2 lines
+
+- update pearproj.sh. To support old project
+
+------------------------------------------------------------------------
+r872 | sakamoto | 2009-05-24 15:21:56 +0900 (日, 24  5月 2009) | 1 line
+
+- bug fixed PEAR_PackageProjector_Document#setStylesheet
+------------------------------------------------------------------------
+r870 | sakamoto | 2009-05-24 15:12:12 +0900 (日, 24  5月 2009) | 1 line
+
+- change 1.0.0-alpha -&gt; 1.0.0-stable
+------------------------------------------------------------------------
+r869 | sakamoto | 2009-05-24 14:21:49 +0900 (日, 24  5月 2009) | 2 lines
+
+- update tutorial.txt
+
+------------------------------------------------------------------------
+r868 | sakamoto | 2009-05-24 14:05:08 +0900 (日, 24  5月 2009) | 4 lines
+
+- update pearproj command
+- update tutorial.txt
+- update document
+- update build.php
+------------------------------------------------------------------------
+r867 | sakamoto | 2009-05-24 12:57:03 +0900 (日, 24  5月 2009) | 2 lines
+
+- add document files
+
+------------------------------------------------------------------------
+r865 | sakamoto | 2009-05-23 16:48:35 +0900 (土, 23  5月 2009) | 7 lines
+
+- add Class PEAR_PackageProjector_MessageHandler_Callback
+- support array data in PEAR_PackageProjector_Project#configure
+- add method PEAR_PackageProjector_Project#serialize()
+- add method PEAR_PackageProjector_Project#unserialize()
+- remove command option &quot;--clear&quot;
+- remove command option &quot;--tmp&quot;
+
+------------------------------------------------------------------------
+r864 | sakamoto | 2009-05-23 00:28:36 +0900 (土, 23  5月 2009) | 8 lines
+
+- add method updatedoc()
+- add method pearinstall()
+- add command option --updatedoc(-doc)
+- add command option --install(-i)
+- change default of command option --project(-p) is &quot;./&quot;
+- change default of command option --config(-confg) is &quot;build.conf&quot;
+- change enter of create file is &quot;\n&quot; to PHP_EOL;
+
+------------------------------------------------------------------------
+r862 | sakamoto | 2009-05-21 07:25:14 +0900 (木, 21  5月 2009) | 1 line
+
+- fixed changelog.
+------------------------------------------------------------------------
+r860 | sakamoto | 2009-05-21 07:09:50 +0900 (木, 21  5月 2009) | 1 line
+
+add PEAR_PackageFileManager_Plugins to required packages list 
+------------------------------------------------------------------------
+r858 | sakamoto | 2009-05-20 23:15:29 +0900 (水, 20  5月 2009) | 4 lines
+
+- support PEAR_PackageFileManager2#addReplacement. And it can make command line.
+- can use checkcode().
+- update build.bat. when you build, release/PEAR_PackageProjector-x.x.x.tgz is installed.
+
+------------------------------------------------------------------------
+r834 | mumumu | 2009-05-16 19:52:22 +0900 (土, 16  5月 2009) | 2 lines
+
+- fixed changelog.
+
+------------------------------------------------------------------------
+r833 | mumumu | 2009-05-16 18:25:59 +0900 (土, 16  5月 2009) | 2 lines
+
+- added documentation description for new version.
+
+------------------------------------------------------------------------
+r832 | mumumu | 2009-05-16 18:25:12 +0900 (土, 16  5月 2009) | 2 lines
+
+- replaced with generated xml for new version.
+
+------------------------------------------------------------------------
+r831 | mumumu | 2009-05-16 18:24:15 +0900 (土, 16  5月 2009) | 5 lines
+
+- commented out checkcode() routine because of PEAR_PackageFileManager2#addReplacement glob routine.
+ 1.-視されます --
+
+M    build.php
+
+------------------------------------------------------------------------
+r830 | mumumu | 2009-05-16 18:22:23 +0900 (土, 16  5月 2009) | 2 lines
+
+- added new version package.
+
+------------------------------------------------------------------------
+r829 | mumumu | 2009-05-16 18:21:47 +0900 (土, 16  5月 2009) | 2 lines
+
+- changed setting for new version.
+
+------------------------------------------------------------------------
+r826 | mumumu | 2009-05-16 12:02:35 +0900 (土, 16  5月 2009) | 3 lines
+
+- followed PEAR update which requires PEAR Package version 2.0 only.
+-- requires PEAR 1.8.0 or higher.
+
+------------------------------------------------------------------------
+r825 | mumumu | 2009-05-16 11:47:03 +0900 (土, 16  5月 2009) | 3 lines
+
+- fixed Undefined Index E-NOTICE
+- http://www.phppro.jp/phptips/archives/vol42/2
+
+------------------------------------------------------------------------
+r284 | sakamoto | 2008-12-27 17:17:49 +0900 (土, 27 12月 2008) | 1 line
+
+first commit
+------------------------------------------------------------------------
+r283 | openpear | 2008-12-27 16:39:18 +0900 (土, 27 12月 2008) | 1 line
+
+[Create Base Directory] PEAR_PackageProjector
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

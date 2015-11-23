@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_zenra">Wozozo_Zenra</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.3.0</mp>
+    <st>beta</st>
+    <l>New BSD License</l>
+    <m>heavenshell</m>
+    <s>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array('appid' =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空きました'); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array(
+    'appid'    =&gt; $appid,
+    'position' =&gt; '名詞',
+    'text'     =&gt; '夜の'
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空いたのでスパゲッティが食べたい');
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer's application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</s>
+    <d>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array('appid' =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空きました'); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array(
+    'appid'    =&gt; $appid,
+    'position' =&gt; '名詞',
+    'text'     =&gt; '夜の'
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空いたのでスパゲッティが食べたい');
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer's application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</d>
+    <da>2010-11-24 23:09:02</da>
+    <n>
+------------------------------------------------------------------------
+r2249 | heavenshell | 2010-11-24 23:05:23 +0900 (水, 24 11月 2010) | 1 line
+
+Import from https://github.com/heavenshell/php-wozozo-zenra/tree/v0.0.1
+------------------------------------------------------------------------
+r2248 | openpear | 2010-11-24 22:56:02 +0900 (水, 24 11月 2010) | 1 line
+
+[New Package] Wozozo_Zenra
+------------------------------------------------------------------------
+ </n>
+    <f>3550</f>
+    <g>http://openpear.org/get/Wozozo_Zenra-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

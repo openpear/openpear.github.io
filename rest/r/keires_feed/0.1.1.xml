@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/keires_feed">Keires_Feed</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</s>
+    <d>* パッケージ概要
+Rasmus Leodorf氏のsimple_rss.phpをベースにしたフィードパーザです。サポートしている形式は
+- RSS 0.91
+- RSS 1.0
+- RSS 2.0
+- ATOM 1.0
+- ATOM 2.0
+です。
+
+* 依存しているパッケージ
+Keires_Feedを利用するにはHTTP_RequestとOpenpear_Utilが必要です．</d>
+    <da>2009-02-22 23:40:35</da>
+    <n>------------------------------------------------------------------------
+r410 | koyhoge | 2009-02-22 23:35:53 -0800 (Sun, 22 Feb 2009) | 3 lines
+
+* fix:
+  - bad email address in header
+
+------------------------------------------------------------------------
+r395 | koyhoge | 2009-02-17 01:30:41 -0800 (Tue, 17 Feb 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------</n>
+    <f>5098</f>
+    <g>http://openpear.org/get/Keires_Feed-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

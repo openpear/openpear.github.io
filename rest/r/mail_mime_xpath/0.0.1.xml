@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/mail_mime_xpath">Mail_mime_XPath</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <st>alpha</st>
+    <l>MIT Licence</l>
+    <m>yudoufu</m>
+    <s>メールのヘッダと本文をパースしてXMLの形で保有し、XPath式で検索できるようにします。
+
+使用例サンプルコード：
+&gt;||
+&lt;?php 
+require_once 'Mail/mime/XPath.php';
+ 
+$doc = file_get_contents('hoge.eml');
+ 
+$email = new Mail_mime_XPath($doc);
+$part = $email-&gt;xpath('//*[@ctype_primary=&quot;text&quot;]');
+ 
+var_dump($part);
+||&lt;
+こうすると、content-typeがtext/*なデータの配列が取得できます。multipartのメールで本文だけ抜き出す場合なんかに超便利！
+もうforeachして総当たりする必要ありません＞＜
+
+
+内部的には、PEARのMail_mimeDecodeでパースしたデータをもとに、SimpleXMLを使ってデータをXMLに直したうえで、XPathで検索、取得という処理をしています。
+
+XPathで検索できる対象ですが、検索対象のデータ自体がMail_mimeに依存している関係から、Mail_mimeで配列のキーになっているものがXPathのノード名として使えます。
+また、
+- content-type
+- ctype_primary
+- ctype_secondary
+- filename
+という４つのデータだけは、各パートのプロパティとしても保持されているので、上記の例のようにこれらのプロパティで検索することによって、textパートの一覧とそのデータを抜き出すことが可能です。
+PerlのEmail::MIME::XPathと違って正規表現的な方法は使えませんが、元々content-typeが分割されているので必要な処理はわりと柔軟に行うことができます。</s>
+    <d>メールのヘッダと本文をパースしてXMLの形で保有し、XPath式で検索できるようにします。
+
+使用例サンプルコード：
+&gt;||
+&lt;?php 
+require_once 'Mail/mime/XPath.php';
+ 
+$doc = file_get_contents('hoge.eml');
+ 
+$email = new Mail_mime_XPath($doc);
+$part = $email-&gt;xpath('//*[@ctype_primary=&quot;text&quot;]');
+ 
+var_dump($part);
+||&lt;
+こうすると、content-typeがtext/*なデータの配列が取得できます。multipartのメールで本文だけ抜き出す場合なんかに超便利！
+もうforeachして総当たりする必要ありません＞＜
+
+
+内部的には、PEARのMail_mimeDecodeでパースしたデータをもとに、SimpleXMLを使ってデータをXMLに直したうえで、XPathで検索、取得という処理をしています。
+
+XPathで検索できる対象ですが、検索対象のデータ自体がMail_mimeに依存している関係から、Mail_mimeで配列のキーになっているものがXPathのノード名として使えます。
+また、
+- content-type
+- ctype_primary
+- ctype_secondary
+- filename
+という４つのデータだけは、各パートのプロパティとしても保持されているので、上記の例のようにこれらのプロパティで検索することによって、textパートの一覧とそのデータを抜き出すことが可能です。
+PerlのEmail::MIME::XPathと違って正規表現的な方法は使えませんが、元々content-typeが分割されているので必要な処理はわりと柔軟に行うことができます。</d>
+    <da>2009-05-09 13:17:46</da>
+    <n>------------------------------------------------------------------------
+r802 | yudoufu | 2009-05-09 12:48:12 -0700 (Sat, 09 May 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r801 | openpear | 2009-05-09 12:44:51 -0700 (Sat, 09 May 2009) | 1 line
+
+[Create Base Directory] Mail_mime_XPath
+------------------------------------------------------------------------</n>
+    <f>3375</f>
+    <g>http://openpear.org/get/Mail_mime_XPath-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

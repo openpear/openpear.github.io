@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/loggeriterator">LoggerIterator</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>hnw</m>
+    <s>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+例外の内容を標準出力または標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準出力または標準エラー出力にログとして出力する機能もあります。
+
+see http://openpear.org/package/LoggerIterator for details.</s>
+    <d>LoggerIteratorは、SPLのイテレータにログを取る機能を追加するようなイテレータです。
+
+例外の内容を標準出力または標準エラー出力に表示して再スローすること、getInnerIterator()で元のイテレータを返すこと、この2点以外は元のイテレータと同じ挙動です。
+
+元のイテレータの全呼び出しを標準出力または標準エラー出力にログとして出力する機能もあります。
+
+see http://openpear.org/package/LoggerIterator for details.</d>
+    <da>2009-05-24 08:54:09</da>
+    <n>------------------------------------------------------------------------
+r880 | hnw | 2009-05-24 08:53:31 -0700 (Sun, 24 May 2009) | 1 line
+
+?\227?\131?\135?\227?\131?\144?\227?\131?\131?\227?\130?\176?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\129?\140?\230?\174?\139?\227?\129?\163?\227?\129?\166?\227?\129?\132?\227?\129?\159?\227?\129?\174?\227?\130?\146?\228?\191?\174?\230?\173?\163 / PHPDoc?\227?\130?\179?\227?\131?\161?\227?\131?\179?\227?\131?\136?\227?\130?\146?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r878 | hnw | 2009-05-24 08:48:05 -0700 (Sun, 24 May 2009) | 1 line
+
+first commit
+------------------------------------------------------------------------</n>
+    <f>1952</f>
+    <g>http://openpear.org/get/LoggerIterator-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

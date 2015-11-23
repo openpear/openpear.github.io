@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/diggin">Diggin</p>
+    <c>openpear.org</c>
+    <v>0.6.10</v>
+    <st>alpha</st>
+    <l>New BSD License</l>
+    <m>sasezaki</m>
+    <s>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</s>
+    <d>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</d>
+    <da>2009-08-14 23:38:10</da>
+    <n>
+Update-Details:
+http://code.google.com/p/diggin/updates/list
+ </n>
+    <f>31775</f>
+    <g>http://openpear.org/get/Diggin-0.6.10</g>
+    <x xlink:href="package.0.6.10.xml"/>
+</r>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_curl2">Net_Curl2</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>eth0jp</m>
+    <s>個人的には使いやすい。
+でも若干HTTP_Request2の方が速い。</s>
+    <d>個人的には使いやすい。
+でも若干HTTP_Request2の方が速い。</d>
+    <da>2010-07-30 06:40:03</da>
+    <n>
+------------------------------------------------------------------------
+r1970 | eth0jp | 2010-07-30 06:36:11 +0900 (金, 30  7月 2010) | 1 line
+
+mv Curl2.php
+------------------------------------------------------------------------
+r1969 | eth0jp | 2010-07-30 06:32:39 +0900 (金, 30  7月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1968 | openpear | 2010-07-30 03:34:05 +0900 (金, 30  7月 2010) | 1 line
+
+[New Package] Net_Curl2
+------------------------------------------------------------------------
+ </n>
+    <f>2335</f>
+    <g>http://openpear.org/get/Net_Curl2-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

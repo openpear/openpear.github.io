@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Yahoo_JP_DA</name>
+ <channel>openpear.org</channel>
+ <summary>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</summary>
+ <description>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-20</date>
+ <time>05:50:45</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+ <notes>------------------------------------------------------------------------
+r600 | shimooka | 2009-03-20 05:44:18 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- renamed from Services_Yahoo_JP_Text
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="9f69a8a4154a2ed65e6ee099d2420e2d" name="Yahoo/JP/DA/AbstractDA.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="6d47626cdf044141c57ff59cbec62b14" name="Yahoo/JP/DA/parse.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="a20ace83fdb18fcc512d132821503edd" name="Yahoo/JP/DA/Response.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="5bbabb492099c87e2d26db7c35be02a1" name="Yahoo/JP/DA.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Services_Yahoo</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-03-20</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>------------------------------------------------------------------------
+r600 | shimooka | 2009-03-20 05:44:18 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- renamed from Services_Yahoo_JP_Text
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

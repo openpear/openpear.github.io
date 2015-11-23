@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/ethna_plugin_debugtoolbar">Ethna_Plugin_Debugtoolbar</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>alpha</st>
+    <l>New BSD Licence</l>
+    <m>sotarok</m>
+    <s>Ethna Debugtoolbar Plugin
+
+
+使い方などは以下参照。
+-[http://d.hatena.ne.jp/sotarok/20090703/ethna_plugin_debugtoolbar_0_9_0:title=Ethna_Plugin_Debugtoolbar 0.9.0 をリリース]</s>
+    <d>Ethna Debugtoolbar Plugin
+
+
+使い方などは以下参照。
+-[http://d.hatena.ne.jp/sotarok/20090703/ethna_plugin_debugtoolbar_0_9_0:title=Ethna_Plugin_Debugtoolbar 0.9.0 をリリース]</d>
+    <da>2009-07-03 11:07:31</da>
+    <n>------------------------------------------------------------------------
+r993 | sotarok | 2009-07-03 10:47:38 -0700 (Fri, 03 Jul 2009) | 1 line
+
+import Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------
+r992 | openpear | 2009-07-03 10:45:05 -0700 (Fri, 03 Jul 2009) | 1 line
+
+[Create Base Directory] Ethna_Plugin_Debugtoolbar
+------------------------------------------------------------------------</n>
+    <f>12306</f>
+    <g>http://openpear.org/get/Ethna_Plugin_Debugtoolbar-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

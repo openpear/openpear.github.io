@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Diggin_RobotRules</name>
+ <channel>openpear.org</channel>
+ <summary>A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.</summary>
+ <description>A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.</description>
+ <lead>
+  <name>させざき</name>
+  <user>sasezaki</user>
+  <email>sasezaki@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-02-05</date>
+ <time>18:35:05</time>
+ <version>
+  <release>0.0.3</release>
+  <api>0.0.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="cec0f0d7d46dd80fff288b9f5115b27e" name="Diggin/RobotRules/Accepter/TxtAccepter.php" role="php" />
+   <file baseinstalldir="." md5sum="f16358afea41aae5232458ae95b1db11" name="Diggin/RobotRules/Parser/TxtStringParser.php" role="php" />
+   <file baseinstalldir="." md5sum="76d41b28fdac523f9ee860f7c2ee30be" name="Diggin/RobotRules/Rules/Txt/LineEntity.php" role="php" />
+   <file baseinstalldir="." md5sum="b578887cf2d1924cfcf1ba883c93f402" name="Diggin/RobotRules/Rules/Txt/RecordEntity.php" role="php" />
+   <file baseinstalldir="." md5sum="0c0f1bc21f4c32ad522aa2a168ed6de9" name="Diggin/RobotRules/Rules/Txt/SpecifiedFieldValueIterator.php" role="php" />
+   <file baseinstalldir="." md5sum="c5e949f462f1deed8386e4f77a7cafb3" name="Diggin/RobotRules/Rules/Txt.php" role="php" />
+   <file baseinstalldir="." md5sum="53a276e94956d89a5dff2fd9ee922e42" name="Diggin/RobotRules/Rules/TxtContainer.php" role="php" />
+   <file baseinstalldir="." md5sum="2e4c7d94e5da5c638e273f87132f2e59" name="Diggin/RobotRules/Accepter.php" role="php" />
+   <file baseinstalldir="." md5sum="919888d3f1127e22182c1acc9eb60e4d" name="Diggin/RobotRules/Exception.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.2</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.3</release>
+    <api>0.0.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-02-05</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.
+   </notes>
+  </release>
+ </changelog>
+</package>

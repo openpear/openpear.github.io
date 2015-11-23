@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/diggin_scraper_adapter_htmlscraping">Diggin_Scraper_Adapter_Htmlscraping</p>
+    <c>openpear.org</c>
+    <v>0.3.0</v>
+    <st>beta</st>
+    <l>LGPL</l>
+    <m>sasezaki</m>
+    <s>Digginライブラリ((http://diggin.musicrider.com/))のスクレイパーでのアダプターの一つです。
+ライセンスの関係上、HTMLScrapingライブラリ((http://www.rcdtokyo.com/etc/htmlscraping/)))から改変したものをこのパッケージにてまとめています。
+
+Diggin_Http_Response_Charsetに依存します。</s>
+    <d>Digginライブラリ((http://diggin.musicrider.com/))のスクレイパーでのアダプターの一つです。
+ライセンスの関係上、HTMLScrapingライブラリ((http://www.rcdtokyo.com/etc/htmlscraping/)))から改変したものをこのパッケージにてまとめています。
+
+Diggin_Http_Response_Charsetに依存します。</d>
+    <da>2008-12-02 08:22:17</da>
+    <n>------------------------------------------------------------------------
+r159 | sasezaki | 2008-12-02 08:20:48 -0800 (Tue, 02 Dec 2008) | 1 line
+
+copyright?\230?\155?\184?\227?\129?\132?\227?\129?\166?\227?\129?\159?\227?\129?\174?\227?\129?\167?\230?\182?\136?\227?\129?\153	
+------------------------------------------------------------------------
+r157 | sasezaki | 2008-12-02 07:31:09 -0800 (Tue, 02 Dec 2008) | 1 line
+
+Response_Encoder?\231?\148?\168 demo?\232?\191?\189?\229?\138?\160
+------------------------------------------------------------------------
+r155 | sasezaki | 2008-12-02 06:46:40 -0800 (Tue, 02 Dec 2008) | 1 line
+
+utf-8?\227?\130?\168?\227?\131?\179?\227?\130?\179?\227?\131?\188?\227?\131?\137?\229?\135?\166?\231?\144?\134?\227?\130?\146Response_Encoder?\227?\129?\168?\227?\129?\151?\227?\129?\166?\229?\136?\134?\229?\137?\178?\227?\129?\151?\227?\129?\159?\229?\134?\141?\231?\183?\168?\230?\136?\144?\227?\130?\130?\227?\129?\174?\227?\130?\146openpear?\231?\148?\168?\227?\129?\171?\227?\129?\190?\227?\129?\168?\227?\130?\129?\227?\129?\166?\229?\136?\157?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136
+------------------------------------------------------------------------
+r152 | openpear | 2008-12-02 06:28:14 -0800 (Tue, 02 Dec 2008) | 1 line
+
+[Create Base Directory] Diggin_Scraper_Adapter_Htmlscraping
+------------------------------------------------------------------------</n>
+    <f>6345</f>
+    <g>http://openpear.org/get/Diggin_Scraper_Adapter_Htmlscraping-0.3.0</g>
+    <x xlink:href="package.0.3.0.xml"/>
+</r>

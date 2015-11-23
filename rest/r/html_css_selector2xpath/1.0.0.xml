@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/html_css_selector2xpath">HTML_CSS_Selector2XPath</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <st>stable</st>
+    <l>The MIT License</l>
+    <m>MugeSo</m>
+    <s>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</s>
+    <d>CSSセレクタをXPathに変換します
+このライブラリは[http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]のPHP移殖版となります。
+
+This library converts css selector to XPath.
+This is the PHP port of [http://search.cpan.org/dist/HTML-Selector-XPath/lib/HTML/Selector/XPath.pm:title=HTML::Selector::XPath]</d>
+    <da>2010-04-21 17:18:05</da>
+    <n>
+------------------------------------------------------------------------
+r1811 | MugeSo | 2010-04-21 17:11:38 +0900 (水, 21  4月 2010) | 1 line
+
+カンマで生成されるXPathが間違っていた問題を修正
+------------------------------------------------------------------------
+r668 | MugeSo | 2009-04-14 18:41:21 +0900 (火, 14  4月 2009) | 1 line
+
+テストの一か所だけ要素がDIVになってて気持ち悪いので周りに合わせた
+------------------------------------------------------------------------
+r662 | MugeSo | 2009-04-14 17:17:07 +0900 (火, 14  4月 2009) | 2 lines
+
+HTML_CSS_Mobileから独立しました。
+独立に伴ってクラス/ファイル名を変更しました。
+------------------------------------------------------------------------
+r661 | openpear | 2009-04-14 16:49:32 +0900 (火, 14  4月 2009) | 1 line
+
+[Create Base Directory] HTML_CSS_Selector2XPath
+------------------------------------------------------------------------
+ </n>
+    <f>4155</f>
+    <g>http://openpear.org/get/HTML_CSS_Selector2XPath-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

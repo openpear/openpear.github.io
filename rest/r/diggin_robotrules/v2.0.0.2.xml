@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/diggin_robotrules">Diggin_RobotRules</p>
+    <c>openpear.org</c>
+    <v>0.0.2</v>
+    <a>0.0.2</a>
+    <mp>5.3.2</mp>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>sasezaki</m>
+    <s>A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.</s>
+    <d>A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.</d>
+    <da>2011-02-02 08:34:06</da>
+    <n>
+A PHP parser &amp; handler for Robots Exclusion Protocol (robots.txt and more..) require PHP 5.3 or over.
+ </n>
+    <f>4484</f>
+    <g>http://openpear.org/get/Diggin_RobotRules-0.0.2</g>
+    <x xlink:href="package.0.0.2.xml"/>
+</r>

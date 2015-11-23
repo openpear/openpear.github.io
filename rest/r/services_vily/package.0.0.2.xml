@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Vily</name>
+ <channel>openpear.org</channel>
+ <summary>vi.lyのAPIを叩くライブラリです
+[http://vi.ly]</summary>
+ <description>vi.lyのAPIを叩くライブラリです
+[http://vi.ly]</description>
+ <lead>
+  <name>tknzk</name>
+  <user>tknzk</user>
+  <email>info@tknzk.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-11-10</date>
+ <time>00:40:04</time>
+ <version>
+  <release>0.0.2</release>
+  <api>0.0.2</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r1378 | tknzk | 2009-11-08 23:46:06 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1376 | tknzk | 2009-11-08 23:34:18 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1375 | tknzk | 2009-11-08 23:24:39 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1374 | tknzk | 2009-11-08 23:23:43 +0900 (日, 08 11月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1373 | openpear | 2009-11-08 23:00:02 +0900 (日, 08 11月 2009) | 1 line
+
+[New Package] Services_Vily
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="29d0b367f8577f2b67f90144dc3ef195" name="Services/Vily/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="bfbc10f3f2678f182d46b4784c9c6092" name="Services/Vily.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-11-10</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r1378 | tknzk | 2009-11-08 23:46:06 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1376 | tknzk | 2009-11-08 23:34:18 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1375 | tknzk | 2009-11-08 23:24:39 +0900 (日, 08 11月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r1374 | tknzk | 2009-11-08 23:23:43 +0900 (日, 08 11月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1373 | openpear | 2009-11-08 23:00:02 +0900 (日, 08 11月 2009) | 1 line
+
+[New Package] Services_Vily
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/opfreepageplugin">opFreepagePlugin</p>
+    <c>openpear.org</c>
+    <v>0.9.0</v>
+    <a>0.9.0</a>
+    <mp>5.2.3</mp>
+    <st>beta</st>
+    <l>Apache 2.0</l>
+    <m>uechoco</m>
+    <s>OpenPNE3用のフリーページ プラグインです。
+
+- OpenPNE2系の互換を意識
+-- PC・mobile 両対応
+-- 認証あり・なし 両対応
+- ルーティング拡張済み(/freepage/idでアクセス可能)
+
+試験的にopenpearに置いてみます。</s>
+    <d>OpenPNE3用のフリーページ プラグインです。
+
+- OpenPNE2系の互換を意識
+-- PC・mobile 両対応
+-- 認証あり・なし 両対応
+- ルーティング拡張済み(/freepage/idでアクセス可能)
+
+試験的にopenpearに置いてみます。</d>
+    <da>2009-03-13 05:54:35</da>
+    <n>------------------------------------------------------------------------
+r561 | uechoco | 2009-03-13 05:34:59 -0700 (Fri, 13 Mar 2009) | 1 line
+
+package.xml?\227?\130?\146?\227?\130?\179?\227?\131?\159?\227?\131?\131?\227?\131?\136?\227?\129?\151?\229?\191?\152?\227?\130?\140
+------------------------------------------------------------------------
+r547 | uechoco | 2009-03-12 17:47:52 -0700 (Thu, 12 Mar 2009) | 1 line
+
+Ver 0.9.0-beta
+------------------------------------------------------------------------
+r546 | openpear | 2009-03-12 17:45:20 -0700 (Thu, 12 Mar 2009) | 1 line
+
+[Create Base Directory] opFreepagePlugin
+------------------------------------------------------------------------</n>
+    <f>11836</f>
+    <g>http://openpear.org/get/opFreepagePlugin-0.9.0</g>
+    <x xlink:href="package.0.9.0.xml"/>
+</r>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>String_Formatter</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD Licence</l>
+<s>比較的管理しやすい文字列のフォーマットを行います。
+PDOのプリペアドステートメントに近い何か。</s>
+<d>比較的管理しやすい文字列のフォーマットを行います。
+PDOのプリペアドステートメントに近い何か。</d>
+<r xlink:href="/rest/r/string_formatter" />
+</p>

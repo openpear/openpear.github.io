@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Wozozo_Zenra</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array('appid' =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空きました'); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array(
+    'appid'    =&gt; $appid,
+    'position' =&gt; '名詞',
+    'text'     =&gt; '夜の'
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空いたのでスパゲッティが食べたい');
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer's application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</s>
+<d>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array('appid' =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空きました'); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once 'Wozozo/Zenra.php';
+$appid  = getenv('YAHOO_APPID');
+$params = array(
+    'appid'    =&gt; $appid,
+    'position' =&gt; '名詞',
+    'text'     =&gt; '夜の'
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize('お腹が空いたのでスパゲッティが食べたい');
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer's application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</d>
+<r xlink:href="/rest/r/wozozo_zenra" />
+</p>

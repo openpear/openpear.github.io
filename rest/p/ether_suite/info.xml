@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Ether_Suite</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>BSD Licence</l>
+<s>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</s>
+<d>Developer suite for Ethna
+
+
+:dependency:Ethna (pear.ethna.jp)
+:requires:JQuery, [http://plugins.jquery.com/project/cookie:title=JQuery cookie Plugin]
+
+load JQuery example:
+&gt;||
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    google.load(&quot;jquery&quot;, &quot;1.2&quot;);
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+||&lt;</d>
+<r xlink:href="/rest/r/ether_suite" />
+</p>

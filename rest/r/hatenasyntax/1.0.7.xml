@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/hatenasyntax">HatenaSyntax</p>
+    <c>openpear.org</c>
+    <v>1.0.7</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>anatoo</m>
+    <s>はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax</s>
+    <d>はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax</d>
+    <da>2011-01-05 02:57:01</da>
+    <n>
+はてな記法のパーサ + レンダラ。マニュアル =&gt; http://nimpad.jp/hatenasyntax
+ </n>
+    <f>11898</f>
+    <g>http://openpear.org/get/HatenaSyntax-1.0.7</g>
+    <x xlink:href="package.1.0.7.xml"/>
+</r>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/acme_hyde">Acme_Hyde</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.1.0</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>riaf</m>
+    <s>Acme_Hyde - Hyde Calculator
+[http://search.cpan.org/~nozzzzz/Acme-Hyde-0.04/]</s>
+    <d>Acme_Hyde - Hyde Calculator
+[http://search.cpan.org/~nozzzzz/Acme-Hyde-0.04/]</d>
+    <da>2008-11-02 06:50:31</da>
+    <n>------------------------------------------------------------------------
+r43 | riaf | 2008-11-02 06:02:25 -0800 (Sun, 02 Nov 2008) | 3 lines
+
+post-commit ?\227?\129?\140?\227?\131?\144?\227?\130?\176?\227?\129?\163?\227?\129?\166?\227?\130?\139?\230?\176?\151?\227?\129?\140?\227?\129?\153?\227?\130?\139?\227?\128?\130
+?\227?\129?\159?\227?\129?\132?\227?\129?\184?\227?\130?\147?\227?\129?\160?\239?\188?\129
+
+------------------------------------------------------------------------
+r40 | riaf | 2008-11-02 05:51:23 -0800 (Sun, 02 Nov 2008) | 1 line
+
+?\229?\141?\152?\228?\189?\141
+------------------------------------------------------------------------
+r37 | riaf | 2008-11-02 05:42:37 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+added Hyde.php
+
+------------------------------------------------------------------------
+r36 | openpear | 2008-11-02 05:36:41 -0800 (Sun, 02 Nov 2008) | 1 line
+
+[Create Base Directory] Acme_Hyde
+------------------------------------------------------------------------</n>
+    <f>1446</f>
+    <g>http://openpear.org/get/Acme_Hyde-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

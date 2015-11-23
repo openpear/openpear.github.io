@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_UserAgent_Mobile_UserID</name>
+ <channel>openpear.org</channel>
+ <summary>携帯電話の端末固有IDを扱うライブラリです。
+
+サンプル
+
+&gt;||
+&lt;?php
+
+require_once &apos;Net/UserAgent/Mobile/UserID.php&apos;;
+
+
+try {
+    $userid = Net_UserAgent_Mobile_UserID::factory();
+} catch (Net_UserAgent_Mobile_UserID_Exception $e) {
+    var_dump($e-&gt;getMessage());
+    exit;
+}
+
+echo $userid-&gt;getID();
+||&lt;</summary>
+ <description>携帯電話の端末固有IDを扱うライブラリです。
+
+サンプル
+
+&gt;||
+&lt;?php
+
+require_once &apos;Net/UserAgent/Mobile/UserID.php&apos;;
+
+
+try {
+    $userid = Net_UserAgent_Mobile_UserID::factory();
+} catch (Net_UserAgent_Mobile_UserID_Exception $e) {
+    var_dump($e-&gt;getMessage());
+    exit;
+}
+
+echo $userid-&gt;getID();
+||&lt;</description>
+ <lead>
+  <name>okonomi</name>
+  <user>okonomi</user>
+  <email>oknm@okonomi.sakura.ne.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-04-10</date>
+ <time>09:09:47</time>
+ <version>
+  <release>0.1.3</release>
+  <api>0.1.3</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r650 | okonomi | 2009-04-04 04:21:23 -0700 (Sat, 04 Apr 2009) | 1 line
+
+?\227?\130?\173?\227?\131?\163?\227?\131?\170?\227?\130?\162?\229?\136?\164?\229?\174?\154?\229?\164?\137?\230?\155?\180?\227?\128?\130?\231?\155?\180?\230?\142?\165?\227?\130?\173?\227?\131?\163?\227?\131?\170?\227?\130?\162?\229?\144?\141?\227?\130?\146?\230?\140?\135?\229?\174?\154?\227?\129?\167?\227?\129?\141?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r632 | okonomi | 2009-03-29 07:13:32 -0700 (Sun, 29 Mar 2009) | 1 line
+
+?\230?\148?\185?\232?\161?\140?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\130?\146LF?\227?\129?\171?\231?\181?\177?\228?\184?\128
+------------------------------------------------------------------------
+r630 | okonomi | 2009-03-29 07:13:12 -0700 (Sun, 29 Mar 2009) | 1 line
+
+?\227?\130?\164?\227?\131?\188?\227?\131?\162?\227?\131?\144?\227?\130?\164?\227?\131?\171?\227?\129?\174?\227?\131?\166?\227?\131?\188?\227?\130?\182?\227?\131?\188ID?\227?\129?\174?\227?\131?\149?\227?\130?\169?\227?\131?\188?\227?\131?\158?\227?\131?\131?\227?\131?\136?\227?\129?\140?\233?\150?\147?\233?\129?\149?\227?\129?\163?\227?\129?\166?\227?\129?\159
+------------------------------------------------------------------------
+r625 | okonomi | 2009-03-28 08:26:20 -0700 (Sat, 28 Mar 2009) | 1 line
+
+?\227?\131?\145?\227?\131?\188?\227?\130?\185?\229?\137?\141?\227?\129?\174ID?\227?\130?\146?\229?\143?\150?\229?\190?\151?\227?\129?\167?\227?\129?\141?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r622 | okonomi | 2009-03-28 02:06:15 -0700 (Sat, 28 Mar 2009) | 1 line
+
+?\227?\131?\162?\227?\130?\184?\227?\131?\165?\227?\131?\188?\227?\131?\171?\227?\130?\146?\229?\183?\174?\227?\129?\151?\230?\155?\191?\227?\129?\136?\227?\130?\137?\227?\130?\140?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r617 | okonomi | 2009-03-26 09:39:50 -0700 (Thu, 26 Mar 2009) | 2 lines
+
+first commit
+
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="edbe09dea35a0b5774b7a3e3d9508bae" name="Net/UserAgent/Mobile/UserID/DoCoMo/SerialNumber/Device.php" role="php" />
+   <file baseinstalldir="/" md5sum="baca0c0dfc172c2c789ef7e8b54ee38b" name="Net/UserAgent/Mobile/UserID/DoCoMo/SerialNumber/FomaCard.php" role="php" />
+   <file baseinstalldir="/" md5sum="288a967810bc2a4158cb45cbc2017054" name="Net/UserAgent/Mobile/UserID/DoCoMo/ImodeID.php" role="php" />
+   <file baseinstalldir="/" md5sum="38ae166a05ec1a9cb0e49899a8a186b2" name="Net/UserAgent/Mobile/UserID/Emobile/UID.php" role="php" />
+   <file baseinstalldir="/" md5sum="f720c4f2720c9ebdda092004d3270b6a" name="Net/UserAgent/Mobile/UserID/EZweb/SubscriberID.php" role="php" />
+   <file baseinstalldir="/" md5sum="96037735aa68cff5a0c53e1c5a29ce32" name="Net/UserAgent/Mobile/UserID/SoftBank/SerialNumber.php" role="php" />
+   <file baseinstalldir="/" md5sum="0c2ccdaa78f96d2e625f584a262dae50" name="Net/UserAgent/Mobile/UserID/SoftBank/UID.php" role="php" />
+   <file baseinstalldir="/" md5sum="4b9db2232a491a8735af5beabd14d9ac" name="Net/UserAgent/Mobile/UserID/Abstract.php" role="php" />
+   <file baseinstalldir="/" md5sum="fc3411e726347b3eaaf09a79ea74f294" name="Net/UserAgent/Mobile/UserID/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c00619396ece05d3f9c7346bbce33fe" name="Net/UserAgent/Mobile/UserID/NonMobile.php" role="php" />
+   <file baseinstalldir="/" md5sum="6d64447c5cd3d931869b83dcea71b210" name="Net/UserAgent/Mobile/UserID.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Net_UserAgent_Mobile</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.3</release>
+    <api>0.1.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-04-10</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r650 | okonomi | 2009-04-04 04:21:23 -0700 (Sat, 04 Apr 2009) | 1 line
+
+?\227?\130?\173?\227?\131?\163?\227?\131?\170?\227?\130?\162?\229?\136?\164?\229?\174?\154?\229?\164?\137?\230?\155?\180?\227?\128?\130?\231?\155?\180?\230?\142?\165?\227?\130?\173?\227?\131?\163?\227?\131?\170?\227?\130?\162?\229?\144?\141?\227?\130?\146?\230?\140?\135?\229?\174?\154?\227?\129?\167?\227?\129?\141?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159?\227?\128?\130
+------------------------------------------------------------------------
+r632 | okonomi | 2009-03-29 07:13:32 -0700 (Sun, 29 Mar 2009) | 1 line
+
+?\230?\148?\185?\232?\161?\140?\227?\130?\179?\227?\131?\188?\227?\131?\137?\227?\130?\146LF?\227?\129?\171?\231?\181?\177?\228?\184?\128
+------------------------------------------------------------------------
+r630 | okonomi | 2009-03-29 07:13:12 -0700 (Sun, 29 Mar 2009) | 1 line
+
+?\227?\130?\164?\227?\131?\188?\227?\131?\162?\227?\131?\144?\227?\130?\164?\227?\131?\171?\227?\129?\174?\227?\131?\166?\227?\131?\188?\227?\130?\182?\227?\131?\188ID?\227?\129?\174?\227?\131?\149?\227?\130?\169?\227?\131?\188?\227?\131?\158?\227?\131?\131?\227?\131?\136?\227?\129?\140?\233?\150?\147?\233?\129?\149?\227?\129?\163?\227?\129?\166?\227?\129?\159
+------------------------------------------------------------------------
+r625 | okonomi | 2009-03-28 08:26:20 -0700 (Sat, 28 Mar 2009) | 1 line
+
+?\227?\131?\145?\227?\131?\188?\227?\130?\185?\229?\137?\141?\227?\129?\174ID?\227?\130?\146?\229?\143?\150?\229?\190?\151?\227?\129?\167?\227?\129?\141?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r622 | okonomi | 2009-03-28 02:06:15 -0700 (Sat, 28 Mar 2009) | 1 line
+
+?\227?\131?\162?\227?\130?\184?\227?\131?\165?\227?\131?\188?\227?\131?\171?\227?\130?\146?\229?\183?\174?\227?\129?\151?\230?\155?\191?\227?\129?\136?\227?\130?\137?\227?\130?\140?\227?\130?\139?\227?\130?\136?\227?\129?\134?\227?\129?\171?\227?\129?\151?\227?\129?\159
+------------------------------------------------------------------------
+r617 | okonomi | 2009-03-26 09:39:50 -0700 (Thu, 26 Mar 2009) | 2 lines
+
+first commit
+
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Web_SessionSecurity</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>SessionAdoptionやSessionハイジャックをブロックする為のライブラリです。
+これは、SessionAdoptionをブロックする為、一度、セッションの値を初期化します。
+
+Sessionハイジャックを検知したい場合は、
+Web_SessionSecurity::getAlert()で知ることができます。
+知った後の処理は、Webアプリへ委譲します。
+
+また、アラートを取り消したい場合は、Web_SessionSecurity::clearAlert()を呼び出してください。</s>
+<d>SessionAdoptionやSessionハイジャックをブロックする為のライブラリです。
+これは、SessionAdoptionをブロックする為、一度、セッションの値を初期化します。
+
+Sessionハイジャックを検知したい場合は、
+Web_SessionSecurity::getAlert()で知ることができます。
+知った後の処理は、Webアプリへ委譲します。
+
+また、アラートを取り消したい場合は、Web_SessionSecurity::clearAlert()を呼び出してください。</d>
+<r xlink:href="/rest/r/web_sessionsecurity" />
+</p>

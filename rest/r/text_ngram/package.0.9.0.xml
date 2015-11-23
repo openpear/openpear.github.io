@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Text_Ngram</name>
+ <channel>openpear.org</channel>
+ <summary>*Text_Ngram
+
+文字列を N-gram 形式に分割するためのライブラリです。
+
+N-gram オブジェクトを生成し、配列のように扱うことができます。
+
+*Requirements
+
+PHP5 (&gt;= PHP 5.3)
+
+*N-gram?
+
+例えば全文検索システムを構築する場合、前処理としてインデックスの作成が必要となります。
+しかし、欧米の言語と違って、日本語はスペース等の一定のデリミタで区切ることはできません。
+そこで、文章的な意味に関わらず、 n 文字ごとの分割した形式を使い、これを N-gram といいます。
+
+分かち書きの方法としては、形態素解析も挙げられますが、 N-gram では辞書のメンテナンスが不要、という利点があります。
+また、 n 文字ごとに分割する、という単純なルールなため、言語にかかわらず適用することができます。
+
+*Usage
+
+**Create N-gram object
+
+&gt;||
+require_once &apos;/path/to/Text/Ngram.php&apos;;
+use Text\Ngram;
+$ngram = new Ngram(&apos;こんにちは世界！&apos;, 2, &apos;UTF-8&apos;);
+||&lt;
+
+**Convert to array
+
+&gt;||
+$ngramArray = $ngram-&gt;toArray();
+||&lt;
+
+**Treat N-gram object as array
+
+&gt;||
+echo $ngram[0];     // =&gt; こん
+echo $ngram[1];     // =&gt; んに
+echo count($ngram); // =&gt; 7
+||&lt;
+
+**Iteration
+
+&gt;||
+foreach ($ngram as $key =&gt; $value) {
+    echo &quot;{$key} : {$value}&quot; . PHP_EOL;
+}
+||&lt;
+
+*Author
+
+Yuya Takeyama &lt;sign.of.the.wolf.pentagram at gmail.com&gt;
+
+*See also
+
+php5-Text_Ngram on Github
+http://github.com/yuya-takeyama/php5-Text_Ngram/</summary>
+ <description>*Text_Ngram
+
+文字列を N-gram 形式に分割するためのライブラリです。
+
+N-gram オブジェクトを生成し、配列のように扱うことができます。
+
+*Requirements
+
+PHP5 (&gt;= PHP 5.3)
+
+*N-gram?
+
+例えば全文検索システムを構築する場合、前処理としてインデックスの作成が必要となります。
+しかし、欧米の言語と違って、日本語はスペース等の一定のデリミタで区切ることはできません。
+そこで、文章的な意味に関わらず、 n 文字ごとの分割した形式を使い、これを N-gram といいます。
+
+分かち書きの方法としては、形態素解析も挙げられますが、 N-gram では辞書のメンテナンスが不要、という利点があります。
+また、 n 文字ごとに分割する、という単純なルールなため、言語にかかわらず適用することができます。
+
+*Usage
+
+**Create N-gram object
+
+&gt;||
+require_once &apos;/path/to/Text/Ngram.php&apos;;
+use Text\Ngram;
+$ngram = new Ngram(&apos;こんにちは世界！&apos;, 2, &apos;UTF-8&apos;);
+||&lt;
+
+**Convert to array
+
+&gt;||
+$ngramArray = $ngram-&gt;toArray();
+||&lt;
+
+**Treat N-gram object as array
+
+&gt;||
+echo $ngram[0];     // =&gt; こん
+echo $ngram[1];     // =&gt; んに
+echo count($ngram); // =&gt; 7
+||&lt;
+
+**Iteration
+
+&gt;||
+foreach ($ngram as $key =&gt; $value) {
+    echo &quot;{$key} : {$value}&quot; . PHP_EOL;
+}
+||&lt;
+
+*Author
+
+Yuya Takeyama &lt;sign.of.the.wolf.pentagram at gmail.com&gt;
+
+*See also
+
+php5-Text_Ngram on Github
+http://github.com/yuya-takeyama/php5-Text_Ngram/</description>
+ <lead>
+  <name>yuya_takeyama</name>
+  <user>yuya_takeyama</user>
+  <email>sign.of.the.wolf.pentagram@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-10-22</date>
+ <time>02:51:02</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2185 | yuya_takeyama | 2010-10-22 02:46:25 +0900 (金, 22 10月 2010) | 2 lines
+
+1st commit.
+
+------------------------------------------------------------------------
+r2184 | yuya_takeyama | 2010-10-22 02:39:19 +0900 (金, 22 10月 2010) | 2 lines
+
+Removed.
+
+------------------------------------------------------------------------
+r2183 | yuya_takeyama | 2010-10-22 02:37:52 +0900 (金, 22 10月 2010) | 2 lines
+
+1st commit.
+
+------------------------------------------------------------------------
+r2182 | openpear | 2010-10-22 02:25:03 +0900 (金, 22 10月 2010) | 1 line
+
+[New Package] Text_Ngram
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="8654cf33781a8de44d5194318b38f307" name="Text/Ngram.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-10-22</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2185 | yuya_takeyama | 2010-10-22 02:46:25 +0900 (金, 22 10月 2010) | 2 lines
+
+1st commit.
+
+------------------------------------------------------------------------
+r2184 | yuya_takeyama | 2010-10-22 02:39:19 +0900 (金, 22 10月 2010) | 2 lines
+
+Removed.
+
+------------------------------------------------------------------------
+r2183 | yuya_takeyama | 2010-10-22 02:37:52 +0900 (金, 22 10月 2010) | 2 lines
+
+1st commit.
+
+------------------------------------------------------------------------
+r2182 | openpear | 2010-10-22 02:25:03 +0900 (金, 22 10月 2010) | 1 line
+
+[New Package] Text_Ngram
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

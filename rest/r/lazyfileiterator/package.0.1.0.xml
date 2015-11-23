@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>LazyFileIterator</name>
+ <channel>openpear.org</channel>
+ <summary>必要になってからファイルをオープンするような、SplFileObjectのラッパーです。</summary>
+ <description>必要になってからファイルをオープンするような、SplFileObjectのラッパーです。</description>
+ <lead>
+  <name>hnw</name>
+  <user>hnw</user>
+  <email>for-openpear@hnw.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-31</date>
+ <time>00:15:14</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r887 | hnw | 2009-05-31 00:10:04 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="3546fc3aec4b8c47695f22ecc4f3ee88" name="LazyFileIterator.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-31</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r887 | hnw | 2009-05-31 00:10:04 -0700 (Sun, 31 May 2009) | 1 line
+
+initial version
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

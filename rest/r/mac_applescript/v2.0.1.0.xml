@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/mac_applescript">Mac_AppleScript</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.0</mp>
+    <st>beta</st>
+    <l>MIT License</l>
+    <m>rsk</m>
+    <s>流れるようなインターフェイスでAppleScriptコマンドの生成・実行をする。</s>
+    <d>流れるようなインターフェイスでAppleScriptコマンドの生成・実行をする。</d>
+    <da>2009-10-01 18:29:11</da>
+    <n>
+------------------------------------------------------------------------
+r1231 | rsk | 2009-10-01 18:16:59 +0900 (木, 01 10月 2009) | 1 line
+
+- initail commit.
+------------------------------------------------------------------------
+r1230 | openpear | 2009-10-01 18:12:01 +0900 (木, 01 10月 2009) | 1 line
+
+[New Package] Mac_AppleScript
+------------------------------------------------------------------------
+ </n>
+    <f>3092</f>
+    <g>http://openpear.org/get/Mac_AppleScript-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

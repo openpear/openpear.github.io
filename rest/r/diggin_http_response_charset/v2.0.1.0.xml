@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/diggin_http_response_charset">Diggin_Http_Response_Charset</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.2.4</mp>
+    <st>beta</st>
+    <l>LGPL</l>
+    <m>sasezaki</m>
+    <s>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</s>
+    <d>強欲にヘッダーやメタタグのContent-Typeや文字列から文字コードを推測し、レスポンスボディ(HTML)をUTF-8にエンコーディングします。
+
+説明：
+http://d.hatena.ne.jp/sasezaki/20100627/p2
+
+旧 Diggin_Http_Response_CharactorEncoding
+の強化版です。LGPL</d>
+    <da>2010-06-24 00:27:12</da>
+    <n>
+------------------------------------------------------------------------
+r1924 | sasezaki | 2010-06-24 00:23:53 +0900 (木, 24  6月 2010) | 1 line
+
+add return  in addEncoder
+------------------------------------------------------------------------
+r1923 | sasezaki | 2010-06-23 22:26:13 +0900 (水, 23  6月 2010) | 1 line
+
+add LICENSE doc-comment &amp; not static
+------------------------------------------------------------------------
+r1922 | sasezaki | 2010-06-23 21:17:53 +0900 (水, 23  6月 2010) | 1 line
+
+adding. wrapping Response
+------------------------------------------------------------------------
+r1904 | sasezaki | 2010-06-12 01:01:50 +0900 (土, 12  6月 2010) | 1 line
+
+add Encoder Fixedfrom
+------------------------------------------------------------------------
+r1903 | sasezaki | 2010-06-12 01:01:09 +0900 (土, 12  6月 2010) | 1 line
+
+change - default detect list
+------------------------------------------------------------------------
+r1902 | sasezaki | 2010-06-08 23:30:19 +0900 (火, 08  6月 2010) | 1 line
+
+init commit
+------------------------------------------------------------------------
+r1901 | openpear | 2010-06-08 23:29:03 +0900 (火, 08  6月 2010) | 1 line
+
+[New Package] Diggin_Http_Response_Charset
+------------------------------------------------------------------------
+ </n>
+    <f>4876</f>
+    <g>http://openpear.org/get/Diggin_Http_Response_Charset-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

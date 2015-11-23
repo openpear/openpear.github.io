@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_TokyoTyrant</name>
+ <channel>openpear.org</channel>
+ <summary>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</summary>
+ <description>[http://tokyocabinet.sourceforge.net/tyrantdoc/:title=TokyoTyrant]をPHPから利用するためのPurePHPライブラリです。</description>
+ <lead>
+  <name>個々一番</name>
+  <user>cocoiti</user>
+  <email>cocoiti@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-02</date>
+ <time>22:28:46</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+ <notes>------------------------------------------------------------------------
+r58 | cocoiti | 2008-11-02 22:25:10 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\229?\158?\139?\230?\131?\133?\229?\160?\177?\227?\130?\146?\228?\187?\152?\228?\184?\142
+
+------------------------------------------------------------------------
+r57 | cocoiti | 2008-11-02 09:31:35 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\227?\129?\148?\227?\129?\191?\227?\130?\146?\230?\182?\136?\227?\129?\151?\227?\129?\159
+
+------------------------------------------------------------------------
+r56 | cocoiti | 2008-11-02 08:50:48 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\227?\131?\153?\227?\131?\179?\227?\131?\129?\227?\131?\158?\227?\131?\188?\227?\130?\175?\227?\130?\146?\232?\191?\189?\229?\138?\160
+
+------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 06:29:28 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------
+r19 | openpear | 2008-10-31 21:04:08 -0700 (Fri, 31 Oct 2008) | 1 line
+
+[Create Base Directory] Net_TokyoTyrant
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Net" name="/">
+   <file baseinstalldir="/Net" md5sum="c1ef2797a6fce6f804fe56c8b511b4e6" name="Net/TokyoTyrant.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="aa56e5a123c1d7dff3d9952a4201f49c" name="sample/sample_1.php" role="php" />
+   <file baseinstalldir="/Net" md5sum="1b39578fc786081906b240782d05a280" name="tests/benchmark/benchmark.php" role="test" />
+   <file baseinstalldir="/Net" md5sum="cb4d9c78799936a346498fde7a14dc2f" name="tests/benchmark/memcache_benchmark.php" role="test" />
+   <file baseinstalldir="/Net" md5sum="c089ae050b1948ac38f3b07374d53e1d" name="tests/benchmark/mysql_benchmark.php" role="test" />
+   <file baseinstalldir="/Net" md5sum="50f1a604be97209ecf248bb1c44befa8" name="tests/benchmark/mysql_benchmark.sql" role="test" />
+   <file baseinstalldir="/Net" md5sum="fb7e28178684f343162204c006202231" name="tests/tmp_test.php" role="test" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-11-02</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+   <notes>------------------------------------------------------------------------
+r58 | cocoiti | 2008-11-02 22:25:10 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\229?\158?\139?\230?\131?\133?\229?\160?\177?\227?\130?\146?\228?\187?\152?\228?\184?\142
+
+------------------------------------------------------------------------
+r57 | cocoiti | 2008-11-02 09:31:35 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\227?\129?\148?\227?\129?\191?\227?\130?\146?\230?\182?\136?\227?\129?\151?\227?\129?\159
+
+------------------------------------------------------------------------
+r56 | cocoiti | 2008-11-02 08:50:48 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+?\227?\131?\153?\227?\131?\179?\227?\131?\129?\227?\131?\158?\227?\131?\188?\227?\130?\175?\227?\130?\146?\232?\191?\189?\229?\138?\160
+
+------------------------------------------------------------------------
+r44 | cocoiti | 2008-11-02 06:29:28 -0800 (Sun, 02 Nov 2008) | 2 lines
+
+The init commit
+
+------------------------------------------------------------------------
+r19 | openpear | 2008-10-31 21:04:08 -0700 (Fri, 31 Oct 2008) | 1 line
+
+[Create Base Directory] Net_TokyoTyrant
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

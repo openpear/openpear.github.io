@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/net_socket_tiarra">Net_Socket_Tiarra</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <a>0.1.0</a>
+    <mp>5.0.0</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>sotarok</m>
+    <s>Tiarraのソケットを使って発言ができます。
+
+-Tiarra : [http://coderepos.org/share/wiki/Tiarra]</s>
+    <d>Tiarraのソケットを使って発言ができます。
+
+-Tiarra : [http://coderepos.org/share/wiki/Tiarra]</d>
+    <da>2009-05-07 03:16:14</da>
+    <n>------------------------------------------------------------------------
+r791 | sotarok | 2009-05-07 03:14:18 -0700 (Thu, 07 May 2009) | 2 lines
+
+?\227?\130?\189?\227?\131?\188?\227?\130?\185?\232?\191?\189?\229?\138?\160
+
+------------------------------------------------------------------------</n>
+    <f>2622</f>
+    <g>http://openpear.org/get/Net_Socket_Tiarra-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

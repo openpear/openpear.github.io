@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>HTTP_OAuthProvider</name>
+ <channel>openpear.org</channel>
+ <summary>OAuthリクエストの認証を行うサービスプロバイダ側のライブラリ。
+2Legged OAuthと3Legged OAuthの両方に対応。
+対応しているシグネチャ方式は、HMAC-SHA1とRSA-SHA1。
+トークンの保持に、Cache_Lite/Memcached/Memcacheのいずれかを使用。
+SAP用のSignature検証も可能。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthProvider/trunk/example</summary>
+ <description>OAuthリクエストの認証を行うサービスプロバイダ側のライブラリ。
+2Legged OAuthと3Legged OAuthの両方に対応。
+対応しているシグネチャ方式は、HMAC-SHA1とRSA-SHA1。
+トークンの保持に、Cache_Lite/Memcached/Memcacheのいずれかを使用。
+SAP用のSignature検証も可能。
+
+サンプルはここから。
+http://openpear.org/repository/HTTP_OAuthProvider/trunk/example</description>
+ <lead>
+  <name>eth0jp</name>
+  <user>eth0jp</user>
+  <email>tetu@eth0.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-09-02</date>
+ <time>22:27:03</time>
+ <version>
+  <release>1.0.8</release>
+  <api>1.0.8</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r2101 | eth0jp | 2010-09-02 22:26:04 +0900 (木, 02  9月 2010) | 1 line
+
+mod version
+------------------------------------------------------------------------
+r2100 | eth0jp | 2010-09-01 05:50:14 +0900 (水, 01  9月 2010) | 1 line
+
+mod Request for lighttpd
+------------------------------------------------------------------------
+r2069 | eth0jp | 2010-08-20 18:27:43 +0900 (金, 20  8月 2010) | 1 line
+
+mod verify
+------------------------------------------------------------------------
+r2067 | eth0jp | 2010-08-20 04:59:40 +0900 (金, 20  8月 2010) | 1 line
+
+add store static
+------------------------------------------------------------------------
+r2055 | eth0jp | 2010-08-16 09:57:51 +0900 (月, 16  8月 2010) | 1 line
+
+mod version
+------------------------------------------------------------------------
+r2054 | eth0jp | 2010-08-16 09:54:16 +0900 (月, 16  8月 2010) | 1 line
+
+mod comment
+------------------------------------------------------------------------
+r2026 | eth0jp | 2010-08-12 02:53:49 +0900 (木, 12  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r2023 | eth0jp | 2010-08-11 05:14:01 +0900 (水, 11  8月 2010) | 1 line
+
+mod store, mod example
+------------------------------------------------------------------------
+r2022 | eth0jp | 2010-08-11 05:03:19 +0900 (水, 11  8月 2010) | 1 line
+
+add StoreException, add StoreMemcache, add StoreMemcached
+------------------------------------------------------------------------
+r2020 | eth0jp | 2010-08-10 19:59:34 +0900 (火, 10  8月 2010) | 1 line
+
+mod method name findConsumer=&gt;fetchConsumer
+------------------------------------------------------------------------
+r2015 | eth0jp | 2010-08-10 04:13:47 +0900 (火, 10  8月 2010) | 1 line
+
+add example 3leeged HTTP_OAuthConsumer
+------------------------------------------------------------------------
+r2013 | eth0jp | 2010-08-09 21:23:33 +0900 (月, 09  8月 2010) | 1 line
+
+mod example 3legged authorize
+------------------------------------------------------------------------
+r2012 | eth0jp | 2010-08-09 21:18:36 +0900 (月, 09  8月 2010) | 1 line
+
+mod 3legged consumer check
+------------------------------------------------------------------------
+r2010 | eth0jp | 2010-08-09 20:30:09 +0900 (月, 09  8月 2010) | 1 line
+
+mod handler, mod example
+------------------------------------------------------------------------
+r2009 | eth0jp | 2010-08-09 17:06:50 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2008 | eth0jp | 2010-08-09 15:20:04 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2007 | eth0jp | 2010-08-09 14:50:43 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2006 | eth0jp | 2010-08-09 04:54:51 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2004 | eth0jp | 2010-08-09 04:40:47 +0900 (月, 09  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1979 | openpear | 2010-08-04 05:55:03 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthProvider
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9927e4113514d85d346a3c86783e1bbf" name="HTTP/OAuthProvider/Signature/HMAC_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="7161b28b5451f4260e1e750eee3b8952" name="HTTP/OAuthProvider/Signature/RSA_SHA1.php" role="php" />
+   <file baseinstalldir="/" md5sum="8458d5d5dbc0df783b02f3ba8ef18fc2" name="HTTP/OAuthProvider/Store/CacheLite.php" role="php" />
+   <file baseinstalldir="/" md5sum="48cd26c1850f5d606b338ed67b680b6d" name="HTTP/OAuthProvider/Store/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="15206c7b72e2e18b916caced0a0495b3" name="HTTP/OAuthProvider/Store/Memcache.php" role="php" />
+   <file baseinstalldir="/" md5sum="f23480cad422946befc7715e9cbfb2aa" name="HTTP/OAuthProvider/Store/Memcached.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d0e68e2b5c85789b14ca28cbf3b8ed8" name="HTTP/OAuthProvider/Store/Static.php" role="php" />
+   <file baseinstalldir="/" md5sum="a728fe5a3f79bf97baec5a6b3c29f2a5" name="HTTP/OAuthProvider/Consumer.php" role="php" />
+   <file baseinstalldir="/" md5sum="76912596f76701796cee329cd9b578ac" name="HTTP/OAuthProvider/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="67b5871966bcbe989cd27aac2855b6fb" name="HTTP/OAuthProvider/Request.php" role="php" />
+   <file baseinstalldir="/" md5sum="475183b0dd8b55909b236a263ff52935" name="HTTP/OAuthProvider/Signature.php" role="php" />
+   <file baseinstalldir="/" md5sum="43452e709a4c268dae9dd52df8f7b524" name="HTTP/OAuthProvider/Store.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d2ac6760fa75a7b71c45188718f37d0" name="HTTP/OAuthProvider.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Cache_Lite</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.8</release>
+    <api>1.0.8</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-09-02</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r2101 | eth0jp | 2010-09-02 22:26:04 +0900 (木, 02  9月 2010) | 1 line
+
+mod version
+------------------------------------------------------------------------
+r2100 | eth0jp | 2010-09-01 05:50:14 +0900 (水, 01  9月 2010) | 1 line
+
+mod Request for lighttpd
+------------------------------------------------------------------------
+r2069 | eth0jp | 2010-08-20 18:27:43 +0900 (金, 20  8月 2010) | 1 line
+
+mod verify
+------------------------------------------------------------------------
+r2067 | eth0jp | 2010-08-20 04:59:40 +0900 (金, 20  8月 2010) | 1 line
+
+add store static
+------------------------------------------------------------------------
+r2055 | eth0jp | 2010-08-16 09:57:51 +0900 (月, 16  8月 2010) | 1 line
+
+mod version
+------------------------------------------------------------------------
+r2054 | eth0jp | 2010-08-16 09:54:16 +0900 (月, 16  8月 2010) | 1 line
+
+mod comment
+------------------------------------------------------------------------
+r2026 | eth0jp | 2010-08-12 02:53:49 +0900 (木, 12  8月 2010) | 1 line
+
+add comment
+------------------------------------------------------------------------
+r2023 | eth0jp | 2010-08-11 05:14:01 +0900 (水, 11  8月 2010) | 1 line
+
+mod store, mod example
+------------------------------------------------------------------------
+r2022 | eth0jp | 2010-08-11 05:03:19 +0900 (水, 11  8月 2010) | 1 line
+
+add StoreException, add StoreMemcache, add StoreMemcached
+------------------------------------------------------------------------
+r2020 | eth0jp | 2010-08-10 19:59:34 +0900 (火, 10  8月 2010) | 1 line
+
+mod method name findConsumer=&gt;fetchConsumer
+------------------------------------------------------------------------
+r2015 | eth0jp | 2010-08-10 04:13:47 +0900 (火, 10  8月 2010) | 1 line
+
+add example 3leeged HTTP_OAuthConsumer
+------------------------------------------------------------------------
+r2013 | eth0jp | 2010-08-09 21:23:33 +0900 (月, 09  8月 2010) | 1 line
+
+mod example 3legged authorize
+------------------------------------------------------------------------
+r2012 | eth0jp | 2010-08-09 21:18:36 +0900 (月, 09  8月 2010) | 1 line
+
+mod 3legged consumer check
+------------------------------------------------------------------------
+r2010 | eth0jp | 2010-08-09 20:30:09 +0900 (月, 09  8月 2010) | 1 line
+
+mod handler, mod example
+------------------------------------------------------------------------
+r2009 | eth0jp | 2010-08-09 17:06:50 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2008 | eth0jp | 2010-08-09 15:20:04 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2007 | eth0jp | 2010-08-09 14:50:43 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2006 | eth0jp | 2010-08-09 04:54:51 +0900 (月, 09  8月 2010) | 1 line
+
+mod example
+------------------------------------------------------------------------
+r2004 | eth0jp | 2010-08-09 04:40:47 +0900 (月, 09  8月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1979 | openpear | 2010-08-04 05:55:03 +0900 (水, 04  8月 2010) | 1 line
+
+[New Package] HTTP_OAuthProvider
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

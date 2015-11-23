@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_html2pdf">Services_HTML2PDF</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>beta</st>
+    <l>PHP License 3.01</l>
+    <m>halt</m>
+    <s>アシアルが提供しているHTML2PDFのAPIを利用するライブラリ。
+
+http://html2pdf.biz
+
+http://project-p.jp/halt/anubis/blog_show/913
+
+コード本体はcodereposにあります。</s>
+    <d>アシアルが提供しているHTML2PDFのAPIを利用するライブラリ。
+
+http://html2pdf.biz
+
+http://project-p.jp/halt/anubis/blog_show/913
+
+コード本体はcodereposにあります。</d>
+    <da>2009-09-30 20:12:03</da>
+    <n>
+------------------------------------------------------------------------
+r1218 | halt | 2009-09-30 20:10:59 +0900 (水, 30  9月 2009) | 1 line
+
+オー。セッテイ ミステタヨー
+------------------------------------------------------------------------
+r1217 | halt | 2009-09-30 19:56:50 +0900 (水, 30  9月 2009) | 1 line
+
+refs http://d.hatena.ne.jp/sotarok/20090129/1233253588
+------------------------------------------------------------------------
+r1216 | halt | 2009-09-30 19:55:05 +0900 (水, 30  9月 2009) | 1 line
+
+svn:external用のディレクトリ作成
+------------------------------------------------------------------------
+r1215 | openpear | 2009-09-30 19:54:02 +0900 (水, 30  9月 2009) | 1 line
+
+[New Package] Services_HTML2PDF
+------------------------------------------------------------------------
+ </n>
+    <f>1816</f>
+    <g>http://openpear.org/get/Services_HTML2PDF-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>

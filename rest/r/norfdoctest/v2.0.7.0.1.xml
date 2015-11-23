@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/norfdoctest">NorfDocTest</p>
+    <c>openpear.org</c>
+    <v>0.7.0.1</v>
+    <a>0.7.0.1</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>MIT Licence</l>
+    <m>szktty</m>
+    <s>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</s>
+    <d>A DocTest tool. Main repository is here:
+
+[http://bitbucket.org/szktty/norfdoctest/]
+
+- [http://svn.openpear.org/NorfDocTest/doc/doctest_ja.html:title=Documentation (Japanese)]</d>
+    <da>2009-03-08 17:54:37</da>
+    <n>------------------------------------------------------------------------
+r535 | szktty | 2009-03-08 17:52:20 -0700 (Sun, 08 Mar 2009) | 1 line
+
+imported
+------------------------------------------------------------------------
+r428 | openpear | 2009-02-23 10:06:10 -0800 (Mon, 23 Feb 2009) | 1 line
+
+[Create Base Directory] NorfDocTest
+------------------------------------------------------------------------</n>
+    <f>40903</f>
+    <g>http://openpear.org/get/NorfDocTest-0.7.0.1</g>
+    <x xlink:href="package.0.7.0.1.xml"/>
+</r>

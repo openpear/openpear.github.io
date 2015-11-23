@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>File_HyperEstraier</name>
+ <channel>openpear.org</channel>
+ <summary>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</summary>
+ <description>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</description>
+ <lead>
+  <name>Kawai</name>
+  <user>kawai</user>
+  <email>hiroaki.kawai@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-12-03</date>
+ <time>23:33:49</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP Licence</license>
+ <notes>------------------------------------------------------------------------
+r178 | kawai | 2008-12-03 23:26:07 -0800 (Wed, 03 Dec 2008) | 1 line
+
+?\229?\136?\157?\230?\156?\159?\230?\138?\149?\229?\133?\165
+------------------------------------------------------------------------
+r177 | openpear | 2008-12-03 23:12:06 -0800 (Wed, 03 Dec 2008) | 1 line
+
+[Create Base Directory] File_HyperEstraier
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/File" name="/">
+   <file baseinstalldir="/File" md5sum="ef0f89d275cacef3ae9544f1e842b532" name="HyperEstraier/Draft.php" role="php" />
+   <file baseinstalldir="/File" md5sum="7d53d8dc3600a437ca7ef59bb803f9e9" name="HyperEstraier/SearchResult.php" role="php" />
+   <file baseinstalldir="/File" md5sum="01f99e5fe86d17bc9be0dc3dabd80397" name="HyperEstraier/Snippet.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-12-03</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP Licence</license>
+   <notes>------------------------------------------------------------------------
+r178 | kawai | 2008-12-03 23:26:07 -0800 (Wed, 03 Dec 2008) | 1 line
+
+?\229?\136?\157?\230?\156?\159?\230?\138?\149?\229?\133?\165
+------------------------------------------------------------------------
+r177 | openpear | 2008-12-03 23:12:06 -0800 (Wed, 03 Dec 2008) | 1 line
+
+[Create Base Directory] File_HyperEstraier
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

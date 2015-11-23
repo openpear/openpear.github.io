@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>File_HyperEstraier</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP Licence</l>
+<s>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</s>
+<d>[http://hyperestraier.sourceforge.net/:HyperEstraier] で使われるファイルフォーマットをパースします。
+
+現在サポートされているファイルフォーマットは次の通り：
+- 文書ドラフト
+- estmaster から得られる検索結果</d>
+<r xlink:href="/rest/r/file_hyperestraier" />
+</p>

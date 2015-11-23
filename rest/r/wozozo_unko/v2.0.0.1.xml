@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_unko">Wozozo_Unko</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.2.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>riaf</m>
+    <s>hogera  hogefuga  hoge      fuga          gufuuff        hogge</s>
+    <d>hogera  hogefuga  hoge      fuga          gufuuff        hogge</d>
+    <da>2009-08-07 02:12:01</da>
+    <n>
+------------------------------------------------------------------------
+r1084 | sotarok | 2009-08-07 01:34:44 +0900 (金, 07  8月 2009) | 2 lines
+
+日本語テスト
+
+------------------------------------------------------------------------
+r839 | sotarok | 2009-05-17 01:58:14 +0900 (日, 17  5月 2009) | 1 line
+
+move
+------------------------------------------------------------------------
+r838 | sotarok | 2009-05-17 01:45:55 +0900 (日, 17  5月 2009) | 1 line
+
+update
+------------------------------------------------------------------------
+r837 | sotarok | 2009-05-17 01:42:40 +0900 (日, 17  5月 2009) | 1 line
+
+commit
+------------------------------------------------------------------------
+r836 | openpear | 2009-05-17 01:05:39 +0900 (日, 17  5月 2009) | 1 line
+
+[Create Base Directory] Wozozo_Unko
+------------------------------------------------------------------------
+ </n>
+    <f>1249</f>
+    <g>http://openpear.org/get/Wozozo_Unko-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Auth_WSSE</name>
+ <channel>openpear.org</channel>
+ <summary>WSSE認証のパッケージです。</summary>
+ <description>WSSE認証のパッケージです。</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-06-29</date>
+ <time>09:10:16</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP3.01</license>
+ <notes>------------------------------------------------------------------------
+r986 | shimooka | 2009-06-29 09:09:49 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r985 | shimooka | 2009-06-29 09:06:58 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r984 | shimooka | 2009-06-29 09:03:37 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- moved test file
+------------------------------------------------------------------------
+r983 | shimooka | 2009-06-29 09:02:41 -0700 (Mon, 29 Jun 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r982 | shimooka | 2009-06-29 08:28:13 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- renamed for packaging
+------------------------------------------------------------------------
+r978 | shimooka | 2009-06-29 08:16:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added comments
+------------------------------------------------------------------------
+r977 | shimooka | 2009-06-29 08:15:02 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added an example
+------------------------------------------------------------------------
+r976 | shimooka | 2009-06-29 07:01:11 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- fixed comments
+------------------------------------------------------------------------
+r975 | shimooka | 2009-06-29 06:59:43 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r974 | openpear | 2009-06-29 06:15:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+[Create Base Directory] Auth_WSSE
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="8b295e05f5ae25b79f7225f78dd4f6fa" name="Auth/WSSE.php" role="php" />
+   <file baseinstalldir="/" md5sum="2ae0a0ecdc2c657f524dfc3d0314842f" name="examples/sample.php" role="doc" />
+   <file baseinstalldir="/" md5sum="d39112177f17cffaec5ae9820411ee09" name="tests/Auth_WSSETest.php" role="test" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.5.4</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request2</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-06-29</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP3.01</license>
+   <notes>------------------------------------------------------------------------
+r986 | shimooka | 2009-06-29 09:09:49 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r985 | shimooka | 2009-06-29 09:06:58 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- committed temporary
+------------------------------------------------------------------------
+r984 | shimooka | 2009-06-29 09:03:37 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- moved test file
+------------------------------------------------------------------------
+r983 | shimooka | 2009-06-29 09:02:41 -0700 (Mon, 29 Jun 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r982 | shimooka | 2009-06-29 08:28:13 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- renamed for packaging
+------------------------------------------------------------------------
+r978 | shimooka | 2009-06-29 08:16:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added comments
+------------------------------------------------------------------------
+r977 | shimooka | 2009-06-29 08:15:02 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- added an example
+------------------------------------------------------------------------
+r976 | shimooka | 2009-06-29 07:01:11 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- fixed comments
+------------------------------------------------------------------------
+r975 | shimooka | 2009-06-29 06:59:43 -0700 (Mon, 29 Jun 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r974 | openpear | 2009-06-29 06:15:31 -0700 (Mon, 29 Jun 2009) | 1 line
+
+[Create Base Directory] Auth_WSSE
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

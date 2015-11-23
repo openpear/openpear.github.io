@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Foursquare</name>
+ <channel>openpear.org</channel>
+ <summary>Services_Foursquare
+
+Implementation of foursquare API
+
+main repository is [https://github.com/isamu/php-foursquare]
+
+FoursquareのAPIのライブラリです。</summary>
+ <description>Services_Foursquare
+
+Implementation of foursquare API
+
+main repository is [https://github.com/isamu/php-foursquare]
+
+FoursquareのAPIのライブラリです。</description>
+ <lead>
+  <name>いさむ</name>
+  <user>isamu</user>
+  <email>openpear@isamu.cc</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-26</date>
+ <time>10:15:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+ <notes>
+------------------------------------------------------------------------
+r2262 | isamu | 2010-11-26 09:54:15 +0900 (金, 26 11月 2010) | 2 lines
+
+remove package2.xml
+
+------------------------------------------------------------------------
+r2261 | isamu | 2010-11-26 09:53:54 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2260 | isamu | 2010-11-26 09:51:35 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2259 | isamu | 2010-11-26 09:50:58 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2257 | isamu | 2010-11-26 09:38:20 +0900 (金, 26 11月 2010) | 2 lines
+
+first commit
+
+------------------------------------------------------------------------
+r2256 | openpear | 2010-11-26 09:25:02 +0900 (金, 26 11月 2010) | 1 line
+
+[New Package] Services_Foursquare
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="76de616165c3a0ed6cd6366607fa4798" name="Services/Foursquare.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-11-26</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+   <notes>
+------------------------------------------------------------------------
+r2262 | isamu | 2010-11-26 09:54:15 +0900 (金, 26 11月 2010) | 2 lines
+
+remove package2.xml
+
+------------------------------------------------------------------------
+r2261 | isamu | 2010-11-26 09:53:54 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2260 | isamu | 2010-11-26 09:51:35 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2259 | isamu | 2010-11-26 09:50:58 +0900 (金, 26 11月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2257 | isamu | 2010-11-26 09:38:20 +0900 (金, 26 11月 2010) | 2 lines
+
+first commit
+
+------------------------------------------------------------------------
+r2256 | openpear | 2010-11-26 09:25:02 +0900 (金, 26 11月 2010) | 1 line
+
+[New Package] Services_Foursquare
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

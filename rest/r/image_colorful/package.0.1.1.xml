@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Image_Colorful</name>
+ <channel>openpear.org</channel>
+ <summary>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+3/6 0.1.0-stableリリース
+
+TODO
+・ストライプ機能
+・揺らぎ機能
+・画像が生成される確率が取得出来るメソッド
+・文字を追加時はみ出す不具合</summary>
+ <description>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+3/6 0.1.0-stableリリース
+
+TODO
+・ストライプ機能
+・揺らぎ機能
+・画像が生成される確率が取得出来るメソッド
+・文字を追加時はみ出す不具合</description>
+ <lead>
+  <name>camelmasa</name>
+  <user>camelmasa</user>
+  <email>camelmasa@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-07</date>
+ <time>05:56:37</time>
+ <version>
+  <release>0.1.1</release>
+  <api>0.1.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r527 | camelmasa | 2009-03-07 05:46:39 -0800 (Sat, 07 Mar 2009) | 1 line
+
+0.1.1-stable?\227?\129?\174?\227?\131?\170?\227?\131?\170?\227?\131?\188?\227?\130?\185
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Image" name="/">
+   <file baseinstalldir="/Image" md5sum="8d545a32531a8ec76fd493171cdcf58c" name="Image_Colorful.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-03-07</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r527 | camelmasa | 2009-03-07 05:46:39 -0800 (Sat, 07 Mar 2009) | 1 line
+
+0.1.1-stable?\227?\129?\174?\227?\131?\170?\227?\131?\170?\227?\131?\188?\227?\130?\185
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

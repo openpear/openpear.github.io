@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Yahoo_JP_DA</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>BSD</l>
+<s>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</s>
+<d>*概要
+Service_Yahoo_JPのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/da/v1/parse.html:title=日本語係り受け解析API]へのアクセスを容易にします。
+
+*備考
+Services_Yahoo_JP_Textから名称変更</d>
+<r xlink:href="/rest/r/services_yahoo_jp_da" />
+</p>

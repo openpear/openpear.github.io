@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_Socket_Tiarra</name>
+ <channel>openpear.org</channel>
+ <summary>Tiarraのソケットを使って発言ができます。
+
+-Tiarra : [http://coderepos.org/share/wiki/Tiarra]</summary>
+ <description>Tiarraのソケットを使って発言ができます。
+
+-Tiarra : [http://coderepos.org/share/wiki/Tiarra]</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-05-07</date>
+ <time>03:16:14</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r791 | sotarok | 2009-05-07 03:14:18 -0700 (Thu, 07 May 2009) | 2 lines
+
+?\227?\130?\189?\227?\131?\188?\227?\130?\185?\232?\191?\189?\229?\138?\160
+
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4f6a3874bf21fb5d29a490e65de9952c" name="Net/Socket/Tiarra/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="702f424fc3643dae6b40ceb2beea8a8e" name="Net/Socket/Tiarra.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-05-07</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r791 | sotarok | 2009-05-07 03:14:18 -0700 (Thu, 07 May 2009) | 2 lines
+
+?\227?\130?\189?\227?\131?\188?\227?\130?\185?\232?\191?\189?\229?\138?\160
+
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

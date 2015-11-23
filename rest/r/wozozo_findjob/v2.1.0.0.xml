@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_findjob">Wozozo_FindJob</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <a>1.0.0</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>halt</m>
+    <s>id:wozozoに合った求人情報を提供する。</s>
+    <d>id:wozozoに合った求人情報を提供する。</d>
+    <da>2009-10-07 18:36:02</da>
+    <n>
+------------------------------------------------------------------------
+r1271 | halt | 2009-10-07 18:35:13 +0900 (水, 07 10月 2009) | 1 line
+
+initial import
+------------------------------------------------------------------------
+r1270 | openpear | 2009-10-07 18:34:02 +0900 (水, 07 10月 2009) | 1 line
+
+[New Package] Wozozo_FindJob
+------------------------------------------------------------------------
+ </n>
+    <f>1306</f>
+    <g>http://openpear.org/get/Wozozo_FindJob-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

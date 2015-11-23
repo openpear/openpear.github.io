@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Photozou</name>
+ <channel>openpear.org</channel>
+ <summary>フォト蔵のAPIを利用できるライブラリです。</summary>
+ <description>フォト蔵のAPIを利用できるライブラリです。</description>
+ <lead>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-08-20</date>
+ <time>14:47:02</time>
+ <version>
+  <release>1.2.0</release>
+  <api>1.2.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1130 | openpear | 2009-08-20 14:32:02 +0900 (木, 20  8月 2009) | 1 line
+
+[New Package] Services_Photozou
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="473c1d5bbc58cea6e3b5dcbad62b2421" name="Services/Photozou.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.0.0</min>
+   </pearinstaller>
+   <package>
+    <name>HTTP_Request</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.2.0</release>
+    <api>1.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-08-20</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1130 | openpear | 2009-08-20 14:32:02 +0900 (木, 20  8月 2009) | 1 line
+
+[New Package] Services_Photozou
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

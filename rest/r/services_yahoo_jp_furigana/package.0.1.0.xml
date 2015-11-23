@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Yahoo_JP_Furigana</name>
+ <channel>openpear.org</channel>
+ <summary>*概要
+Service_Yahooのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/furigana/v1/furigana.html:title=ルビ振りAPI]へのアクセスを容易にします。
+
+*インストール
+&gt;||
+$ sudo pear install -a Services_Yahoo_JP_Furigana
+||&lt;
+
+*サンプルコード
+&gt;||
+&lt;?php
+require_once &apos;Services/Yahoo/JP/Furigana.php&apos;;
+
+try {
+    $yahoo = Services_Yahoo_JP_Furigana::factory(&apos;furigana&apos;);
+    $yahoo-&gt;withAppID(getenv(&apos;YAHOO_APP_ID&apos;));
+    $yahoo-&gt;setSentence(&apos;うちの庭には鶏がいます。&apos;);
+    $yahoo-&gt;setGrade(1);
+    $result = $yahoo-&gt;submit();
+
+    $str = null;
+    foreach ($result as $word) {
+        $str .= isset($word[&apos;Furigana&apos;]) ? $word[&apos;Furigana&apos;] : $word[&apos;Surface&apos;];
+    }
+    echo $str . PHP_EOL;
+} catch (Services_Yahoo_Exception $e) {
+    die($e-&gt;getMessage());
+}
+||&lt;
+
+*その他
+-Services_Yahoo_JPに取り込まれたい</summary>
+ <description>*概要
+Service_Yahooのサブパッケージで、[http://developer.yahoo.co.jp/webapi/jlp/furigana/v1/furigana.html:title=ルビ振りAPI]へのアクセスを容易にします。
+
+*インストール
+&gt;||
+$ sudo pear install -a Services_Yahoo_JP_Furigana
+||&lt;
+
+*サンプルコード
+&gt;||
+&lt;?php
+require_once &apos;Services/Yahoo/JP/Furigana.php&apos;;
+
+try {
+    $yahoo = Services_Yahoo_JP_Furigana::factory(&apos;furigana&apos;);
+    $yahoo-&gt;withAppID(getenv(&apos;YAHOO_APP_ID&apos;));
+    $yahoo-&gt;setSentence(&apos;うちの庭には鶏がいます。&apos;);
+    $yahoo-&gt;setGrade(1);
+    $result = $yahoo-&gt;submit();
+
+    $str = null;
+    foreach ($result as $word) {
+        $str .= isset($word[&apos;Furigana&apos;]) ? $word[&apos;Furigana&apos;] : $word[&apos;Surface&apos;];
+    }
+    echo $str . PHP_EOL;
+} catch (Services_Yahoo_Exception $e) {
+    die($e-&gt;getMessage());
+}
+||&lt;
+
+*その他
+-Services_Yahoo_JPに取り込まれたい</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-20</date>
+ <time>06:18:27</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+ <notes>------------------------------------------------------------------------
+r603 | shimooka | 2009-03-20 06:12:37 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Services" name="/">
+   <file baseinstalldir="/Services" md5sum="fe92dfb7e81f1c3de010264c9ff9f5a5" name="Yahoo/JP/Furigana/AbstractFurigana.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="7f40c138642a5390d00f66ea8b594c38" name="Yahoo/JP/Furigana/furigana.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="d9795dac51abcb92b3afdc8873f225e0" name="Yahoo/JP/Furigana/Response.php" role="php" />
+   <file baseinstalldir="/Services" md5sum="9c57fb6df17e71ec20e64a182ce46a0b" name="Yahoo/JP/Furigana.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Services_Yahoo</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-03-20</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>------------------------------------------------------------------------
+r603 | shimooka | 2009-03-20 06:12:37 -0700 (Fri, 20 Mar 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

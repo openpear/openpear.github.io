@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_buzzurl">Services_Buzzurl</p>
+    <c>openpear.org</c>
+    <v>0.0.3</v>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>tell-k</m>
+    <s>* description
+
+Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+
+** Buzzurl API
+ http://labs.ecnavi.jp/developer/buzzurl/api/
+
+
+* version 
+
+&gt;||
+0.0.7-alpha
+||&lt;
+
+
+* dependencies
+
+** cURL
+  http://php.net/manual/ja/book.curl.php
+
+
+* example
+
+&gt;||
+&lt;?php
+
+$id = 'tell-k' //&lt;= your buzzurl id
+
+$api = Services_Buzzurl::getInstance();
+$result = $api-&gt;getReaders($id);
+
+foreach($result as $user)  {
+      print $user . &quot;&lt;br /&gt;\n&quot;;
+}
+
+$api-&gt;setFormat('json');
+$result = $api-&gt;getReaders($id);
+
+print $result . &quot; &lt;br /&gt;\n&quot;; //print json data
+
+//add bookmark
+$api = Services_Buzzurl::getInstance();
+$email  = ''; //&lt;= your buzzurl login id(email)  
+$passwd = ''; //&lt;= your buzzurl password
+$args   = array('url' =&gt; 'http://buzzurl.jp');
+$result = $api-&gt;add($email, $passwd, $args);
+ 
+if ($result) {
+    print 'add bookmark success' . &quot;&lt;br /&gt;\n&quot;;
+} else {
+    print 'add bookmark failed' . &quot;&lt;br /&gt;\n&quot; ;
+}
+
+
+
+||&lt;
+
+
+* test
+
+pearのtestディレクトリに移動して、テストコードが実行できます。
+
+limeを利用しています。
+
+
+&gt;||
+cd /usr/share/pear/test/Services_Buzzurl/
+php test_all.php 
+||&lt;
+
+
+* todo 
+
+(2010/06/15 完了) 投稿APIが未対応 http://labs.ecnavi.jp/developer/2007/03/api_2.html</s>
+    <d>* description
+
+Buzzurl(http://buzzurl.jp)のAPIをPHPから利用するためのライブラリです。
+
+
+** Buzzurl API
+ http://labs.ecnavi.jp/developer/buzzurl/api/
+
+
+* version 
+
+&gt;||
+0.0.7-alpha
+||&lt;
+
+
+* dependencies
+
+** cURL
+  http://php.net/manual/ja/book.curl.php
+
+
+* example
+
+&gt;||
+&lt;?php
+
+$id = 'tell-k' //&lt;= your buzzurl id
+
+$api = Services_Buzzurl::getInstance();
+$result = $api-&gt;getReaders($id);
+
+foreach($result as $user)  {
+      print $user . &quot;&lt;br /&gt;\n&quot;;
+}
+
+$api-&gt;setFormat('json');
+$result = $api-&gt;getReaders($id);
+
+print $result . &quot; &lt;br /&gt;\n&quot;; //print json data
+
+//add bookmark
+$api = Services_Buzzurl::getInstance();
+$email  = ''; //&lt;= your buzzurl login id(email)  
+$passwd = ''; //&lt;= your buzzurl password
+$args   = array('url' =&gt; 'http://buzzurl.jp');
+$result = $api-&gt;add($email, $passwd, $args);
+ 
+if ($result) {
+    print 'add bookmark success' . &quot;&lt;br /&gt;\n&quot;;
+} else {
+    print 'add bookmark failed' . &quot;&lt;br /&gt;\n&quot; ;
+}
+
+
+
+||&lt;
+
+
+* test
+
+pearのtestディレクトリに移動して、テストコードが実行できます。
+
+limeを利用しています。
+
+
+&gt;||
+cd /usr/share/pear/test/Services_Buzzurl/
+php test_all.php 
+||&lt;
+
+
+* todo 
+
+(2010/06/15 完了) 投稿APIが未対応 http://labs.ecnavi.jp/developer/2007/03/api_2.html</d>
+    <da>2010-05-17 08:43:02</da>
+    <n>
+------------------------------------------------------------------------
+r1841 | tell-k | 2010-05-17 08:30:27 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * comment modified 
+
+
+------------------------------------------------------------------------
+r1837 | tell-k | 2010-05-17 07:55:58 +0900 (月, 17  5月 2010) | 4 lines
+
+
+ * first commit
+
+
+------------------------------------------------------------------------
+r1836 | openpear | 2010-05-16 23:37:05 +0900 (日, 16  5月 2010) | 1 line
+
+[New Package] Services_Buzzurl
+------------------------------------------------------------------------
+ </n>
+    <f>3019</f>
+    <g>http://openpear.org/get/Services_Buzzurl-0.0.3</g>
+    <x xlink:href="package.0.0.3.xml"/>
+</r>

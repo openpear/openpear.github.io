@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Wozozo_Zenra</name>
+ <channel>openpear.org</channel>
+ <summary>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once &apos;Wozozo/Zenra.php&apos;;
+$appid  = getenv(&apos;YAHOO_APPID&apos;);
+$params = array(&apos;appid&apos; =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize(&apos;お腹が空きました&apos;); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once &apos;Wozozo/Zenra.php&apos;;
+$appid  = getenv(&apos;YAHOO_APPID&apos;);
+$params = array(
+    &apos;appid&apos;    =&gt; $appid,
+    &apos;position&apos; =&gt; &apos;名詞&apos;,
+    &apos;text&apos;     =&gt; &apos;夜の&apos;
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize(&apos;お腹が空いたのでスパゲッティが食べたい&apos;);
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer&apos;s application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</summary>
+ <description>Zenrize in PHP
+
+&gt;||
+&lt;?php
+require_once &apos;Wozozo/Zenra.php&apos;;
+$appid  = getenv(&apos;YAHOO_APPID&apos;);
+$params = array(&apos;appid&apos; =&gt; $appid);
+$zenra  = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize(&apos;お腹が空きました&apos;); // お腹が全裸で空きました
+||&lt;
+
+Nightize
+&gt;||
+&lt;?php
+require_once &apos;Wozozo/Zenra.php&apos;;
+$appid  = getenv(&apos;YAHOO_APPID&apos;);
+$params = array(
+    &apos;appid&apos;    =&gt; $appid,
+    &apos;position&apos; =&gt; &apos;名詞&apos;,
+    &apos;text&apos;     =&gt; &apos;夜の&apos;
+);
+$zenra = new \Wozozo\Zenra($params);
+echo $zenra-&gt;zenrize(&apos;お腹が空いたのでスパゲッティが食べたい&apos;);
+// 夜のお腹が空いたので夜のスパゲッティが食べたい
+||&lt;
+
+*Requirement
+PHP5.3
+HTTP_Request2
+PHPUnit
+Yahoo! Japan Developer&apos;s application id
+Yahoo!デベロッパーネットワーク - テキスト解析 - 日本語形態素解析</description>
+ <lead>
+  <name>heavenshell</name>
+  <user>heavenshell</user>
+  <email>heavenshell.jp@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-11-24</date>
+ <time>23:09:02</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r2249 | heavenshell | 2010-11-24 23:05:23 +0900 (水, 24 11月 2010) | 1 line
+
+Import from https://github.com/heavenshell/php-wozozo-zenra/tree/v0.0.1
+------------------------------------------------------------------------
+r2248 | openpear | 2010-11-24 22:56:02 +0900 (水, 24 11月 2010) | 1 line
+
+[New Package] Wozozo_Zenra
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="7dd41e3a8907d10a1f5f1811ada32f02" name="Wozozo/Zenra/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="f89213edea711ddea5163fd70be5aca1" name="Wozozo/Zenra.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2010-11-24</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r2249 | heavenshell | 2010-11-24 23:05:23 +0900 (水, 24 11月 2010) | 1 line
+
+Import from https://github.com/heavenshell/php-wozozo-zenra/tree/v0.0.1
+------------------------------------------------------------------------
+r2248 | openpear | 2010-11-24 22:56:02 +0900 (水, 24 11月 2010) | 1 line
+
+[New Package] Wozozo_Zenra
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

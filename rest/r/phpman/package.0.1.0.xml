@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>phpman</name>
+ <channel>openpear.org</channel>
+ <summary>command line interface to look up php manual.
+
+required:
+ w3m</summary>
+ <description>command line interface to look up php manual.
+
+required:
+ w3m</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-10-11</date>
+ <time>22:31:41</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1322 | sotarok | 2009-10-11 00:00:41 +0900 (日, 11 10月 2009) | 1 line
+
+add source
+------------------------------------------------------------------------
+r1321 | openpear | 2009-10-10 23:59:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] phpman
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="942f31a56dc57b82e50eda5f5923e41d" name="bin/phpman" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="1603634c930da1fa5f8468eb28179da0" name="phpman/Setup.php" role="php">
+    <tasks:postinstallscript>
+     <tasks:paramgroup>
+      <tasks:id>downloadhtml</tasks:id>
+      <tasks:instructions>Download Manual HTML</tasks:instructions>
+      <tasks:param>
+       <tasks:name>lang</tasks:name>
+       <tasks:prompt>Your language? (choose from: http://php.net/download-docs.php)</tasks:prompt>
+       <tasks:type>string</tasks:type>
+       <tasks:default>ja</tasks:default>
+      </tasks:param>
+      <tasks:param>
+       <tasks:name>mirror</tasks:name>
+       <tasks:prompt>Mirror site?</tasks:prompt>
+       <tasks:type>string</tasks:type>
+       <tasks:default>www.php.net</tasks:default>
+      </tasks:param>
+     </tasks:paramgroup>
+    </tasks:postinstallscript>
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="5afbd3893689403e5dc76efe618f63f9" name="phpman.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="phpman" name="bin/phpman" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-10-11</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">The MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1322 | sotarok | 2009-10-11 00:00:41 +0900 (日, 11 10月 2009) | 1 line
+
+add source
+------------------------------------------------------------------------
+r1321 | openpear | 2009-10-10 23:59:02 +0900 (土, 10 10月 2009) | 1 line
+
+[New Package] phpman
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

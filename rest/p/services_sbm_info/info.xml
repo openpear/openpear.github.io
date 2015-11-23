@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_SBM_Info</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>SBM(ソーシャルブックマーク)の情報を取得するライブラリです。
+
+
+* SBMの情報:
+
+ - ブックマーク数
+ - ブックマーク数の単位 (user|users) (tweet|tweets)
+ - ブックマーク数のランク (色の変わるブックマーク数に応じたランク)
+ - ブックマークコメント
+ - エントリーページのURL
+ - 追加ページのURL
+
+
+* 対応しているSBMサービス:
+
+ - はてなブックマーク (Hatena)
+ - Delicious (Delicious)
+ - livedoorクリップ (Livedoor)
+ - Buzzurl (Buzzurl)
+ - Twitter (Twitter)</s>
+<d>SBM(ソーシャルブックマーク)の情報を取得するライブラリです。
+
+
+* SBMの情報:
+
+ - ブックマーク数
+ - ブックマーク数の単位 (user|users) (tweet|tweets)
+ - ブックマーク数のランク (色の変わるブックマーク数に応じたランク)
+ - ブックマークコメント
+ - エントリーページのURL
+ - 追加ページのURL
+
+
+* 対応しているSBMサービス:
+
+ - はてなブックマーク (Hatena)
+ - Delicious (Delicious)
+ - livedoorクリップ (Livedoor)
+ - Buzzurl (Buzzurl)
+ - Twitter (Twitter)</d>
+<r xlink:href="/rest/r/services_sbm_info" />
+</p>

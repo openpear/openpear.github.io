@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Openpear_Util</name>
+ <channel>openpear.org</channel>
+ <summary>皆で共通化するとうれしい部分をパッケージ化しましょう。誰でも変更可に設定してありますので、汎用的に使う関数やクラスがあったら、じゃんじゃん追加して下さい。
+
+* 共通化したライブラリのロード
+&gt;|
+Openpear_Util::import(&quot;library_name&quot;);
+|&lt;
+でライブラリをロードできます。上記の構文は、Openpear/Util/library_name.php を include します。
+
+* 現在有効なパッケージ
+** array_val
+** ExceptionWrapper</summary>
+ <description>皆で共通化するとうれしい部分をパッケージ化しましょう。誰でも変更可に設定してありますので、汎用的に使う関数やクラスがあったら、じゃんじゃん追加して下さい。
+
+* 共通化したライブラリのロード
+&gt;|
+Openpear_Util::import(&quot;library_name&quot;);
+|&lt;
+でライブラリをロードできます。上記の構文は、Openpear/Util/library_name.php を include します。
+
+* 現在有効なパッケージ
+** array_val
+** ExceptionWrapper</description>
+ <lead>
+  <name>KOYAMA Tetsuji</name>
+  <user>koyhoge</user>
+  <email>koyama@hoge.org</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>halt</name>
+  <user>halt</user>
+  <email>halt.feits@gmail.com</email>
+  <active>yes</active>
+ </developer>
+ <date>2009-11-19</date>
+ <time>19:39:04</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1409 | koyhoge | 2009-11-19 19:34:51 +0900 (木, 19 11月 2009) | 3 lines
+
+* fix:
+  - support ArrayAccess Interface.
+
+------------------------------------------------------------------------
+r414 | koyhoge | 2009-02-23 18:47:19 +0900 (月, 23  2月 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r413 | openpear | 2009-02-23 18:44:41 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Openpear_Util
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="3985704df8e86115b9af84fcc3d92183" name="Openpear/Util/array_val.php" role="php" />
+   <file baseinstalldir="/" md5sum="647006ed45f4755b3d7e6b563ef0a8bd" name="Openpear/Util/ExceptionWrapper.php" role="php" />
+   <file baseinstalldir="/" md5sum="9bf1d452003adcaee64b98c0cf8ebce1" name="Openpear/Util.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2009-11-19</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1409 | koyhoge | 2009-11-19 19:34:51 +0900 (木, 19 11月 2009) | 3 lines
+
+* fix:
+  - support ArrayAccess Interface.
+
+------------------------------------------------------------------------
+r414 | koyhoge | 2009-02-23 18:47:19 +0900 (月, 23  2月 2009) | 2 lines
+
+* initial import
+
+------------------------------------------------------------------------
+r413 | openpear | 2009-02-23 18:44:41 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Openpear_Util
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

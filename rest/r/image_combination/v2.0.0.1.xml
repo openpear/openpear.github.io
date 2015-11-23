@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/image_combination">Image_Combination</p>
+    <c>openpear.org</c>
+    <v>0.0.1</v>
+    <a>0.0.1</a>
+    <mp>5.0.0</mp>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>camelmasa</m>
+    <s>ImageMagickライブラリの車輪の再発明(ヒマつぶしで作った。)</s>
+    <d>ImageMagickライブラリの車輪の再発明(ヒマつぶしで作った。)</d>
+    <da>2010-08-15 16:32:04</da>
+    <n>
+------------------------------------------------------------------------
+r2052 | camelmasa | 2010-08-15 16:29:16 +0900 (日, 15  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2051 | openpear | 2010-08-15 15:48:02 +0900 (日, 15  8月 2010) | 1 line
+
+[New Package] Image_Combination
+------------------------------------------------------------------------
+ </n>
+    <f>3501</f>
+    <g>http://openpear.org/get/Image_Combination-0.0.1</g>
+    <x xlink:href="package.0.0.1.xml"/>
+</r>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Bitly</name>
+ <channel>openpear.org</channel>
+ <summary>bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。</summary>
+ <description>bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。</description>
+ <lead>
+  <name>tknzk</name>
+  <user>tknzk</user>
+  <email>info@tknzk.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-09-22</date>
+ <time>22:57:03</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+ <notes>
+------------------------------------------------------------------------
+r1198 | tknzk | 2009-09-22 22:48:47 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1197 | tknzk | 2009-09-22 22:48:32 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1196 | tknzk | 2009-09-22 22:47:50 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1195 | openpear | 2009-09-22 22:28:02 +0900 (火, 22  9月 2009) | 1 line
+
+[New Package] Services_Bitly
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="3acb32f933abd982cf3e1d2f399dbf93" name="Services/Bitly.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-09-22</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
+   <notes>
+------------------------------------------------------------------------
+r1198 | tknzk | 2009-09-22 22:48:47 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1197 | tknzk | 2009-09-22 22:48:32 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1196 | tknzk | 2009-09-22 22:47:50 +0900 (火, 22  9月 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1195 | openpear | 2009-09-22 22:28:02 +0900 (火, 22  9月 2009) | 1 line
+
+[New Package] Services_Bitly
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

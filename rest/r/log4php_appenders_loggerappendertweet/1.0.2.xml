@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/log4php_appenders_loggerappendertweet">log4php_appenders_LoggerAppenderTweet</p>
+    <c>openpear.org</c>
+    <v>1.0.2</v>
+    <st>beta</st>
+    <l>Apache License Version 2.0</l>
+    <m>yokkuns</m>
+    <s>log4phpのtwitterにポストするAppender。
+
+log4phpとZend_Service_Twitterに依存してます。</s>
+    <d>log4phpのtwitterにポストするAppender。
+
+log4phpとZend_Service_Twitterに依存してます。</d>
+    <da>2010-02-18 06:44:17</da>
+    <n>
+------------------------------------------------------------------------
+r1650 | yokkuns | 2010-02-18 06:14:44 +0900 (木, 18  2月 2010) | 1 line
+
+first import
+------------------------------------------------------------------------
+r1649 | yokkuns | 2010-02-18 05:48:15 +0900 (木, 18  2月 2010) | 1 line
+
+add log4php appenders directory
+------------------------------------------------------------------------
+r1648 | openpear | 2010-02-18 05:47:02 +0900 (木, 18  2月 2010) | 1 line
+
+[New Package] log4php_appenders_LoggerAppenderTweet
+------------------------------------------------------------------------
+ </n>
+    <f>2009</f>
+    <g>http://openpear.org/get/log4php_appenders_LoggerAppenderTweet-1.0.2</g>
+    <x xlink:href="package.1.0.2.xml"/>
+</r>

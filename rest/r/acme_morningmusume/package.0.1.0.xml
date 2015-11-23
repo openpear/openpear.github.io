@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Acme_MorningMusume</name>
+ <channel>openpear.org</channel>
+ <summary>phpcon 2008 での takesako さんの一言から openpear への野望は始まった訳です。</summary>
+ <description>phpcon 2008 での takesako さんの一言から openpear への野望は始まった訳です。</description>
+ <lead>
+  <name>Keisuke SATO</name>
+  <user>riaf</user>
+  <email>riaf@nequal.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-10-31</date>
+ <time>02:48:42</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r3 | riaf | 2008-10-31 02:44:06 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+first import
+
+------------------------------------------------------------------------
+r2 | openpear | 2008-10-31 02:41:18 -0700 (Fri, 31 Oct 2008) | 1 line
+
+[Create Base Directory] Acme_MorningMusume
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Acme" name="/">
+   <file baseinstalldir="/Acme" md5sum="ab1fea6dd84fcb2d85ea5407dd864b0e" name="MorningMusume/Member/AbeNatsumi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="ed953c300b358924ba63d993b10e5241" name="MorningMusume/Member/Base.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="8bc49ae8c54fa934e32c03ef4b1d1ba2" name="MorningMusume/Member/FujimotoMiki.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="52d4e838547aaad94b76be5a08c6a135" name="MorningMusume/Member/FukudaAsuka.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="0285562a58ff1d0f7e0d84086de23752" name="MorningMusume/Member/GotohMaki.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="6171257ad4b62632e9deedf36cb11311" name="MorningMusume/Member/IchiiSayaka.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="51df15345576e576afef69b0a70f6763" name="MorningMusume/Member/IidaKaori.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="1593e69166ed5a182aaf9f9a079cb837" name="MorningMusume/Member/IshiguroAya.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="8bddec7eaef81c30b981e33ebd3fc624" name="MorningMusume/Member/IshikawaRika.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="b59831a25e56ea71862044efe060e4eb" name="MorningMusume/Member/KagoAi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="be3d34ca55b5146150aba17661edc348" name="MorningMusume/Member/KameiEri.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="ab04313246a2c4cff947d5a4920dafa5" name="MorningMusume/Member/KonnoAsami.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="c9a9cb2e2938b2e18ebf67424fd8db21" name="MorningMusume/Member/KusumiKoharu.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="f5bd129582efaf6b76c03c0326881cbd" name="MorningMusume/Member/LiChun.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="03d449616f25209380cef9cccbd1b0f8" name="MorningMusume/Member/MichishigeSayumi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="6850907bc7ff02808f1b4017ad0814cc" name="MorningMusume/Member/MitsuiAika.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="cf7ca9fd056fc9d61d4e85373e5a263d" name="MorningMusume/Member/NakazawaYuko.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="82c2361a837ee90eccf130a33d45ac2b" name="MorningMusume/Member/NiigakiRisa.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="91d7f8f3f59de3ef3edb7365a26597cd" name="MorningMusume/Member/OgawaMakoto.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="9e150d0b8d56fa48cc7e531c5891fb32" name="MorningMusume/Member/QianLin.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="9b91797d0610822060179cc50a7c54ab" name="MorningMusume/Member/TakahashiAi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="0bcbcbb2a025101aaebace07573e2db5" name="MorningMusume/Member/TanakaReina.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="53008a82f2956192c9cb0321860bdcda" name="MorningMusume/Member/TsujiNozomi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="71a6962c211b6654a3bd286c121b55c4" name="MorningMusume/Member/YaguchiMari.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="b5d95de6ebba5c5d403e450bf100da18" name="MorningMusume/Member/YasudaKei.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="34c2c45d8627090b3f9230742cd76f0f" name="MorningMusume/Member/YoshizawaHitomi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="641b4b224e169c258471e3a81d0d1f54" name="MorningMusume.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-10-31</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r3 | riaf | 2008-10-31 02:44:06 -0700 (Fri, 31 Oct 2008) | 2 lines
+
+first import
+
+------------------------------------------------------------------------
+r2 | openpear | 2008-10-31 02:41:18 -0700 (Fri, 31 Oct 2008) | 1 line
+
+[Create Base Directory] Acme_MorningMusume
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Services_Bitly</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>BSD License</l>
+<s>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once 'Services/Bitly.php';
+
+$login = 'Bitlyのアカウント';
+$apikey = 'BitlyのAPI Key';
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</s>
+<d>*概要
+bit.ly APIを叩くライブラリです。
+j.mpにも対応しています。
+
+shortenとexpandを実装しています。
+
+-version0.3.0になりました。
+--bit.ly APIversion3.0に対応しました。
+--format=txtに対応しました。
+--format=xmlの場合の処理をsimplexml_load_stringに戻しました。これに伴い、PEAR::XML_Seriarizerの依存はなくなりました。
+
+
+*使い方
+
+&gt;|php|
+&lt;?php
+require_once 'Services/Bitly.php';
+
+$login = 'Bitlyのアカウント';
+$apikey = 'BitlyのAPI Key';
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org/package/Services_Bitly&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+
+// j.mp対応
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $shorten = $bitly-&gt;shorten(&quot;http://openpear.org&quot;);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+try {
+    $bitly = new Services_Bitly($login,$apikey);
+    $bitly-&gt;setBaseDomain('j.mp');
+    $expand = $bitly-&gt;expand($shorten);
+} catch (Services_Bitly_Exception $e) {
+    echo $e-&gt;getMessage();
+}
+
+||&lt;</d>
+<r xlink:href="/rest/r/services_bitly" />
+</p>

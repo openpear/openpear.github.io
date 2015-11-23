@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/diggin">Diggin</p>
+    <c>openpear.org</c>
+    <v>0.6.11</v>
+    <a>0.6.11</a>
+    <mp>5.2.4</mp>
+    <st>alpha</st>
+    <l>New BSD License</l>
+    <m>sasezaki</m>
+    <s>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</s>
+    <d>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</d>
+    <da>2009-12-20 07:11:08</da>
+    <n>
+------------------------------------------------------------------------
+r827 | sasezaki | 2009-05-16 15:33:14 +0900 (土, 16  5月 2009) | 1 line
+
+メインリポ(googlecode側)でのディレクトリ構成変更に伴い
+------------------------------------------------------------------------
+r816 | sasezaki | 2009-05-10 23:50:06 +0900 (日, 10  5月 2009) | 1 line
+
+けし忘
+------------------------------------------------------------------------
+r813 | sasezaki | 2009-05-10 10:30:00 +0900 (日, 10  5月 2009) | 1 line
+
+拡張子無いとopenpearから見えないっぽいので変更
+------------------------------------------------------------------------
+r496 | sasezaki | 2009-03-04 23:14:05 +0900 (水, 04  3月 2009) | 1 line
+
+追加してなかった。。。
+------------------------------------------------------------------------
+r494 | sasezaki | 2009-03-04 23:03:21 +0900 (水, 04  3月 2009) | 1 line
+
+
+------------------------------------------------------------------------
+r492 | sasezaki | 2009-03-04 22:55:29 +0900 (水, 04  3月 2009) | 1 line
+
+心は３０になってもオリーブ少女だからいいか
+------------------------------------------------------------------------
+r491 | sasezaki | 2009-03-04 22:38:25 +0900 (水, 04  3月 2009) | 1 line
+
+本番で動作確認する男の人って
+------------------------------------------------------------------------
+r490 | sasezaki | 2009-03-04 22:02:00 +0900 (水, 04  3月 2009) | 1 line
+
+svn:externalsつかうほうがいいのかな
+------------------------------------------------------------------------
+r421 | sasezaki | 2009-02-23 23:00:11 +0900 (月, 23  2月 2009) | 1 line
+
+add CHANGELOG (0.5系から0.6でのScraperの変更点)
+------------------------------------------------------------------------
+r420 | sasezaki | 2009-02-23 22:21:19 +0900 (月, 23  2月 2009) | 1 line
+
+依存モジュール指定ができる日がいつかきっと必ずくる！と念じながらコミット
+------------------------------------------------------------------------
+r418 | openpear | 2009-02-23 22:04:27 +0900 (月, 23  2月 2009) | 1 line
+
+[Create Base Directory] Diggin
+------------------------------------------------------------------------
+ </n>
+    <f>32421</f>
+    <g>http://openpear.org/get/Diggin-0.6.11</g>
+    <x xlink:href="package.0.6.11.xml"/>
+</r>

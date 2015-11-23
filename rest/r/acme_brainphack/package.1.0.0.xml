@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Acme_BrainPhack</name>
+ <channel>openpear.org</channel>
+ <summary>&quot;BrainF*ck&quot; interpreter sample implementation by PHP.</summary>
+ <description>&quot;BrainF*ck&quot; interpreter sample implementation by PHP.</description>
+ <lead>
+  <name>msakamoto-sf</name>
+  <user>msakamoto-sf</user>
+  <email>sakamoto-gsyc-3s@glamenv-septzen.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-23</date>
+ <time>23:52:04</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</license>
+ <notes>
+- fix package meta data for script files
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="4aa25e60ff3935841b1e581c6ae87ea6" name="Acme/BrainPhack/test/testsrc/HelloWorld_Jojo_Dio.txt" role="data" />
+   <file baseinstalldir="/" md5sum="89272e4e0e728977be31064dc066ca42" name="Acme/BrainPhack/test/testsrc/HelloWorld_None.txt" role="data" />
+   <file baseinstalldir="/" md5sum="4450b599ea32855751d89db1a531ad8c" name="Acme/BrainPhack/test/testsrc/HelloWorld_Yaruo_Detteiu.txt" role="data" />
+   <file baseinstalldir="/" md5sum="32f5d77b876e99f8bb50409d5e0413e6" name="Acme/BrainPhack/test/all_test.php" role="php" />
+   <file baseinstalldir="/" md5sum="d603d3d5dd2aafaa32577658c0e81ed6" name="Acme/BrainPhack/test/Interpreter_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="d4294ee995e461a9e37a7ec68f77c14f" name="Acme/BrainPhack/test/MemoryStack_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="e6901e37ec5cfabc5b0878b5cd813be7" name="Acme/BrainPhack/test/README" role="data" />
+   <file baseinstalldir="/" md5sum="b025176dace262f73e53903aebeb504a" name="Acme/BrainPhack/test/scripts_test.php" role="php" />
+   <file baseinstalldir="/" md5sum="8f740e76a19fcd2f1598887ed2dbff75" name="Acme/BrainPhack/test/stdin_test.php" role="php" />
+   <file baseinstalldir="/" md5sum="5d3a23a28ad975c7b2517ec77ea6b119" name="Acme/BrainPhack/test/Translator_TestCase.php" role="php" />
+   <file baseinstalldir="/" md5sum="922b8377a2c59613dd2dca168cc2fd2d" name="Acme/BrainPhack/Translator/Jojo/Dio.php" role="php" />
+   <file baseinstalldir="/" md5sum="d804e4a453ecd336f24600005fa0028e" name="Acme/BrainPhack/Translator/Yaruo/Detteiu.php" role="php" />
+   <file baseinstalldir="/" md5sum="31422f3a439df2f62c7b2c8d466903f7" name="Acme/BrainPhack/Translator/None.php" role="php" />
+   <file baseinstalldir="/" md5sum="12bf643f516e931247471cdeefd516b5" name="Acme/BrainPhack/Interpreter.php" role="php" />
+   <file baseinstalldir="/" md5sum="d015eeb969d3fa7de726781298bf94ce" name="Acme/BrainPhack/MemoryStack.php" role="php" />
+   <file baseinstalldir="/" md5sum="7533a09f30553218057c32bad676ae48" name="Acme/BrainPhack/Translator.php" role="php" />
+   <file baseinstalldir="/" md5sum="92ef8ec3b8871c16c8961d221446bd8a" name="scripts/brainphack.bat" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="2f72dd19f065bc3f88964966815a05ae" name="scripts/brainphack.sh" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+   <file baseinstalldir="/" md5sum="2a066feaf8fcc9f0af9044002c5992e9" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="brainphack" name="scripts/brainphack.sh" />
+   <install as="brainphack.bat" name="scripts/brainphack.bat" />
+  </filelist>
+ </phprelease>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-01-23</date>
+   <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</license>
+   <notes>
+- fix package meta data for script files
+   </notes>
+  </release>
+ </changelog>
+</package>

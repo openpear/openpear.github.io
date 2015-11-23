@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/image_colorful">Image_Colorful</p>
+    <c>openpear.org</c>
+    <v>0.1.4</v>
+    <a>0.1.4</a>
+    <mp>4.3.3</mp>
+    <st>stable</st>
+    <l>New BSD Licence</l>
+    <m>camelmasa</m>
+    <s>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+-履歴
+-3/10 0.1.3-stableリリース
+--Colorfulという親クラスを作成
+--Image_Colorful_Wordという子クラスを作成
+-3/8 0.1.2-stableリリース
+--addTextsメソッドの修正
+-3/7 0.1.1-stableリリース
+--setColorsメソッドの追加
+--setRedメソッドの追加
+--setGreenメソッドの追加
+--setBlueメソッドの追加
+--addColorsメソッドの追加
+-3/6 0.1.0-stableリリース
+
+TODO
+-ストライプ機能
+-揺らぎ機能</s>
+    <d>カラフルな画像が簡単に作成出来るパッケージです。
+
+http://imagecolorful.com/
+
+-履歴
+-3/10 0.1.3-stableリリース
+--Colorfulという親クラスを作成
+--Image_Colorful_Wordという子クラスを作成
+-3/8 0.1.2-stableリリース
+--addTextsメソッドの修正
+-3/7 0.1.1-stableリリース
+--setColorsメソッドの追加
+--setRedメソッドの追加
+--setGreenメソッドの追加
+--setBlueメソッドの追加
+--addColorsメソッドの追加
+-3/6 0.1.0-stableリリース
+
+TODO
+-ストライプ機能
+-揺らぎ機能</d>
+    <da>2009-03-13 00:59:07</da>
+    <n>------------------------------------------------------------------------
+r552 | camelmasa | 2009-03-13 00:56:46 -0700 (Fri, 13 Mar 2009) | 1 line
+
+?\227?\130?\168?\227?\131?\169?\227?\131?\188?\227?\131?\143?\227?\131?\179?\227?\131?\137?\227?\131?\170?\227?\131?\179?\227?\130?\176?\227?\129?\174?\228?\191?\174?\230?\173?\163
+------------------------------------------------------------------------</n>
+    <f>3639</f>
+    <g>http://openpear.org/get/Image_Colorful-0.1.4</g>
+    <x xlink:href="package.0.1.4.xml"/>
+</r>

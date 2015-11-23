@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Phoblinks</name>
+ <channel>openpear.org</channel>
+ <summary>Phoblinks (PHP Object Links) is an object system.
+
+Main repository is [http://bitbucket.org/szktty/phoblinks/]
+
+[http://svn.openpear.org/Phoblinks/doc/manual_ja.html:title=Documentation (Japanese)]</summary>
+ <description>Phoblinks (PHP Object Links) is an object system.
+
+Main repository is [http://bitbucket.org/szktty/phoblinks/]
+
+[http://svn.openpear.org/Phoblinks/doc/manual_ja.html:title=Documentation (Japanese)]</description>
+ <lead>
+  <name>szktty</name>
+  <user>szktty</user>
+  <email>suzuki@spice-of-life.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-03-08</date>
+ <time>09:06:30</time>
+ <version>
+  <release>0.7.0</release>
+  <api>0.7.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/MIT/">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r532 | szktty | 2009-03-08 09:04:04 -0700 (Sun, 08 Mar 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r523 | szktty | 2009-03-07 00:47:01 -0800 (Sat, 07 Mar 2009) | 1 line
+
+import
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="1bdceb38b8bb6249346fc32cf13c0c86" name="Phoblinks/ClassOfPhobBehavior.php" role="php" />
+   <file baseinstalldir="/" md5sum="1195830b9d1686eb7b6cf7a8038b2f45" name="Phoblinks/ClassOfPhobClass.php" role="php" />
+   <file baseinstalldir="/" md5sum="d8737214479fd8b220a0b01b50df95e5" name="Phoblinks/ClassOfPhobClassDescription.php" role="php" />
+   <file baseinstalldir="/" md5sum="f243bb9cf57dcd5db6b34952807dcabd" name="Phoblinks/ClassOfPhobMetaclass.php" role="php" />
+   <file baseinstalldir="/" md5sum="b3308b5236c4235c571153ba6f11d786" name="Phoblinks/ClassOfPhobObject.php" role="php" />
+   <file baseinstalldir="/" md5sum="03cc175b84343d76315e830bd9905e6c" name="Phoblinks/PhobBehavior.php" role="php" />
+   <file baseinstalldir="/" md5sum="27625f5c745e2b53f40fa9c6ff5c4a1a" name="Phoblinks/PhobClass.php" role="php" />
+   <file baseinstalldir="/" md5sum="d7d32dd43b959f21e353e4b4b63eb017" name="Phoblinks/PhobClassBuilder.php" role="php" />
+   <file baseinstalldir="/" md5sum="1629c129aac3b1e6d0f9ec73ed5017a7" name="Phoblinks/PhobClassDescription.php" role="php" />
+   <file baseinstalldir="/" md5sum="60db7e9dba112906af3464da052823b9" name="Phoblinks/PhobInitializer.php" role="php" />
+   <file baseinstalldir="/" md5sum="67f3891cdf87fb63b72c3f8438fc9728" name="Phoblinks/PhobKeyValueCoding.php" role="php" />
+   <file baseinstalldir="/" md5sum="18470b398b95ac348deb7ba0823f0389" name="Phoblinks/Phoblinks.php" role="php" />
+   <file baseinstalldir="/" md5sum="2b1ea8de953a468be5e7a87f8ca16a11" name="Phoblinks/PhobMetaclass.php" role="php" />
+   <file baseinstalldir="/" md5sum="35f7ccb13b2a81cacc769c3ba5700a6e" name="Phoblinks/PhobObject.php" role="php" />
+   <file baseinstalldir="/" md5sum="d79495dee2cbe70360b28f38a3816aac" name="Phoblinks/PhobProperty.php" role="php" />
+   <file baseinstalldir="/" md5sum="553c6df29b36ea60b4ddcbd1c91385e4" name="Phoblinks/PhobTrait.php" role="php" />
+   <file baseinstalldir="/" md5sum="2cabfc589b0a7273a58e0876f37f8827" name="Phoblinks/PhobValidation.php" role="php" />
+   <file baseinstalldir="/" md5sum="feadfb647abaafe0c6daeece2e9f0a02" name="Phoblinks/PhobValueTransformer.php" role="php" />
+   <file baseinstalldir="/" md5sum="aaeb9f01d64ca6ea783f558add22b627" name="Phoblinks/PhobValueValidator.php" role="php" />
+   <file baseinstalldir="/" md5sum="14f621f7ab768dd2d292c3e7275994c0" name="Phoblinks.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.7.0</release>
+    <api>0.7.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-03-08</date>
+   <license uri="http://creativecommons.org/licenses/MIT/">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r532 | szktty | 2009-03-08 09:04:04 -0700 (Sun, 08 Mar 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r523 | szktty | 2009-03-07 00:47:01 -0800 (Sat, 07 Mar 2009) | 1 line
+
+import
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

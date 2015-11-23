@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>ZendFramework</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>The following copyrights are applicable to portions of Zend Framework.
+Copyright © 2005-2009 Zend Technologies Inc. (http://www.zend.com)</s>
+<d>The following copyrights are applicable to portions of Zend Framework.
+Copyright © 2005-2009 Zend Technologies Inc. (http://www.zend.com)</d>
+<r xlink:href="/rest/r/zendframework" />
+</p>

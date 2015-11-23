@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/services_twitter_time">Services_Twitter_Time</p>
+    <c>openpear.org</c>
+    <v>1.0.0</v>
+    <st>alpha</st>
+    <l>PHP License 3.01</l>
+    <m>camelmasa</m>
+    <s>Twitterの&quot;2 minutes ago&quot;とか&quot;10 days ago&quot;とかを簡単にしてしまおうというライブラリです。
+全然デバッグしていないので、報告お待ちしております。</s>
+    <d>Twitterの&quot;2 minutes ago&quot;とか&quot;10 days ago&quot;とかを簡単にしてしまおうというライブラリです。
+全然デバッグしていないので、報告お待ちしております。</d>
+    <da>2010-08-25 03:18:02</da>
+    <n>
+------------------------------------------------------------------------
+r2082 | camelmasa | 2010-08-25 03:12:03 +0900 (水, 25  8月 2010) | 1 line
+
+
+------------------------------------------------------------------------
+r2081 | openpear | 2010-08-25 02:52:02 +0900 (水, 25  8月 2010) | 1 line
+
+[New Package] Services_Twitter_Time
+------------------------------------------------------------------------
+ </n>
+    <f>1540</f>
+    <g>http://openpear.org/get/Services_Twitter_Time-1.0.0</g>
+    <x xlink:href="package.1.0.0.xml"/>
+</r>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_ShortURL_Googl</name>
+ <channel>openpear.org</channel>
+ <summary>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。</summary>
+ <description>goo.glによるURL短縮サービスのラッパーで、PEAR::Services_ShortURLのサブパッケージです。</description>
+ <lead>
+  <name>SHIMOOKA Hideyuki</name>
+  <user>shimooka</user>
+  <email>shimooka@doyouphp.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-12-17</date>
+ <time>18:43:02</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1462 | shimooka | 2009-12-17 18:41:46 +0900 (木, 17 12月 2009) | 1 line
+
+- fixed directories
+------------------------------------------------------------------------
+r1458 | shimooka | 2009-12-17 18:21:25 +0900 (木, 17 12月 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r1457 | openpear | 2009-12-17 17:33:03 +0900 (木, 17 12月 2009) | 1 line
+
+[New Package] Services_ShortURL_Googl
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="24d10e791f510e879ff414419bc6fbc2" name="doc/Services_ShortURL_Googl/sample.php" role="php" />
+   <file baseinstalldir="/" md5sum="ffbf9e77743e024221017dc8eab83cd1" name="Services/ShortURL/Googl.php" role="php" />
+   <file baseinstalldir="/" md5sum="9278e89d17e36d11a62887e1f43b3890" name="test/Services_ShortURL_Googl/Mock.php" role="php" />
+   <file baseinstalldir="/" md5sum="5340cd6c322d7b9425c98ae58d793e5a" name="test/Services_ShortURL_Googl/Services_ShortURL_GooglTest.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+   <package>
+    <name>Services_ShortURL</name>
+    <channel>pear.php.net</channel>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-12-17</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1462 | shimooka | 2009-12-17 18:41:46 +0900 (木, 17 12月 2009) | 1 line
+
+- fixed directories
+------------------------------------------------------------------------
+r1458 | shimooka | 2009-12-17 18:21:25 +0900 (木, 17 12月 2009) | 1 line
+
+- initial import
+------------------------------------------------------------------------
+r1457 | openpear | 2009-12-17 17:33:03 +0900 (木, 17 12月 2009) | 1 line
+
+[New Package] Services_ShortURL_Googl
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

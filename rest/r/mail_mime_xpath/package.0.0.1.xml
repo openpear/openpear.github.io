@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Mail_mime_XPath</name>
+ <channel>openpear.org</channel>
+ <summary>メールのヘッダと本文をパースしてXMLの形で保有し、XPath式で検索できるようにします。
+
+使用例サンプルコード：
+&gt;||
+&lt;?php 
+require_once &apos;Mail/mime/XPath.php&apos;;
+ 
+$doc = file_get_contents(&apos;hoge.eml&apos;);
+ 
+$email = new Mail_mime_XPath($doc);
+$part = $email-&gt;xpath(&apos;//*[@ctype_primary=&quot;text&quot;]&apos;);
+ 
+var_dump($part);
+||&lt;
+こうすると、content-typeがtext/*なデータの配列が取得できます。multipartのメールで本文だけ抜き出す場合なんかに超便利！
+もうforeachして総当たりする必要ありません＞＜
+
+
+内部的には、PEARのMail_mimeDecodeでパースしたデータをもとに、SimpleXMLを使ってデータをXMLに直したうえで、XPathで検索、取得という処理をしています。
+
+XPathで検索できる対象ですが、検索対象のデータ自体がMail_mimeに依存している関係から、Mail_mimeで配列のキーになっているものがXPathのノード名として使えます。
+また、
+- content-type
+- ctype_primary
+- ctype_secondary
+- filename
+という４つのデータだけは、各パートのプロパティとしても保持されているので、上記の例のようにこれらのプロパティで検索することによって、textパートの一覧とそのデータを抜き出すことが可能です。
+PerlのEmail::MIME::XPathと違って正規表現的な方法は使えませんが、元々content-typeが分割されているので必要な処理はわりと柔軟に行うことができます。</summary>
+ <description>メールのヘッダと本文をパースしてXMLの形で保有し、XPath式で検索できるようにします。
+
+使用例サンプルコード：
+&gt;||
+&lt;?php 
+require_once &apos;Mail/mime/XPath.php&apos;;
+ 
+$doc = file_get_contents(&apos;hoge.eml&apos;);
+ 
+$email = new Mail_mime_XPath($doc);
+$part = $email-&gt;xpath(&apos;//*[@ctype_primary=&quot;text&quot;]&apos;);
+ 
+var_dump($part);
+||&lt;
+こうすると、content-typeがtext/*なデータの配列が取得できます。multipartのメールで本文だけ抜き出す場合なんかに超便利！
+もうforeachして総当たりする必要ありません＞＜
+
+
+内部的には、PEARのMail_mimeDecodeでパースしたデータをもとに、SimpleXMLを使ってデータをXMLに直したうえで、XPathで検索、取得という処理をしています。
+
+XPathで検索できる対象ですが、検索対象のデータ自体がMail_mimeに依存している関係から、Mail_mimeで配列のキーになっているものがXPathのノード名として使えます。
+また、
+- content-type
+- ctype_primary
+- ctype_secondary
+- filename
+という４つのデータだけは、各パートのプロパティとしても保持されているので、上記の例のようにこれらのプロパティで検索することによって、textパートの一覧とそのデータを抜き出すことが可能です。
+PerlのEmail::MIME::XPathと違って正規表現的な方法は使えませんが、元々content-typeが分割されているので必要な処理はわりと柔軟に行うことができます。</description>
+ <lead>
+  <name>yudoufu</name>
+  <user>yudoufu</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2009-05-09</date>
+ <time>13:17:46</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+ <notes>------------------------------------------------------------------------
+r802 | yudoufu | 2009-05-09 12:48:12 -0700 (Sat, 09 May 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r801 | openpear | 2009-05-09 12:44:51 -0700 (Sat, 09 May 2009) | 1 line
+
+[Create Base Directory] Mail_mime_XPath
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="2df910e68d93e3af3326599c2df1904c" name="Mail/mime/XPath.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-05-09</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT Licence</license>
+   <notes>------------------------------------------------------------------------
+r802 | yudoufu | 2009-05-09 12:48:12 -0700 (Sat, 09 May 2009) | 1 line
+
+first import
+------------------------------------------------------------------------
+r801 | openpear | 2009-05-09 12:44:51 -0700 (Sat, 09 May 2009) | 1 line
+
+[Create Base Directory] Mail_mime_XPath
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

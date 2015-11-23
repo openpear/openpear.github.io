@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfJpMobilePlugin</name>
+ <channel>openpear.org</channel>
+ <summary>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</summary>
+ <description>symfonyでの携帯サイト制作を支援するプラグイン
+
+symfonyはPEARチャンネルを用いてプラグインをインストールできるので、openpearは配布用です。
+
+開発は http://github.com/vectorxenon/sfJpMobilePlugin/tree/master です。
+
+気に入らなかったら、ドンドンforkしてください。</description>
+ <lead>
+  <name>vector</name>
+  <user>vector</user>
+  <email>yuki@yagni.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2009-08-08</date>
+ <time>19:42:04</time>
+ <version>
+  <release>0.0.6</release>
+  <api>0.0.6</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT License</license>
+ <notes>
+------------------------------------------------------------------------
+r1095 | vector | 2009-08-08 19:24:41 +0900 (土, 08  8月 2009) | 1 line
+
+Merge branch &apos;github&apos;
+------------------------------------------------------------------------
+r1008 | vector | 2009-07-15 04:16:22 +0900 (水, 15  7月 2009) | 1 line
+
+Merge branch &apos;github&apos;
+------------------------------------------------------------------------
+r1004 | vector | 2009-07-11 01:31:47 +0900 (土, 11  7月 2009) | 6 lines
+
+Merge branch &apos;master&apos; of git@github.com:vectorxenon/sfJpMobilePlugin
+
+Conflicts:
+	config/config_handlers.yml
+	lib/controller/sfJpMobileController.class.php
+	lib/filter/sfJpMobileFilter.class.php
+------------------------------------------------------------------------
+r1001 | vector | 2009-07-09 02:45:25 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r1000 | vector | 2009-07-09 02:45:06 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r938 | vector | 2009-06-09 02:49:07 +0900 (火, 09  6月 2009) | 1 line
+
+plugin内のconfig_handlersがdebug=offの時に動作しなかったので修正
+------------------------------------------------------------------------
+r925 | vector | 2009-06-05 02:20:59 +0900 (金, 05  6月 2009) | 1 line
+
+Merge branch &apos;master&apos; of git@github.com:vectorxenon/sfJpMobilePlugin into github
+------------------------------------------------------------------------
+r921 | openpear | 2009-06-04 15:15:55 +0900 (木, 04  6月 2009) | 1 line
+
+[Create Base Directory] sfJpMobilePlugin
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="sfJpMobilePlugin" name="/">
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="011b3274d6448396bfc3a96e7b57690d" name="config/jpmobile/emoji/au_dec.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="0ab5fc52b8b48535d962808ea5f74605" name="config/jpmobile/emoji/au_enc.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="9ed8b5e237081dd764ebec1bccb8e212" name="config/jpmobile/emoji/dc_dec.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="3fe4fdcd008d3d5eef53466df0babf1a" name="config/jpmobile/emoji/dc_enc.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="270e5616a4073db1a8acf06c234f47d8" name="config/jpmobile/emoji/sb_dec.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="d31fde5b9732fe05a2d1ee8e5ee43cbe" name="config/jpmobile/emoji/sb_enc.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="9360737ba8a37a95b8fa1cbce63317f3" name="config/jpmobile/istyle.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="a475e08977ae93950a9e1631de9ad594" name="config/config_handlers.yml" role="data" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="447638099232824b9e822b167ec362ad" name="config/sfJpMobilePluginConfiguration.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="2c3a94b9f1f5bd28396e995c7161e738" name="lib/config/sfJpMobileEmojiConfigHandler.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="1ec663a25084296b12413b4c6836888f" name="lib/controller/sfJpMobileController.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="8e5b8f22fc187912c19e85ec75ac2dd8" name="lib/device/sfJpMobileDevice.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="277021dabaf44cbab3e8872ce512b3a3" name="lib/device/sfJpMobileDeviceDocomo.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="4da183a6f0405efb85b7525c34a5bb53" name="lib/device/sfJpMobileDeviceKddi.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="05ea37e9aeed2c1dcf6d772b52fbd0ef" name="lib/device/sfJpMobileDevicePc.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="61b83f5a70c2e397bc1880e6283bbfab" name="lib/device/sfJpMobileDeviceSoftbank.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="06b5193f1c79cc751a4cf5b08e974e34" name="lib/emoji/sfJpMobileEmoji.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="3052b8bdcc6457d076fa7f31fec59dc3" name="lib/emoji/sfJpMobileEmojiDocomo.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="1d9ea649930d545f9f6e7c3c7e3d2351" name="lib/emoji/sfJpMobileEmojiKddi.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="f370aa81e6c6a94b547e1e8e8a8d5ce4" name="lib/emoji/sfJpMobileEmojiPc.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="00919addf53bbc647a1ed855a8cbc9d3" name="lib/emoji/sfJpMobileEmojiSoftbank.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="7f6fb944391ace7af42b1b16e2166f20" name="lib/exception/sfMobileNotDetermineException.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="0a71bb7d2935a0b23df5f2ce85c15ad4" name="lib/filter/sfJpMobileFilter.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="122c9a71a37fa6c2555cfee187bccb9e" name="lib/helper/JpMobileHelper.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="30ed57d14053a5c569201d71eb067afb" name="lib/helper/JpMobileUrlHelper.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="4a058e0691f5e8a13ef967cd9eb85a2b" name="lib/storage/sfJpMobileSessionStorage.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="918c30c283dc2bf3b7429a01e206999b" name="lib/view/sfJpMobilePartialView.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="d68bfe435515d24a5a86df466b92fad7" name="lib/view/sfJpMobileView.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="222e69d18329846c0004eb2e70772373" name="lib/sfJpMobile.class.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="d10eb5427f299de37043bf5798dfd99e" name="modules/jpmobile/templates/_dtd.php" role="php" />
+   <file baseinstalldir="sfJpMobilePlugin" md5sum="71b1d47429f8ff1f613a442bcf323437" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.6</release>
+    <api>0.0.6</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2009-08-08</date>
+   <license uri="http://www.symfony-project.com/license">MIT License</license>
+   <notes>
+------------------------------------------------------------------------
+r1095 | vector | 2009-08-08 19:24:41 +0900 (土, 08  8月 2009) | 1 line
+
+Merge branch &apos;github&apos;
+------------------------------------------------------------------------
+r1008 | vector | 2009-07-15 04:16:22 +0900 (水, 15  7月 2009) | 1 line
+
+Merge branch &apos;github&apos;
+------------------------------------------------------------------------
+r1004 | vector | 2009-07-11 01:31:47 +0900 (土, 11  7月 2009) | 6 lines
+
+Merge branch &apos;master&apos; of git@github.com:vectorxenon/sfJpMobilePlugin
+
+Conflicts:
+	config/config_handlers.yml
+	lib/controller/sfJpMobileController.class.php
+	lib/filter/sfJpMobileFilter.class.php
+------------------------------------------------------------------------
+r1001 | vector | 2009-07-09 02:45:25 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r1000 | vector | 2009-07-09 02:45:06 +0900 (木, 09  7月 2009) | 1 line
+
+merged
+------------------------------------------------------------------------
+r938 | vector | 2009-06-09 02:49:07 +0900 (火, 09  6月 2009) | 1 line
+
+plugin内のconfig_handlersがdebug=offの時に動作しなかったので修正
+------------------------------------------------------------------------
+r925 | vector | 2009-06-05 02:20:59 +0900 (金, 05  6月 2009) | 1 line
+
+Merge branch &apos;master&apos; of git@github.com:vectorxenon/sfJpMobilePlugin into github
+------------------------------------------------------------------------
+r921 | openpear | 2009-06-04 15:15:55 +0900 (木, 04  6月 2009) | 1 line
+
+[Create Base Directory] sfJpMobilePlugin
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

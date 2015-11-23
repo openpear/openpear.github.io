@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>jpSimpleMailPlugin</name>
+ <channel>openpear.org</channel>
+ <summary>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン</summary>
+ <description>簡単に日本語(iso-2022-jp)メールを送信するためのsymfonyプラグイン</description>
+ <lead>
+  <name>brtRiver</name>
+  <user>brtriver</user>
+  <email>brt.river@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-29</date>
+ <time>09:11:13</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r130 | brtriver | 2008-11-29 09:10:22 -0800 (Sat, 29 Nov 2008) | 1 line
+
+rename files (desc.txt and notes.txt)
+------------------------------------------------------------------------
+r129 | brtriver | 2008-11-29 09:03:40 -0800 (Sat, 29 Nov 2008) | 1 line
+
+commit /lib for release 0.1.0
+------------------------------------------------------------------------
+r128 | brtriver | 2008-11-29 09:02:45 -0800 (Sat, 29 Nov 2008) | 1 line
+
+first commit for release 0.1.0
+------------------------------------------------------------------------
+r127 | openpear | 2008-11-29 02:54:26 -0800 (Sat, 29 Nov 2008) | 1 line
+
+[Create Base Directory] jpSimpleMailPlugin
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="904c37d1d9b242de5d71d9898f52c594" name="config/jpSimpleMailPluginConfiguration.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="dbb1f1309a92782a68a6c59c2665126b" name="lib/exception/jpSendMailException.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="5de679bbb68d1f7c6e0a637c2186d499" name="lib/mailer/jpMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="948793f4984793af9578c5bf224bb79e" name="lib/mailer/jpPHPMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="d55c112723b153f42dcecefd242eba8f" name="lib/mailer/jpQdmail.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9635e3c735e95521c7f4cca49c06651" name="lib/mailer/jpSwiftMailer.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="4d3e69a0cdc09aeecce35a4f321efef9" name="lib/jpMail.class.php" role="php" />
+   <file baseinstalldir="/" md5sum="f5a7ca76107ae487912afab0574900b0" name="test/bin/prove.php" role="php" />
+   <file baseinstalldir="/" md5sum="d957c39b462e2644d5416212e774f30a" name="test/bootstrap/functional.php" role="php" />
+   <file baseinstalldir="/" md5sum="5a662b7b3f575aed70e3c1bc07e6edd5" name="test/bootstrap/unit.php" role="php" />
+   <file baseinstalldir="/" md5sum="beb90d2c297c38c3f4e16cc336c540c7" name="test/functional/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="e9fa084378c9838d21b09f688bce08b3" name="test/functional/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="76e4b954f637d61c65c8fd6ce1788be1" name="test/functional/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="c304a0a529e9ada2340fe303dd7ed1e2" name="test/unit/jpPHPMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="360f557c5a4e89040325e2c665b64c07" name="test/unit/jpQdmailTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="4ecb5a5033838f8e671e43c1efef66e7" name="test/unit/jpSwiftMailerTest.php" role="php" />
+   <file baseinstalldir="/" md5sum="4caca74aa092bc5aac8c47815b179594" name="desc.txt" role="data" />
+   <file baseinstalldir="/" md5sum="939c66cf8dfdf0f77f9088e00f674c5c" name="notes.txt" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2008-11-29</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r130 | brtriver | 2008-11-29 09:10:22 -0800 (Sat, 29 Nov 2008) | 1 line
+
+rename files (desc.txt and notes.txt)
+------------------------------------------------------------------------
+r129 | brtriver | 2008-11-29 09:03:40 -0800 (Sat, 29 Nov 2008) | 1 line
+
+commit /lib for release 0.1.0
+------------------------------------------------------------------------
+r128 | brtriver | 2008-11-29 09:02:45 -0800 (Sat, 29 Nov 2008) | 1 line
+
+first commit for release 0.1.0
+------------------------------------------------------------------------
+r127 | openpear | 2008-11-29 02:54:26 -0800 (Sat, 29 Nov 2008) | 1 line
+
+[Create Base Directory] jpSimpleMailPlugin
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

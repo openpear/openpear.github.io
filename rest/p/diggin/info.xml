@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Diggin</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>New BSD License</l>
+<s>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</s>
+<d>[http://diggin.musicrider.com/:title=Diggin]はスクレイピング＆スパイダリングライブラリ群です。
+
+[http://diggin.googlecode.com/svn/standard/trunk/:title=最新のソース(Google Code)]
+[http://code.google.com/p/diggin/source/list:title=更新履歴]
+[http://diggin.musicrider.com/manual/diggin.index.html:title=リファレンス]
+
+現在のコンポーネントは以下のとおりです。
+*Diggin_Scraper
+Web::Scraperライクなスクレイピングを可能にします。
+*Diggin_Service_Wedata
+WedataのAPI操作
+*Diggin_Service_Tumblr
+TumblrのAPI操作
+*Diggin_Felica_Adapter_Sfcpeep
+sfcpeepの標準出力をPHPでの配列形式で扱います。
+*Diggin_CDDB_Application_CDex
+WindowdsリッピングソフトCDexでのCDDBファイル操作を行います。
+
+
+デモやテストコードは
+http://diggin.googlecode.com/svn/standard/trunk/
+を参照ください。
+
+
+Http通信を行うものについてはZend Framework(1.6以上)が必要です。
+また、Diggin_Scraperを使うにはtidyモジュール・Net_Url2が動作することも望ましいです。</d>
+<r xlink:href="/rest/r/diggin" />
+</p>

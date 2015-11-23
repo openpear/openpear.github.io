@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Acme_IdolMaster</name>
+ <channel>openpear.org</channel>
+ <summary>アイドルマスターのアイドルを管理します。</summary>
+ <description>アイドルマスターのアイドルを管理します。</description>
+ <lead>
+  <name>yohei</name>
+  <user>brick</user>
+  <email>yohei.kawano@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2008-11-06</date>
+ <time>20:33:13</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+ <notes>------------------------------------------------------------------------
+r64 | brick | 2008-11-06 19:33:32 -0800 (Thu, 06 Nov 2008) | 2 lines
+
+add nick
+
+------------------------------------------------------------------------
+r63 | brick | 2008-11-05 06:03:39 -0800 (Wed, 05 Nov 2008) | 2 lines
+
+add Acme_IdolMaster
+
+------------------------------------------------------------------------
+r62 | openpear | 2008-11-05 05:54:57 -0800 (Wed, 05 Nov 2008) | 1 line
+
+[Create Base Directory] Acme_IdolMaster
+------------------------------------------------------------------------</notes>
+ <contents>
+  <dir baseinstalldir="/Acme" name="/">
+   <file baseinstalldir="/Acme" md5sum="caa6f4db9c54302247563614d5b4fe3c" name="Acme/IdolMaster/Member/AkizukiRitsuko.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="47ff711d4f2ec946427b01fdb43451c5" name="Acme/IdolMaster/Member/AmamiHaruka.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="910c7939e5337fe3e0283763902caad6" name="Acme/IdolMaster/Member/Base.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="a42a92e8b7440fc4ecc4d0696c8b9444" name="Acme/IdolMaster/Member/FutamiAmi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="b8cd1bc6dc0399980e55d26d85d7a3a0" name="Acme/IdolMaster/Member/FutamiMami.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="908461ac912a93766b685fd94476415e" name="Acme/IdolMaster/Member/HagiwaraYukiho.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="815c53f3d8e1ae95140ea771a7a8a2a3" name="Acme/IdolMaster/Member/HoshiiMiki.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="47952b86b398668f0a7180caf22646a1" name="Acme/IdolMaster/Member/KikuchiMakoto.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="3c20a6d97ee7b9cf2462493755ebd57f" name="Acme/IdolMaster/Member/KisaragiChihaya.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="081b17e80c561a92e081b8eac4a35cee" name="Acme/IdolMaster/Member/MinaseIori.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="106bdfbfbaf935e7ba8d3276936b2231" name="Acme/IdolMaster/Member/MiuraAzusa.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="3d58c10b5e76b4062c78319fc1f9506c" name="Acme/IdolMaster/Member/skeleton.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="3defcc11ac41f72d0955a5f72b401927" name="Acme/IdolMaster/Member/TakatsukiYayoi.php" role="php" />
+   <file baseinstalldir="/Acme" md5sum="3db5ef41dc7b9bede4ce25e55cc0de04" name="Acme/IdolMaster.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2008-11-06</date>
+   <license uri="http://creativecommons.org/licenses/BSD/">New BSD Licence</license>
+   <notes>------------------------------------------------------------------------
+r64 | brick | 2008-11-06 19:33:32 -0800 (Thu, 06 Nov 2008) | 2 lines
+
+add nick
+
+------------------------------------------------------------------------
+r63 | brick | 2008-11-05 06:03:39 -0800 (Wed, 05 Nov 2008) | 2 lines
+
+add Acme_IdolMaster
+
+------------------------------------------------------------------------
+r62 | openpear | 2008-11-05 05:54:57 -0800 (Wed, 05 Nov 2008) | 1 line
+
+[Create Base Directory] Acme_IdolMaster
+------------------------------------------------------------------------</notes>
+  </release>
+ </changelog>
+</package>

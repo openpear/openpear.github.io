@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Auth_OpenID</name>
+ <channel>openpear.org</channel>
+ <summary>hooo</summary>
+ <description>hooo</description>
+ <lead>
+  <name>Sotaro KARASAWA</name>
+  <user>sotarok</user>
+  <email>sotaro.k+pear@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-12-26</date>
+ <time>00:14:20</time>
+ <version>
+  <release>2.2.2</release>
+  <api>2.2.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://openpear.org/license">PHP License 3.01</license>
+ <notes>
+hooo
+ </notes>
+ <contents>
+  <dir baseinstalldir="Auth" name="/">
+   <file baseinstalldir="Auth" md5sum="ec1e890341639f52b749842d723516fc" name="OpenID/Association.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="e62ab05454a8c588b938c5d3e6a5c871" name="OpenID/AX.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="bea9dc354f8ae949687257e11c86092d" name="OpenID/BigMath.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="d376e93a1833a67af7db36b74238e814" name="OpenID/Consumer.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="96b99d61692f4661215af046261d5b28" name="OpenID/CryptUtil.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="3c6a5aac6895cfd513e8910ff1b00e29" name="OpenID/DatabaseConnection.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="0f2f44acef865ba11718e66f8d8935ba" name="OpenID/DiffieHellman.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="cb5e129f160df12ce476b635ba877555" name="OpenID/Discover.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="01ade53e6fd1c8ea9823691ce170b03b" name="OpenID/DumbStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="02abdee76a075990fd66269c4f8fd916" name="OpenID/Extension.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="50c5bf0e299d21059c275d7525718384" name="OpenID/FileStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="d2b5855f40918887894475ea2d8f157e" name="OpenID/HMAC.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="9fcc9f8550ac9a0a46b41e9aa9c3a84d" name="OpenID/Interface.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="fc2a5ec5baaaa9cfcfbc821f1fd13277" name="OpenID/KVForm.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="a0e0f812c5c87480a589672576cc7ede" name="OpenID/MDB2Store.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="282c860f53a189d05b9148893e09fa9e" name="OpenID/MemcachedStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="abb12aa7e7a08be52eaa96efdea34ebf" name="OpenID/Message.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="b2b1e84c83882b510ffb93ed32e20b47" name="OpenID/MySQLStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="54f0dc85dd34719bd6d7c46543b6e406" name="OpenID/Nonce.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="ecf127c350eb64f016d8aa68171e2e53" name="OpenID/PAPE.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="0b056bf4027c185d9eb02f7637dd632c" name="OpenID/Parse.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="702b40955fc5bd3b6ca0a8270216131b" name="OpenID/PostgreSQLStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="52633cffd8cd4010929afdbbe04773a7" name="OpenID/Server.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="2e95e7c0ae872b2c9cf1243baf664804" name="OpenID/ServerRequest.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="fb1f8f0a59559bea07ddf5affde37e84" name="OpenID/SQLiteStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="e427fe88d409a85752182e6bb15312e8" name="OpenID/SQLStore.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="7d7aaec465aee1c7a287da6cdbf59ffe" name="OpenID/SReg.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="1d7136a7e2f97daa1661687aa9cd6bd2" name="OpenID/TrustRoot.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="d8583b6e66842979c9553342b814398e" name="OpenID/URINorm.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="2520c568c4b8b8039bd9b1b62e2931ab" name="Yadis/HTTPFetcher.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="bc305a59c2e8c9af2c532ebd85898824" name="Yadis/Manager.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="7396878abc1a59a941d09800ac89b4ce" name="Yadis/Misc.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="002f85996f7e83f4a8b7661521f9366c" name="Yadis/ParanoidHTTPFetcher.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="b0bb707efb3802fa5604e584451ca115" name="Yadis/ParseHTML.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="46bf22fcd87ed857597bff777c10fa32" name="Yadis/PlainHTTPFetcher.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="e115b77a652261f6e6bbe7032d4bb2e1" name="Yadis/XML.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="0cb02172211216b0d83a2248f5207dd3" name="Yadis/XRDS.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="f7ede2ab410b35ffef76a23bac0d74e8" name="Yadis/XRI.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="f741827d1c6f95232693d2c979365118" name="Yadis/XRIRes.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="c74a057f6a5318dc5f190e9bc128badb" name="Yadis/Yadis.php" role="php" />
+   <file baseinstalldir="Auth" md5sum="05d93b592e620e9ce63082a1d71f6276" name="OpenID.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.6</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>2.2.2</release>
+    <api>2.2.2</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-12-26</date>
+   <license uri="http://openpear.org/license">PHP License 3.01</license>
+   <notes>
+hooo
+   </notes>
+  </release>
+ </changelog>
+</package>

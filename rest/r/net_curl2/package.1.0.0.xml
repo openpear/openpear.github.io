@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Net_Curl2</name>
+ <channel>openpear.org</channel>
+ <summary>個人的には使いやすい。
+でも若干HTTP_Request2の方が速い。</summary>
+ <description>個人的には使いやすい。
+でも若干HTTP_Request2の方が速い。</description>
+ <lead>
+  <name>eth0jp</name>
+  <user>eth0jp</user>
+  <email>tetu@eth0.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-07-30</date>
+ <time>06:40:03</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+------------------------------------------------------------------------
+r1970 | eth0jp | 2010-07-30 06:36:11 +0900 (金, 30  7月 2010) | 1 line
+
+mv Curl2.php
+------------------------------------------------------------------------
+r1969 | eth0jp | 2010-07-30 06:32:39 +0900 (金, 30  7月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1968 | openpear | 2010-07-30 03:34:05 +0900 (金, 30  7月 2010) | 1 line
+
+[New Package] Net_Curl2
+------------------------------------------------------------------------
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="faeb4c1a28c7c4692293c6175e588cfe" name="Net/Curl2.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.8.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-07-30</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+------------------------------------------------------------------------
+r1970 | eth0jp | 2010-07-30 06:36:11 +0900 (金, 30  7月 2010) | 1 line
+
+mv Curl2.php
+------------------------------------------------------------------------
+r1969 | eth0jp | 2010-07-30 06:32:39 +0900 (金, 30  7月 2010) | 1 line
+
+import
+------------------------------------------------------------------------
+r1968 | openpear | 2010-07-30 03:34:05 +0900 (金, 30  7月 2010) | 1 line
+
+[New Package] Net_Curl2
+------------------------------------------------------------------------
+   </notes>
+  </release>
+ </changelog>
+</package>

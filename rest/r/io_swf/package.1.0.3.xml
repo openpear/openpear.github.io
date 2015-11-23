@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>IO_SWF</name>
+ <channel>openpear.org</channel>
+ <summary>SWF バイナリを解釈/編集する為のライブラリです。
+IO_Bit が必要です (deps設定の仕方は後で調べる)</summary>
+ <description>SWF バイナリを解釈/編集する為のライブラリです。
+IO_Bit が必要です (deps設定の仕方は後で調べる)</description>
+ <lead>
+  <name>よや</name>
+  <user>yoya</user>
+  <email>yoya@awm.jp</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-25</date>
+ <time>19:15:03</time>
+ <version>
+  <release>1.0.3</release>
+  <api>1.0.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+ <notes>
+- JPEG chunk 並び替えクラスを追加 (IO_SWF_JPEG)
+- SWF 特有の JPEG 操作を行うコマンドを実装
+- replaceTagContentByCharacterId の戻り値に成功失敗を反映
+- CWS の圧縮形式に対応
+- dumpChunk の表示に md5 をつけた
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="d0e42a11bc1260b18e1cb11bd95d5c65" name="IO/SWF/Dumper.php" role="php" />
+   <file baseinstalldir="/" md5sum="25d28eafe2163dc95320c9936e468437" name="IO/SWF/Editor.php" role="php" />
+   <file baseinstalldir="/" md5sum="90879ac3164c7ef8c2eac5ab1c5c2147" name="IO/SWF/Former.php" role="php" />
+   <file baseinstalldir="/" md5sum="1d8f1558b66f52d136d6ec5aa7591b57" name="IO/SWF/JPEG.php" role="php" />
+   <file baseinstalldir="/" md5sum="ff1cf63aef9525ee31ff5024ec20dc11" name="IO/SWF.php" role="php" />
+   <file baseinstalldir="/" md5sum="bbdb614a0e1a73ba9611c2dd2f7098f5" name="sample/jpeg_dump.php" role="php" />
+   <file baseinstalldir="/" md5sum="b7abce5187e1a336c11f4eefad278d00" name="sample/swfcopy.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf173d55674ed650a31b114bba223fc0" name="sample/swfdump.php" role="php" />
+   <file baseinstalldir="/" md5sum="a29555feb20143f73d04a83f3922cd27" name="sample/swfreplacejpeg.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d65b9414c74aac3c930fd6225603694" name="sample/swfsetbgcolor.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.4.9</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.9</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.3</release>
+    <api>1.0.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2010-08-25</date>
+   <license uri="http://www.php.net/license/3_01.txt">PHP License 3.01</license>
+   <notes>
+- JPEG chunk 並び替えクラスを追加 (IO_SWF_JPEG)
+- SWF 特有の JPEG 操作を行うコマンドを実装
+- replaceTagContentByCharacterId の戻り値に成功失敗を反映
+- CWS の圧縮形式に対応
+- dumpChunk の表示に md5 をつけた
+   </notes>
+  </release>
+ </changelog>
+</package>

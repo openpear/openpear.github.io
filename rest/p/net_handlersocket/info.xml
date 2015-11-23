@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>Net_HandlerSocket</n>
+<c>openpear.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>PHP License 3.01</l>
+<s>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket('somehost', '9998');
+  $hs-&gt;openIndex(1, 'somedb', 'table1', 'PRIMARY', array('id', 'enable', 'body'));
+  $r = $hs-&gt;executeSingle(1, '=', array(1));</s>
+<d>HandlerSocket Plugin for MySQLのPHPクライアントです。
+
+
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL
+
+
+使い方は今のところ、perlクライアントに合わせてあります。
+http://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/perl-client.ja.txt
+
+
+sample:
+  $hs = new HandlerSocket('somehost', '9998');
+  $hs-&gt;openIndex(1, 'somedb', 'table1', 'PRIMARY', array('id', 'enable', 'body'));
+  $r = $hs-&gt;executeSingle(1, '=', array(1));</d>
+<r xlink:href="/rest/r/net_handlersocket" />
+</p>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
+    <p xlink:href="/rest/p/wozozo_view">Wozozo_View</p>
+    <c>openpear.org</c>
+    <v>0.1.1</v>
+    <a>0.1.1</a>
+    <mp>5.2.0</mp>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>koyhoge</m>
+    <s>ちょーしんぷるなテンプレート。</s>
+    <d>ちょーしんぷるなテンプレート。</d>
+    <da>2009-09-30 21:57:03</da>
+    <n>
+なんか動かない場合があるのを直した。
+ </n>
+    <f>1406</f>
+    <g>http://openpear.org/get/Wozozo_View-0.1.1</g>
+    <x xlink:href="package.0.1.1.xml"/>
+</r>

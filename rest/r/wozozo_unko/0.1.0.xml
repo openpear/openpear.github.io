@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/wozozo_unko">Wozozo_Unko</p>
+    <c>openpear.org</c>
+    <v>0.1.0</v>
+    <st>stable</st>
+    <l>PHP License 3.01</l>
+    <m>sotarok</m>
+    <s>hogera  hogefuga  hoge      fuga          gufuuff        hogge</s>
+    <d>hogera  hogefuga  hoge      fuga          gufuuff        hogge</d>
+    <da>2009-05-16 09:58:26</da>
+    <n>------------------------------------------------------------------------
+r839 | sotarok | 2009-05-16 09:58:14 -0700 (Sat, 16 May 2009) | 1 line
+
+move
+------------------------------------------------------------------------
+r838 | sotarok | 2009-05-16 09:45:55 -0700 (Sat, 16 May 2009) | 1 line
+
+update
+------------------------------------------------------------------------
+r837 | sotarok | 2009-05-16 09:42:40 -0700 (Sat, 16 May 2009) | 1 line
+
+commit
+------------------------------------------------------------------------</n>
+    <f>1104</f>
+    <g>http://openpear.org/get/Wozozo_Unko-0.1.0</g>
+    <x xlink:href="package.0.1.0.xml"/>
+</r>
