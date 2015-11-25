@@ -27,10 +27,19 @@ footer.footer {
   text-align: center;
 }
 
-.list-packages li {
+.list-packages li,
+.panel-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.panel-body {
+  word-break:break-all;
+}
+
+.logo {
+  max-width: 100%;
 }
 
 .back-to-top {
